@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<app-head></app-head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+   	<app-header></app-header>
+    <!-- end header -->
+
+    <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="inner-heading">
+              <ul class="breadcrumb">
+                <li><a href="index.html">Home</a> <i class="icon-angle-right"></i></li>
+                <li><a href="#">Pages</a> <i class="icon-angle-right"></i></li>
+                <li class="active">Sign Up</li>
+              </ul>
+              <h2>Sign Up</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+			
+		<form (ngSubmit)="onSignup(f)" #f="ngForm">
+			<div class="form-group">
+				<label for="email">Mail</label>
+				<input type="email" name="email" ngModel class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" name="password" ngModel class="form-control">
+			</div>
+			<button class="btn btn-primary" type="submit">Sign Up</button>
+		</form>
+          
+
+        </div>
+
+      </div>
+    </section>
+
+    <app-footer></app-footer>
+    
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
+
+</body>
+
+</html>
