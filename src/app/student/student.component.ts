@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
-import { StudentService } from '../service/student.service'
-import { Student } from '../model/student.model'
+import { StudentService } from '../student.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { MatDialog, MatDialogConfig} from "@angular/material";
+import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
+import { Student } from '../models/Student';
 
 @Component({
   selector: 'app-student',
@@ -10,55 +13,80 @@ import { Student } from '../model/student.model'
   styleUrls: ['./student.component.css']
 })
 export class StudentComponent implements OnInit {
-  genders = ['male', 'female'];
-  signupForm: FormGroup;
-  forbiddenUsernames = ['Chris', 'Anna'];
-  student: Student[]= [];
 
-  constructor(private studentService: StudentService) {}
+  title = 'Add Student';
+  angForm: FormGroup;
+  students: any;
+  public student : Student;
+  private gridApi;
+  private gridColumnApi;
+  private rowSelection;
+  dialogConfig = new MatDialogConfig();
   
+  constructor(private route: ActivatedRoute, 
+  			  private router: Router, 
+  			  private fb: FormBuilder,
+  			  private studentservice: StudentService,
+  			  private dialog: MatDialog) {
+    	this.createForm();
+    	this.rowSelection = "single";
+    	this.student = new Student();
+   }
+   
+  openDialog(student) {
+    this.dialogConfig.disableClose = true;
+    this.dialogConfig.autoFocus = true;
+    
+    this.dialog.open(DialogBodyComponent, { width: '600px', 
+    	data: { student }
+    });
+    
+  }
+  
+  onRowClicked(event: any) { 
+  	document.querySelector("#selectedRows").innerHTML = event.data.fname;
+  	this.openDialog(event.data);
+  }
+  
+  save() {
+    //this.dialogRef.close(this.form.value);
+  }
+   
   ngOnInit() {
-      this.signupForm = new FormGroup({
-          'userData': new FormGroup({
-            'username': new FormControl(null, [Validators.required, this.forbiddenNames.bind(this)]),
-            'email': new FormControl(null, [Validators.required, Validators.email], this.forbiddenEmails)
-          }),
-          'gender': new FormControl('male'),
-          'hobbies': new FormArray([])
-        });
+  	this.getStudents();
   }
   
-  onSave(){
-//      this.studentService.onAddStudent(this.signupForm)
+  columnDefs = [
+        {headerName: 'First Name', field: 'fname'},
+        {headerName: 'Last Name', field: 'lname' },
+        {headerName: 'Action', field: 'action'}
+  ];
+  
+  createForm() {
+    this.angForm = this.fb.group({
+      fname: ['', Validators.required ],
+      lname: ['', Validators.required ]
+   });
   }
-
-  onSubmit() {
-//    console.log(this.signupForm);
+  
+  addStudent() {
+    this.studentservice.addStudent(this.student).subscribe(res => {
+      this.getStudents();
+      this.angForm.reset();
+    });
   }
   
-  forbiddenNames(control: FormControl): {[s: string]: boolean} {
-      if (this.forbiddenUsernames.indexOf(control.value) !== -1) {
-        return {'nameIsForbidden': true};
-      }
-      return null;
-    }
+  getStudents() {
+      this.studentservice.getStudents().subscribe(res => {
+        this.students = res;
+    });
+  }
   
-  forbiddenEmails(control: FormControl): Promise<any> | Observable<any> {
-      const promise = new Promise<any>((resolve, reject) => {
-        setTimeout(() => {
-          if (control.value === 'test@test.com') {
-            resolve({'emailIsForbidden': true});
-          } else {
-            resolve(null);
-          }
-        }, 1000);
-      });
-      return promise;
-    }
+  deleteStudent(id) {
+    this.studentservice.deleteStudent(id).subscribe(res => {
+      this.getStudents();
+    });
+  }
   
-//  onAddHobby(){
-//      const control = new FormControl(null);
-//      (<FormArray>this.signupForm.get('hobbies')).push(control);
-//  }
- 
+  
 }

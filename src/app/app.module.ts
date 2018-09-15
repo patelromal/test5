@@ -16,11 +16,17 @@ import { CourseComponent } from './course/course.component';
 import { ResultComponent } from './result/result.component';
 import { StudentComponent } from './student/student.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpModule } from '@angular/http';
-import { StudentService } from './service/student.service';
+import { StudentService } from './student.service';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { AuthService } from './auth/auth.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgGridModule } from 'ag-grid-angular';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule,MatDialogRef,MatFormFieldModule,MatInputModule } from "@angular/material";
+import { DialogBodyComponent } from './dialog-body/dialog-body.component';
+
 
 @NgModule({
   declarations: [
@@ -38,16 +44,26 @@ import { AuthService } from './auth/auth.service';
     ResultComponent,
     StudentComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    DialogBodyComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    HttpClientModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    AgGridModule.withComponents([]),
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [StudentService,AuthService],
+  entryComponents: [
+    DialogBodyComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
