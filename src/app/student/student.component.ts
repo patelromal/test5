@@ -5,7 +5,7 @@ import { StudentService } from '../student.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog, MatDialogConfig} from "@angular/material";
 import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
-import { Student } from '../models/Student';
+import { student } from '../models/student';
 
 @Component({
   selector: 'app-student',
@@ -17,7 +17,7 @@ export class StudentComponent implements OnInit {
   title = 'Add Student';
   angForm: FormGroup;
   students: any;
-  public student : Student;
+  public student : student;
   private gridApi;
   private gridColumnApi;
   private rowSelection;
@@ -30,7 +30,7 @@ export class StudentComponent implements OnInit {
   			  private dialog: MatDialog) {
     	this.createForm();
     	this.rowSelection = "single";
-    	this.student = new Student();
+    	this.student = new student();
    }
    
   openDialog(student) {
@@ -70,7 +70,7 @@ export class StudentComponent implements OnInit {
   }
   
   addStudent() {
-    this.studentservice.addStudent(this.student).subscribe(res => {
+      this.studentservice.addStudent(this.student).subscribe(res => {
       this.getStudents();
       this.angForm.reset();
     });

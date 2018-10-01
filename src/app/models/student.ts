@@ -1,4 +1,5 @@
-export class Student { 
+export class student {
+    
    public fname: string;
    public lname: string; 
       

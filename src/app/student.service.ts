@@ -3,14 +3,14 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import { Student } from './../../models/Student';
+//import { Student } from './../../models/Student';
 
 @Injectable()
 export class StudentService {
 
   result: any;
   constructor(private http: HttpClient) {}
-  student: Student;
+//  student: Student;
 
   addStudent(studentData) {
     const uri = 'http://localhost:4000/students/add';
@@ -46,11 +46,11 @@ export class StudentService {
             });
   }
 
-  updateStudent(fname, lname, id) {
-    const uri = 'http://localhost:4000/students/update/' + id;
+  updateStudent(studentData) {
+    const uri = 'http://localhost:4000/students/update/' + studentData._id;
     const obj = {
-        fname: fname,
-        lname: lname
+        fname: studentData.fname,
+        lname: studentData.lname
     };
     return this
 	      .http
