@@ -1,7 +1,8 @@
-import { Component, OnInit,Inject } from '@angular/core';
+import { Component, OnInit,Inject,ViewChild,ContentChild,Output, EventEmitter } from '@angular/core';
 import { MatDialogRef,MAT_DIALOG_DATA } from "@angular/material";
 import { FormArray, FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
 import { StudentService } from '../student.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-dialog-body',
@@ -14,7 +15,8 @@ export class DialogBodyComponent implements OnInit {
   fb: FormBuilder;
     	
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
-          private studentservice: StudentService,
+          private studentservice: StudentService,private router: Router,
+          private route: ActivatedRoute,
 		  public dialogRef: MatDialogRef<DialogBodyComponent>){
   }
 
@@ -25,11 +27,6 @@ export class DialogBodyComponent implements OnInit {
       this.studentservice.updateStudent(this.data.student).subscribe(res => {
           this.dialogRef.close();
     });
-  }
-  
-  save() {
-    console.log('save : ' + this.data.student.fname);
-    this.updateStudent();
   }
   
   close() {

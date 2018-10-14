@@ -24,9 +24,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-import { MatDialogModule,MatDialogRef,MatFormFieldModule,MatInputModule } from "@angular/material";
+import { MatDialogModule,MatDialogRef,MatFormFieldModule,
+         MatButtonModule, MatIconModule, MatInputModule, 
+         MatPaginatorModule, MatProgressSpinnerModule,
+         MatSortModule,MatTableModule, MatToolbarModule} from "@angular/material";
 import { DialogBodyComponent } from './dialog-body/dialog-body.component';
-
+import { CollapsibleModule } from 'angular2-collapsible';
 
 @NgModule({
   declarations: [
@@ -56,9 +59,14 @@ import { DialogBodyComponent } from './dialog-body/dialog-body.component';
     HttpClientModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
     AgGridModule.withComponents([]),
     BrowserAnimationsModule,
-    MatInputModule
+    CollapsibleModule
   ],
   providers: [StudentService,AuthService],
   entryComponents: [

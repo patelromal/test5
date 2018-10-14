@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CollapsibleModule } from 'angular2-collapsible';
 
 @Component({
   selector: 'app-about-us',

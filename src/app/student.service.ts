@@ -3,17 +3,18 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-//import { Student } from './../../models/Student';
+import { student } from './models/student';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class StudentService {
 
   result: any;
   constructor(private http: HttpClient) {}
-//  student: Student;
+  student: student;
 
   addStudent(studentData) {
-    const uri = 'http://localhost:4000/students/add';
+    const uri = 'https://vast-springs-98239.herokuapp.com/students/add';
     const obj = {
       fname: studentData.fname,
       lname: studentData.lname
@@ -26,8 +27,8 @@ export class StudentService {
       });
   }
 
-  getStudents() {
-    const uri = 'http://localhost:4000/students';
+  getStudents(){
+    const uri = 'https://vast-springs-98239.herokuapp.com/students';
     return this
             .http
             .get(uri)
@@ -37,7 +38,7 @@ export class StudentService {
   }
 
   editStudent(id) {
-    const uri = 'http://localhost:4000/students/edit/' + id;
+    const uri = 'https://vast-springs-98239.herokuapp.com/students/edit/' + id;
     return this
             .http
             .get(uri)
@@ -47,7 +48,7 @@ export class StudentService {
   }
 
   updateStudent(studentData) {
-    const uri = 'http://localhost:4000/students/update/' + studentData._id;
+    const uri = 'https://vast-springs-98239.herokuapp.com/students/update/' + studentData._id;
     const obj = {
         fname: studentData.fname,
         lname: studentData.lname
@@ -61,7 +62,7 @@ export class StudentService {
   }
 
   deleteStudent(id) {
-    const uri = 'http://localhost:4000/students/delete/' + id;
+    const uri = 'https://vast-springs-98239.herokuapp.com/students/delete/' + id;
     return this
         .http
         .get(uri)

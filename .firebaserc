@@ -1,5 +1,6 @@
 {
   "projects": {
-    "staging": "student-http"
+    "staging": "student-http",
+    "default": "student-http"
   }
 }

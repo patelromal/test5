@@ -1,16 +1,27 @@
 {
-  "hosting": {
-    "public": "student",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "firebase": "sosgov",
+  "public": "dist",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build && node server.js",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "main": "server.js",
+    "postbuild": "server.js"
+  },
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ],
+  "rewrites": [{
+    "source": "/public/**",
+    "destination": "/public.html"
+  },
+  {
+    "source": "**",
+    "destination": "/index.html"
+  }]
 }

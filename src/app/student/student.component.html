@@ -16,20 +16,31 @@
 	  </form>
     </div>
     <div class="row">
-    	<ag-grid-angular
-			    #agGrid
-			    id="myGrid"
-			    style="width: 600px; height: 200px;"
-			    class="ag-theme-balham"
-			    [enableSorting]="true"
-			    [enableFilter]="true"
-			    [rowData]="students"
-			    [rowSelection]="rowSelection"
-			    (rowClicked)='onRowClicked($event)'
-			    [columnDefs]="columnDefs"
-			    >
-			</ag-grid-angular>
-			Selection: <span id="selectedRows"></span>
+    
+<!--     <mat-table #table [dataSource]="dataSource" matSort class="mat-cell"> -->
+	   	
+<!-- 	   	<ng-container matColumnDef="id"> -->
+<!-- 	      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->
+<!-- 	      <mat-cell *matCellDef="let row" >{{fname}}</mat-cell> -->
+<!-- 	    </ng-container> -->
+    
+    	
+<!--     </mat-table> -->
+
+<!--     	<ag-grid-angular -->
+<!-- 			    #agGrid -->
+<!-- 			    id="myGrid" -->
+<!-- 			    style="width: 600px; height: 200px;" -->
+<!-- 			    class="ag-theme-balham" -->
+<!-- 			    [enableSorting]="true" -->
+<!-- 			    [enableFilter]="true" -->
+<!-- 			    [rowData]="students" -->
+<!-- 			    [rowSelection]="rowSelection" -->
+<!-- 			    (rowClicked)='onRowClicked($event)' -->
+<!-- 			    [columnDefs]="columnDefs" -->
+<!-- 			    > -->
+<!-- 			</ag-grid-angular> -->
+<!-- 			Selection: <span id="selectedRows"></span> -->
     </div>
   </div>
 </div>

@@ -5,3 +5,8 @@ export class student {
       
    constructor () {} 
 }
+
+//export interface student {
+//    fname: string;
+//    lname: string;
+//}
