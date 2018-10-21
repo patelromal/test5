@@ -309,17 +309,6 @@ module.exports = ".grid { \n    width: 100%; \n    border-collapse: collapse; \n
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles/menu.css":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./node_modules/postcss-loader/lib??embedded!./src/styles/menu.css ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/* Override the default styling of .btn-group */\n.menu-btn-group {\n    border-top-right-radius: 4px !important; \n    border-bottom-right-radius: 4px !important;\n}\n.dropdown-menu {\n    padding: 0;\n}\n.dropdown-menu .menu-item {\n    padding: 0.5em 0;\n}\n.popup-menu {\n    opacity: 0;\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: none;\n    border-radius: .25rem;\n    border: 1px solid rgba(0, 0, 0, .15);\n    list-style: none;\n    text-align: left;\n    z-index: 1000;\n}\n.popup-menu-hover {\n    display: block;\n    opacity: 1;\n}\n.menu-item {\n    border-left-width: 1px;\n    border-left-style: solid;\n    border-left-color: rgba(0, 0, 0, 0.15);\n    border-right-width: 1px;\n    border-right-style: solid;\n    border-right-color: rgba(0, 0, 0, 0.15);\n}\n.menu-item:first-of-type {\n    border-top-width: 1px;\n    border-top-style: solid;\n    border-top-color: rgba(0, 0, 0, 0.15);\n    border-radius: 4px 4px 0px 0px;\n}\n.menu-item:last-of-type {\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgba(0, 0, 0, 0.15);\n    border-radius: 0px 0px 4px 4px;\n}\n.menu-item:hover {\n    cursor: pointer;\n    background-color: #ccc;\n}\n.menu-item a {\n    color: black;\n}\n.dropdown-icon {\n    display: inline-block;\n    width: 40px;\n}\n.divider {\n    border-top: 1px solid #EEE;\n}\n"
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles/modal.css":
 /*!****************************************************************************************************!*\
   !*** ./node_modules/raw-loader!./node_modules/postcss-loader/lib??embedded!./src/styles/modal.css ***!
@@ -328,17 +317,6 @@ module.exports = "/* Override the default styling of .btn-group */\n.menu-btn-gr
 /***/ (function(module, exports) {
 
 module.exports = ".sparq-modal-overlay {\n    display: block;\n\tposition: fixed;\n\tz-index: 1000;\n\twidth: 100%;\n\theight: 100%;\n\ttop: 0;\n\tright: 0;\n\tleft: 0;\n\tbottom: 0;\n\tbackground-color: black;\n\topacity: 0.5 !important;\n}\n\n.sparq-modal {\n\tposition: fixed;\n\tbackground-color: white;\n\tz-index: 1000;\n\tborder-radius: 2px;\n\tbox-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);\n\ttop: 15%;\n\tleft: 50%;\n\t-webkit-transform: translateX(-50%);\n\t        transform: translateX(-50%);\n}\n\n.sparq-modal-body {\n\tpadding: 20px;\n}\n\n.sparq-modal-header {\n\theight: 50px;\n\twidth: 100%;\n\tfont-size: 20px;\n\tpadding: 10px 10px 10px 25px;\n\tbackground-color: #123751;\n\tcolor: #F7F7F7;\n}\n\n.sparq-modal-footer {\n\tpadding-bottom: 15px;\n\ttext-align: center;\n}\n"
-
-/***/ }),
-
-/***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles/styles.css":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./node_modules/postcss-loader/lib??embedded!./src/styles/styles.css ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "html, body { height: 100%; }\n\n.margin-bot { margin-bottom: 10px; }\n\n.hidden { display: none; }\n\n.full-width { width: 100%; }\n\n.center { text-align: center; }\n\n.rj     { text-align: right; }\n\n.sm-pad { padding: 5px; }\n\n.link { color: blue; text-decoration: underline; }\n\n.code-drop { width: 600px !important; }\n\n.error-well {\n    border: 1px #ccc solid;\n    border-radius: 3px;\n    background-color: #ddd;\n    padding: 10px;\n}\n\n.popup-wrapper {\n    position: relative;\n    -webkit-transform: translateZ(0); /* webkit flicker fix */\n}\n\n.popup-wrapper .popup {\n    z-index: 1000;\n    background: #fff;\n    top: -80px;\n    left: -20px;\n    display: none;\n    text-align: left;\n    opacity: 0;\n    padding: 20px;\n    pointer-events: none;\n    position: absolute;\n    width: 100%;\n    -webkit-transform: translateY(0px);\n            transform: translateY(0px);\n    transition-property: opacity, -webkit-transform;\n    transition-property: transform, opacity;\n    transition-property: transform, opacity, -webkit-transform;\n    transition-duration: .25s;\n    transition-timing-function: ease-out;\n    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);\n}\n\n.popup-wrapper .popup-hover {\n    z-index: 1000;\n    display: block;\n    opacity: 1;\n    pointer-events: auto;\n    -webkit-transform: translateY(100px);\n            transform: translateY(100px);\n}\n\n.no-style {\n    border: none;\n    color: inherit;\n    padding: 0;\n    font: inherit;\n    outline: inherit;\n    cursor: pointer;\n    background: none;\n}\n\n.no-style:focus {\n    outline: inherit;\n}\n\n.success { color: green; }\n\n.warning { color: red; }\n\n.trendline1 {\n    stroke: steelblue;\n    stroke-width: 3px;\n    fill: none;\n}\n"
 
 /***/ }),
 
@@ -893,36 +871,6 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/styles/menu.css":
-/*!*****************************!*\
-  !*** ./src/styles/menu.css ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../node_modules/raw-loader!../../node_modules/postcss-loader/lib??embedded!./menu.css */ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles/menu.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./src/styles/modal.css":
 /*!******************************!*\
   !*** ./src/styles/modal.css ***!
@@ -953,40 +901,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/styles/styles.css":
-/*!*******************************!*\
-  !*** ./src/styles/styles.css ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../node_modules/raw-loader!../../node_modules/postcss-loader/lib??embedded!./styles.css */ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles/styles.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ 2:
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./node_modules/datatables.net-dt/css/jquery.dataTables.css ./node_modules/datatables.net-select-dt/css/select.dataTables.css ./node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css ./node_modules/font-awesome/css/font-awesome.min.css ./node_modules/select2/dist/css/select2.min.css ./node_modules/ag-grid/dist/styles/ag-grid.css ./node_modules/ag-grid/dist/styles/ag-theme-balham.css ./src/styles/grid.css ./src/styles/modal.css ./src/styles/menu.css ./src/styles/styles.css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./node_modules/datatables.net-dt/css/jquery.dataTables.css ./node_modules/datatables.net-select-dt/css/select.dataTables.css ./node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css ./node_modules/font-awesome/css/font-awesome.min.css ./node_modules/select2/dist/css/select2.min.css ./node_modules/ag-grid/dist/styles/ag-grid.css ./node_modules/ag-grid/dist/styles/ag-theme-balham.css ./src/styles/grid.css ./src/styles/modal.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -999,9 +917,7 @@ __webpack_require__(/*! /Users/skapale/Development/dev/test2/node_modules/select
 __webpack_require__(/*! /Users/skapale/Development/dev/test2/node_modules/ag-grid/dist/styles/ag-grid.css */"./node_modules/ag-grid/dist/styles/ag-grid.css");
 __webpack_require__(/*! /Users/skapale/Development/dev/test2/node_modules/ag-grid/dist/styles/ag-theme-balham.css */"./node_modules/ag-grid/dist/styles/ag-theme-balham.css");
 __webpack_require__(/*! /Users/skapale/Development/dev/test2/src/styles/grid.css */"./src/styles/grid.css");
-__webpack_require__(/*! /Users/skapale/Development/dev/test2/src/styles/modal.css */"./src/styles/modal.css");
-__webpack_require__(/*! /Users/skapale/Development/dev/test2/src/styles/menu.css */"./src/styles/menu.css");
-module.exports = __webpack_require__(/*! /Users/skapale/Development/dev/test2/src/styles/styles.css */"./src/styles/styles.css");
+module.exports = __webpack_require__(/*! /Users/skapale/Development/dev/test2/src/styles/modal.css */"./src/styles/modal.css");
 
 
 /***/ })
