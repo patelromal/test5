@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import { map } from "rxjs/operators";
 import { student } from './models/student';
 import { BehaviorSubject } from 'rxjs';
 

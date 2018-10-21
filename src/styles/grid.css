@@ -1,0 +1,33 @@
+.grid { 
+    width: 100%; 
+    border-collapse: collapse; 
+    font-family: "Titillium Web";
+    font-size: 11px;
+}
+
+.grid > thead > tr > th { 
+    color: #9C9490;
+    font-weight: normal;
+    height: 28px;
+}
+
+.grid > thead > tr > th:first-of-type,
+.grid > tbody > tr > td:first-of-type { 
+    padding-left: 24px;
+}
+
+.grid > thead > tr > th:last-of-type,
+.grid > tbody > tr > td:last-of-type {
+    padding-right: 24px;
+}
+
+.grid > thead > tr > th, .grid > tbody > tr > td { 
+    font-size: 11px; 
+    padding-right: 14px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.grid > tbody > tr > td {  
+    height: 24px; 
+    color: #3A2E2E;
+}

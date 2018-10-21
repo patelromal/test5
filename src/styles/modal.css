@@ -1,0 +1,42 @@
+.sparq-modal-overlay {
+    display: block;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.5 !important;
+}
+
+.sparq-modal {
+	position: fixed;
+	background-color: white;
+	z-index: 1000;
+	border-radius: 2px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sparq-modal-body {
+	padding: 20px;
+}
+
+.sparq-modal-header {
+	height: 50px;
+	width: 100%;
+	font-size: 20px;
+	padding: 10px 10px 10px 25px;
+	background-color: #123751;
+	color: #F7F7F7;
+}
+
+.sparq-modal-footer {
+	padding-bottom: 15px;
+	text-align: center;
+}

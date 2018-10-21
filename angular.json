@@ -25,10 +25,24 @@
               {
                 "input": "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
               },
-              "src/assets/ag-grid.css",
-              "src/assets/ag-theme-balham.css"
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
+              "node_modules/datatables.net-select-dt/css/select.dataTables.css",
+              "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/select2/dist/css/select2.min.css",
+              "node_modules/ag-grid/dist/styles/ag-grid.css",
+              "node_modules/ag-grid/dist/styles/ag-theme-balham.css",
+              "src/styles/grid.css",
+              "src/styles/modal.css",
+              "src/styles/menu.css",
+              "src/styles/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/select2/dist/js/select2.full.min.js"
+            ]
           },
           "configurations": {
             "production": {
