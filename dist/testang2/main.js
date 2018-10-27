@@ -5587,7 +5587,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../student.service */ "./src/app/student.service.ts");
+/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student/services/student.service */ "./src/app/student/services/student.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5619,7 +5619,7 @@ var AdminComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./admin.component.html */ "./src/app/admin/admin.component.html"),
             styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/admin.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"]])
     ], AdminComponent);
     return AdminComponent;
 }());
@@ -5726,10 +5726,21 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 };
 
 
+//import { LocationStrategy } from "@angular/common";
+//import { EnvironmentService } from "./common/services/environment.service";
+//import { ModalService } from "./common/services/modal.service";
+//import { ErrorService } from "./common/services/error.service";
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
+        this.error = { message: "" };
     }
+    //  constructor(
+    //          private url: LocationStrategy,
+    //          private router: Router,
+    //          private errorService: ErrorService,
+    //          public modalService: ModalService,
+    //          public envService: EnvironmentService
+    //  ) { }
     AppComponent.prototype.ngOnInit = function () {
         firebase__WEBPACK_IMPORTED_MODULE_1__["initializeApp"]({
             apiKey: "AIzaSyAeFGtd5RG4T-hRxdCsz9y5263K6JIJ9Cg",
@@ -5776,7 +5787,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
 /* harmony import */ var _student_student_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./student/student.component */ "./src/app/student/student.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _student_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./student.service */ "./src/app/student.service.ts");
+/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./student/services/student.service */ "./src/app/student/services/student.service.ts");
 /* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
 /* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
 /* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./auth/auth.service */ "./src/app/auth/auth.service.ts");
@@ -5788,12 +5799,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
 /* harmony import */ var angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! angular2-collapsible */ "./node_modules/angular2-collapsible/index.js");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -5843,7 +5856,8 @@ var AppModule = /** @class */ (function () {
                 _student_student_component__WEBPACK_IMPORTED_MODULE_15__["StudentComponent"],
                 _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_18__["SignupComponent"],
                 _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_19__["SigninComponent"],
-                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"]
+                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"],
+                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -5863,7 +5877,7 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_21__["BrowserAnimationsModule"],
                 angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__["CollapsibleModule"]
             ],
-            providers: [_student_service__WEBPACK_IMPORTED_MODULE_17__["StudentService"], _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"]],
+            providers: [_student_services_student_service__WEBPACK_IMPORTED_MODULE_17__["StudentService"], _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"]],
             entryComponents: [
                 _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"]
             ],
@@ -6062,6 +6076,61 @@ var SignupComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/components/page-action/page-action.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/common/components/page-action/page-action.component.ts ***!
+  \************************************************************************/
+/*! exports provided: PageActionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageActionComponent", function() { return PageActionComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var PageActionComponent = /** @class */ (function () {
+    function PageActionComponent() {
+    }
+    PageActionComponent.prototype.agInit = function (params) {
+        this.params = params;
+        this.pageAction = params.pageAction;
+    };
+    PageActionComponent.prototype.refresh = function (params) {
+        this.params = params;
+        return true;
+    };
+    PageActionComponent.prototype.save = function () {
+        this.params.api.gridOptions.context.componentParent.save(this.params.data);
+    };
+    PageActionComponent.prototype.edit = function (ev) {
+        this.params.api.gridOptions.context.componentParent.edit(this.params.data);
+        ev.stopPropagation();
+    };
+    PageActionComponent.prototype.open = function () {
+        this.params.api.gridOptions.context.componentParent.open(this.params);
+    };
+    PageActionComponent.prototype.delete = function () {
+        this.params.api.gridOptions.context.componentParent.delete(this.params);
+    };
+    PageActionComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "page-action",
+            template: "\n        <button *ngIf=\"pageAction === 'edit'\" class='no-style' (click)='edit($event)'\n        tooltip=\"Edit\">\n            <i class='fa fa-pencil text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'save'\" class='no-style' (click)='save($event)'\n        tooltip=\"Save\">\n            <i class='fa fa-save text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'open'\" class='no-style' (click)='open($event)'\n        tooltip=\"Open\">\n            <i class='fa fa-openid text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'delete'\" class='no-style' (click)='delete($event)'\n        tooltip=\"Save\">\n            <i class='fa fa-trash text-danger' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'notes'\" class='no-style'\n        tooltip=\"Notes\">\n            <span class=\"fa-stack\">\n                <span class=\"fa fa-sticky-note text-warning fa-stack-2x\"></span>\n                <strong class=\"fa-stack\" style=\"font-family:Roboto; font-size:xx-small\">\n                    {{params.data.notes}}</strong>\n            </span>\n        </button>\n    ",
+        })
+    ], PageActionComponent);
+    return PageActionComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/contact-us/contact-us.component.css":
 /*!*****************************************************!*\
   !*** ./src/app/contact-us/contact-us.component.css ***!
@@ -6225,7 +6294,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogBodyComponent", function() { return DialogBodyComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student.service */ "./src/app/student.service.ts");
+/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student/services/student.service */ "./src/app/student/services/student.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6269,7 +6338,7 @@ var DialogBodyComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./dialog-body.component.css */ "./src/app/dialog-body/dialog-body.component.css")]
         }),
         __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
-        __metadata("design:paramtypes", [Object, _student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+        __metadata("design:paramtypes", [Object, _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
             _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]])
     ], DialogBodyComponent);
@@ -6670,10 +6739,10 @@ var ResultComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/student.service.ts":
-/*!************************************!*\
-  !*** ./src/app/student.service.ts ***!
-  \************************************/
+/***/ "./src/app/student/services/student.service.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/student/services/student.service.ts ***!
+  \*****************************************************/
 /*! exports provided: StudentService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6682,6 +6751,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentService", function() { return StudentService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6691,6 +6761,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 var StudentService = /** @class */ (function () {
@@ -6779,7 +6850,7 @@ module.exports = ".container {\n  margin-top: 30px;\n}\n\ninput.ng-invalid.ng-to
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n      <form #form=\"ngForm\">\n      \t<div>\n\t      <label class=\"col-md-4\">First Name: </label>\n\t      <input type=\"text\" class=\"form-control\" name=\"fname\" [(ngModel)]=\"student.fname\" />\n\t    </div>\n\t    <div>\n\t      <label class=\"col-md-4\">Last Name: </label>\n\t      <input type=\"text\" class=\"form-control\" name=\"lname\" [(ngModel)]=\"student.lname\" />\n\t    </div>\n\t\t<div>  \n\t\t  <button (click)=\"addStudent()\" class=\"btn btn-primary\">Add</button>\n\t\t</div>  \n\t  </form>\n    </div>\n    <div class=\"row\">\n    \n<!--     <mat-table #table [dataSource]=\"dataSource\" matSort class=\"mat-cell\"> -->\n\t   \t\n<!-- \t   \t<ng-container matColumnDef=\"id\"> -->\n<!-- \t      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->\n<!-- \t      <mat-cell *matCellDef=\"let row\" >{{fname}}</mat-cell> -->\n<!-- \t    </ng-container> -->\n    \n    \t\n<!--     </mat-table> -->\n\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 600px; height: 200px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    [rowSelection]=\"rowSelection\"\n\t\t\t    (rowClicked)='onRowClicked($event)'\n\t\t\t    [columnDefs]=\"columnDefs\"\n\t\t\t    >\n\t\t\t</ag-grid-angular>\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n    </div>\n  </div>\n</div>\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n      <form #form=\"ngForm\">\n<!--       \t<div> -->\n<!-- \t      <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t      <input type=\"text\" class=\"form-control\" name=\"fname\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t    </div> -->\n<!-- \t    <div> -->\n<!-- \t      <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t      <input type=\"text\" class=\"form-control\" name=\"lname\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t    </div> -->\n<!-- \t\t<div>   -->\n<!-- \t\t  <button (click)=\"addStudent()\" class=\"btn btn-primary\">Add</button> -->\n<!-- \t\t</div>   -->\n\t  </form>\n    </div>\n    <div class=\"row\">\n    \n<!--     <mat-table #table [dataSource]=\"dataSource\" matSort class=\"mat-cell\"> -->\n<!-- \t   \t<ng-container matColumnDef=\"id\"> -->\n<!-- \t      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->\n<!-- \t      <mat-cell *matCellDef=\"let row\" >{{fname}}</mat-cell> -->\n<!-- \t    </ng-container> -->\n<!--     </mat-table> -->\n\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 600px; height: 200px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    [rowSelection]=\"rowSelection\"\n\t\t\t    (rowClicked)='onRowClicked($event)'\n\t\t\t    [columnDefs]=\"columnDefs\"\n\t\t\t    >\n\t\t\t</ag-grid-angular>\n\t\t\tSelection: <span id=\"selectedRows\"></span>\n    </div>\n  </div>\n</div>\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
 
 /***/ }),
 
@@ -6795,7 +6866,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentComponent", function() { return StudentComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student.service */ "./src/app/student.service.ts");
+/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/student.service */ "./src/app/student/services/student.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
@@ -6894,21 +6965,12 @@ var StudentComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
-            _student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
+            _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
             _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"]])
     ], StudentComponent);
     return StudentComponent;
 }());
 
-//export class StudentDataSource extends DataSource<any> {
-//    constructor(private studentService: StudentService) {
-//      super();
-//    }
-//    connect(): Observable<student[]> {
-//      return this.studentService.getStudents();
-//    }
-//    disconnect() {}
-//}
 
 
 /***/ }),

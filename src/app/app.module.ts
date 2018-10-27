@@ -16,7 +16,7 @@ import { CourseComponent } from './course/course.component';
 import { ResultComponent } from './result/result.component';
 import { StudentComponent } from './student/student.component';
 import { AppRoutingModule } from './app-routing.module';
-import { StudentService } from './student.service';
+import { StudentService } from './student/services/student.service';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { AuthService } from './auth/auth.service';
@@ -30,6 +30,7 @@ import { MatDialogModule,MatDialogRef,MatFormFieldModule,
          MatSortModule,MatTableModule, MatToolbarModule} from "@angular/material";
 import { DialogBodyComponent } from './dialog-body/dialog-body.component';
 import { CollapsibleModule } from 'angular2-collapsible';
+import { PageActionComponent } from './common/components/page-action/page-action.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CollapsibleModule } from 'angular2-collapsible';
     StudentComponent,
     SignupComponent,
     SigninComponent,
-    DialogBodyComponent
+    DialogBodyComponent,
+    PageActionComponent
   ],
   imports: [
     BrowserModule,

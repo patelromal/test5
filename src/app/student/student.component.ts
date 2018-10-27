@@ -1,7 +1,7 @@
 import { Component, OnInit,Injectable,Output } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
-import { StudentService } from '../student.service';
+import { StudentService } from './services/student.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog, MatDialogConfig} from "@angular/material";
 import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
@@ -28,13 +28,13 @@ export class StudentComponent implements OnInit {
 //  dataSource = new StudentDataSource(this.studentservice);
   
   constructor(private route: ActivatedRoute, 
-  			  private router: Router, 
-  			  private fb: FormBuilder,
-  			  private studentservice: StudentService,
-  			  private dialog: MatDialog) {
-    	this.createForm();
-    	this.rowSelection = "single";
-    	this.student = new student();
+              private router: Router, 
+              private fb: FormBuilder,
+              private studentservice: StudentService,
+              private dialog: MatDialog) {
+        this.createForm();
+        this.rowSelection = "single";
+        this.student = new student();
    }
   
   ngOnInit() {
@@ -98,13 +98,3 @@ export class StudentComponent implements OnInit {
   }
   
 }
-
-//export class StudentDataSource extends DataSource<any> {
-//    constructor(private studentService: StudentService) {
-//      super();
-//    }
-//    connect(): Observable<student[]> {
-//      return this.studentService.getStudents();
-//    }
-//    disconnect() {}
-//}

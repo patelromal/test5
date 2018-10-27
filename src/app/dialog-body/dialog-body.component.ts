@@ -1,7 +1,7 @@
 import { Component, OnInit,Inject,ViewChild,ContentChild,Output, EventEmitter } from '@angular/core';
 import { MatDialogRef,MAT_DIALOG_DATA } from "@angular/material";
 import { FormArray, FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
-import { StudentService } from '../student.service';
+import { StudentService } from '../student/services/student.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({

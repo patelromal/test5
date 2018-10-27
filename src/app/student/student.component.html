@@ -2,29 +2,26 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <form #form="ngForm">
-      	<div>
-	      <label class="col-md-4">First Name: </label>
-	      <input type="text" class="form-control" name="fname" [(ngModel)]="student.fname" />
-	    </div>
-	    <div>
-	      <label class="col-md-4">Last Name: </label>
-	      <input type="text" class="form-control" name="lname" [(ngModel)]="student.lname" />
-	    </div>
-		<div>  
-		  <button (click)="addStudent()" class="btn btn-primary">Add</button>
-		</div>  
+<!--       	<div> -->
+<!-- 	      <label class="col-md-4">First Name: </label> -->
+<!-- 	      <input type="text" class="form-control" name="fname" [(ngModel)]="student.fname" /> -->
+<!-- 	    </div> -->
+<!-- 	    <div> -->
+<!-- 	      <label class="col-md-4">Last Name: </label> -->
+<!-- 	      <input type="text" class="form-control" name="lname" [(ngModel)]="student.lname" /> -->
+<!-- 	    </div> -->
+<!-- 		<div>   -->
+<!-- 		  <button (click)="addStudent()" class="btn btn-primary">Add</button> -->
+<!-- 		</div>   -->
 	  </form>
     </div>
     <div class="row">
     
 <!--     <mat-table #table [dataSource]="dataSource" matSort class="mat-cell"> -->
-	   	
 <!-- 	   	<ng-container matColumnDef="id"> -->
 <!-- 	      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->
 <!-- 	      <mat-cell *matCellDef="let row" >{{fname}}</mat-cell> -->
 <!-- 	    </ng-container> -->
-    
-    	
 <!--     </mat-table> -->
 
     	<ag-grid-angular
@@ -40,7 +37,7 @@
 			    [columnDefs]="columnDefs"
 			    >
 			</ag-grid-angular>
-<!-- 			Selection: <span id="selectedRows"></span> -->
+			Selection: <span id="selectedRows"></span>
     </div>
   </div>
 </div>

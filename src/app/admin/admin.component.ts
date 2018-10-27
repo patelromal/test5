@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute, Router } from '@angular/router';
-import { StudentService } from './../student.service';
+import { StudentService } from '../student/services/student.service';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 
 @Component({
