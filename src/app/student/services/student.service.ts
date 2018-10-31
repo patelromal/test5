@@ -27,7 +27,7 @@ export class StudentService {
       });
   }
 
-  getStudents(){
+  getStudents() {
     const uri = 'http://localhost:4000/students';
     return this
             .http
@@ -48,7 +48,7 @@ export class StudentService {
   }
 
   updateStudent(studentData) {
-    const uri = 'http://localhost:4000/students/update/' + studentData._id;
+    const uri = 'http://localhost:4000/students/update/' + studentData.id;
     const obj = {
         fname: studentData.fname,
         lname: studentData.lname

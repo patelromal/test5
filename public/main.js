@@ -5800,12 +5800,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
 /* harmony import */ var angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! angular2-collapsible */ "./node_modules/angular2-collapsible/index.js");
 /* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_common_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./common/common.module */ "./src/app/common/common.module.ts");
+/* harmony import */ var _common_services_modal_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./common/services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -5859,6 +5867,10 @@ var AppModule = /** @class */ (function () {
                 _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"],
                 _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"]
             ],
+            schemas: [
+                _angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"],
+                _angular_core__WEBPACK_IMPORTED_MODULE_1__["NO_ERRORS_SCHEMA"]
+            ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
@@ -5875,11 +5887,17 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatProgressSpinnerModule"],
                 ag_grid_angular__WEBPACK_IMPORTED_MODULE_22__["AgGridModule"].withComponents([]),
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_21__["BrowserAnimationsModule"],
-                angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__["CollapsibleModule"]
+                angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__["CollapsibleModule"],
+                _common_common_module__WEBPACK_IMPORTED_MODULE_29__["SmuCommonModule"].forRoot(),
+                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"].forRoot(),
+                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"].forRoot()
             ],
-            providers: [_student_services_student_service__WEBPACK_IMPORTED_MODULE_17__["StudentService"], _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"]],
+            exports: [
+                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"]
+            ],
+            providers: [_student_services_student_service__WEBPACK_IMPORTED_MODULE_17__["StudentService"], _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"], _common_services_modal_service__WEBPACK_IMPORTED_MODULE_30__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["BsModalService"]],
             entryComponents: [
-                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"]
+                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"], _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
@@ -6076,6 +6094,138 @@ var SignupComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/common.module.ts":
+/*!*****************************************!*\
+  !*** ./src/app/common/common.module.ts ***!
+  \*****************************************/
+/*! exports provided: SmuCommonModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmuCommonModule", function() { return SmuCommonModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var SmuCommonModule = /** @class */ (function () {
+    function SmuCommonModule() {
+    }
+    SmuCommonModule_1 = SmuCommonModule;
+    SmuCommonModule.forRoot = function () {
+        return {
+            ngModule: SmuCommonModule_1,
+            providers: [],
+        };
+    };
+    var SmuCommonModule_1;
+    SmuCommonModule = SmuCommonModule_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            ],
+            entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__["PageActionComponent"]],
+            declarations: [_components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__["ModalComponent"]],
+            exports: [_components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__["ModalComponent"]]
+        })
+    ], SmuCommonModule);
+    return SmuCommonModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/modal/modal.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/common/components/modal/modal.component.ts ***!
+  \************************************************************/
+/*! exports provided: ModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalComponent", function() { return ModalComponent; });
+/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ModalComponent = /** @class */ (function () {
+    function ModalComponent(modalService, el) {
+        this.modalService = modalService;
+        this.el = el;
+        this.element = el.nativeElement;
+    }
+    ModalComponent.prototype.ngOnInit = function () {
+        var modal = this;
+        // ensure id attribute exists
+        if (!this.id) {
+            console.error('modal must have an id');
+            return;
+        }
+        // move element to bottom of page (just before </body>) so it can be displayed above everything else
+        document.body.appendChild(this.element);
+        // close modal on background click
+        this.element.addEventListener('click', function (e) {
+            if (e.target.className === 'modal') {
+                modal.close();
+            }
+        });
+        // add self (this modal instance) to the modal service so it's accessible from controllers
+        this.modalService.add(this);
+    };
+    // remove self from modal service when directive is destroyed
+    ModalComponent.prototype.ngOnDestroy = function () {
+        this.modalService.remove(this.id);
+        this.element.remove();
+    };
+    // open modal
+    ModalComponent.prototype.open = function () {
+        this.element.style.display = 'block';
+        document.body.classList.add('modal-open');
+    };
+    // close modal
+    ModalComponent.prototype.close = function () {
+        this.element.style.display = 'none';
+        document.body.classList.remove('modal-open');
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        __metadata("design:type", String)
+    ], ModalComponent.prototype, "id", void 0);
+    ModalComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'modal',
+            template: '<ng-content></ng-content>'
+        }),
+        __metadata("design:paramtypes", [_services_modal_service__WEBPACK_IMPORTED_MODULE_0__["ModalService"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]])
+    ], ModalComponent);
+    return ModalComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/components/page-action/page-action.component.ts":
 /*!************************************************************************!*\
   !*** ./src/app/common/components/page-action/page-action.component.ts ***!
@@ -6125,6 +6275,45 @@ var PageActionComponent = /** @class */ (function () {
         })
     ], PageActionComponent);
     return PageActionComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/services/modal.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/common/services/modal.service.ts ***!
+  \**************************************************/
+/*! exports provided: ModalService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalService", function() { return ModalService; });
+var ModalService = /** @class */ (function () {
+    function ModalService() {
+        this.modals = [];
+    }
+    ModalService.prototype.add = function (modal) {
+        // add modal to array of active modals
+        this.modals.push(modal);
+    };
+    ModalService.prototype.remove = function (id) {
+        // remove modal from array of active modals
+        this.modals = this.modals.filter(function (x) { return x.id !== id; });
+    };
+    ModalService.prototype.open = function (id) {
+        // open modal specified by id
+        var modal = this.modals.filter(function (x) { return x.id === id; })[0];
+        modal.open();
+    };
+    ModalService.prototype.close = function (id) {
+        // close modal specified by id
+        var modal = this.modals.filter(function (x) { return x.id === id; })[0];
+        modal.close();
+    };
+    return ModalService;
 }());
 
 
@@ -6658,30 +6847,6 @@ var MenuComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/models/student.ts":
-/*!***********************************!*\
-  !*** ./src/app/models/student.ts ***!
-  \***********************************/
-/*! exports provided: student */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "student", function() { return student; });
-var student = /** @class */ (function () {
-    function student() {
-    }
-    return student;
-}());
-
-//export interface student {
-//    fname: string;
-//    lname: string;
-//}
-
-
-/***/ }),
-
 /***/ "./src/app/result/result.component.css":
 /*!*********************************************!*\
   !*** ./src/app/result/result.component.css ***!
@@ -6800,7 +6965,7 @@ var StudentService = /** @class */ (function () {
         });
     };
     StudentService.prototype.updateStudent = function (studentData) {
-        var uri = 'http://localhost:4000/students/update/' + studentData._id;
+        var uri = 'http://localhost:4000/students/update/' + studentData.id;
         var obj = {
             fname: studentData.fname,
             lname: studentData.lname
@@ -6839,7 +7004,7 @@ var StudentService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".container {\n  margin-top: 30px;\n}\n\ninput.ng-invalid.ng-touched {\n  border: 1px solid red;\n}\n\nbody {\n  text-align: justify;\n}\n"
+module.exports = ""
 
 /***/ }),
 
@@ -6850,7 +7015,7 @@ module.exports = ".container {\n  margin-top: 30px;\n}\n\ninput.ng-invalid.ng-to
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n      <form #form=\"ngForm\">\n<!--       \t<div> -->\n<!-- \t      <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t      <input type=\"text\" class=\"form-control\" name=\"fname\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t    </div> -->\n<!-- \t    <div> -->\n<!-- \t      <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t      <input type=\"text\" class=\"form-control\" name=\"lname\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t    </div> -->\n<!-- \t\t<div>   -->\n<!-- \t\t  <button (click)=\"addStudent()\" class=\"btn btn-primary\">Add</button> -->\n<!-- \t\t</div>   -->\n\t  </form>\n    </div>\n    <div class=\"row\">\n    \n<!--     <mat-table #table [dataSource]=\"dataSource\" matSort class=\"mat-cell\"> -->\n<!-- \t   \t<ng-container matColumnDef=\"id\"> -->\n<!-- \t      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->\n<!-- \t      <mat-cell *matCellDef=\"let row\" >{{fname}}</mat-cell> -->\n<!-- \t    </ng-container> -->\n<!--     </mat-table> -->\n\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 600px; height: 200px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    [rowSelection]=\"rowSelection\"\n\t\t\t    (rowClicked)='onRowClicked($event)'\n\t\t\t    [columnDefs]=\"columnDefs\"\n\t\t\t    >\n\t\t\t</ag-grid-angular>\n\t\t\tSelection: <span id=\"selectedRows\"></span>\n    </div>\n  </div>\n</div>\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+module.exports = "<ng-template #studentModal>\n\t<div class=\"modal-header\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t  <button type=\"button\" class=\"close\" aria-label=\"Close\"\n\t   (click)=\"activeModal.dismiss('Cross click')\">\n\t  </button>\n\t</div>\n\t<form [formGroup]='studentForm' novalidate (ngSubmit)='editSubmit(studentForm)'>\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id='student-submit-btn' type='submit' class='btn btn-primary' [disabled]='!studentForm.valid'>\n\t        Submit\n\t    </button>\n\t    <button id='student-cancel-btn' type='button' class='btn btn-secondary' (click)='closeModal()'>\n\t        Cancel\n\t    </button>\n\t  </div>\n\t</form>\n</ng-template>\n<div class=\"container\">\n  <div class=\"row\">\n\t\t<button type=\"button\" class=\"btn btn-primary\" (click)=\"openModal(studentModal)\">New Student</button>\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 460px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    [rowSelection]=\"rowSelection\"\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n\t\t\tSelection: <span id=\"selectedRows\"></span>\n  </div>\n</div>\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
 
 /***/ }),
 
@@ -6867,10 +7032,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/student.service */ "./src/app/student/services/student.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
-/* harmony import */ var _models_student__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../models/student */ "./src/app/models/student.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6887,61 +7053,137 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var StudentComponent = /** @class */ (function () {
-    //  dataSource = new StudentDataSource(this.studentservice);
-    function StudentComponent(route, router, fb, studentservice, dialog) {
-        this.route = route;
-        this.router = router;
+    function StudentComponent(fb, studentservice, dialog, modalService, ngxSmartModalService) {
         this.fb = fb;
         this.studentservice = studentservice;
         this.dialog = dialog;
-        this.title = 'Add Student';
-        //  private studentservice: StudentService;
-        this.dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialogConfig"]();
-        this.columnDefs = [
-            { headerName: 'First Name', field: 'fname' },
-            { headerName: 'Last Name', field: 'lname' },
-            { headerName: 'Action', field: 'action' }
-        ];
+        this.modalService = modalService;
+        this.ngxSmartModalService = ngxSmartModalService;
+        this.dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.editMode = true;
         this.createForm();
-        this.rowSelection = "single";
-        this.student = new _models_student__WEBPACK_IMPORTED_MODULE_6__["student"]();
+        this.gridOptions = { context: { componentParent: this } };
     }
     StudentComponent.prototype.ngOnInit = function () {
+        this.createForm();
         this.getStudents();
     };
     StudentComponent.prototype.createForm = function () {
-        this.angForm = this.fb.group({
-            fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
-            lname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]
+        this.studentForm = this.fb.group({
+            id: [''],
+            fname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+            lname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
         });
     };
-    StudentComponent.prototype.onRowClicked = function (event) {
-        document.querySelector("#selectedRows").innerHTML = event.data.fname;
-        this.openDialog(event.data);
+    StudentComponent.prototype.newStudent = function () {
+        this.studentForm.reset();
+        this.editMode = false;
+        this.ngxSmartModalService.getModal('popupOne').open();
+    };
+    StudentComponent.prototype.onGridReady = function (params) {
+        this.columnDefs = [
+            { headerName: 'First Name', field: 'fname' },
+            { headerName: 'Last Name', field: 'lname' },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'edit' },
+                width: 30, tooltip: function () { return 'Edit'; } },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'delete' },
+                width: 30, tooltip: function () { return 'Delete'; } },
+        ];
+        this.gridOptions = {
+            rowData: this.students,
+            rowHeight: 36,
+            context: { componentParent: this }
+        };
+        this.gridApi = params.api;
+        this.gridApi.gridOptions = this.gridOptions;
+        //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
+        //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
+    };
+    StudentComponent.prototype.editSubmit = function (studentForm) {
+        var studentData = studentForm.value;
+        this.closeModal();
+        if (studentData.id !== undefined) {
+            //   this.studentMd=studentData;
+            this.updateStudent(studentData);
+        }
+        else {
+            this.addStudent(studentData);
+        }
+        //      this.pricingService.savePriceType(this.priceType).subscribe(
+        //          (res) => {
+        //              if (!this.editMode) {
+        //                  this.priceTypes.push(res);
+        //              }
+        //              this.gridApi.setRowData(this.priceTypes);
+        //              return true;
+        //              },
+        //          (err) => {
+        //              let error = JSON.parse(err);
+        //              error = error["message"];
+        //              this.alertService.danger({message: error, timed: false, closeable: true});
+        //              return false;
+        //          });
+        //      this.modalService.hide("student-edit-modal");
+        //      this.gridApi.refreshCells();
+    };
+    StudentComponent.prototype.updateStudent = function (studentData) {
+        var _this = this;
+        console.log('updateStudent: ' + studentData.id);
+        this.studentservice.updateStudent(studentData).subscribe(function () {
+            _this.getStudents();
+        });
+    };
+    StudentComponent.prototype.addStudent = function (studentData) {
+        var _this = this;
+        this.studentservice.addStudent(studentData).subscribe(function () {
+            _this.getStudents();
+            _this.studentForm.reset();
+        });
+    };
+    StudentComponent.prototype.edit = function (selectedStudent) {
+        this.studentForm.setValue({
+            id: selectedStudent._id,
+            fname: selectedStudent.fname,
+            lname: selectedStudent.lname,
+        });
+        this.modalRef = this.modalService.show(this.studentModal);
+    };
+    StudentComponent.prototype.sizeColumnsToFit = function () {
+        this.gridApi.sizeColumnsToFit();
+    };
+    StudentComponent.prototype.openModal = function (template) {
+        this.studentForm.reset();
+        this.modalRef = this.modalService.show(template);
+    };
+    StudentComponent.prototype.closeModal = function () {
+        this.modalRef.hide();
+    };
+    StudentComponent.prototype.onRowClicked = function (event, template) {
+        this.editStudent(event.data);
+        this.modalRef = this.modalService.show(template);
+    };
+    StudentComponent.prototype.editStudent = function (student) {
+        this.student = student;
+        console.log(student);
+        this.studentForm.setValue({
+            id: student._id,
+            fname: student.fname,
+            lname: student.lname,
+        });
     };
     StudentComponent.prototype.openDialog = function (student) {
         var _this = this;
         this.dialogConfig.disableClose = true;
         this.dialogConfig.autoFocus = true;
-        var dialogRef = this.dialog.open(_dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_5__["DialogBodyComponent"], {
+        var dialogRef = this.dialog.open(_dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_4__["DialogBodyComponent"], {
             data: { student: student }
         });
-        dialogRef.afterClosed().subscribe(function (result) {
+        dialogRef.afterClosed().subscribe(function () {
             _this.getStudents();
-        });
-    };
-    StudentComponent.prototype.updateStudent = function (student) {
-        var _this = this;
-        this.studentservice.updateStudent(student).subscribe(function (res) {
-            _this.getStudents();
-        });
-    };
-    StudentComponent.prototype.addStudent = function () {
-        var _this = this;
-        this.studentservice.addStudent(this.student).subscribe(function (res) {
-            _this.getStudents();
-            _this.angForm.reset();
         });
     };
     StudentComponent.prototype.getStudents = function () {
@@ -6952,21 +7194,25 @@ var StudentComponent = /** @class */ (function () {
     };
     StudentComponent.prototype.deleteStudent = function (id) {
         var _this = this;
-        this.studentservice.deleteStudent(id).subscribe(function (res) {
+        this.studentservice.deleteStudent(id).subscribe(function () {
             _this.getStudents();
         });
     };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('studentModal'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])
+    ], StudentComponent.prototype, "studentModal", void 0);
     StudentComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-student',
             template: __webpack_require__(/*! ./student.component.html */ "./src/app/student/student.component.html"),
             styles: [__webpack_require__(/*! ./student.component.css */ "./src/app/student/student.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
             _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"]])
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"],
+            ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_7__["BsModalService"],
+            ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__["NgxSmartModalService"]])
     ], StudentComponent);
     return StudentComponent;
 }());
@@ -7024,8 +7270,14 @@ __webpack_require__.r(__webpack_exports__);
 if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
-    .catch(function (err) { return console.log(err); });
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"]).then(function (ref) {
+    // Ensure Angular destroys itself on hot reloads.
+    if (window['ngRef']) {
+        window['ngRef'].destroy();
+    }
+    window['ngRef'] = ref;
+    // Otherise, log the boot error
+}).catch(function (err) { return console.error(err); });
 
 
 /***/ }),

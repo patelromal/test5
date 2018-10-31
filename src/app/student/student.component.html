@@ -1,44 +1,49 @@
+<ng-template #studentModal>
+	<div class="modal-header">
+	  <h4 class="modal-title">Student Add/Update Form</h4>
+	  <button type="button" class="close" aria-label="Close"
+	   (click)="activeModal.dismiss('Cross click')">
+	  </button>
+	</div>
+	<form [formGroup]='studentForm' novalidate (ngSubmit)='editSubmit(studentForm)'>
+	  <div class="modal-boy">
+	    <div class="container">
+	      <div class="form-group">
+	        <label for="fname">First Name</label>
+	        <input id="fname" type="text" class="form-control" formControlName="fname" />
+	      </div>
+	      <div class="form-group">
+	        <label for="lname">Last Name</label>
+	        <input id="lname" type="text" class="form-control" formControlName="lname">
+	      </div>
+	    </div>
+	  </div>
+	  <div class="modal-footer">
+	    <button id='student-submit-btn' type='submit' class='btn btn-primary' [disabled]='!studentForm.valid'>
+	        Submit
+	    </button>
+	    <button id='student-cancel-btn' type='button' class='btn btn-secondary' (click)='closeModal()'>
+	        Cancel
+	    </button>
+	  </div>
+	</form>
+</ng-template>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form #form="ngForm">
-<!--       	<div> -->
-<!-- 	      <label class="col-md-4">First Name: </label> -->
-<!-- 	      <input type="text" class="form-control" name="fname" [(ngModel)]="student.fname" /> -->
-<!-- 	    </div> -->
-<!-- 	    <div> -->
-<!-- 	      <label class="col-md-4">Last Name: </label> -->
-<!-- 	      <input type="text" class="form-control" name="lname" [(ngModel)]="student.lname" /> -->
-<!-- 	    </div> -->
-<!-- 		<div>   -->
-<!-- 		  <button (click)="addStudent()" class="btn btn-primary">Add</button> -->
-<!-- 		</div>   -->
-	  </form>
-    </div>
-    <div class="row">
-    
-<!--     <mat-table #table [dataSource]="dataSource" matSort class="mat-cell"> -->
-<!-- 	   	<ng-container matColumnDef="id"> -->
-<!-- 	      <mat-header-cell *matHeaderCellDef mat-sort-header>fname</mat-header-cell> -->
-<!-- 	      <mat-cell *matCellDef="let row" >{{fname}}</mat-cell> -->
-<!-- 	    </ng-container> -->
-<!--     </mat-table> -->
-
+		<button type="button" class="btn btn-primary" (click)="openModal(studentModal)">New Student</button>
     	<ag-grid-angular
 			    #agGrid
 			    id="myGrid"
-			    style="width: 600px; height: 200px;"
+			    style="width: 460px; height: 400px;"
 			    class="ag-theme-balham"
 			    [enableSorting]="true"
 			    [enableFilter]="true"
 			    [rowData]="students"
 			    [rowSelection]="rowSelection"
-			    (rowClicked)='onRowClicked($event)'
-			    [columnDefs]="columnDefs"
-			    >
+			    (gridReady)="onGridReady($event)"
+			    [columnDefs]="columnDefs">
 			</ag-grid-angular>
 			Selection: <span id="selectedRows"></span>
-    </div>
   </div>
 </div>
 

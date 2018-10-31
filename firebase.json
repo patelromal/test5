@@ -1,15 +1,15 @@
 {
   "firebase": "sosgov",
-  "public": "dist",
+  "public": "public",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build && node server.js",
+    "start": "npm run build & concurrently --kill-others \"npm run serve-api\" \"npm run serve\"",
+    "serve": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build --output-path=public",
+    "serve-api": "node server.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "main": "server.js",
-    "postbuild": "server.js"
+    "e2e": "ng e2e"
   },
   "ignore": [
     "firebase.json",

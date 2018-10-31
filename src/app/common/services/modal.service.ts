@@ -1,21 +1,25 @@
-import { Injectable } from "@angular/core";
-import { Observable, Subject } from "rxjs";
-
-@Injectable()
 export class ModalService {
-    private subject = new Subject<any>();
+    private modals: any[] = [];
 
-    constructor() { }
+    add(modal: any) {
+        // add modal to array of active modals
+        this.modals.push(modal);
+    }
 
-	public getModalStatus() {
-		return this.subject.asObservable();
-	}
+    remove(id: string) {
+        // remove modal from array of active modals
+        this.modals = this.modals.filter(x => x.id !== id);
+    }
 
-	public show(id) {
-        this.subject.next({ elemId: id, shown: true });
-	}
+    open(id: string) {
+        // open modal specified by id
+        let modal: any = this.modals.filter(x => x.id === id)[0];
+        modal.open();
+    }
 
-	public hide(id) {
-        this.subject.next({ elemId: id, shown: false });
-	}
+    close(id: string) {
+        // close modal specified by id
+        let modal: any = this.modals.filter(x => x.id === id)[0];
+        modal.close();
+    }
 }
