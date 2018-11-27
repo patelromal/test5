@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head -->
+<app-head></app-head>
+
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+	<app-header></app-header>
+
+	<!-- Menu -->
+	<app-menu></app-menu>
+  
+    <div class="milestones">
+		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" style="background-image: url(../../assets/images/about.jpg);" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+                        <div class="col">
+
+                          <div class="home_content text-center">
+							<div class="home_title">Welcome Admin</div>
+                          </div>
+            
+                        </div>
+
+			</div>
+		</div>
+  </div>
+  
+    <div class="container">
+      <div class="row"><br></div><div class="row"><br></div>
+	<div class="row">
+     <div class="col">
+                <app-admin-header (featureSelected)="onNavigate($event)"></app-admin-header>
+          </div>
+        </div>
+        <div class="row"><br></div><div class="row"><br></div>
+	</div>
+
+	<!-- Footer -->
+    <app-footer></app-footer>
+	
+</div>
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
 <app-head></app-head>
 
 <body>
 
   <div id="wrapper">
 
-    <!-- start header -->
    	<app-header></app-header>
-    <!-- end header -->
 
     <section id="inner-headline">
       <div class="container">
@@ -27,37 +78,14 @@
         </div>
       </div>
     </section>
-    
-<!--     <app-header (featureSelected)="onNavigate($event)"></app-header> -->
-<!-- <div class="container"> -->
-<!--   <div class="row"> -->
-<!--     <div class="col-md-12"> -->
-<!--       <router-outlet></router-outlet> -->
-<!--     </div> -->
-<!--   </div> -->
-<!-- </div> -->
-    
 
    <app-admin-header (featureSelected)="onNavigate($event)"></app-admin-header>
-	<div class="container">
-	  <div class="row">
-	    <div class="col-md-12">
-	    
-<!-- 	    	<router-outlet></router-outlet> -->
-<!-- 	      <app-course *ngIf="loadedFeature === 'managecourse'"></app-course> -->
-<!-- 	      <app-result *ngIf="loadedFeature === 'manageresult'"></app-result> -->
-<!-- 	      <app-student *ngIf="loadedFeature === 'managestudent'"></app-student> -->
-<!-- 	      <app-menu *ngIf="loadedFeature === 'managemenu'"></app-menu> -->
 
-	    </div>
-	  </div>
-	</div>
-
-    <app-footer></app-footer>
+   <app-footer></app-footer>
     
   </div>
   <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
 
 </body>
 
-</html>
+</html> -->

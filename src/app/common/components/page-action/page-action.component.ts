@@ -1,8 +1,9 @@
-import {Component} from "@angular/core";
-import {ICellRendererAngularComp} from "ag-grid-angular";
+import {Component} from '@angular/core';
+import {ICellRendererAngularComp} from 'ag-grid-angular';
 
 @Component({
-    selector: "page-action",
+    // tslint:disable-next-line:component-selector
+    selector: 'page-action',
     template: `
         <button *ngIf="pageAction === 'edit'" class='no-style' (click)='edit($event)'
         tooltip="Edit">
@@ -58,6 +59,6 @@ export class PageActionComponent implements ICellRendererAngularComp {
     }
 
     public delete() {
-        this.params.api.gridOptions.context.componentParent.delete(this.params);
+        this.params.api.gridOptions.context.componentParent.delete(this.params.data);
     }
 }

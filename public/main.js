@@ -5395,7 +5395,7 @@ function webpackEmptyAsyncContext(req) {
 	// Here Promise.resolve().then() is used instead of new Promise() to prevent
 	// uncaught exception popping up in devtools
 	return Promise.resolve().then(function() {
-		var e = new Error('Cannot find module "' + req + '".');
+		var e = new Error("Cannot find module '" + req + "'");
 		e.code = 'MODULE_NOT_FOUND';
 		throw e;
 	});
@@ -5414,7 +5414,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".panel-heading a:after {\n    font-family:'Glyphicons Halflings';\n    content:\"\\e114\";\n    float: right;\n    color: grey;\n}\n.panel-heading a.collapsed:after {\n    content:\"\\e080\";\n}"
+module.exports = ".panel-heading a:after {\n    font-family:'Glyphicons Halflings';\n    content:\"\\e114\";\n    float: right;\n    color: grey;\n}\n.panel-heading a.collapsed:after {\n    content:\"\\e080\";\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQtdXMvYWJvdXQtdXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG1DQUFtQztJQUNuQyxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLFlBQVk7Q0FDZjtBQUNEO0lBQ0ksZ0JBQWdCO0NBQ25CIiwiZmlsZSI6InNyYy9hcHAvYWJvdXQtdXMvYWJvdXQtdXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wYW5lbC1oZWFkaW5nIGE6YWZ0ZXIge1xuICAgIGZvbnQtZmFtaWx5OidHbHlwaGljb25zIEhhbGZsaW5ncyc7XG4gICAgY29udGVudDpcIlxcZTExNFwiO1xuICAgIGZsb2F0OiByaWdodDtcbiAgICBjb2xvcjogZ3JleTtcbn1cbi5wYW5lbC1oZWFkaW5nIGEuY29sbGFwc2VkOmFmdGVyIHtcbiAgICBjb250ZW50OlwiXFxlMDgwXCI7XG59Il19 */"
 
 /***/ }),
 
@@ -5425,7 +5425,7 @@ module.exports = ".panel-heading a:after {\n    font-family:'Glyphicons Halfling
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">About</li>\n              </ul>\n              <h2>About us</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\n          <div class=\"span12\">\n            <i class=\"fa fa-hand-o-right\"></i><p class=\"text-justify\">\n            State of Maharashtra University –SMU Is Autonomous Institutes Formally Run on small Based Since 1990 And Now Under the Management of Education Society is an institution founded in 2000 and registered under the rules & regulations of Govt of India Act XXI 1860 by a group of devoted and educated persons with the help and co-operation of experts in this field. The area of operation of the SMU is wide and extensive all over India & Abroad & Online. Centers of examination are situated in almost all India & Abroad and Online where annual examinations are normally organized to different subjects and categories in every March, June, September and December \n            </p>\n            <p class=\"text-justify\">\n            To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life.\n            </p>\n            <p class=\"text-justify\">To provide the best possible teaching and learning environment to the students, so that they can serve the Society effectively with dignity\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To provide individualized study with flexibility in terms of place and duration.\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To identify educational needs of the children/persons of the State who are otherwise not catered to by the formal system of school education and to open study/academic centers.\n\t\t\t</p>\n\t\t\t<p>To provide opportunities in School Education and Skill Development through Open and Distance Learning (ODL) mode.\n\t\t\t</p>\n\t\t\t<p>To identify and promote approved standards of learning in Open and Distance Learning system.\n\t\t\t</p>\n\t\t\t<p>To design and develop courses, self-instructional materials (SIM) and other learning support for the courses identified at different points of time.\n\t\t\t</p>\n\t\t\t<p>To organize orientation and training programmes for the functionaries of the open schooling system in the country, to evolve strategies for curriculum development, instructional procedures etc.;\n\t\t\t</p>\n\t\t\t<p>To undertake and coordinate educational and research programmes with the suggestions of the State government(s) concerned\n\t\t\t</p>\n\t\t\t<p>To establish contacts with international agencies in the field of education, especially school education, for keeping acquainted with the latest trends in curriculum development, material production, media use for dissemination etc.,\n\t\t\t</p>\n\t\t\t<p>To establish links with other examining bodies with special focus on Asian countries.\n\t\t\t</p>\n\t\t\t<p>To collaborate with other agencies within and outside the state for developing and delivering skill oriented courses of study\n\t\t\t</p>\n\t\t\t<p>To promote and publicize open schooling programmes and distance education activities in the country.\n\t\t\t</p>\n\t\t\t<p>To maintain standards and equivalence with formal education system, while ensuring flexible characteristics of Open and Distance Learning System.\n\t\t\t</p>\n\t\t\t<p>To serve as an agency for effective dissemination of information related to open learning and distance education\n\t\t\t</p>\n\t\t\t<p>To establish linkages with contemporary education systems like State Boards, Sanskrit Boards, Madrasa Boards and state open boards with mainstream education system with mobility across them and equivalence between them; To expand access to school education at all levels and to increase retention rates at all levels of schooling.\n\t\t\t</p>\n\t\t\t<p>To encourage, promote and conduct a system of Open School Education and Distance education relevant to the students/learners, to organize training programmes at national and international level on `open  school system;\n\t\t\t</p>\n\t\t\t<p>To promote interaction and co-ordination among open schools and distance education institutions.\n\t\t\t</p>\n\t\t\t<p>To make study of various subjects more purposeful and to effect a fusion between traditional and modern system of education;\n\t\t\t</p>\n\t\t\t<p>To institute career oriented courses related to education through distance learning/ correspondence courses; to develop courses of education in various subjects.\n\t\t\t</p>\n\t\t\t<p>To prepare `database on open schooling and to conduct online and offline examination of Secondary , Higher Secondary level Exams and Diploma in Management and Technical Courses all over the country\n\t\t\t</p>\n\t\t\t<p>To announce the results of concerned examination and release certificates to passed candidates from time to time\n\t\t\t</p>\n\t\t\t<p>To organize educational and vocational training programmes with special concern for deprived sections, women/girls and unemployed youth to impart new skills: refine/sharpen/up-grade the existing skills.\n\t\t\t</p>\n\t\t\t<p>To impart free education and cultural training to the poor, helpless, differently able and needy children/students, to establish and maintain institutions for adult education with the consent of the concerned authorities.\n            </p>\n            \n<!--             <blockquote> -->\n<!--               To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life. -->\n<!--             </blockquote> -->\n\n          </div>\n\n        </div>\n        \n        <div class=\"row\">\n        \n\t\t\t\t\n\t\t\t\t<collapsible-list [type]=\"'accordion'\">\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      AIMS & OBJECTIVE OF THE MSU\n    </collapsible-header>\n    <collapsible-body [expanded]=\"false\">\n      <p>\n      \tThe aim of Institution is to provide some job oriented professional / Vocational / Technical / Management / I.T / Engineering / Academic and other Courses.\n      </p>\n      <p>\n      \t1. To act as an Autonomous , Non-Commercial, Voluntary and Perpetual Body Corporate with Statutory Status under the Constitution of India for the right to Education , Training and its Administration; for providing Education at LESSER COST\n\t\t</p>\n\t\t<i class=\"fa fa-hand-o-right\" style=\"font-size:48px;color:red\"></i>\n\t\t\n\t\t\t<p class=\"text-justify\">•\tfor the Expansion, Propagation and Development of Distance Education;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Democratization of Higher Education by providing it to the door- steps of Students;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Popularization of Education under Open and Distance Education System on the pattern of other Countries;\n\t\t\t</p><p>•\tfor providing Education at lesser cost;\n\t\t\t</p><p>•\tfor Publication of Educational Literature;\n\t\t\t</p><p>•\tfor Honoring Eminent Educationists;\n\t\t\t</p><p>•\tfor Awarding Titles of Honor’s to Educators and Researchers;\n\t\t\t</p><p>•\tfor Conducting Regular, Open, Distance, Correspondence and Continuing Education in General, Traditional, Technical, Professional, and Advanced Management Courses;\n\t\t\t</p><p>•\tfor Conducting Written, Practical and Oral Examinations;\n\t\t\t</p><p>•\tfor Awarding Certificates, Diplomas, Degrees and honor’s, as per the directions in the National Education Policy of the Government of India, the Directives in the Constitution of India and on the pattern of Open and Distance Education System approved by U.N. and its Agencies such as UNESCO, W.H.O, etc.\n\t\t</p><p>2. To establish Educational Institutions under the State of Maharashtra University –SMU to impart proper education to the needy from Pre-primary , Primary, Upper Primary, Secondary , Higher Secondary to Diploma, Degree, Post Graduate Diploma and P. G. Degree and in Research Level from M. Phil, Ph.D, to Post Doctorate and Honorary Doctorate Level.\n\t\t</p><p>3. To impart Education to the under-privileged, down trodden, Backward and Scheduled Classes, Women. Destitutes, Widows, Detenues and other eligible candidates at Concessional rate of fees, and for this purpose to establish Distance Education Canters in any part of India or Abroad; to conduct Courses of Study included in the Distance, Continuing, Correspondence and Open Education System of Open Universities and Institutions of National and International Reputation.\n      \t\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect heading-primary mt-xl\" >\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      METHOD OF EDUCATION\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tThe Institution has clear vision and aims at imparting Education and providing an opportunity to the school drop outs and to such students who are otherwise busy in their own life style and could not have an opportunity to attend regular schooling at their tender age but having a desire to learn to be educated at least to the level of Secondary and Senior Secondary Education. \nThe idea and concept of providing an opportunity to them is to make learn the education at least to the level of Secondary and Senior Secondary, which is very much essential to stand in the developing society and deal in the better way in the respective fields of works, business and professions in which they are already engaged by learning English, Mathematics, General Science, Social Studies, National Language, which are much helpful to them. \n      </p>\n      <p>\n      The effort of this Institution is also to impart education so has to enable the students to feel educated and to avail the job opportunities in private sectors who ever recognize our efforts and the ability of the students. \nIn accordance with National Education Policy (1986) of Govt. of India this Institution aims to impart education to those who are unable to come out their busy schedules and unable to attend the regular classes, by way of correspondence learning. \n      </p>\n      <p>\n      This Institution provides education to desired students in Engineering & Technical, Para-Medical and also Secondary, Senior Secondary courses only with English as medium of instructions and it also refers books on all selected subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      This Institution adopts multimedia educational system consisting of printed course material for self-study. Provide facility for practical and personal contact programme and to evaluate lessons by faculty experts. \nThis Institution provides excellent education to the desired students up to the level of Secondary & Senior Secondary Education with English of the medium of the Instruction and refers books on all concerning subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      The syllabus & examination pattern is based on syllabus prevailing in Board of Secondary Education, Board of Intermediate Education and other Recognized Boards / Institutions of India with a view to make our students all along the other students in this competitive World. \n      </p>\n      <p>\n      The study material would be supplied to the students who join our correspondence courses, which will guide them for effective learning of the course. Beside the same, syllabus of the programme and Model question papers would be sent to them time to time. The Institution also advice the students to purchase the recommended text books and shall attend personally for the periodical classes of theory and practical’s whenever called to attend and shall attend all the Term Examination and Annual Examinations conducted by this institute and make their efforts to excel in the same.\n      </p>\n      <p>\n      That on successful completion of the said courses, the Certificates / Diplomas will be awarded to the students on the passing of final examinations. It is pertinent hereto mentioned that the Certificates / Diplomas awarded by this Institutions only in reorganization of successfully completion of said course. \n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Independent Organization in the field of education, formally registered by Government of India and aims to democratize Higher Education by providing it to eligible students at their door step irrespective of Caste, Age, Sex and Territory so as to enable them to compete with the International standards of education.\n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Autonomous Board Registered under the Government of India, Planning Commission, Government of India and Ministry of Human Resource Development, Government of India. SMERC is accredited with International Council for Open and Distance Education (ICDE), Oslo, Norway and is accredited with ISO 9001:2015 Certification and a Member Institution of Indian Association of Teacher Educators (IATE).\n      </p>\n      <p>\n      State of Maharashtra University –SMU conducts the courses in Non-Formal mode through Regular, Correspondence, Open and Distance Learning. Currently State of Maharashtra University –SMU conducts Elementary Education, Preparatory Programme, OBE Programme, ESLC Programme, Secondary Education, Higher Secondary Education (First and Second Year), Certificate Courses, Diploma Courses, Post Graduate Diploma Courses, Technical Courses, Management Courses and various courses related to Teacher Education.\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  \n \n</collapsible-list>\n\t\t\t\t\n        </div>\n\n        <!-- divider -->\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"solidline\"></div>\n          </div>\n        </div>\n        <!-- end divider -->\n\n        <div class=\"row team\">\n          <div class=\"span12\">\n            <h4 class=\"title\">Board Of Members Portfolio In <strong>SMUGOV</strong></h4>\n          </div>\n\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/1.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Vincent Austin Jr</strong></p>\n                <p>\n                  CEO - Founder\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/2.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Tommy Laugher</strong></p>\n                <p>\n                  Lead designer\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/3.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Gabirelle Borowski</strong></p>\n                <p>\n                  Customer support\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/4.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Benny Strongton</strong></p>\n                <p>\n                  Coffee maker\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"blankline30\"></div>\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">About us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\n          <div class=\"span12\">\n            <i class=\"fa fa-hand-o-right\"></i><p class=\"text-justify\">\n            State of Maharashtra University –SMU Is Autonomous Institutes Formally Run on small Based Since 1990 And Now Under the Management of Education Society is an institution founded in 2000 and registered under the rules & regulations of Govt of India Act XXI 1860 by a group of devoted and educated persons with the help and co-operation of experts in this field. The area of operation of the SMU is wide and extensive all over India & Abroad & Online. Centers of examination are situated in almost all India & Abroad and Online where annual examinations are normally organized to different subjects and categories in every March, June, September and December \n            </p>\n            <p class=\"text-justify\">\n            To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life.\n            </p>\n            <p class=\"text-justify\">To provide the best possible teaching and learning environment to the students, so that they can serve the Society effectively with dignity\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To provide individualized study with flexibility in terms of place and duration.\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To identify educational needs of the children/persons of the State who are otherwise not catered to by the formal system of school education and to open study/academic centers.\n\t\t\t</p>\n\t\t\t<p>To provide opportunities in School Education and Skill Development through Open and Distance Learning (ODL) mode.\n\t\t\t</p>\n\t\t\t<p>To identify and promote approved standards of learning in Open and Distance Learning system.\n\t\t\t</p>\n\t\t\t<p>To design and develop courses, self-instructional materials (SIM) and other learning support for the courses identified at different points of time.\n\t\t\t</p>\n\t\t\t<p>To organize orientation and training programmes for the functionaries of the open schooling system in the country, to evolve strategies for curriculum development, instructional procedures etc.;\n\t\t\t</p>\n\t\t\t<p>To undertake and coordinate educational and research programmes with the suggestions of the State government(s) concerned\n\t\t\t</p>\n\t\t\t<p>To establish contacts with international agencies in the field of education, especially school education, for keeping acquainted with the latest trends in curriculum development, material production, media use for dissemination etc.,\n\t\t\t</p>\n\t\t\t<p>To establish links with other examining bodies with special focus on Asian countries.\n\t\t\t</p>\n\t\t\t<p>To collaborate with other agencies within and outside the state for developing and delivering skill oriented courses of study\n\t\t\t</p>\n\t\t\t<p>To promote and publicize open schooling programmes and distance education activities in the country.\n\t\t\t</p>\n\t\t\t<p>To maintain standards and equivalence with formal education system, while ensuring flexible characteristics of Open and Distance Learning System.\n\t\t\t</p>\n\t\t\t<p>To serve as an agency for effective dissemination of information related to open learning and distance education\n\t\t\t</p>\n\t\t\t<p>To establish linkages with contemporary education systems like State Boards, Sanskrit Boards, Madrasa Boards and state open boards with mainstream education system with mobility across them and equivalence between them; To expand access to school education at all levels and to increase retention rates at all levels of schooling.\n\t\t\t</p>\n\t\t\t<p>To encourage, promote and conduct a system of Open School Education and Distance education relevant to the students/learners, to organize training programmes at national and international level on `open  school system;\n\t\t\t</p>\n\t\t\t<p>To promote interaction and co-ordination among open schools and distance education institutions.\n\t\t\t</p>\n\t\t\t<p>To make study of various subjects more purposeful and to effect a fusion between traditional and modern system of education;\n\t\t\t</p>\n\t\t\t<p>To institute career oriented courses related to education through distance learning/ correspondence courses; to develop courses of education in various subjects.\n\t\t\t</p>\n\t\t\t<p>To prepare `database on open schooling and to conduct online and offline examination of Secondary , Higher Secondary level Exams and Diploma in Management and Technical Courses all over the country\n\t\t\t</p>\n\t\t\t<p>To announce the results of concerned examination and release certificates to passed candidates from time to time\n\t\t\t</p>\n\t\t\t<p>To organize educational and vocational training programmes with special concern for deprived sections, women/girls and unemployed youth to impart new skills: refine/sharpen/up-grade the existing skills.\n\t\t\t</p>\n\t\t\t<p>To impart free education and cultural training to the poor, helpless, differently able and needy children/students, to establish and maintain institutions for adult education with the consent of the concerned authorities.\n            </p>\n            \n<!--             <blockquote> -->\n<!--               To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life. -->\n<!--             </blockquote> -->\n\n          </div>\n\n        </div>\n        \n        <div class=\"row\">\n        \n\t\t\t\t\n\t\t\t\t<collapsible-list [type]=\"'accordion'\">\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      AIMS & OBJECTIVE OF THE MSU\n    </collapsible-header>\n    <collapsible-body [expanded]=\"false\">\n      <p>\n      \tThe aim of Institution is to provide some job oriented professional / Vocational / Technical / Management / I.T / Engineering / Academic and other Courses.\n      </p>\n      <p>\n      \t1. To act as an Autonomous , Non-Commercial, Voluntary and Perpetual Body Corporate with Statutory Status under the Constitution of India for the right to Education , Training and its Administration; for providing Education at LESSER COST\n\t\t</p>\n\t\t<i class=\"fa fa-hand-o-right\" style=\"font-size:48px;color:red\"></i>\n\t\t\n\t\t\t<p class=\"text-justify\">•\tfor the Expansion, Propagation and Development of Distance Education;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Democratization of Higher Education by providing it to the door- steps of Students;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Popularization of Education under Open and Distance Education System on the pattern of other Countries;\n\t\t\t</p><p>•\tfor providing Education at lesser cost;\n\t\t\t</p><p>•\tfor Publication of Educational Literature;\n\t\t\t</p><p>•\tfor Honoring Eminent Educationists;\n\t\t\t</p><p>•\tfor Awarding Titles of Honor’s to Educators and Researchers;\n\t\t\t</p><p>•\tfor Conducting Regular, Open, Distance, Correspondence and Continuing Education in General, Traditional, Technical, Professional, and Advanced Management Courses;\n\t\t\t</p><p>•\tfor Conducting Written, Practical and Oral Examinations;\n\t\t\t</p><p>•\tfor Awarding Certificates, Diplomas, Degrees and honor’s, as per the directions in the National Education Policy of the Government of India, the Directives in the Constitution of India and on the pattern of Open and Distance Education System approved by U.N. and its Agencies such as UNESCO, W.H.O, etc.\n\t\t</p><p>2. To establish Educational Institutions under the State of Maharashtra University –SMU to impart proper education to the needy from Pre-primary , Primary, Upper Primary, Secondary , Higher Secondary to Diploma, Degree, Post Graduate Diploma and P. G. Degree and in Research Level from M. Phil, Ph.D, to Post Doctorate and Honorary Doctorate Level.\n\t\t</p><p>3. To impart Education to the under-privileged, down trodden, Backward and Scheduled Classes, Women. Destitutes, Widows, Detenues and other eligible candidates at Concessional rate of fees, and for this purpose to establish Distance Education Canters in any part of India or Abroad; to conduct Courses of Study included in the Distance, Continuing, Correspondence and Open Education System of Open Universities and Institutions of National and International Reputation.\n      \t\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect heading-primary mt-xl\" >\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      METHOD OF EDUCATION\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tThe Institution has clear vision and aims at imparting Education and providing an opportunity to the school drop outs and to such students who are otherwise busy in their own life style and could not have an opportunity to attend regular schooling at their tender age but having a desire to learn to be educated at least to the level of Secondary and Senior Secondary Education. \nThe idea and concept of providing an opportunity to them is to make learn the education at least to the level of Secondary and Senior Secondary, which is very much essential to stand in the developing society and deal in the better way in the respective fields of works, business and professions in which they are already engaged by learning English, Mathematics, General Science, Social Studies, National Language, which are much helpful to them. \n      </p>\n      <p>\n      The effort of this Institution is also to impart education so has to enable the students to feel educated and to avail the job opportunities in private sectors who ever recognize our efforts and the ability of the students. \nIn accordance with National Education Policy (1986) of Govt. of India this Institution aims to impart education to those who are unable to come out their busy schedules and unable to attend the regular classes, by way of correspondence learning. \n      </p>\n      <p>\n      This Institution provides education to desired students in Engineering & Technical, Para-Medical and also Secondary, Senior Secondary courses only with English as medium of instructions and it also refers books on all selected subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      This Institution adopts multimedia educational system consisting of printed course material for self-study. Provide facility for practical and personal contact programme and to evaluate lessons by faculty experts. \nThis Institution provides excellent education to the desired students up to the level of Secondary & Senior Secondary Education with English of the medium of the Instruction and refers books on all concerning subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      The syllabus & examination pattern is based on syllabus prevailing in Board of Secondary Education, Board of Intermediate Education and other Recognized Boards / Institutions of India with a view to make our students all along the other students in this competitive World. \n      </p>\n      <p>\n      The study material would be supplied to the students who join our correspondence courses, which will guide them for effective learning of the course. Beside the same, syllabus of the programme and Model question papers would be sent to them time to time. The Institution also advice the students to purchase the recommended text books and shall attend personally for the periodical classes of theory and practical’s whenever called to attend and shall attend all the Term Examination and Annual Examinations conducted by this institute and make their efforts to excel in the same.\n      </p>\n      <p>\n      That on successful completion of the said courses, the Certificates / Diplomas will be awarded to the students on the passing of final examinations. It is pertinent hereto mentioned that the Certificates / Diplomas awarded by this Institutions only in reorganization of successfully completion of said course. \n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Independent Organization in the field of education, formally registered by Government of India and aims to democratize Higher Education by providing it to eligible students at their door step irrespective of Caste, Age, Sex and Territory so as to enable them to compete with the International standards of education.\n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Autonomous Board Registered under the Government of India, Planning Commission, Government of India and Ministry of Human Resource Development, Government of India. SMERC is accredited with International Council for Open and Distance Education (ICDE), Oslo, Norway and is accredited with ISO 9001:2015 Certification and a Member Institution of Indian Association of Teacher Educators (IATE).\n      </p>\n      <p>\n      State of Maharashtra University –SMU conducts the courses in Non-Formal mode through Regular, Correspondence, Open and Distance Learning. Currently State of Maharashtra University –SMU conducts Elementary Education, Preparatory Programme, OBE Programme, ESLC Programme, Secondary Education, Higher Secondary Education (First and Second Year), Certificate Courses, Diploma Courses, Post Graduate Diploma Courses, Technical Courses, Management Courses and various courses related to Teacher Education.\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  \n \n</collapsible-list>\n\t\t\t\t\n        </div>\n\n        <!-- <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"solidline\"></div>\n          </div>\n        </div>\n\n        <div class=\"row team\">\n          <div class=\"span12\">\n            <h4 class=\"title\">Board Of Members Portfolio In <strong>SMUGOV</strong></h4>\n          </div>\n\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/1.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Vincent Austin Jr</strong></p>\n                <p>\n                  CEO - Founder\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/2.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Tommy Laugher</strong></p>\n                <p>\n                  Lead designer\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/3.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Gabirelle Borowski</strong></p>\n                <p>\n                  Customer support\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/4.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Benny Strongton</strong></p>\n                <p>\n                  Coffee maker\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n        </div> -->\n        <!-- <div class=\"blankline30\"></div> -->\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>\n"
 
 /***/ }),
 
@@ -5477,7 +5477,7 @@ var AboutUsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLWhlYWRlci9hZG1pbi1oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -5488,7 +5488,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\t<div class=\"row\">\n\t\t<ul class=\"nav nav-tabs\">\n        <li routerLinkActive=\"active\"><a routerLink=\"managestudent\">Student</a></li>\n        <li routerLinkActive=\"active\"><a routerLink=\"managecourse\">course</a></li>\n<!--         <li routerLinkActive=\"active\"><a (click)=\"onManageStudent()\" style=\"cursor: pointer;\">Student</a></li> -->\n<!--         <li routerLinkActive=\"active\"><a (click)=\"onManageCourse()\" style=\"cursor: pointer;\">course</a></li> -->\n      </ul>\n<!--       <button class=\"btn btn-success\" (click)=\"onManageStudent()\">Student</button> -->\n<!--       <button class=\"btn btn-success\" (click)=\"onManageCourse()\">Course</button> -->\n\t</div>\n</div>\n<div class=\"col-md-7\">\n   <router-outlet></router-outlet>\n </div>\n\n<!-- <div class=\"container\"> -->\n<!-- \t<div class=\"row\"> -->\n<!-- \t\t<ul class=\"nav nav-tabs\"> -->\n<!--         <li role=\"presentation\" -->\n<!--             routerLinkActive=\"active\" -->\n<!--             [routerLinkActiveOptions]=\"{exact: true}\"> -->\n<!--           <a [routerLink]=\"['/student','1','edit']\">student</a> -->\n<!--         </li> -->\n<!--         <li routerLinkActive=\"active\"><a routerLink=\"/course\">course</a></li> -->\n<!--         <li role=\"presentation\" -->\n<!--             routerLinkActive=\"active\"> -->\n<!--           <a [routerLink]=\"['result']\">result</a> -->\n<!--         </li> -->\n<!--       </ul> -->\n<!-- \t</div> -->\n<!-- </div> -->\n\n<!-- <nav class=\"navbar navbar-default\"> -->\n<!--   <div class=\"container-fluid\"> -->\n\n<!--     <div class=\"collapse navbar-collapse\"> -->\n<!--       <ul class=\"nav navbar-nav\"> -->\n<!--         <li routerLinkActive=\"active\"><a routerLink=\"/managecourse\">Course</a></li> -->\n<!--         <li routerLinkActive=\"active\"><a routerLink=\"/student\">Student</a></li> -->\n<!--       </ul> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </nav> -->\n\n"
+module.exports = "<div class=\"container\">\n\t<div class=\"row\">\n     <div class=\"col\">\n      <nav class=\"main_nav_contaner\">\n            <ul class=\"main_nav\">\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managestudent\">Manage Student</a></li>\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managecourse\">Manage Course</a></li>\n            </ul>\n      </nav>\n      </div>\n      </div>\n</div>\n<div class=\"col-md-7\">\n   <router-outlet></router-outlet>\n </div>\n"
 
 /***/ }),
 
@@ -5560,7 +5560,7 @@ var AdminHeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -5571,7 +5571,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Admin</li>\n              </ul>\n              <h2>Welcome Admin</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n    \n<!--     <app-header (featureSelected)=\"onNavigate($event)\"></app-header> -->\n<!-- <div class=\"container\"> -->\n<!--   <div class=\"row\"> -->\n<!--     <div class=\"col-md-12\"> -->\n<!--       <router-outlet></router-outlet> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->\n    \n\n   <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n\t<div class=\"container\">\n\t  <div class=\"row\">\n\t    <div class=\"col-md-12\">\n\t    \n<!-- \t    \t<router-outlet></router-outlet> -->\n<!-- \t      <app-course *ngIf=\"loadedFeature === 'managecourse'\"></app-course> -->\n<!-- \t      <app-result *ngIf=\"loadedFeature === 'manageresult'\"></app-result> -->\n<!-- \t      <app-student *ngIf=\"loadedFeature === 'managestudent'\"></app-student> -->\n<!-- \t      <app-menu *ngIf=\"loadedFeature === 'managemenu'\"></app-menu> -->\n\n\t    </div>\n\t  </div>\n\t</div>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n</body>\n\n</html>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n  \n    <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Welcome Admin</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n  </div>\n  \n    <div class=\"container\">\n      <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t<div class=\"row\">\n     <div class=\"col\">\n                <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n          </div>\n        </div>\n        <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t</div>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>\n\n\n<!-- <!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n   \t<app-header></app-header>\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Admin</li>\n              </ul>\n              <h2>Welcome Admin</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n   <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n\n   <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n</body>\n\n</html> -->\n"
 
 /***/ }),
 
@@ -5804,12 +5804,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_services_modal_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./common/services/modal.service */ "./src/app/common/services/modal.service.ts");
 /* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
 /* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./homebody/homebody.component */ "./src/app/homebody/homebody.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -5865,7 +5869,8 @@ var AppModule = /** @class */ (function () {
                 _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_18__["SignupComponent"],
                 _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_19__["SigninComponent"],
                 _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"],
-                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"]
+                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"],
+                _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_34__["HomebodyComponent"]
             ],
             schemas: [
                 _angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"],
@@ -5884,13 +5889,15 @@ var AppModule = /** @class */ (function () {
                 _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatTableModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatPaginatorModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatSnackBarModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatProgressSpinnerModule"],
                 ag_grid_angular__WEBPACK_IMPORTED_MODULE_22__["AgGridModule"].withComponents([]),
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_21__["BrowserAnimationsModule"],
                 angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__["CollapsibleModule"],
                 _common_common_module__WEBPACK_IMPORTED_MODULE_29__["SmuCommonModule"].forRoot(),
                 ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"].forRoot(),
-                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"].forRoot()
+                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"].forRoot(),
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__["NgbModule"].forRoot()
             ],
             exports: [
                 ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"]
@@ -5959,7 +5966,7 @@ var AuthService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2F1dGgvc2lnbmluL3NpZ25pbi5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6030,7 +6037,7 @@ var SigninComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2F1dGgvc2lnbnVwL3NpZ251cC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6107,13 +6114,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
-/* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
+/* harmony import */ var _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
+/* harmony import */ var _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/confirmation-dialog/confirmation-dialog.component */ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts");
+/* harmony import */ var _services_alert_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/alert/alert.component */ "./src/app/common/components/alert/alert.component.ts");
+/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/data.service */ "./src/app/common/services/data.service.ts");
+/* harmony import */ var _course_service_course_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../course/service/course.service */ "./src/app/course/service/course.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
 
 
 
@@ -6125,7 +6146,7 @@ var SmuCommonModule = /** @class */ (function () {
     SmuCommonModule.forRoot = function () {
         return {
             ngModule: SmuCommonModule_1,
-            providers: [],
+            providers: [_services_alert_service__WEBPACK_IMPORTED_MODULE_5__["AlertService"], _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogService"], _services_modal_service__WEBPACK_IMPORTED_MODULE_7__["ModalService"], _services_data_service__WEBPACK_IMPORTED_MODULE_9__["DataService"], _course_service_course_service__WEBPACK_IMPORTED_MODULE_10__["CourseService"]],
         };
     };
     var SmuCommonModule_1;
@@ -6134,12 +6155,168 @@ var SmuCommonModule = /** @class */ (function () {
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
             ],
-            entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__["PageActionComponent"]],
-            declarations: [_components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__["ModalComponent"]],
-            exports: [_components_modal_modal_component__WEBPACK_IMPORTED_MODULE_3__["ModalComponent"]]
+            entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__["PageActionComponent"], _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__["ModalComponent"]],
+            declarations: [_components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__["ModalComponent"]],
+            exports: []
         })
     ], SmuCommonModule);
     return SmuCommonModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/alert/alert.component.css":
+/*!*************************************************************!*\
+  !*** ./src/app/common/components/alert/alert.component.css ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#alert {\n    position: fixed;\n    top: 10px;\n    left: 50%;\n    width: 45%;\n    -webkit-transform: translate(-50%, 0);\n            transform: translate(-50%, 0);\n    padding: 10px 15px 10px 15px;\n    border-radius: 5px;\n    z-index: 9999;\n    font-weight: bold;\n}\n\n#alert button {\n    padding: 7px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tbW9uL2NvbXBvbmVudHMvYWxlcnQvYWxlcnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0lBQ1YsVUFBVTtJQUNWLFdBQVc7SUFDWCxzQ0FBOEI7WUFBOUIsOEJBQThCO0lBQzlCLDZCQUE2QjtJQUM3QixtQkFBbUI7SUFDbkIsY0FBYztJQUNkLGtCQUFrQjtDQUNyQjs7QUFFRDtJQUNJLGFBQWE7Q0FDaEIiLCJmaWxlIjoic3JjL2FwcC9jb21tb24vY29tcG9uZW50cy9hbGVydC9hbGVydC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2FsZXJ0IHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAxMHB4O1xuICAgIGxlZnQ6IDUwJTtcbiAgICB3aWR0aDogNDUlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIDApO1xuICAgIHBhZGRpbmc6IDEwcHggMTVweCAxMHB4IDE1cHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHotaW5kZXg6IDk5OTk7XG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbiNhbGVydCBidXR0b24ge1xuICAgIHBhZGRpbmc6IDdweDtcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/common/components/alert/alert.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/common/components/alert/alert.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/common/components/alert/alert.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/common/components/alert/alert.component.ts ***!
+  \************************************************************/
+/*! exports provided: AlertComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertComponent", function() { return AlertComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AlertComponent = /** @class */ (function () {
+    function AlertComponent() {
+        this.isActive = false;
+        this.addExtraClass = false;
+    }
+    AlertComponent.prototype.ngOnInit = function () {
+        // this.alertService.getAlert().subscribe((alert) => {
+        //     this.alert = alert;
+        //     if (this.alert.message == "") {
+        //         this.isActive = false;
+        //     } else {
+        //         this.isActive = true;
+        //     }
+        // });
+    };
+    AlertComponent.prototype.closeAlert = function () {
+        this.isActive = false;
+    };
+    AlertComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "alert",
+            styles: [__webpack_require__(/*! ./alert.component.css */ "./src/app/common/components/alert/alert.component.css")],
+            template: __webpack_require__(/*! ./alert.component.html */ "./src/app/common/components/alert/alert.component.html"),
+        }),
+        __metadata("design:paramtypes", [])
+    ], AlertComponent);
+    return AlertComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.html":
+/*!******************************************************************************************!*\
+  !*** ./src/app/common/components/confirmation-dialog/confirmation-dialog.component.html ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">{{ title }}</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"dismiss()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    {{ message }}\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"decline()\">{{ btnCancelText }}</button>\n    <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"accept()\">{{ btnOkText }}</button>\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts":
+/*!****************************************************************************************!*\
+  !*** ./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts ***!
+  \****************************************************************************************/
+/*! exports provided: ConfirmationDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationDialogComponent", function() { return ConfirmationDialogComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ConfirmationDialogComponent = /** @class */ (function () {
+    function ConfirmationDialogComponent(activeModal) {
+        this.activeModal = activeModal;
+    }
+    ConfirmationDialogComponent.prototype.ngOnInit = function () {
+    };
+    ConfirmationDialogComponent.prototype.decline = function () {
+        this.activeModal.close(false);
+    };
+    ConfirmationDialogComponent.prototype.accept = function () {
+        this.activeModal.close(true);
+    };
+    ConfirmationDialogComponent.prototype.dismiss = function () {
+        this.activeModal.dismiss();
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ConfirmationDialogComponent.prototype, "title", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ConfirmationDialogComponent.prototype, "message", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ConfirmationDialogComponent.prototype, "btnOkText", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", String)
+    ], ConfirmationDialogComponent.prototype, "btnCancelText", void 0);
+    ConfirmationDialogComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-confirmation-dialog',
+            template: __webpack_require__(/*! ./confirmation-dialog.component.html */ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.html"),
+            styles: ["\n    .dark-modal .modal-content {\n      background-color: #292b2c;\n      color: white;\n    }\n    .dark-modal .close {\n      color: white;\n    }\n    .light-blue-backdrop {\n      background-color: #5cb3fd;\n    }\n  "]
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbActiveModal"]])
+    ], ConfirmationDialogComponent);
+    return ConfirmationDialogComponent;
 }());
 
 
@@ -6156,7 +6333,7 @@ var SmuCommonModule = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalComponent", function() { return ModalComponent; });
-/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/modal.service */ "./src/app/common/services/modal.service.ts");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6191,11 +6368,11 @@ var ModalComponent = /** @class */ (function () {
             }
         });
         // add self (this modal instance) to the modal service so it's accessible from controllers
-        this.modalService.add(this);
+        // this.modalService.add(this);
     };
     // remove self from modal service when directive is destroyed
     ModalComponent.prototype.ngOnDestroy = function () {
-        this.modalService.remove(this.id);
+        // this.modalService.remove(this.id);
         this.element.remove();
     };
     // open modal
@@ -6214,6 +6391,7 @@ var ModalComponent = /** @class */ (function () {
     ], ModalComponent.prototype, "id", void 0);
     ModalComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            // tslint:disable-next-line:component-selector
             selector: 'modal',
             template: '<ng-content></ng-content>'
         }),
@@ -6266,15 +6444,227 @@ var PageActionComponent = /** @class */ (function () {
         this.params.api.gridOptions.context.componentParent.open(this.params);
     };
     PageActionComponent.prototype.delete = function () {
-        this.params.api.gridOptions.context.componentParent.delete(this.params);
+        this.params.api.gridOptions.context.componentParent.delete(this.params.data);
     };
     PageActionComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: "page-action",
+            // tslint:disable-next-line:component-selector
+            selector: 'page-action',
             template: "\n        <button *ngIf=\"pageAction === 'edit'\" class='no-style' (click)='edit($event)'\n        tooltip=\"Edit\">\n            <i class='fa fa-pencil text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'save'\" class='no-style' (click)='save($event)'\n        tooltip=\"Save\">\n            <i class='fa fa-save text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'open'\" class='no-style' (click)='open($event)'\n        tooltip=\"Open\">\n            <i class='fa fa-openid text-primary' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'delete'\" class='no-style' (click)='delete($event)'\n        tooltip=\"Save\">\n            <i class='fa fa-trash text-danger' style=\"transform: scale(1.2)\"></i>\n        </button>\n        <button *ngIf=\"pageAction === 'notes'\" class='no-style'\n        tooltip=\"Notes\">\n            <span class=\"fa-stack\">\n                <span class=\"fa fa-sticky-note text-warning fa-stack-2x\"></span>\n                <strong class=\"fa-stack\" style=\"font-family:Roboto; font-size:xx-small\">\n                    {{params.data.notes}}</strong>\n            </span>\n        </button>\n    ",
         })
     ], PageActionComponent);
     return PageActionComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/services/alert.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/common/services/alert.service.ts ***!
+  \**************************************************/
+/*! exports provided: AlertService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertService", function() { return AlertService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AlertService = /** @class */ (function () {
+    function AlertService(snackBar) {
+        this.snackBar = snackBar;
+        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        //message: string = 'Snack Bar opened.';
+        this.actionButtonLabel = 'Retry';
+        this.action = true;
+        this.setAutoHide = true;
+        // autoHide: number = 2000;
+        this.horizontalPosition = 'center';
+    }
+    AlertService.prototype.showSuccessMessage = function (message, verticalPosition, autoHide) {
+        var config = new _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBarConfig"]();
+        config.verticalPosition = verticalPosition;
+        config.horizontalPosition = this.horizontalPosition;
+        config.duration = this.setAutoHide ? autoHide : 0;
+        config.panelClass = 'success';
+        this.snackBar.open(message, this.action ? this.actionButtonLabel : undefined, config);
+    };
+    AlertService.prototype.openSnackBar = function (message, action, className) {
+        this.snackBar.open(message, action, {
+            duration: 2000,
+            panelClass: [className],
+            verticalPosition: 'top'
+        });
+    };
+    AlertService.prototype.getAlert = function () {
+        return this.subject.asObservable();
+    };
+    AlertService.prototype.warning = function (errorConfig) {
+        this.alert("warning", errorConfig.message, errorConfig.timed, errorConfig.closeable);
+    };
+    AlertService.prototype.danger = function (errorConfig) {
+        this.alert("danger", errorConfig.message, errorConfig.timed, errorConfig.closeable);
+    };
+    AlertService.prototype.info = function (errorConfig) {
+        this.alert("info", errorConfig.message, errorConfig.timed, errorConfig.closeable);
+    };
+    AlertService.prototype.success = function (errorConfig) {
+        this.alert("success", errorConfig.message, errorConfig.timed, errorConfig.closeable);
+    };
+    AlertService.prototype.clear = function () {
+        this.subject.next();
+    };
+    AlertService.prototype.alert = function (alertType, message, timed, closeable) {
+        var _this = this;
+        this.subject.next({
+            alertType: alertType,
+            message: message,
+            closeable: closeable,
+        });
+        if (timed) {
+            rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"].timer(2000).subscribe(function () {
+                _this.subject.next({});
+            });
+        }
+    };
+    AlertService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"]])
+    ], AlertService);
+    return AlertService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/services/confirmation-dialog.service.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/common/services/confirmation-dialog.service.ts ***!
+  \****************************************************************/
+/*! exports provided: ConfirmationDialogService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationDialogService", function() { return ConfirmationDialogService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/confirmation-dialog/confirmation-dialog.component */ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ConfirmationDialogService = /** @class */ (function () {
+    function ConfirmationDialogService(modalService) {
+        this.modalService = modalService;
+    }
+    ConfirmationDialogService.prototype.confirm = function (title, message, btnOkText, btnCancelText, dialogSize) {
+        var modalRef = this.modalService.open(_components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_2__["ConfirmationDialogComponent"]);
+        modalRef.componentInstance.dialogSize = dialogSize;
+        modalRef.componentInstance.title = title;
+        modalRef.componentInstance.message = message;
+        modalRef.componentInstance.btnOkText = btnOkText;
+        modalRef.componentInstance.btnCancelText = btnCancelText;
+        modalRef.componentInstance.backdropClass = 'light-blue-backdrop';
+        return modalRef.result;
+    };
+    ConfirmationDialogService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"]])
+    ], ConfirmationDialogService);
+    return ConfirmationDialogService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/common/services/data.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/common/services/data.service.ts ***!
+  \*************************************************/
+/*! exports provided: DataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var DataService = /** @class */ (function () {
+    // = '/api/students/';
+    // private http: HttpClient;
+    // private uri: any;
+    function DataService(http) {
+        this.http = http;
+    }
+    DataService.prototype.create = function (uri, formData) {
+        return this.http.post(uri, formData).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.get = function (uri) {
+        return this.http.get(uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.edit = function (uri) {
+        return this.http.get(uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.update = function (uri, formData) {
+        return this.http.put(uri + formData.id, formData).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.delete = function (uri) {
+        return this.http.delete(uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], DataService);
+    return DataService;
 }());
 
 
@@ -6291,28 +6681,36 @@ var PageActionComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalService", function() { return ModalService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 var ModalService = /** @class */ (function () {
     function ModalService() {
-        this.modals = [];
+        this.subject = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
     }
-    ModalService.prototype.add = function (modal) {
-        // add modal to array of active modals
-        this.modals.push(modal);
+    ModalService.prototype.getModalStatus = function () {
+        return this.subject.asObservable();
     };
-    ModalService.prototype.remove = function (id) {
-        // remove modal from array of active modals
-        this.modals = this.modals.filter(function (x) { return x.id !== id; });
+    ModalService.prototype.show = function (id) {
+        this.subject.next({ elemId: id, shown: true });
     };
-    ModalService.prototype.open = function (id) {
-        // open modal specified by id
-        var modal = this.modals.filter(function (x) { return x.id === id; })[0];
-        modal.open();
+    ModalService.prototype.hide = function (id) {
+        this.subject.next({ elemId: id, shown: false });
     };
-    ModalService.prototype.close = function (id) {
-        // close modal specified by id
-        var modal = this.modals.filter(function (x) { return x.id === id; })[0];
-        modal.close();
-    };
+    ModalService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], ModalService);
     return ModalService;
 }());
 
@@ -6327,7 +6725,7 @@ var ModalService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QtdXMvY29udGFjdC11cy5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6338,7 +6736,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Contact</li>\n              </ul>\n              <h2>Get in touch</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section id=\"content\">\n<!--       <div id=\"google-map\" data-latitude=\"40.713417\" data-longitude=\"-74.0092125\"></div> -->\n\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span8\">\n            <h4>Get in touch with us by filling contact form below</h4>\n\n            <div id=\"sendmessage\">Your message has been sent. Thank you!</div>\n            <div id=\"errormessage\"></div>\n            <form action=\"\" method=\"post\" role=\"form\" class=\"contactForm\">\n              <div class=\"row\">\n                <div class=\"span4 form-group field\">\n                  <input type=\"text\" name=\"name\" id=\"name\" placeholder=\"Your Name\" data-rule=\"minlen:4\" data-msg=\"Please enter at least 4 chars\" />\n                  <div class=\"validation\"></div>\n                </div>\n\n                <div class=\"span4 form-group\">\n                  <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Your Email\" data-rule=\"email\" data-msg=\"Please enter a valid email\" />\n                  <div class=\"validation\"></div>\n                </div>\n                <div class=\"span8 form-group\">\n                  <input type=\"text\" name=\"subject\" id=\"subject\" placeholder=\"Subject\" data-rule=\"minlen:4\" data-msg=\"Please enter at least 8 chars of subject\" />\n                  <div class=\"validation\"></div>\n                </div>\n                <div class=\"span8 form-group\">\n                  <textarea name=\"message\" rows=\"5\" data-rule=\"required\" data-msg=\"Please write something for us\" placeholder=\"Message\"></textarea>\n                  <div class=\"validation\"></div>\n                  <div class=\"text-center\">\n                    <button class=\"btn btn-theme btn-medium margintop10\" type=\"submit\">Send a message</button>\n                  </div>\n                </div>\n              </div>\n            </form>\n          </div>\n          <div class=\"span4\">\n            <div class=\"clearfix\"></div>\n            <aside class=\"right-sidebar\">\n\n              <div class=\"widget\">\n                <h5 class=\"widgetheading\">Contact information<span></span></h5>\n\n                <ul class=\"contact-info\">\n                  <li><label>Address :</label> Mumbai<br /> India</li>\n                  <li><label>Phone :</label>+ 91 9999999999</li>\n                  <li><label>Fax : </label>+ 91 9999999999</li>\n                  <li><label>Email : </label> info@smugov.org</li>\n                </ul>\n\n              </div>\n            </aside>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n</body>\n\n</html>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/contact.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Contact us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <br>\n        </div>\n        <div class=\"row\">\n          <div class=\"col\">\n\n            <form id=\"contact-form\" method=\"post\" action=\"#\" role=\"form\">\n\n                  <div class=\"messages\"></div>\n\n                  <div class=\"controls\">\n\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_name\">Firstname *</label>\n                                  <input id=\"form_name\" type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Please enter your firstname *\" required=\"required\" data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_lastname\">Lastname *</label>\n                                  <input id=\"form_lastname\" type=\"text\" name=\"surname\" class=\"form-control\" placeholder=\"Please enter your lastname *\" required=\"required\" data-error=\"Lastname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_email\">Email *</label>\n                                  <input id=\"form_email\" type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Please enter your email *\" required=\"required\" data-error=\"Valid email is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_need\">Please specify your need *</label>\n                                  <select id=\"form_need\" name=\"need\" class=\"form-control\" required=\"required\" data-error=\"Please specify your need.\">\n                                      <option value=\"\"></option>\n                                      <option value=\"Request quotation\">Request Fees Information</option>\n                                      <option value=\"Request order status\">Request Registration status</option>\n                                      <option value=\"Other\">Other</option>\n                                  </select>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-12\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_message\">Message *</label>\n                                  <textarea id=\"form_message\" name=\"message\" class=\"form-control\" placeholder=\"Message for me *\" rows=\"4\" required=\"required\" data-error=\"Please, leave us a message.\"></textarea>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-12\">\n                              <input type=\"submit\" class=\"btn btn-success btn-send\" value=\"Send message\">\n                          </div>\n                      </div>\n                  </div>\n              </form>\n\n          </div>\n          <div class=\"col\">\n\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n\n</body>\n\n</html>\n"
 
 /***/ }),
 
@@ -6390,7 +6788,7 @@ var ContactUsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvdXJzZS9jb3Vyc2UuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -6401,7 +6799,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\">\n      <form (ngSubmit)=\"onSubmit()\" #f=\"ngForm\">\n        <div\n          id=\"user-data\"\n          ngModelGroup=\"userData\"\n          #userData=\"ngModelGroup\">\n          <div class=\"form-group\">\n            <label for=\"username\">Username</label>\n            <input\n              type=\"text\"\n              id=\"username\"\n              class=\"form-control\"\n              ngModel\n              name=\"username\"\n              required>\n          </div>\n          <button\n            class=\"btn btn-default\"\n            type=\"button\"\n            (click)=\"suggestUserName()\">Suggest an Username</button>\n          <div class=\"form-group\">\n            <label for=\"email\">Mail</label>\n            <input\n              type=\"email\"\n              id=\"email\"\n              class=\"form-control\"\n              ngModel\n              name=\"email\"\n              required\n              email\n              #email=\"ngModel\">\n            <span class=\"help-block\" *ngIf=\"!email.valid && email.touched\">Please enter a valid email!</span>\n          </div>\n        </div>\n        <p *ngIf=\"!userData.valid && userData.touched\">User Data is invalid!</p>\n        <div class=\"form-group\">\n          <label for=\"secret\">Secret Questions</label>\n          <select\n            id=\"secret\"\n            class=\"form-control\"\n            [ngModel]=\"defaultQuestion\"\n            name=\"secret\">\n            <option value=\"pet\">Your first Pet?</option>\n            <option value=\"teacher\">Your first teacher?</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <textarea\n            name=\"questionAnswer\"\n            rows=\"3\"\n            class=\"form-control\"\n            [(ngModel)]=\"answer\"></textarea>\n        </div>\n        <p>Your reply: {{ answer }}</p>\n        <div class=\"radio\" *ngFor=\"let gender of genders\">\n          <label>\n            <input\n              type=\"radio\"\n              name=\"gender\"\n              ngModel\n              [value]=\"gender\"\n              required>\n            {{ gender }}\n          </label>\n        </div>\n        <button\n          class=\"btn btn-primary\"\n          type=\"submit\"\n          [disabled]=\"!f.valid\">Submit</button>\n      </form>\n    </div>\n  </div>\n  <hr>\n<!--   <div class=\"row\" *ngIf=\"submitted\"> -->\n<!--     <div class=\"col-xs-12\"> -->\n<!--       <h3>Your Data</h3> -->\n<!--       <p>Username: {{ user.username }}</p> -->\n<!--       <p>Mail: {{ user.email }}</p> -->\n<!--       <p>Secret Question: Your first {{ user.secretQuestion }}</p> -->\n<!--       <p>Answer: {{ user.answer }}</p> -->\n<!--       <p>Gender: {{ user.gender }}</p> -->\n<!--     </div> -->\n<!--   </div> -->\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n  \n    <form [formGroup]=\"courseForm\" novalidate (ngSubmit)=\"editSubmit(courseForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"name\">Course Name</label>\n\t        <input id=\"name\" type=\"text\" class=\"form-control\" formControlName=\"name\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"subcourse\">Sub Course Name</label>\n\t        <input id=\"subcourse\" type=\"text\" class=\"form-control\" formControlName=\"subcourse\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" (click)=\"create()\">Submit</button>\n\t  </div>\n  </form>\n  \n\t</div>\n\t\n\t<div class=\"row\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<ag-grid-angular\n\t\t\t\t\t\t\t#agGrid\n\t\t\t\t\t\t\tid=\"myGrid\"\n\t\t\t\t\t\t\tstyle=\"width: 480px; height: 400px;\"\n\t\t\t\t\t\t\tclass=\"ag-theme-balham\"\n\t\t\t\t\t\t\t[enableSorting]=\"true\"\n\t\t\t\t\t\t\t[enableFilter]=\"true\"\n\t\t\t\t\t\t\t[rowData]=\"rowData\"\n\t\t\t\t\t\t\trowSelection='multiple'\n\t\t\t\t\t\t\t(gridReady)=\"onGridReady($event)\"\n\t\t\t\t\t\t\t[columnDefs]=\"columnDefs\">\n\t\t\t\t\t</ag-grid-angular>\n\t\t\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -6416,7 +6814,11 @@ module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div cla
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseComponent", function() { return CourseComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _service_course_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./service/course.service */ "./src/app/course/service/course.service.ts");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6428,11 +6830,86 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
+
+
 var CourseComponent = /** @class */ (function () {
-    function CourseComponent(router) {
-        this.router = router;
+    function CourseComponent(fb, courseService, confirmationDialogService, alertService) {
+        this.fb = fb;
+        this.courseService = courseService;
+        this.confirmationDialogService = confirmationDialogService;
+        this.alertService = alertService;
+        this.createForm();
     }
     CourseComponent.prototype.ngOnInit = function () {
+        this.getData();
+    };
+    CourseComponent.prototype.getData = function () {
+        var _this = this;
+        this.courseService.get().subscribe(function (res) {
+            _this.rowData = res;
+        });
+    };
+    CourseComponent.prototype.createForm = function () {
+        this.courseForm = this.fb.group({
+            id: [''],
+            name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+            subcourse: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+        });
+    };
+    CourseComponent.prototype.create = function () {
+        this.courseService.create(this.courseForm.value).subscribe(function (res) {
+            console.log('res : ' + res);
+        }, function (error) {
+            console.log('this.errorMessage : ' + error);
+        });
+    };
+    CourseComponent.prototype.delete = function (selectedRow) {
+        var _this = this;
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this course information ... ? ' + selectedRow.name, 'Ok', 'Cancel', 'sm')
+            .then(function (confirmed) {
+            if (confirmed) {
+                _this.courseService.delete(selectedRow._id).subscribe(function () {
+                    _this.getData();
+                    _this.alertService.showSuccessMessage('succesfully deleted course information ' + selectedRow.name, 'top', 2000);
+                });
+            }
+        })
+            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
+    };
+    CourseComponent.prototype.onGridReady = function (params) {
+        this.columnDefs = [
+            { headerName: 'Name', field: 'name' },
+            { headerName: 'Sub Course', field: 'subcourse' },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'edit' },
+                width: 40, tooltip: function () { return 'Edit'; } },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'delete' },
+                width: 40, tooltip: function () { return 'Delete'; } },
+        ];
+        this.gridOptions = {
+            rowData: this.rowData,
+            rowHeight: 36,
+            context: { componentParent: this }
+        };
+        this.gridApi = params.api;
+        this.gridApi.gridOptions = this.gridOptions;
+        //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
+        //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
+    };
+    CourseComponent.prototype.editSubmit = function (courseForm) {
+        //   const studentData = form.value;
+        //   if (studentData.id !== null) {
+        //       this.updateStudent(studentData);
+        //       this.closeModal();
+        //       //this.alertService.showSuccessMessage('succesfully updated student information ' + studentData.fname,'top',2000);
+        //       this.alertService.openSnackBar('succesfully updated student information ' + studentData.fname,'','success');
+        //   } else {
+        //       this.addStudent(studentData);
+        //       this.alertService.showSuccessMessage('succesfully Addedd student information','top',2000);
+        //   }
     };
     CourseComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -6440,9 +6917,75 @@ var CourseComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./course.component.html */ "./src/app/course/course.component.html"),
             styles: [__webpack_require__(/*! ./course.component.css */ "./src/app/course/course.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _service_course_service__WEBPACK_IMPORTED_MODULE_2__["CourseService"],
+            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__["ConfirmationDialogService"],
+            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"]])
     ], CourseComponent);
     return CourseComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/course/service/course.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/course/service/course.service.ts ***!
+  \**************************************************/
+/*! exports provided: CourseService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseService", function() { return CourseService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/services/data.service */ "./src/app/common/services/data.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CourseService = /** @class */ (function () {
+    function CourseService(dataService) {
+        this.dataService = dataService;
+        this.uri = 'http://localhost:4000/api/courses/';
+    }
+    CourseService.prototype.create = function (formData) {
+        return this.dataService.create(this.uri, formData);
+    };
+    CourseService.prototype.get = function () {
+        console.log('call api course service > ' + this.uri);
+        return this.dataService.get(this.uri);
+    };
+    CourseService.prototype.edit = function (id) {
+        return this.dataService.get(this.uri + id).map(function (res) {
+            return res;
+        });
+    };
+    CourseService.prototype.update = function (formData) {
+        return this.dataService.update(this.uri, formData).map(function (res) {
+            return res;
+        });
+    };
+    CourseService.prototype.delete = function (id) {
+        return this.dataService.delete(this.uri + id).map(function (res) {
+            return res;
+        });
+    };
+    CourseService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_common_services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
+    ], CourseService);
+    return CourseService;
 }());
 
 
@@ -6456,7 +6999,7 @@ var CourseComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RpYWxvZy1ib2R5L2RpYWxvZy1ib2R5LmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -6512,10 +7055,9 @@ var DialogBodyComponent = /** @class */ (function () {
     DialogBodyComponent.prototype.ngOnInit = function () {
     };
     DialogBodyComponent.prototype.updateStudent = function () {
-        var _this = this;
-        this.studentservice.updateStudent(this.data.student).subscribe(function (res) {
-            _this.dialogRef.close();
-        });
+        //   this.studentservice.updateStudent(this.data.student).subscribe(res => {
+        //       this.dialogRef.close();
+        // });
     };
     DialogBodyComponent.prototype.close = function () {
         this.dialogRef.close();
@@ -6527,7 +7069,8 @@ var DialogBodyComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./dialog-body.component.css */ "./src/app/dialog-body/dialog-body.component.css")]
         }),
         __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
-        __metadata("design:paramtypes", [Object, _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
+        __metadata("design:paramtypes", [Object, _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
             _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
             _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]])
     ], DialogBodyComponent);
@@ -6545,7 +7088,7 @@ var DialogBodyComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -6556,7 +7099,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"span4\">\n        <div class=\"widget\">\n          <h5 class=\"widgetheading\">Browse pages</h5>\n          <ul class=\"link-list\">\n            <li><a href=\"#\">Our company</a></li>\n            <li><a href=\"#\">Terms and conditions</a></li>\n            <li><a href=\"#\">Privacy policy</a></li>\n            <li><a href=\"#\">Press release</a></li>\n            <li><a href=\"#\">What we have done</a></li>\n            <li><a href=\"#\">Our support forum</a></li>\n          </ul>\n\n        </div>\n      </div>\n      <div class=\"span4\">\n        <div class=\"widget\">\n          <h5 class=\"widgetheading\">Get in touch</h5>\n          <address>\n\t\t\t<strong>smugov</strong><br>\n\t\t\tMumbai<br>\n\t\t\tIndia\n\t\t</address>\n          <p>\n            <i class=\"icon-phone\"></i> +91 9999999999 <br>\n            <i class=\"icon-envelope-alt\"></i> info@smugov.org\n          </p>\n        </div>\n      </div>\n      <div class=\"span4\">\n        <div class=\"widget\">\n          <h5 class=\"widgetheading\">Subscribe newsletter</h5>\n          <p>\n            Keep updated for new releases and freebies. Enter your e-mail and subscribe to our newsletter.\n          </p>\n          <form class=\"subscribe\">\n            <div class=\"input-append\">\n              <input class=\"span2\" id=\"appendedInputButton\" type=\"text\">\n              <button class=\"btn btn-theme\" type=\"submit\">Subscribe</button>\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div id=\"sub-footer\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"span6\">\n          <div class=\"copyright\">\n            <p><span>&copy; smugov. All right reserved</span></p>\n          </div>\n\n        </div>\n\n        <div class=\"span6\">\n          <div class=\"credits\">\n            <!--\n              All the links in the footer should remain intact.\n              You can delete the links only if you purchased the pro version.\n              Licensing information: https://bootstrapmade.com/license/\n              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Eterna\n            -->\n            Designed by <a href=\"#\">smugov</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>"
+module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <!-- About -->\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_about\">\n          <div class=\"logo_container\">\n            <a href=\"#\">\n              <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                <div class=\"logo_img\"><img src=\"../../assets/images/logo.png\" alt=\"\"></div>\n                <div class=\"logo_text\">learn</div>\n              </div>\n            </a>\n          </div>\n          <div class=\"footer_about_text\">\n            <p>Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.</p>\n          </div>\n          <div class=\"footer_social\">\n            <ul>\n              <li><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n          </div>\n          <div class=\"copyright\"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->\n                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://smugov.org\" target=\"_blank\">Smugov</a>\n                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Quick menu</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"index.html\">Home</a></li>\n            <li><a href=\"about.html\">About us</a></li>\n            <li><a href=\"#\">Testimonials</a></li>\n            <li><a href=\"#\">Services</a></li>\n            <li><a href=\"contact.html\">Contact</a></li>\n            <li><a href=\"#\">Facts</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Useful Links</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"courses.html\">Courses</a></li>\n            <li><a href=\"#\">Events</a></li>\n            <li><a href=\"news.html\">News</a></li>\n            <li><a href=\"#\">Teachers</a></li>\n            <li><a href=\"#\">Links</a></li>\n            <li><a href=\"#\">FAQ</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_contact\">\n          <div class=\"footer_title\">Contact Us</div>\n          <div class=\"footer_contact_info\">\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Address:</div>\n              <div class=\"footer_contact_line\">Mumbai</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Phone:</div>\n              <div class=\"footer_contact_line\">+91 999999999</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Email:</div>\n              <div class=\"footer_contact_line\">info@smugov.org</div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>"
 
 /***/ }),
 
@@ -6608,7 +7151,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWQvaGVhZC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6619,7 +7162,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<head>\n  <meta charset=\"utf-8\">\n  <title>Eterna - Professional bootstrap site template for corporate business</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <meta name=\"description\" content=\"Your page description here\" />\n  <meta name=\"author\" content=\"\" />\n\n  <!-- css -->\n  <link href=\"https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800\" rel=\"stylesheet\">\n  <link href=\"/assets/css/bootstrap.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/bootstrap-responsive.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/flexslider.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/prettyPhoto.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/camera.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/jquery.bxslider.css\" rel=\"stylesheet\" />\n  <link href=\"/assets/css/style.css\" rel=\"stylesheet\" />\n\n  <!-- Theme skin -->\n  <link href=\"/assets/color/default.css\" rel=\"stylesheet\" />\n\n  <!-- Fav and touch icons -->\n  <link rel=\"apple-touch-icon-precomposed\" sizes=\"144x144\" href=\"/assets/ico/apple-touch-icon-144-precomposed.png\" />\n  <link rel=\"apple-touch-icon-precomposed\" sizes=\"114x114\" href=\"/assets/ico/apple-touch-icon-114-precomposed.png\" />\n  <link rel=\"apple-touch-icon-precomposed\" sizes=\"72x72\" href=\"/assets/ico/apple-touch-icon-72-precomposed.png\" />\n  <link rel=\"apple-touch-icon-precomposed\" href=\"/assets/ico/apple-touch-icon-57-precomposed.png\" />\n  <link rel=\"shortcut icon\" href=\"/assets/ico/favicon.png\" />\n\n  <!-- =======================================================\n    Theme Name: Eterna\n    Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/\n    Author: BootstrapMade.com\n    Author URL: https://bootstrapmade.com\n  ======================================================= -->\n</head>"
+module.exports = "<head>\n<title>State of Maharashtra University –SMU</title>\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"description\" content=\"Elearn project\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>"
 
 /***/ }),
 
@@ -6665,7 +7208,7 @@ var HeadComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".navbar-custom {\n    background-color: #000;\n}\n\n/* change the brand and text color */\n\n.navbar-custom .navbar-brand,\n.navbar-custom .navbar-text {\n    color: rgba(255,255,255,.8);\n}\n\n/* change the link color */\n\n.navbar-custom .navbar-nav .nav-link {\n    color: rgba(255,255,255,.5);\n}\n\n/* change the color of active or hovered links */\n\n.navbar-custom .nav-item.active .nav-link,\n.navbar-custom .nav-item:hover .nav-link {\n    color: #ffffff;\n}\n\n/* for dropdown only - change the color of droodown */\n\n.navbar-custom .dropdown-menu {\n    background-color: #000;\n}\n\n.navbar-custom .dropdown-item {\n    color: #ffffff;\n}\n\n.navbar-custom .dropdown-item:hover,\n.navbar-custom .dropdown-item:focus {\n    color: #333333;\n    background-color: #FE642E;\n}\n\n.dropdown:hover>.dropdown-menu {\n  display: block;\n}\n\n.dropdown>.dropdown-toggle:active {\n  /*Without this, clicking will make it sticky*/\n    pointer-events: none;\n}\n\n.fa {\n  padding: 10px;\n  font-size: 30px;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  text-decoration: none;\n  margin: 5px 2px;\n}\n\n.fa:hover {\n    opacity: 0.7;\n}\n\n.fa-facebook {\n  background: #3B5998;\n  color: white;\n}\n\n.fa-twitter {\n  background: #55ACEE;\n  color: white;\n}\n\n.fa-google {\n  background: #dd4b39;\n  color: white;\n}\n\n.fa-linkedin {\n  background: #007bb5;\n  color: white;\n}\n\n.fa-youtube {\n  background: #bb0000;\n  color: white;\n}\n\n.fa-instagram {\n  background: #125688;\n  color: white;\n}\n\n.fa-pinterest {\n  background: #cb2027;\n  color: white;\n}\n\n.fa-snapchat-ghost {\n  background: #fffc00;\n  color: white;\n  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n}\n\n.fa-skype {\n  background: #00aff0;\n  color: white;\n}\n\n.fa-android {\n  background: #a4c639;\n  color: white;\n}\n\n.fa-dribbble {\n  background: #ea4c89;\n  color: white;\n}\n\n.fa-vimeo {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-tumblr {\n  background: #2c4762;\n  color: white;\n}\n\n.fa-vine {\n  background: #00b489;\n  color: white;\n}\n\n.fa-foursquare {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-stumbleupon {\n  background: #eb4924;\n  color: white;\n}\n\n.fa-flickr {\n  background: #f40083;\n  color: white;\n}\n\n.fa-yahoo {\n  background: #430297;\n  color: white;\n}\n\n.fa-soundcloud {\n  background: #ff5500;\n  color: white;\n}\n\n.fa-reddit {\n  background: #ff5700;\n  color: white;\n}\n\n.fa-rss {\n  background: #ff6600;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksdUJBQXVCO0NBQzFCOztBQUVELHFDQUFxQzs7QUFDckM7O0lBRUksNEJBQTRCO0NBQy9COztBQUVELDJCQUEyQjs7QUFDM0I7SUFDSSw0QkFBNEI7Q0FDL0I7O0FBRUQsaURBQWlEOztBQUNqRDs7SUFFSSxlQUFlO0NBQ2xCOztBQUVELHNEQUFzRDs7QUFDdEQ7SUFDSSx1QkFBdUI7Q0FDMUI7O0FBQ0Q7SUFDSSxlQUFlO0NBQ2xCOztBQUNEOztJQUVJLGVBQWU7SUFDZiwwQkFBMEI7Q0FDN0I7O0FBRUQ7RUFDRSxlQUFlO0NBQ2hCOztBQUVEO0VBQ0UsOENBQThDO0lBQzVDLHFCQUFxQjtDQUN4Qjs7QUFFRDtFQUNFLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsc0JBQXNCO0VBQ3RCLGdCQUFnQjtDQUNqQjs7QUFFRDtJQUNJLGFBQWE7Q0FDaEI7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7RUFDYixrRUFBa0U7Q0FDbkU7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhci1jdXN0b20ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG59XG5cbi8qIGNoYW5nZSB0aGUgYnJhbmQgYW5kIHRleHQgY29sb3IgKi9cbi5uYXZiYXItY3VzdG9tIC5uYXZiYXItYnJhbmQsXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLXRleHQge1xuICAgIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC44KTtcbn1cblxuLyogY2hhbmdlIHRoZSBsaW5rIGNvbG9yICovXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLW5hdiAubmF2LWxpbmsge1xuICAgIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC41KTtcbn1cblxuLyogY2hhbmdlIHRoZSBjb2xvciBvZiBhY3RpdmUgb3IgaG92ZXJlZCBsaW5rcyAqL1xuLm5hdmJhci1jdXN0b20gLm5hdi1pdGVtLmFjdGl2ZSAubmF2LWxpbmssXG4ubmF2YmFyLWN1c3RvbSAubmF2LWl0ZW06aG92ZXIgLm5hdi1saW5rIHtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbn1cblxuLyogZm9yIGRyb3Bkb3duIG9ubHkgLSBjaGFuZ2UgdGhlIGNvbG9yIG9mIGRyb29kb3duICovXG4ubmF2YmFyLWN1c3RvbSAuZHJvcGRvd24tbWVudSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbn1cbi5uYXZiYXItY3VzdG9tIC5kcm9wZG93bi1pdGVtIHtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbn1cbi5uYXZiYXItY3VzdG9tIC5kcm9wZG93bi1pdGVtOmhvdmVyLFxuLm5hdmJhci1jdXN0b20gLmRyb3Bkb3duLWl0ZW06Zm9jdXMge1xuICAgIGNvbG9yOiAjMzMzMzMzO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGRTY0MkU7XG59XG5cbi5kcm9wZG93bjpob3Zlcj4uZHJvcGRvd24tbWVudSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4uZHJvcGRvd24+LmRyb3Bkb3duLXRvZ2dsZTphY3RpdmUge1xuICAvKldpdGhvdXQgdGhpcywgY2xpY2tpbmcgd2lsbCBtYWtlIGl0IHN0aWNreSovXG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi5mYSB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgd2lkdGg6IDUwcHg7XG4gIGhlaWdodDogNTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIG1hcmdpbjogNXB4IDJweDtcbn1cblxuLmZhOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAwLjc7XG59XG5cbi5mYS1mYWNlYm9vayB7XG4gIGJhY2tncm91bmQ6ICMzQjU5OTg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXR3aXR0ZXIge1xuICBiYWNrZ3JvdW5kOiAjNTVBQ0VFO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1nb29nbGUge1xuICBiYWNrZ3JvdW5kOiAjZGQ0YjM5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1saW5rZWRpbiB7XG4gIGJhY2tncm91bmQ6ICMwMDdiYjU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXlvdXR1YmUge1xuICBiYWNrZ3JvdW5kOiAjYmIwMDAwO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1pbnN0YWdyYW0ge1xuICBiYWNrZ3JvdW5kOiAjMTI1Njg4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1waW50ZXJlc3Qge1xuICBiYWNrZ3JvdW5kOiAjY2IyMDI3O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1zbmFwY2hhdC1naG9zdCB7XG4gIGJhY2tncm91bmQ6ICNmZmZjMDA7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1zaGFkb3c6IC0xcHggMCBibGFjaywgMCAxcHggYmxhY2ssIDFweCAwIGJsYWNrLCAwIC0xcHggYmxhY2s7XG59XG5cbi5mYS1za3lwZSB7XG4gIGJhY2tncm91bmQ6ICMwMGFmZjA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWFuZHJvaWQge1xuICBiYWNrZ3JvdW5kOiAjYTRjNjM5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1kcmliYmJsZSB7XG4gIGJhY2tncm91bmQ6ICNlYTRjODk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXZpbWVvIHtcbiAgYmFja2dyb3VuZDogIzQ1YmJmZjtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtdHVtYmxyIHtcbiAgYmFja2dyb3VuZDogIzJjNDc2MjtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtdmluZSB7XG4gIGJhY2tncm91bmQ6ICMwMGI0ODk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWZvdXJzcXVhcmUge1xuICBiYWNrZ3JvdW5kOiAjNDViYmZmO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1zdHVtYmxldXBvbiB7XG4gIGJhY2tncm91bmQ6ICNlYjQ5MjQ7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWZsaWNrciB7XG4gIGJhY2tncm91bmQ6ICNmNDAwODM7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXlhaG9vIHtcbiAgYmFja2dyb3VuZDogIzQzMDI5NztcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtc291bmRjbG91ZCB7XG4gIGJhY2tncm91bmQ6ICNmZjU1MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXJlZGRpdCB7XG4gIGJhY2tncm91bmQ6ICNmZjU3MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXJzcyB7XG4gIGJhY2tncm91bmQ6ICNmZjY2MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
 
 /***/ }),
 
@@ -6676,7 +7219,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <div class=\"top\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"span6\">\n          <p class=\"topcontact\"><i class=\"icon-phone\"></i> +91 9999999999</p>\n        </div>\n        <div class=\"span6\">\n\n          <ul class=\"social-network\">\n            <li><a href=\"#\" data-placement=\"bottom\" title=\"Facebook\"><i class=\"icon-facebook icon-white\"></i></a></li>\n            <li><a href=\"#\" data-placement=\"bottom\" title=\"Twitter\"><i class=\"icon-twitter icon-white\"></i></a></li>\n            <li><a href=\"#\" data-placement=\"bottom\" title=\"Linkedin\"><i class=\"icon-linkedin icon-white\"></i></a></li>\n            <li><a href=\"#\" data-placement=\"bottom\" title=\"Google +\"><i class=\"icon-google-plus icon-white\"></i></a></li>\n            <li><a routerLink=\"/admin\" data-placement=\"bottom\" title=\"Dribbble\"><i class=\"icon-dribbble icon-white\"></i></a></li>\n          </ul>\n\n        </div>\n      </div>\n    </div>\n  </div>\n  <app-menu></app-menu>\n</header>"
+module.exports = "<header class=\"header\">\n\t\t\t\n  <!-- Top Bar -->\n  <div class=\"top_bar\">\n    <div class=\"top_bar_container\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"top_bar_content d-flex flex-row align-items-center justify-content-start\">\n              <ul class=\"top_bar_contact_list\">\n                <li><div class=\"question\">Have any questions?</div></li>\n                <li>\n                  <div>+91 999999999</div>\n                </li>\n                <li>\n                  <div>info@smugov.org</div>\n                </li>\n              </ul>\n              <div class=\"top_bar_login ml-auto\">\n                <ul>\n                  <li><a href=\"#\">Register</a></li>\n                  <li><a href=\"#\">Login</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\t\n  </div>\n\n  <!-- Header Content -->\n  <div class=\"header_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_content d-flex flex-row align-items-center justify-content-start\">\n            <div class=\"logo_container\">\n              <a href=\"#\">\n                <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                  <div class=\"logo_img\"><img src=\"../../assets/img/logo4.png\" alt=\"\" style=\"height: 90px;\"></div>\n                </div>\n              </a>\n            </div>\n            <nav class=\"main_nav_contaner ml-auto\">\n              <ul class=\"main_nav\">\n                  <li [routerLinkActive]=\"['active']\"><a href=\"/\">home</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/aboutus\">About Us</a></li>\n                  <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/courses\">Courses</a></li> -->\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/contactus\">Contact Us</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/admin\">Admin</a></li>\n              </ul>\n              <div class=\"search_button\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>\n\n              <!-- Hamburger -->\n\n              <div class=\"hamburger menu_mm\">\n                <i class=\"fa fa-bars menu_mm\" aria-hidden=\"true\"></i>\n              </div>\n            </nav>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Search Panel -->\n  <div class=\"header_search_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_search_content d-flex flex-row align-items-center justify-content-end\">\n            <form action=\"#\" class=\"header_search_form\">\n              <input type=\"search\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\n              <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center\">\n                <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\n  </div>\t\t\t\n</header>"
 
 /***/ }),
 
@@ -6728,7 +7271,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6739,7 +7282,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <!-- section featured -->\n    <section id=\"featured\">\n\n      <!-- slideshow start here -->\n\n      <div class=\"camera_wrap\" id=\"camera-slide\">\n\n        <!-- slide 1 here -->\n        <div data-src=\"assets/img/slides/camera/slide1/img1.jpg\">\n          <div class=\"camera_caption fadeFromLeft\">\n            <div class=\"container\">\n              <div class=\"row\">\n              \n              \t<form class=\"form-horizontal\" role=\"form\">\n\t\t\t\t    <div class=\"form-group\">\n\t\t\t\t        <label for=\"inputType\" class=\"col-sm-2 control-label\">MBA&nbsp;</label>\n\t\t\t\t        <div class=\"col-sm-4\">\n\t\t\t\t            <button class=\"btn btn-theme\" type=\"submit\">APPLY NOW</button>\n\t\t\t\t        </div>\n\t\t\t\t    </div>\n\t\t\t\t</form>\n                  \n                <div class=\"span6\">\n<!--                   <h2 class=\"animated fadeInDown\"><strong>Great template for <span class=\"colored\">multi usage</span></strong></h2> -->\n<!--                   <p class=\"animated fadeInUp\"> Vim porro dicam reprehendunt te, populo quodsi dissentiet cum ad. Ne natum deseruisse vis. Iisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no tamquam reprimique.</p> -->\n\n<!--                   <a href=\"#\" class=\"btn btn-success btn-large animated fadeInUp\"> -->\n<!-- \t\t\t\t\t\t\t\t\t\t\t<i class=\"icon-link\"></i> Read more -->\n<!-- \t\t\t\t\t\t\t\t\t\t</a> -->\n\n                </div>\n                <div class=\"span6\">\n<!--                   <img src=\"assets/img/slides/camera/slide1/screen.png\" alt=\"\" class=\"animated bounceInDown delay1\" /> -->\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <!-- slide 2 here -->\n        <div data-src=\"assets/img/slides/camera/slide2/img1.jpg\">\n          <div class=\"camera_caption fadeFromLeft\">\n            <div class=\"container\">\n              <div class=\"row\">\n                <div class=\"span6\">\n<!--                   <img src=\"assets/img/slides/camera/slide2/iMac.png\" alt=\"\" /> -->\n                </div>\n                <div class=\"span6\">\n<!--                   <h2 class=\"animated fadeInDown\"><strong>MBA <span class=\"colored\"> News</span></strong></h2> -->\n<!--                   <form> -->\n<!--                     <div class=\"input-append\"> -->\n<!--                        <h2 class=\"animated fadeInDown\"><strong>MBA </strong></h2> -->\n<!--                       <button class=\"btn btn-theme btn-large\" type=\"submit\">APPLY NOW</button> -->\n<!--                     </div> -->\n<!--                   </form> -->\n                </div>\n\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <!-- slide 3 here -->\n        <div data-src=\"assets/img/slides/camera/slide2/img1.jpg\">\n          <div class=\"camera_caption fadeFromLeft\">\n            <div class=\"container\">\n              <div class=\"row\">\n                <div class=\"span12 aligncenter\">\n                  <h2 class=\"animated fadeInDown\">\n                  <strong><span class=\"colored\">To develop a healthy attitude among </span>students\n                  <span class=\"colored\"> towards work and life.</span></strong></h2>\n                  <p class=\"animated fadeInUp\"><strong>\n                  State of Maharashtra University –SMU has been established under Maharashtra Government with the aim of providing quality education to all.\n                  </strong></p>\n<!--                   <img src=\"assets/img/slides/camera/slide3/browsers.png\" alt=\"\" class=\"animated bounceInDown delay1\" /> -->\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n      </div>\n\n      <!-- slideshow end here -->\n\n    </section>\n    <!-- /section featured -->\n\n    <section id=\"content\">\n      <div class=\"container\">\n\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"row\">\n              <div class=\"span4\">\n                <div class=\"box flyLeft\">\n                  <div class=\"icon\">\n                    <i class=\"ico icon-circled icon-bgdark icon-star active icon-3x\"></i>\n                  </div>\n                  <div class=\"text\">\n                    <h4>Aims & <strong>Objective</strong></h4>\n                    <p>\n                      The aim of Institution is to provide some job oriented professional / Vocational / Technical / Management / I.T / Engineering / Academic and other Courses.\n                    </p>\n                    <a href=\"#\">Learn More</a>\n                  </div>\n                </div>\n              </div>\n\n              <div class=\"span4\">\n                <div class=\"box flyIn\">\n                  <div class=\"icon\">\n                    <i class=\"ico icon-circled icon-bgdark icon-dropbox active icon-3x\"></i>\n                  </div>\n                  <div class=\"text\">\n                    <h4>Mission & <strong>Vision</strong></h4>\n                    <p>\n                      To become a leader in the integration of teaching, learning and advancement of knowledge to people from all streams through state of the art equipment’s all over India.\n                    </p>\n                    <a href=\"#\">Learn More</a>\n                  </div>\n                </div>\n              </div>\n              <div class=\"span4\">\n                <div class=\"box flyRight\">\n                  <div class=\"icon\">\n                    <i class=\"ico icon-circled icon-bgdark icon-laptop active icon-3x\"></i>\n                  </div>\n                  <div class=\"text\">\n                    <h4>Quality <strong>Policy</strong></h4>\n                    <p>\n                      State of Maharashtra University –SMU has committed to provide Global Standards of Excellence in all endeavors namely admitting students, testing them using appropriate tools and providing certificates.\n                    </p>\n                    <a href=\"#\">Learn More</a>\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"solidline\"></div>\n          </div>\n        </div>\n\n<!--         <div class=\"row\"> -->\n<!--           <div class=\"span12\"> -->\n<!--             <div class=\"row\"> -->\n<!--               <div class=\"span12\"> -->\n<!--                 <div class=\"aligncenter\"> -->\n<!--                   <h3>Our <strong>Pricing</strong></h3> -->\n<!--                   <p>Lorem ipsum dolor sit amet, labores dolorum scriptorem eum an, te quodsi sanctus neglegentur. -->\n<!--                   </p> -->\n<!--                 </div> -->\n<!--               </div> -->\n<!--             </div> -->\n\n\n<!--             <div class=\"row\"> -->\n\n<!--               <div class=\"span3\"> -->\n<!--                 <div class=\"pricing-box-wrap animated-fast flyIn\"> -->\n<!--                   <div class=\"pricing-heading\"> -->\n<!--                     <h3>Very <strong>Basic</strong></h3> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-terms\"> -->\n<!--                     <h6>&#36;15.00 / Month</h6> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-content\"> -->\n<!--                     <ul> -->\n<!--                       <li><i class=\"icon-ok\"></i> 100 applications</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> 24x7 support available</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> No hidden fees</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Free 30-days trial</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Stop anytime easily</li> -->\n<!--                     </ul> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-action\"> -->\n<!--                     <a href=\"#\" class=\"btn btn-medium btn-theme\"><i class=\"icon-chevron-down\"></i> Sign Up</a> -->\n<!--                   </div> -->\n<!--                 </div> -->\n<!--               </div> -->\n\n<!--               <div class=\"span3\"> -->\n<!--                 <div class=\"pricing-box-wrap animated-fast flyIn\"> -->\n<!--                   <div class=\"pricing-heading\"> -->\n<!--                     <h3>Simple <strong>Choice</strong></h3> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-terms\"> -->\n<!--                     <h6>&#36;20.00 / Month</h6> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-content\"> -->\n<!--                     <ul> -->\n<!--                       <li><i class=\"icon-ok\"></i> 100 applications</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> 24x7 support available</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> No hidden fees</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Free 30-days trial</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Stop anytime easily</li> -->\n<!--                     </ul> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-action\"> -->\n<!--                     <a href=\"#\" class=\"btn btn-medium btn-theme\"><i class=\"icon-chevron-down\"></i> Sign Up</a> -->\n<!--                   </div> -->\n<!--                 </div> -->\n<!--               </div> -->\n\n<!--               <div class=\"span3\"> -->\n<!--                 <div class=\"pricing-box-wrap special animated-slow flyIn\"> -->\n<!--                   <div class=\"pricing-heading\"> -->\n<!--                     <h3>Special <strong>Choice</strong></h3> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-terms\"> -->\n<!--                     <h6>&#36;15.00 / Month</h6> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-content\"> -->\n<!--                     <ul> -->\n<!--                       <li><i class=\"icon-ok\"></i> 100 applications</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> 24x7 support available</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> No hidden fees</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Free 30-days trial</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Stop anytime easily</li> -->\n<!--                     </ul> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-action\"> -->\n<!--                     <a href=\"#\" class=\"btn btn-medium btn-theme\"><i class=\"icon-chevron-down\"></i> Sign Up</a> -->\n<!--                   </div> -->\n<!--                 </div> -->\n<!--               </div> -->\n\n<!--               <div class=\"span3\"> -->\n<!--                 <div class=\"pricing-box-wrap animated flyIn\"> -->\n<!--                   <div class=\"pricing-heading\"> -->\n<!--                     <h3>Just <strong>Happy</strong></h3> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-terms\"> -->\n<!--                     <h6>&#36;15.00 / Month</h6> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-content\"> -->\n<!--                     <ul> -->\n<!--                       <li><i class=\"icon-ok\"></i> 100 applications</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> 24x7 support available</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> No hidden fees</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Free 30-days trial</li> -->\n<!--                       <li><i class=\"icon-ok\"></i> Stop anytime easily</li> -->\n<!--                     </ul> -->\n<!--                   </div> -->\n<!--                   <div class=\"pricing-action\"> -->\n<!--                     <a href=\"#\" class=\"btn btn-medium btn-theme\"><i class=\"icon-chevron-down\"></i> Sign Up</a> -->\n<!--                   </div> -->\n<!--                 </div> -->\n<!--               </div> -->\n<!--             </div> -->\n\n<!--           </div> -->\n\n\n<!--         </div> -->\n\n\n\n        <div class=\"row\">\n          <div class=\"span12 aligncenter\">\n            <h3 class=\"title\">What people <strong>saying</strong> about us</h3>\n            <div class=\"blankline30\"></div>\n\n            <ul class=\"bxslider\">\n              <li>\n                <blockquote>\n                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis\n                  feugiat\n                </blockquote>\n                <div class=\"testimonial-autor\">\n                  <img src=\"assets/img/dummies/testimonial/1.png\" alt=\"\" />\n                  <h4>Hillary Doe</h4>\n                  <a href=\"#\">www.companyname.com</a>\n                </div>\n              </li>\n              <li>\n                <blockquote>\n                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis\n                  feugiat\n                </blockquote>\n                <div class=\"testimonial-autor\">\n                  <img src=\"assets/img/dummies/testimonial/2.png\" alt=\"\" />\n                  <h4>Michael Doe</h4>\n                  <a href=\"#\">www.companyname.com</a>\n                </div>\n              </li>\n              <li>\n                <blockquote>\n                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis\n                  feugiat\n                </blockquote>\n                <div class=\"testimonial-autor\">\n                  <img src=\"assets/img/dummies/testimonial/3.png\" alt=\"\" />\n                  <h4>Mark Donovan</h4>\n                  <a href=\"#\">www.companyname.com</a>\n                </div>\n              </li>\n              <li>\n                <blockquote>\n                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis\n                  feugiat\n                </blockquote>\n                <div class=\"testimonial-autor\">\n                  <img src=\"assets/img/dummies/testimonial/4.png\" alt=\"\" />\n                  <h4>Marry Doe Elliot</h4>\n                  <a href=\"#\">www.companyname.com</a>\n                </div>\n              </li>\n            </ul>\n\n          </div>\n        </div>\n\n      </div>\n    </section>\n\n\n    <section id=\"works\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <h4 class=\"title\">Recent <strong>Works</strong></h4>\n            <div class=\"row\">\n\n              <div class=\"grid cs-style-4\">\n                <div class=\"span3\">\n                  <div class=\"item\">\n                    <figure>\n                      <div><img src=\"assets/img/dummies/works/1.jpg\" alt=\"\" /></div>\n                      <figcaption>\n                        <div>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"assets/img/dummies/works/big.png\" data-pretty=\"prettyPhoto[gallery1]\" title=\"Portfolio caption here\"><i class=\"icon-plus icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-file icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                        </div>\n                      </figcaption>\n                    </figure>\n                  </div>\n                </div>\n                <div class=\"span3\">\n                  <div class=\"item\">\n                    <figure>\n                      <div><img src=\"assets/img/dummies/works/2.jpg\" alt=\"\" /></div>\n                      <figcaption>\n                        <div>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"assets/img/dummies/works/big.png\" data-pretty=\"prettyPhoto[gallery1]\" title=\"Portfolio caption here\"><i class=\"icon-plus icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-file icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                        </div>\n                      </figcaption>\n                    </figure>\n                  </div>\n                </div>\n                <div class=\"span3\">\n                  <div class=\"item\">\n                    <figure>\n                      <div><img src=\"assets/img/dummies/works/3.jpg\" alt=\"\" /></div>\n                      <figcaption>\n                        <div>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"assets/img/dummies/works/big.png\" data-pretty=\"prettyPhoto[gallery1]\" title=\"Portfolio caption here\"><i class=\"icon-plus icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-file icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                        </div>\n                      </figcaption>\n                    </figure>\n                  </div>\n                </div>\n                <div class=\"span3\">\n                  <div class=\"item\">\n                    <figure>\n                      <div><img src=\"assets/img/dummies/works/4.jpg\" alt=\"\" /></div>\n                      <figcaption>\n                        <div>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"assets/img/dummies/works/big.png\" data-pretty=\"prettyPhoto[gallery1]\" title=\"Portfolio caption here\"><i class=\"icon-plus icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                          <span>\n\t\t\t\t\t\t\t\t<a href=\"#\"><i class=\"icon-file icon-circled icon-bglight icon-2x\"></i></a>\n\t\t\t\t\t\t\t\t</span>\n                        </div>\n                      </figcaption>\n                    </figure>\n                  </div>\n                </div>\n              </div>\n\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n</html>"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n\t\n\t<!-- Home -->\n    <app-homebody></app-homebody>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>"
 
 /***/ }),
 
@@ -6766,6 +7309,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
+        this.images = [1, 2, 3].map(function () { return "https://picsum.photos/900/500?random&t=" + Math.random(); });
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
@@ -6784,6 +7328,69 @@ var HomeComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/homebody/homebody.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/homebody/homebody.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWVib2R5L2hvbWVib2R5LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/homebody/homebody.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/homebody/homebody.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"home\">\n  <div class=\"home_slider_container\">\n    \n    <!-- Home Slider -->\n    <div class=\"owl-carousel owl-theme home_slider\">\n      \n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Register Online</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Courses Details</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Online Courses</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Featured Course -->\n\n<div class=\"featured\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <!-- Home Slider Nav -->\n        <div class=\"home_slider_nav_container d-flex flex-row align-items-start justify-content-between\">\n          <div class=\"home_slider_nav home_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"home_slider_nav home_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n        </div>\n        <div class=\"featured_container\">\n          <div class=\"row\">\n            <div class=\"col-lg-6 featured_col\">\n              <div class=\"featured_content\">\n                <div class=\"featured_header d-flex flex-row align-items-center justify-content-start\">\n                  <div class=\"featured_tag\"><a href=\"#\">Featured</a></div>\n                  <div class=\"featured_price ml-auto\">Price: <span>$35</span></div>\n                </div>\n                <div class=\"featured_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                <div class=\"featured_text\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Donec vehicula efficitur nibh, in pretium nulla interdum non.</div>\n                <div class=\"featured_footer d-flex align-items-center justify-content-start\">\n                  <div class=\"featured_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"\"></div>\n                  <div class=\"featured_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                  <div class=\"featured_sales ml-auto\"><span>352</span> Sales</div>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-lg-6 featured_col\">\n              <!-- Background image artist https://unsplash.com/@jtylernix -->\n              <div class=\"featured_background\" style=\"background-image:url(../../assets/images/featured.jpg)\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Courses -->\n\n<div class=\"courses\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Choose your course</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"course_search\">\n          <form action=\"#\" class=\"course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between\">\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Course\" required=\"required\"></div>\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Level\" required=\"required\"></div>\n            <button class=\"course_button\"><span>search course</span><span class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></span></button>\n          </form>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        \n        <!-- Courses Slider -->\n        <div class=\"courses_slider_container\">\n          <div class=\"owl-carousel owl-theme courses_slider\">\n            \n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_1.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"https://unsplash.com/@anthonytran\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_2.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">New</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Social Media Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_2.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Mark Smith</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_3.jpg\" alt=\"https://unsplash.com/@annademy\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Marketing Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_3.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Julia Williams</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n          </div>\n          \n          <!-- Courses Slider Nav -->\n          <div class=\"courses_slider_nav courses_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"courses_slider_nav courses_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Milestones -->\n\n<div class=\"milestones\">\n  <!-- Background image artis https://unsplash.com/@thepootphotographer -->\n  <div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image:  url(../../assets/images/milestones.jpg)\" data-speed=\"0.8\"></div>\n  <div class=\"container\">\n    <div class=\"row milestones_container\">\n            \n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_1.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"1548\">0</div>\n          <div class=\"milestone_text\">Online Courses</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_2.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"7286\">0</div>\n          <div class=\"milestone_text\">Students</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_3.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"257\">0</div>\n          <div class=\"milestone_text\">Teachers</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_4.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"39\">0</div>\n          <div class=\"milestone_text\">Countries</div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Sections -->\n\n<div class=\"grouped_sections\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- Why Choose Us -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Why Choose Us?</div>\n        <div class=\"accordions\">\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center active\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Vehicula nisi congue, blandit?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Nisi congue, blandit purus sed?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n\n      <!-- Events -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Upcoming Events</div>\n        <div class=\"events\">\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">20</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course Release</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">23</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Students Art Workshop</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">25</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Launch Party for a new Platform</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">27</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">29</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n\n      <!-- News -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Latest News</div>\n        <div class=\"news\">\n          \n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_1.jpg\" alt=\"https://unsplash.com/@beccatapert\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_2.jpg\" alt=\"https://unsplash.com/@nbb_photos\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_3.jpg\" alt=\"https://unsplash.com/@rawpixel\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_4.jpg\" alt=\"https://unsplash.com/@jtylernix\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Video -->\n\n<div class=\"video\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"video_container_outer\">\n          <div class=\"video_container\">\n            <!-- Video poster image artist: https://unsplash.com/@annademy -->\n            <!-- <video id=\"vid1\" class=\"video-js vjs-default-skin\" controls data-setup='{ \"poster\": \"../../assets/images/video.jpg\", \"techOrder\": [\"youtube\"], \"sources\": [{ \"type\": \"video/youtube\", \"src\": \"https://youtu.be/5_MRXyYjHDk\"}], \"youtube\": { \"iv_load_policy\": 1 } }'> -->\n            <!-- </video> -->\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Join -->\n\n<div class=\"join\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Join Our Course Today</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"button join_button\"><a href=\"#\">register now<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/homebody/homebody.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/homebody/homebody.component.ts ***!
+  \************************************************/
+/*! exports provided: HomebodyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomebodyComponent", function() { return HomebodyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomebodyComponent = /** @class */ (function () {
+    function HomebodyComponent() {
+    }
+    HomebodyComponent.prototype.ngOnInit = function () {
+    };
+    HomebodyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-homebody',
+            template: __webpack_require__(/*! ./homebody.component.html */ "./src/app/homebody/homebody.component.html"),
+            styles: [__webpack_require__(/*! ./homebody.component.css */ "./src/app/homebody/homebody.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomebodyComponent);
+    return HomebodyComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/menu/menu.component.css":
 /*!*****************************************!*\
   !*** ./src/app/menu/menu.component.css ***!
@@ -6791,7 +7398,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -6802,7 +7409,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row nomargin\">\n    <div class=\"span4\">\n      <div class=\"logo\">\n        <a href=\"index.html\"><img src=\"assets/img/logo1.png\" alt=\"\" /></a>\n      </div>\n    </div>\n    <div class=\"span8\">\n      <div class=\"navbar navbar-static-top\">\n        <div class=\"navigation\">\n          <nav>\n            <ul class=\"nav topnav\">\n              <li class=\"dropdown active\">\n                <a href=\"#\"><i class=\"icon-home\"></i> Home <i class=\"icon-angle-down\"></i></a>\n                <ul class=\"dropdown-menu\">\n                  <li><a routerLink=\"/signup\">Sign Up</a></li>\n                   <li class=\"dropdown\"><a routerLink=\"/aboutus\">About Us<i class=\"icon-angle-right\"></i></a>\n                    <ul class=\"dropdown-menu sub-menu-level1\">\n                      <li><a href=\"index.html\">Aims & Objective</a></li>\n                      <li><a href=\"index.html\">Mission & Vision</a></li>\n                      <li><a href=\"index.html\">Philosophy</a></li>\n                      <li><a href=\"index.html\">Quality Policy</a></li>\n                      <li><a href=\"index.html\">Quality Assurance</a></li>\n                      <li><a href=\"index.html\">Value of Skill Education</a></li>\n                      <li><a href=\"index.html\">What we Do</a></li>\n                      <li><a href=\"index.html\">Why E-learning</a></li>\n                    </ul>\n                  </li>\n                </ul>\n              </li>\n              <li>\n                <a href=\"/aboutus\">About Us </a>\n              </li>\n              <li>\n                <a href=\"/admin\">Admin </a>\n              </li>\n              <li>\n                <a href=\"/signup\">Sign Up </a>\n              </li>\n              <li>\n                <a href=\"/contactus\">Contact </a>\n              </li>\n            </ul>\n          </nav>\n        </div>\n        <!-- end navigation -->\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400\">\n  <div class=\"menu_close_container\"><div class=\"menu_close\"><div></div><div></div></div></div>\n  <div class=\"search\">\n    <form action=\"#\" class=\"header_search_form menu_mm\">\n      <input type=\"search\" class=\"search_input menu_mm\" placeholder=\"Search\" required=\"required\">\n      <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center menu_mm\">\n        <i class=\"fa fa-search menu_mm\" aria-hidden=\"true\"></i>\n      </button>\n    </form>\n  </div>\n  <nav class=\"menu_nav\">\n    <ul class=\"menu_mm\">\n      <li class=\"menu_mm\"><a href=\"/\">Home</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/aboutus\">About Us</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/admin\">Admin</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/contactus\">Contact Us</a></li>\n    </ul>\n  </nav>\n  <div class=\"menu_extra\">\n    <div class=\"menu_phone\"><span class=\"menu_title\">phone:</span>+91 999999999</div>\n    <div class=\"menu_social\">\n      <span class=\"menu_title\">follow us</span>\n      <ul>\n        <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -6854,7 +7461,7 @@ var MenuComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3VsdC9yZXN1bHQuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -6916,7 +7523,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentService", function() { return StudentService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/services/data.service */ "./src/app/common/services/data.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6929,66 +7537,46 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var StudentService = /** @class */ (function () {
-    function StudentService(http) {
+    function StudentService(http, dataService) {
         this.http = http;
+        this.dataService = dataService;
+        this.uri = '/api/students/';
+        // dataService = new DataService(); 
     }
-    StudentService.prototype.addStudent = function (studentData) {
-        var uri = 'http://localhost:4000/students/add';
-        var obj = {
-            fname: studentData.fname,
-            lname: studentData.lname
-        };
-        return this
-            .http
-            .post(uri, obj)
-            .map(function (res) {
+    StudentService.prototype.create = function (formData) {
+        return this.dataService.create(this.uri, formData);
+        // return this.http.post(this.uri, formData).map(res => {
+        //   return res;
+        // });
+    };
+    StudentService.prototype.get = function () {
+        console.log('call api students service ------- ' + this.uri);
+        return this.dataService.get(this.uri);
+        // return this.http.get(this.uri+'students').map(res => {
+        //   return res;
+        // });
+    };
+    StudentService.prototype.edit = function (id) {
+        return this.dataService.get(this.uri + id).map(function (res) {
             return res;
         });
     };
-    StudentService.prototype.getStudents = function () {
-        var uri = 'http://localhost:4000/students';
-        return this
-            .http
-            .get(uri)
-            .map(function (res) {
+    StudentService.prototype.update = function (formData) {
+        return this.dataService.update(this.uri, formData).map(function (res) {
             return res;
         });
     };
-    StudentService.prototype.editStudent = function (id) {
-        var uri = 'http://localhost:4000/edit/' + id;
-        return this
-            .http
-            .get(uri)
-            .map(function (res) {
-            return res;
-        });
-    };
-    StudentService.prototype.updateStudent = function (studentData) {
-        var uri = 'http://localhost:4000/students/update/' + studentData.id;
-        var obj = {
-            fname: studentData.fname,
-            lname: studentData.lname
-        };
-        return this
-            .http
-            .post(uri, obj)
-            .map(function (res) {
-            return res;
-        });
-    };
-    StudentService.prototype.deleteStudent = function (id) {
-        var uri = 'http://localhost:4000/students/delete/' + id;
-        return this
-            .http
-            .get(uri)
-            .map(function (res) {
+    StudentService.prototype.delete = function (id) {
+        return this.dataService.delete(this.uri + id).map(function (res) {
             return res;
         });
     };
     StudentService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
+            _common_services_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
     ], StudentService);
     return StudentService;
 }());
@@ -7004,7 +7592,7 @@ var StudentService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "#sparq-edit-button {padding: 0}\n.edit-btn { width: 100%; }\nh3 { float: left; }\n.sparq-modal-body {\n    padding: 20px;\n    height: 500px;\n    min-width: 860px;\n    overflow: auto;\n    background-color: rgb(246, 253, 255);\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 5%;\n}\nth { font-size: 15px;}\n.empty-table-message { text-align: center; }\n.empty-table-message td { padding: 200px; }\n.plandetail-hotspot:hover {\n    cursor: pointer;\n    background-color: #ddd;\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 15%;\n}\n.row {\n    min-width: 820px;\n}\n.image-upload > input\n{\n    display: none;\n}\n.success {\n  background: #2196F3;\n  color: white;\n}\n.fail {\n  background: #F44336;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3R1ZGVudC9zdHVkZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsb0JBQW9CLFVBQVUsQ0FBQztBQUMvQixZQUFZLFlBQVksRUFBRTtBQUUxQixLQUFLLFlBQVksRUFBRTtBQUVuQjtJQUNJLGNBQWM7SUFDZCxjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixxQ0FBcUM7Q0FDeEM7QUFDRDtDQUNDLHFDQUFxQztJQUNsQyxRQUFRO0NBQ1g7QUFDRCxLQUFLLGdCQUFnQixDQUFDO0FBRXRCLHVCQUF1QixtQkFBbUIsRUFBRTtBQUM1QywwQkFBMEIsZUFBZSxFQUFFO0FBRTNDO0lBQ0ksZ0JBQWdCO0lBQ2hCLHVCQUF1QjtDQUMxQjtBQUNEO0NBQ0MscUNBQXFDO0lBQ2xDLFNBQVM7Q0FDWjtBQUNEO0lBQ0ksaUJBQWlCO0NBQ3BCO0FBRUQ7O0lBRUksY0FBYztDQUNqQjtBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDtBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZCIsImZpbGUiOiJzcmMvYXBwL3N0dWRlbnQvc3R1ZGVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3NwYXJxLWVkaXQtYnV0dG9uIHtwYWRkaW5nOiAwfVxuLmVkaXQtYnRuIHsgd2lkdGg6IDEwMCU7IH1cblxuaDMgeyBmbG9hdDogbGVmdDsgfVxuXG4uc3BhcnEtbW9kYWwtYm9keSB7XG4gICAgcGFkZGluZzogMjBweDtcbiAgICBoZWlnaHQ6IDUwMHB4O1xuICAgIG1pbi13aWR0aDogODYwcHg7XG4gICAgb3ZlcmZsb3c6IGF1dG87XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xufVxuLnNwYXJxLW1vZGFsIHtcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xuICAgIHRvcDogNSU7XG59XG50aCB7IGZvbnQtc2l6ZTogMTVweDt9XG5cbi5lbXB0eS10YWJsZS1tZXNzYWdlIHsgdGV4dC1hbGlnbjogY2VudGVyOyB9XG4uZW1wdHktdGFibGUtbWVzc2FnZSB0ZCB7IHBhZGRpbmc6IDIwMHB4OyB9XG5cbi5wbGFuZGV0YWlsLWhvdHNwb3Q6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGRkO1xufVxuLnNwYXJxLW1vZGFsIHtcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xuICAgIHRvcDogMTUlO1xufVxuLnJvdyB7XG4gICAgbWluLXdpZHRoOiA4MjBweDtcbn1cblxuLmltYWdlLXVwbG9hZCA+IGlucHV0XG57XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuLnN1Y2Nlc3Mge1xuICBiYWNrZ3JvdW5kOiAjMjE5NkYzO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYWlsIHtcbiAgYmFja2dyb3VuZDogI0Y0NDMzNjtcbiAgY29sb3I6IHdoaXRlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -7015,7 +7603,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-template #studentModal>\n\t<div class=\"modal-header\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t  <button type=\"button\" class=\"close\" aria-label=\"Close\"\n\t   (click)=\"activeModal.dismiss('Cross click')\">\n\t  </button>\n\t</div>\n\t<form [formGroup]='studentForm' novalidate (ngSubmit)='editSubmit(studentForm)'>\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id='student-submit-btn' type='submit' class='btn btn-primary' [disabled]='!studentForm.valid'>\n\t        Submit\n\t    </button>\n\t    <button id='student-cancel-btn' type='button' class='btn btn-secondary' (click)='closeModal()'>\n\t        Cancel\n\t    </button>\n\t  </div>\n\t</form>\n</ng-template>\n<div class=\"container\">\n  <div class=\"row\">\n\t\t<button type=\"button\" class=\"btn btn-primary\" (click)=\"openModal(studentModal)\">New Student</button>\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 460px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    [rowSelection]=\"rowSelection\"\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n\t\t\tSelection: <span id=\"selectedRows\"></span>\n  </div>\n</div>\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n\n<div class=\"container\">\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
 
 /***/ }),
 
@@ -7033,10 +7621,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/student.service */ "./src/app/student/services/student.service.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
-/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/services/data.service */ "./src/app/common/services/data.service.ts");
 /* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
-/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
+/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7050,25 +7640,50 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+// import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
 
+
+
+
+// import { ModalService } from '../common/services/modal.service';
 
 
 
 var StudentComponent = /** @class */ (function () {
-    function StudentComponent(fb, studentservice, dialog, modalService, ngxSmartModalService) {
+    function StudentComponent(fb, dialog, alertService, studentService, dataService, modalService, viewContainerRef, snackBar, ngxSmartModalService, confirmationDialogService) {
         this.fb = fb;
-        this.studentservice = studentservice;
         this.dialog = dialog;
+        this.alertService = alertService;
+        this.studentService = studentService;
+        this.dataService = dataService;
         this.modalService = modalService;
+        this.viewContainerRef = viewContainerRef;
+        this.snackBar = snackBar;
         this.ngxSmartModalService = ngxSmartModalService;
-        this.dialogConfig = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialogConfig"]();
+        this.confirmationDialogService = confirmationDialogService;
+        //dialogConfig = new MatDialogConfig();
         this.editMode = true;
+        this.message = 'Snack Bar opened.';
+        this.actionButtonLabel = 'Retry';
+        this.action = true;
+        this.setAutoHide = true;
+        this.autoHide = 2000;
+        this.horizontalPosition = 'center';
+        this.verticalPosition = 'top';
+        this.addExtraClass = false;
         this.createForm();
         this.gridOptions = { context: { componentParent: this } };
     }
     StudentComponent.prototype.ngOnInit = function () {
         this.createForm();
         this.getStudents();
+    };
+    StudentComponent.prototype.open = function () {
+        var config = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBarConfig"]();
+        config.verticalPosition = this.verticalPosition;
+        config.horizontalPosition = this.horizontalPosition;
+        config.duration = this.setAutoHide ? this.autoHide : 0;
+        this.snackBar.open(this.message, this.action ? this.actionButtonLabel : undefined, config);
     };
     StudentComponent.prototype.createForm = function () {
         this.studentForm = this.fb.group({
@@ -7086,12 +7701,12 @@ var StudentComponent = /** @class */ (function () {
         this.columnDefs = [
             { headerName: 'First Name', field: 'fname' },
             { headerName: 'Last Name', field: 'lname' },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__["PageActionComponent"],
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
                 cellRendererParams: { pageAction: 'edit' },
-                width: 30, tooltip: function () { return 'Edit'; } },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_5__["PageActionComponent"],
+                width: 40, tooltip: function () { return 'Edit'; } },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
                 cellRendererParams: { pageAction: 'delete' },
-                width: 30, tooltip: function () { return 'Delete'; } },
+                width: 40, tooltip: function () { return 'Delete'; } },
         ];
         this.gridOptions = {
             rowData: this.students,
@@ -7103,45 +7718,59 @@ var StudentComponent = /** @class */ (function () {
         //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
         //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
     };
+    StudentComponent.prototype.openConfirmationDialog = function () {
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ?', 'Ok', 'Cancel', 'lg')
+            .then(function (confirmed) { return console.log('User confirmed:', confirmed); })
+            .catch(function () { return console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'); });
+    };
     StudentComponent.prototype.editSubmit = function (studentForm) {
         var studentData = studentForm.value;
-        this.closeModal();
-        if (studentData.id !== undefined) {
-            //   this.studentMd=studentData;
+        if (studentData.id !== null) {
             this.updateStudent(studentData);
+            this.closeModal();
+            //this.alertService.showSuccessMessage('succesfully updated student information ' + studentData.fname,'top',2000);
+            this.alertService.openSnackBar('succesfully updated student information ' + studentData.fname, '', 'success');
         }
         else {
             this.addStudent(studentData);
+            this.alertService.showSuccessMessage('succesfully Addedd student information', 'top', 2000);
         }
-        //      this.pricingService.savePriceType(this.priceType).subscribe(
-        //          (res) => {
-        //              if (!this.editMode) {
-        //                  this.priceTypes.push(res);
-        //              }
-        //              this.gridApi.setRowData(this.priceTypes);
-        //              return true;
-        //              },
-        //          (err) => {
-        //              let error = JSON.parse(err);
-        //              error = error["message"];
-        //              this.alertService.danger({message: error, timed: false, closeable: true});
-        //              return false;
-        //          });
-        //      this.modalService.hide("student-edit-modal");
-        //      this.gridApi.refreshCells();
+    };
+    StudentComponent.prototype.delete = function (selectedStudent) {
+        var _this = this;
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ? ' + selectedStudent.fname, 'Ok', 'Cancel', 'sm')
+            .then(function (confirmed) {
+            if (confirmed) {
+                _this.studentService.delete(selectedStudent._id).subscribe(function () {
+                    _this.getStudents();
+                    _this.alertService.showSuccessMessage('succesfully deleted student information ' + selectedStudent.fname, 'top', 2000);
+                });
+            }
+        })
+            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
     };
     StudentComponent.prototype.updateStudent = function (studentData) {
         var _this = this;
-        console.log('updateStudent: ' + studentData.id);
-        this.studentservice.updateStudent(studentData).subscribe(function () {
+        this.studentService.update(studentData).subscribe(function () {
             _this.getStudents();
         });
     };
     StudentComponent.prototype.addStudent = function (studentData) {
+        //   this.studentservice.addStudent(studentData).subscribe(() => {
+        //       this.getStudents();
+        //       this.studentForm.reset();
+        //   });
         var _this = this;
-        this.studentservice.addStudent(studentData).subscribe(function () {
+        this.studentService.create(studentData).subscribe(function (res) {
+            // this.students.push(res);
+            _this.closeModal();
             _this.getStudents();
-            _this.studentForm.reset();
+            // this.gridApi.setRowData(this.students);
+        }, function (error) {
+            // this.errorMessage = error;
+            // console.log('this.errorMessage : ' + error);
+            // this.alertService.showError(error);
+            // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
         });
     };
     StudentComponent.prototype.edit = function (selectedStudent) {
@@ -7150,53 +7779,69 @@ var StudentComponent = /** @class */ (function () {
             fname: selectedStudent.fname,
             lname: selectedStudent.lname,
         });
-        this.modalRef = this.modalService.show(this.studentModal);
+        //   this.modalService.show('studentModal');
+        this.modalRef = this.modalService.open(this.studentModal);
+        // this.openDialog(this.studentForm);
     };
     StudentComponent.prototype.sizeColumnsToFit = function () {
         this.gridApi.sizeColumnsToFit();
     };
-    StudentComponent.prototype.openModal = function (template) {
+    StudentComponent.prototype.openModal = function () {
         this.studentForm.reset();
-        this.modalRef = this.modalService.show(template);
+        this.modalRef = this.modalService.open(this.studentModal);
     };
     StudentComponent.prototype.closeModal = function () {
-        this.modalRef.hide();
+        this.modalRef.close();
     };
-    StudentComponent.prototype.onRowClicked = function (event, template) {
-        this.editStudent(event.data);
-        this.modalRef = this.modalService.show(template);
-    };
+    //   onRowClicked(event: any, template: TemplateRef<any>) {
+    //     this.editStudent(event.data);
+    //     // this.modalRef = this.modalService.show(template);
+    //   }
     StudentComponent.prototype.editStudent = function (student) {
         this.student = student;
-        console.log(student);
         this.studentForm.setValue({
             id: student._id,
             fname: student.fname,
             lname: student.lname,
         });
     };
-    StudentComponent.prototype.openDialog = function (student) {
-        var _this = this;
-        this.dialogConfig.disableClose = true;
-        this.dialogConfig.autoFocus = true;
-        var dialogRef = this.dialog.open(_dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_4__["DialogBodyComponent"], {
-            data: { student: student }
-        });
-        dialogRef.afterClosed().subscribe(function () {
-            _this.getStudents();
-        });
-    };
+    //   openDialog(student) {
+    //     // this.dialogConfig.disableClose = true;
+    //     // this.dialogConfig.autoFocus = true;
+    //     const dialogRef = this.dialog.open(DialogBodyComponent, {
+    //         width: '600px',
+    //         data: {student}
+    //     });
+    //     dialogRef.afterClosed().subscribe(() => {
+    //         this.getStudents();
+    //     });
+    //   }
     StudentComponent.prototype.getStudents = function () {
         var _this = this;
-        this.studentservice.getStudents().subscribe(function (res) {
+        this.studentService.get().subscribe(function (res) {
             _this.students = res;
         });
     };
     StudentComponent.prototype.deleteStudent = function (id) {
-        var _this = this;
-        this.studentservice.deleteStudent(id).subscribe(function () {
-            _this.getStudents();
-        });
+        this.openConfirmationDialog();
+        // this.studentservice.deleteStudent(id).subscribe(() => {
+        //     this.getStudents();
+        // });
+    };
+    StudentComponent.prototype.openBackDropCustomClass = function (content) {
+        // this.modalService.open(content, {backdropClass: 'light-blue-backdrop'});
+    };
+    StudentComponent.prototype.openWindowCustomClass = function (content) {
+        // this.modalService.open(content, { windowClass: 'dark-modal' });
+    };
+    StudentComponent.prototype.openSm = function (content) {
+        // this.modalService.open(content, { size: 'sm' });
+    };
+    StudentComponent.prototype.openLg = function (content) {
+        // this.modalService.open(content, { size: 'lg' });
+    };
+    StudentComponent.prototype.openVerticallyCentered = function (content) {
+        // this.modalService.open(content, { centered: true });
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('studentModal'),
@@ -7209,10 +7854,15 @@ var StudentComponent = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./student.component.css */ "./src/app/student/student.component.css")]
         }),
         __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
-            _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
             _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"],
-            ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_7__["BsModalService"],
-            ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__["NgxSmartModalService"]])
+            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__["AlertService"],
+            _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
+            _common_services_data_service__WEBPACK_IMPORTED_MODULE_5__["DataService"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModal"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBar"],
+            ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__["NgxSmartModalService"],
+            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__["ConfirmationDialogService"]])
     ], StudentComponent);
     return StudentComponent;
 }());

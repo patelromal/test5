@@ -12,6 +12,7 @@ import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 export class AdminComponent implements OnInit {
 
   loadedFeature = 'managecourse';
+  valid: any;
 
   onNavigate(feature: string) {
     console.log('feature:::::: ' + feature);

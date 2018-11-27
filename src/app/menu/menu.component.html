@@ -1,50 +1,31 @@
-<div class="container">
-  <div class="row nomargin">
-    <div class="span4">
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo1.png" alt="" /></a>
-      </div>
-    </div>
-    <div class="span8">
-      <div class="navbar navbar-static-top">
-        <div class="navigation">
-          <nav>
-            <ul class="nav topnav">
-              <li class="dropdown active">
-                <a href="#"><i class="icon-home"></i> Home <i class="icon-angle-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a routerLink="/signup">Sign Up</a></li>
-                   <li class="dropdown"><a routerLink="/aboutus">About Us<i class="icon-angle-right"></i></a>
-                    <ul class="dropdown-menu sub-menu-level1">
-                      <li><a href="index.html">Aims & Objective</a></li>
-                      <li><a href="index.html">Mission & Vision</a></li>
-                      <li><a href="index.html">Philosophy</a></li>
-                      <li><a href="index.html">Quality Policy</a></li>
-                      <li><a href="index.html">Quality Assurance</a></li>
-                      <li><a href="index.html">Value of Skill Education</a></li>
-                      <li><a href="index.html">What we Do</a></li>
-                      <li><a href="index.html">Why E-learning</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="/aboutus">About Us </a>
-              </li>
-              <li>
-                <a href="/admin">Admin </a>
-              </li>
-              <li>
-                <a href="/signup">Sign Up </a>
-              </li>
-              <li>
-                <a href="/contactus">Contact </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- end navigation -->
-      </div>
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+  <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+  <div class="search">
+    <form action="#" class="header_search_form menu_mm">
+      <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+      <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+        <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+  <nav class="menu_nav">
+    <ul class="menu_mm">
+      <li class="menu_mm"><a href="/">Home</a></li>
+      <li class="menu_mm"><a routerLink="/aboutus">About Us</a></li>
+      <li class="menu_mm"><a routerLink="/admin">Admin</a></li>
+      <li class="menu_mm"><a routerLink="/contactus">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="menu_extra">
+    <div class="menu_phone"><span class="menu_title">phone:</span>+91 999999999</div>
+    <div class="menu_social">
+      <span class="menu_title">follow us</span>
+      <ul>
+        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
   </div>
 </div>

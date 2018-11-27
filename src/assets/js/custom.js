@@ -1,167 +1,369 @@
-/*global jQuery:false */
-jQuery(document).ready(function($) {
-  "use strict";
+/* JS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Vars and Inits
+2. Set Header
+3. Init Header Search
+4. Init Menu
+5. Init Home Slider
+6. Init Courses Slider
+7. Init Milestones
+8. Init Accordions
 
 
-  (function() {
+******************************/
 
-    var $menu = $('.navigation nav'),
-      optionsList = '<option value="" selected>Go to..</option>';
+$(document).ready(function()
+{
+	"use strict";
 
-    $menu.find('li').each(function() {
-        var $this = $(this),
-          $anchor = $this.children('a'),
-          depth = $this.parents('ul').length - 1,
-          indent = '';
+	/* 
 
-        if (depth) {
-          while (depth > 0) {
-            indent += ' - ';
-            depth--;
-          }
-        }
+	1. Vars and Inits
 
-        $(".nav li").parent().addClass("bold");
-        optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
-      }).end()
-      .after('<select class="selectmenu">' + optionsList + '</select>');
+	*/
 
-    $('select.selectmenu').on('change', function() {
-      window.location = $(this).val();
-    });
+	var menu = $('.menu');
+	var menuActive = false;
+	var header = $('.header');
+	var burger = $('.hamburger');
+	var ctrl = new ScrollMagic.Controller();
 
-  })();
+	setHeader();
 
-  //Navi hover
-  $('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-  }, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-  });
+	$(window).on('resize', function()
+	{
+		setHeader();
+	});
 
-  //add some elements with animate effect
+	$(document).on('scroll', function()
+	{
+		setHeader();
+	});
 
-  var iOS = false,
-    p = navigator.platform;
+	initHeaderSearch();
+	initMenu();
+	initHomeSlider();
+	initCoursesSlider();
+	initMilestones();
+	initAccordions();
 
-  if (p === 'iPad' || p === 'iPhone' || p === 'iPod') {
-    iOS = true;
-  }
+	/* 
 
-  if (iOS === false) {
+	2. Set Header
 
-    $('.flyIn').bind('inview', function(event, visible) {
-      if (visible === true) {
-        $(this).addClass('animated fadeInUp');
-      }
-    });
+	*/
 
-    $('.flyLeft').bind('inview', function(event, visible) {
-      if (visible === true) {
-        $(this).addClass('animated fadeInLeftBig');
-      }
-    });
+	function setHeader()
+	{
+		if($(window).scrollTop() > 100)
+		{
+			header.addClass('scrolled');
+		}
+		else
+		{
+			header.removeClass('scrolled');
+		}
+	}
 
-    $('.flyRight').bind('inview', function(event, visible) {
-      if (visible === true) {
-        $(this).addClass('animated fadeInRightBig');
-      }
-    });
+	/* 
 
-  }
+	3. Init Header Search
 
-  $(".box").hover(
-    function() {
-      $(this).find('.ico').addClass("animated rotateIn");
-      $(this).find('h4').addClass("animated fadeInUp");
-    },
-    function() {
-      $(this).find('.ico').removeClass("animated rotateIn");
-      $(this).find('h4').removeClass("animated fadeInUp");
-    }
-  );
+	*/
 
-  $('.accordion').on('show', function(e) {
+	function initHeaderSearch()
+	{
+		if($('.search_button').length)
+		{
+			$('.search_button').on('click', function()
+			{
+				if($('.header_search_container').length)
+				{
+					$('.header_search_container').toggleClass('active');
+				}
+			});
+		}
+	}
 
-    $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
-    $(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
-    $(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
-  });
+	/* 
 
-  $('.accordion').on('hide', function(e) {
-    $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
-    $(this).find('.accordion-toggle i').not($(e.target)).removeClass('icon-minus');
-    $(this).find('.accordion-toggle i').not($(e.target)).addClass('icon-plus');
-  });
+	4. Init Menu
 
-  // testimonial
-  var TestiSlide = $('.bxslider');
-  TestiSlide.bxSlider({
-    auto: true,
-    pager: false,
-    controls: false,
-    useCSS: false,
-    speed: 2000,
-    easing: 'easeOutElastic',
-    mode: 'horizontal',
-    controlDirections: true
-  });
+	*/
 
-  //prettyphoto
-  $("a[data-pretty^='prettyPhoto']").prettyPhoto({
-    social_tools: ''
-  });
+	function initMenu()
+	{
+		if($('.menu').length)
+		{
+			var menu = $('.menu');
+			if($('.hamburger').length)
+			{
+				burger.on('click', function()
+				{
+					if(menuActive)
+					{
+						closeMenu();
+					}
+					else
+					{
+						openMenu();
 
-  // tooltip
-  $('.social-network li a, .options_box .color a').tooltip();
+						$(document).one('click', function cls(e)
+						{
+							if($(e.target).hasClass('menu_mm'))
+							{
+								$(document).one('click', cls);
+							}
+							else
+							{
+								closeMenu();
+							}
+						});
+					}
+				});
+			}
+		}
+	}
 
-  //scroll to top
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.scrollup').fadeIn();
+	function openMenu()
+	{
+		menu.addClass('active');
+		menuActive = true;
+	}
 
-    } else {
-      $('.scrollup').fadeOut();
+	function closeMenu()
+	{
+		menu.removeClass('active');
+		menuActive = false;
+	}
 
-    }
-  });
+	/* 
 
-  $('.scrollup').click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000);
-    return false;
-  });
+	5. Init Home Slider
 
-  //flexslider
-  $('.flexslider').flexslider({
-    animation: "fade",
-    directionNav: true,
-    controlNav: false,
-    pauseOnAction: true,
-    pauseOnHover: true,
-    slideshowSpeed: 5500
-  });
+	*/
 
-  //Google Map
-  if( $('#google-map').length ) {
-    var get_latitude = $('#google-map').data('latitude');
-    var get_longitude = $('#google-map').data('longitude');
+	function initHomeSlider()
+	{
+		if($('.home_slider').length)
+		{
+			var homeSlider = $('.home_slider');
+			homeSlider.owlCarousel(
+			{
+				items:1,
+				loop:true,
+				autoplay:true,
+				autoplayTimeout:8000,
+				dots:false,
+				nav:false,
+				smartSpeed:1200
+			});
 
-    function initialize_google_map() {
-      var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-      var mapOptions = {
-        zoom: 14,
-        scrollwheel: false,
-        center: myLatlng
-      };
-      var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-      var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map
-      });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize_google_map);
-  }
+			if($('.home_slider_prev').length)
+			{
+				var prev = $('.home_slider_prev');
+				prev.on('click', function()
+				{
+					homeSlider.trigger('prev.owl.carousel');
+				});
+			}
+
+			if($('.home_slider_next').length)
+			{
+				var next = $('.home_slider_next');
+				next.on('click', function()
+				{
+					homeSlider.trigger('next.owl.carousel');
+				});
+			}
+		}
+	}
+
+	/* 
+
+	6. Init Courses Slider
+
+	*/
+
+	function initCoursesSlider()
+	{
+		if($('.courses_slider').length)
+		{
+			var coursesSlider = $('.courses_slider');
+			coursesSlider.owlCarousel(
+			{
+				items:3,
+				loop:true,
+				autoplay:true,
+				autoplayTimeout:8000,
+				nav:false,
+				dots:false,
+				smartSpeed:1200,
+				margin:30,
+				responsive:
+				{
+					0:
+					{
+						items:1
+					},
+					768:
+					{
+						items:2
+					},
+					992:
+					{
+						items:3
+					}
+				}
+			});
+
+			if($('.courses_slider_prev').length)
+			{
+				var prev = $('.courses_slider_prev');
+				prev.on('click', function()
+				{
+					coursesSlider.trigger('prev.owl.carousel');
+				});
+			}
+
+			if($('.courses_slider_next').length)
+			{
+				var next = $('.courses_slider_next');
+				next.on('click', function()
+				{
+					coursesSlider.trigger('next.owl.carousel');
+				});
+			}
+		}
+	}
+
+	/* 
+
+	7. Initialize Milestones
+
+	*/
+
+	function initMilestones()
+	{
+		if($('.milestone_counter').length)
+		{
+			var milestoneItems = $('.milestone_counter');
+
+	    	milestoneItems.each(function(i)
+	    	{
+	    		var ele = $(this);
+	    		var endValue = ele.data('end-value');
+	    		var eleValue = ele.text();
+
+	    		/* Use data-sign-before and data-sign-after to add signs
+	    		infront or behind the counter number (+, k, etc) */
+	    		var signBefore = "";
+	    		var signAfter = "";
+
+	    		if(ele.attr('data-sign-before'))
+	    		{
+	    			signBefore = ele.attr('data-sign-before');
+	    		}
+
+	    		if(ele.attr('data-sign-after'))
+	    		{
+	    			signAfter = ele.attr('data-sign-after');
+	    		}
+
+	    		var milestoneScene = new ScrollMagic.Scene({
+		    		triggerElement: this,
+		    		triggerHook: 'onEnter',
+		    		reverse:false
+		    	})
+		    	.on('start', function()
+		    	{
+		    		// var counter = {value:eleValue};
+		    		// var counterTween = TweenMax.to(counter, 4,
+		    		// {
+		    		// 	value: endValue,
+		    		// 	roundProps:"value", 
+					// 	ease: Circ.easeOut, 
+					// 	onUpdate:function()
+					// 	{
+					// 		//document.getElementsByClassName('milestone_counter')[i].innerHTML = signBefore + counter.value + signAfter;
+					// 	}
+		    		// });
+		    	})
+			    .addTo(ctrl);
+	    	});
+		}
+	}
+
+	/* 
+
+	8. Init Accordions
+
+	*/
+
+	function initAccordions()
+	{
+		if($('.accordion').length)
+		{
+			var accs = $('.accordion');
+
+			accs.each(function()
+			{
+				var acc = $(this);
+
+				if(acc.hasClass('active'))
+				{
+					var panel = $(acc.next());
+					var panelH = panel.prop('scrollHeight') + "px";
+					
+					if(panel.css('max-height') == "0px")
+					{
+						panel.css('max-height', panel.prop('scrollHeight') + "px");
+					}
+					else
+					{
+						panel.css('max-height', "0px");
+					} 
+				}
+
+				acc.on('click', function()
+				{
+					if(acc.hasClass('active'))
+					{
+						acc.removeClass('active');
+						var panel = $(acc.next());
+						var panelH = panel.prop('scrollHeight') + "px";
+						
+						if(panel.css('max-height') == "0px")
+						{
+							panel.css('max-height', panel.prop('scrollHeight') + "px");
+						}
+						else
+						{
+							panel.css('max-height', "0px");
+						} 
+					}
+					else
+					{
+						acc.addClass('active');
+						var panel = $(acc.next());
+						var panelH = panel.prop('scrollHeight') + "px";
+						
+						if(panel.css('max-height') == "0px")
+						{
+							panel.css('max-height', panel.prop('scrollHeight') + "px");
+						}
+						else
+						{
+							panel.css('max-height', "0px");
+						} 
+					}
+				});
+			});
+		}
+	}
 
 });

@@ -22,22 +22,43 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css",
+              "src/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css",
+              "src/assets/plugins/OwlCarousel2-2.2.1/animate.css",
+              "src/assets/styles/main_styles.css",
+              "src/assets/styles/responsive.css",
+              "src/styles/overwrite.css",
               "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "node_modules/datatables.net-select-dt/css/select.dataTables.css",
               "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/select2/dist/css/select2.min.css",
               "node_modules/ag-grid/dist/styles/ag-grid.css",
-              "node_modules/ag-grid/dist/styles/ag-theme-balham.css",
+              "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/bootstrap-social/bootstrap-social.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles/grid.css",
-              "src/styles/styles.css"
+              "src/styles/modal.css",
+              "node_modules/mdbootstrap/css/mdb.css",
+              "node_modules/ag-grid/dist/styles/ag-theme-balham.css",
+              "src/assets/plugins/video-js/video-js.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/jquery.easing.1.3.js",
-              "node_modules/popper.js/dist/umd/popper.js",
+              "src/assets/js/jquery-3.2.1.min.js",
+              "src/assets/styles/bootstrap4/popper.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/select2/dist/js/select2.full.min.js"
+              "src/assets/plugins/greensock/TweenMax.min.js",
+              "src/assets/plugins/greensock/TimelineMax.min.js",
+              "src/assets/plugins/scrollmagic/ScrollMagic.min.js",
+              "src/assets/plugins/greensock/animation.gsap.min.js",
+              "src/assets/plugins/greensock/ScrollToPlugin.min.js",
+              "src/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js",
+              "src/assets/plugins/easing/easing.js",
+              "src/assets/plugins/parallax-js-master/parallax.min.js",
+              "src/assets/js/custom.js",
+              "node_modules/select2/dist/js/select2.full.min.js",
+              "src/assets/plugins/video-js/video.min.js",
+              "src/assets/plugins/video-js/Youtube.min.js"
             ]
           },
           "configurations": {

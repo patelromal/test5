@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
-import { Router } from "@angular/router";
 //import { LocationStrategy } from "@angular/common";
 //import { EnvironmentService } from "./common/services/environment.service";
 //import { ModalService } from "./common/services/modal.service";

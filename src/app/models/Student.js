@@ -1,8 +1,10 @@
+// Defining the Student model in Mongoose
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// Define collection and schema for Items
-var student = new Schema({
+// Define collection and schema for Student
+var Student = new Schema({
   fname: {
     type: String
   },
@@ -20,12 +22,3 @@ var student = new Schema({
 });
 
 module.exports = mongoose.model('student', Student);
-
-//
-//export class student {
-//    
-//   public fname: string;
-//   public lname: string; 
-//      
-//   constructor () {} 
-//}

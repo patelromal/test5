@@ -5,87 +5,108 @@
 
 <body>
 
+  <div class="milestones">
+		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" style="background-image: url(../../assets/images/contact.jpg);" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+                        <div class="col">
+
+                          <div class="home_content text-center">
+							<div class="home_title">Contact us</div>
+                          </div>
+            
+                        </div>
+
+			</div>
+		</div>
+	</div>
+
   <div id="wrapper">
 
     <!-- start header -->
    	<app-header></app-header>
     <!-- end header -->
 
-    <section id="inner-headline">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <div class="inner-heading">
-              <ul class="breadcrumb">
-                <li><a href="">Home</a> <i class="icon-angle-right"></i></li>
-                <li class="active">Contact</li>
-              </ul>
-              <h2>Get in touch</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <app-menu></app-menu>
 
     <section id="content">
-<!--       <div id="google-map" data-latitude="40.713417" data-longitude="-74.0092125"></div> -->
-
       <div class="container">
         <div class="row">
-          <div class="span8">
-            <h4>Get in touch with us by filling contact form below</h4>
+          <br>
+        </div>
+        <div class="row">
+          <div class="col">
 
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-                <div class="span4 form-group field">
-                  <input type="text" name="name" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
+            <form id="contact-form" method="post" action="#" role="form">
 
-                <div class="span4 form-group">
-                  <input type="email" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="span8 form-group">
-                  <input type="text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="span8 form-group">
-                  <textarea name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                  <div class="text-center">
-                    <button class="btn btn-theme btn-medium margintop10" type="submit">Send a message</button>
+                  <div class="messages"></div>
+
+                  <div class="controls">
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Firstname *</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Lastname *</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_need">Please specify your need *</label>
+                                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                      <option value=""></option>
+                                      <option value="Request quotation">Request Fees Information</option>
+                                      <option value="Request order status">Request Registration status</option>
+                                      <option value="Other">Other</option>
+                                  </select>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="form_message">Message *</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btn btn-success btn-send" value="Send message">
+                          </div>
+                      </div>
                   </div>
-                </div>
-              </div>
-            </form>
+              </form>
+
           </div>
-          <div class="span4">
-            <div class="clearfix"></div>
-            <aside class="right-sidebar">
+          <div class="col">
 
-              <div class="widget">
-                <h5 class="widgetheading">Contact information<span></span></h5>
-
-                <ul class="contact-info">
-                  <li><label>Address :</label> Mumbai<br /> India</li>
-                  <li><label>Phone :</label>+ 91 9999999999</li>
-                  <li><label>Fax : </label>+ 91 9999999999</li>
-                  <li><label>Email : </label> info@smugov.org</li>
-                </ul>
-
-              </div>
-            </aside>
           </div>
         </div>
       </div>
     </section>
 
     <app-footer></app-footer>
+    
   </div>
-  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
 
 </body>
 

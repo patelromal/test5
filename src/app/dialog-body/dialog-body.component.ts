@@ -1,6 +1,6 @@
-import { Component, OnInit,Inject,ViewChild,ContentChild,Output, EventEmitter } from '@angular/core';
-import { MatDialogRef,MAT_DIALOG_DATA } from "@angular/material";
-import { FormArray, FormControl, FormGroup, Validators,FormBuilder } from '@angular/forms';
+import { Component, OnInit, Inject, ViewChild, ContentChild, Output, EventEmitter } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { FormArray, FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { StudentService } from '../student/services/student.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -13,22 +13,24 @@ export class DialogBodyComponent implements OnInit {
 
   form: FormGroup;
   fb: FormBuilder;
-    	
+  public description: any;
+
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
-          private studentservice: StudentService,private router: Router,
+          private studentservice: StudentService,
+          private router: Router,
           private route: ActivatedRoute,
-		  public dialogRef: MatDialogRef<DialogBodyComponent>){
+          public dialogRef: MatDialogRef<DialogBodyComponent>) {
   }
 
   ngOnInit() {
   }
-  
+
   updateStudent() {
-      this.studentservice.updateStudent(this.data.student).subscribe(res => {
-          this.dialogRef.close();
-    });
+    //   this.studentservice.updateStudent(this.data.student).subscribe(res => {
+    //       this.dialogRef.close();
+    // });
   }
-  
+
   close() {
     this.dialogRef.close();
   }

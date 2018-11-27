@@ -1,25 +1,22 @@
-const express = require('express'),
-      path = require('path'),
-      bodyParser = require('body-parser'),
-      cors = require('cors'),
-      mongoose = require('mongoose'),
-      config = require('./config/DB'),
-      studentRoutes = require('./expressRoutes/studentRoutes');
-
-//const http = require('http');
-//const Student = require('./models/Student');
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import path from 'path';
+import mongoose from 'mongoose';
+import config from './config/DB';
+import api from './src/resources';
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/students', studentRoutes);
+app.use('/api', api());
 
 //Point static path to dist
-//app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Mongo db connection ======================================
+//mongo db connection ======================================
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB).then(
     () => {console.log('Database is connected') },
@@ -27,11 +24,156 @@ mongoose.connect(config.DB).then(
 );
 
 //listen (start app with node server.js) ======================================
-const port = process.env.PORT || 4000;
 app.listen(port);
-console.log("App listening on port 4000");
+console.log("Server listening on port " + port);
+
+// working fine above code on firebase
+
+// import studentRoutes from './expressRoutes/routes';
+// const express = require('express');
+// const cors = require('cors');
+// const bodyParser = require('body-parser');
+// const path = require('path');
+// const mongoose = require('mongoose');
+// const config = require('./config/DB');
+// const api = require('./src/resources');
+// const studentRoutes = require('./expressRoutes/routes');
+
+// import http from 'http';
+// import express from 'express';
+// import cors from 'cors';
+// import bodyParser from 'body-parser';
+// import api from './src/resources';
+// import logger from 'morgan';
+// import mongoose from 'mongoose';
+// import path from 'path';
+// import studentRoutes from './expressRoutes/routes';
+
+// // import db from './db';
+// // var debug = require('debug')('mean-app:server');
+
+// const app = express();
+// const port = process.env.PORT || 4000;
+
+// app.server = http.createServer(app);
+
+// app.use(logger('dev'));
+// app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: false }))
+// app.use(bodyParser.json())
+// app.use('/', express.static('public'));
+
+// //Mongo db connection ======================================
+// // db( _ => {
+// app.use('/api', api());
+// app.use('/students', studentRoutes);
+// 	// app.server.listen(port);
+// // });
+
+// mongoose.Promise = global.Promise;
+// mongoose.connect('mongodb://user1:welcome01@ds127342.mlab.com:27342/sspou');
+
+// app.listen(port, function(){
+// console.log('Listening on port ' + port);
+// });
+
+//listen (start app with node server.js) =====================================
+
+// app.set('port', port);
+// var server = createServer(app);
+
+// server.listen(port);
+// server.on('error', onError);
+// server.on('listening', onListening);
+
+// function onError(error) {
+//   if (error.syscall !== 'listen') {
+//     throw error;
+//   }
+
+//   var bind = typeof port === 'string'
+//     ? 'Pipe ' + port
+//     : 'Port ' + port;
+
+//   // handle specific listen errors with friendly messages
+//   switch (error.code) {
+//     case 'EACCES':
+//       console.error(bind + ' requires elevated privileges');
+//       process.exit(1);
+//       break;
+//     case 'EADDRINUSE':
+//       console.error(bind + ' is already in use');
+//       process.exit(1);
+//       break;
+//     default:
+//       throw error;
+//   }
+// }
+
+// /**
+//  * Event listener for HTTP server "listening" event.
+//  */
+
+// function onListening() {
+//   var addr = server.address();
+//   var bind = typeof addr === 'string'
+//     ? 'pipe ' + addr
+//     : 'port ' + addr.port;
+//   debug('Listening on ' + bind);
+// }
+
+
+// router.get('/', function(req, res, next) {
+//   res.send('Express REST API');
+// });
+//Point static path to dist
+// app.use(express.static(path.join(__dirname, 'public')));
+// app.use('/api', routes);
+// require('./expressRoutes/routes');
+
+//generic below -----------
+
+// import http from 'http';
+// import express from 'express';
+// import cors from 'cors';
+// import bodyParser from 'body-parser';
+// import db from './db';
+// import api from './resources';
+// import path from 'path';
+
+
+// var app = express();
+// const port = process.env.PORT || 4000;
+
+// app.server = http.createServer(app);
+
+// app.use(cors({
+// 	exposedHeaders: ['Link']
+// }));
+
+// app.use(bodyParser.json({
+// 	limit : '100kb'
+// }));
+
+// db( _ => {
+// 	app.use('/', api());
+//     app.server.listen(port);
+// });
+
+// app.use(express.static(path.join(__dirname, 'public')));
+
+// var logger = require('morgan');
+// var debug = require('debug')('mean-app:server');
+// app.use(logger('dev'));
+
+// export default app;
+
+//generic above -----------
+
 
 //original ->
+
+
 //const express = require('express'),
 //path = require('path'),
 //bodyParser = require('body-parser'),

@@ -3,25 +3,37 @@
   "public": "public",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build & concurrently --kill-others \"npm run serve-api\" \"npm run serve\"",
-    "serve": "ng serve --proxy-config proxy.conf.json",
-    "build": "ng build --output-path=public",
-    "serve-api": "node server.js",
+    "start": "ng serve",
+    "build": "ng build && node server.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "main": "server.js",
+    "postbuild": "server.js"
   },
   "ignore": [
     "firebase.json",
     "**/.*",
     "**/node_modules/**"
   ],
-  "rewrites": [{
-    "source": "/public/**",
-    "destination": "/public.html"
-  },
-  {
-    "source": "**",
-    "destination": "/index.html"
-  }]
+  "rewrites": [
+    {
+      "source": "/public/**",
+      "destination": "/public.html"
+    },
+    {
+      "source": "**",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/api",
+      "function": "app"
+    }
+  ],
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ],
+    "source": "functions"
+  }
 }

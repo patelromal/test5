@@ -1,73 +1,49 @@
 import { Injectable } from '@angular/core';
-import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { DataService } from '../../common/services/data.service';
 import 'rxjs/add/operator/map';
-import { student } from '../../models/student';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class StudentService {
 
   result: any;
-  constructor(private http: HttpClient) {}
-  student: student;
+  uri: any;
+  constructor(private http: HttpClient, 
+              private dataService: DataService) {
+    this.uri = 'https://vast-springs-98239.herokuapp.com/api/students/';
+    // dataService = new DataService(); 
+  }
 
-  addStudent(studentData) {
-    const uri = 'http://localhost:4000/students/add';
-    const obj = {
-      fname: studentData.fname,
-      lname: studentData.lname
-    };
-    return this
-      .http
-      .post(uri, obj)
-      .map(res => {
+  create(formData) {
+    return this.dataService.create(this.uri,formData);
+    // return this.http.post(this.uri, formData).map(res => {
+    //   return res;
+    // });
+  }
+
+  get() {
+    console.log('call api students service ------- ' + this.uri);
+    return this.dataService.get(this.uri);
+    // return this.http.get(this.uri+'students').map(res => {
+    //   return res;
+    // });
+  }
+
+  edit(id) {
+    return this.dataService.get(this.uri+ id).map(res => {
+      return res;
+    });
+  }
+
+  update(formData) {
+    return this.dataService.update(this.uri,formData).map(res => {
         return res;
-      });
+    });
   }
 
-  getStudents() {
-    const uri = 'http://localhost:4000/students';
-    return this
-            .http
-            .get(uri)
-            .map(res => {
-              return res;
-            });
-  }
-
-  editStudent(id) {
-    const uri = 'http://localhost:4000/edit/' + id;
-    return this
-            .http
-            .get(uri)
-            .map(res => {
-              return res;
-            });
-  }
-
-  updateStudent(studentData) {
-    const uri = 'http://localhost:4000/students/update/' + studentData.id;
-    const obj = {
-        fname: studentData.fname,
-        lname: studentData.lname
-    };
-    return this
-          .http
-          .post(uri, obj)
-          .map(res => {
-            return res;
-          });
-  }
-
-  deleteStudent(id) {
-    const uri = 'http://localhost:4000/students/delete/' + id;
-    return this
-        .http
-        .get(uri)
-        .map(res => {
-          return res;
-        });
+  delete(id) {
+    return this.dataService.delete(this.uri+id).map(res => {
+        return res;
+    });
   }
 }
