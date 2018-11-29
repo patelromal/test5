@@ -7542,7 +7542,7 @@ var StudentService = /** @class */ (function () {
     function StudentService(http, dataService) {
         this.http = http;
         this.dataService = dataService;
-        this.uri = 'https://stark-journey-22743.herokuapp.com/api/students';
+        this.uri = 'https://stark-journey-22743.herokuapp.com/api/students/';
         // dataService = new DataService(); 
     }
     StudentService.prototype.create = function (formData) {
