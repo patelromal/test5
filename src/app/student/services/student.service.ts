@@ -10,7 +10,7 @@ export class StudentService {
   uri: any;
   constructor(private http: HttpClient, 
               private dataService: DataService) {
-    this.uri = 'https://vast-springs-98239.herokuapp.com/api/students/';
+    this.uri = 'https://vast-springs-98239.herokuapp.com/students';
     // dataService = new DataService(); 
   }
 

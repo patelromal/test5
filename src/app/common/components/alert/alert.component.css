@@ -1,0 +1,15 @@
+#alert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 45%;
+    transform: translate(-50%, 0);
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-weight: bold;
+}
+
+#alert button {
+    padding: 7px;
+}

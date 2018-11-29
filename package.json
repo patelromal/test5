@@ -3,13 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node index.js",
-    "serve": "ng serve --proxy-config proxy.conf.json",
-    "build": "ng build --output-path=public",
+    "start": "node index.js",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "main": "index.js"
+    "postinstall": "ng build --aot -prod"
   },
   "babel": {
     "presets": [
