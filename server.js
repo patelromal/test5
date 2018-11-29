@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import mongoose from 'mongoose';
 import config from './config/DB';
-import api from './src/resources';
+import api from './src/api';
 
 const app = express();
 const port = process.env.PORT || 4000;

@@ -1,6 +1,6 @@
 import BaseController from './base';
-import { Student } from '../../models/Student';
-import { Course } from '../../models/Course';
+import { Student } from '../models/Student';
+import { Course } from '../models/Course';
 
 export class StudentsController extends BaseController{
   constructor(){

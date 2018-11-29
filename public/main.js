@@ -6957,7 +6957,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var CourseService = /** @class */ (function () {
     function CourseService(dataService) {
         this.dataService = dataService;
-        this.uri = 'http://localhost:4000/api/courses/';
+        this.uri = 'https://stark-journey-22743.herokuapp.com/api/courses/';
     }
     CourseService.prototype.create = function (formData) {
         return this.dataService.create(this.uri, formData);
@@ -7542,7 +7542,7 @@ var StudentService = /** @class */ (function () {
     function StudentService(http, dataService) {
         this.http = http;
         this.dataService = dataService;
-        this.uri = 'https://vast-springs-98239.herokuapp.com/students';
+        this.uri = 'https://stark-journey-22743.herokuapp.com/api/students';
         // dataService = new DataService(); 
     }
     StudentService.prototype.create = function (formData) {

@@ -10,7 +10,7 @@ export class CourseService {
   result: any;
   uri: any;
   constructor(private dataService: DataService) {
-      this.uri = 'http://localhost:4000/api/courses/';
+      this.uri = 'https://stark-journey-22743.herokuapp.com/api/courses/';
   }
 
   create(formData) {
