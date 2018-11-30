@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { ActivatedRoute, Router } from '@angular/router';
-import { StudentService } from '../student/services/student.service';
-import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-admin',
@@ -15,11 +12,10 @@ export class AdminComponent implements OnInit {
   valid: any;
 
   onNavigate(feature: string) {
-    console.log('feature:::::: ' + feature);
     this.loadedFeature = feature;
   }
   
-  constructor(private route: ActivatedRoute, private router: Router, private studentService: StudentService) {
+  constructor() {
   }
   
   ngOnInit() {

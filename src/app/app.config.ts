@@ -1,3 +1,3 @@
 export const appConfig = {
-    apiUrl: "/api",
+    apiUrl: "https://stark-journey-22743.herokuapp.com/api/",
 };

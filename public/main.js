@@ -5586,8 +5586,6 @@ module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-hea
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student/services/student.service */ "./src/app/student/services/student.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5598,17 +5596,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-
 var AdminComponent = /** @class */ (function () {
-    function AdminComponent(route, router, studentService) {
-        this.route = route;
-        this.router = router;
-        this.studentService = studentService;
+    function AdminComponent() {
         this.loadedFeature = 'managecourse';
     }
     AdminComponent.prototype.onNavigate = function (feature) {
-        console.log('feature:::::: ' + feature);
         this.loadedFeature = feature;
     };
     AdminComponent.prototype.ngOnInit = function () {
@@ -5619,7 +5611,7 @@ var AdminComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./admin.component.html */ "./src/app/admin/admin.component.html"),
             styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/admin.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"]])
+        __metadata("design:paramtypes", [])
     ], AdminComponent);
     return AdminComponent;
 }());
@@ -5644,8 +5636,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
 /* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _course_course_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./course/course.component */ "./src/app/course/course.component.ts");
-/* harmony import */ var _student_student_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./student/student.component */ "./src/app/student/student.component.ts");
+/* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
+/* harmony import */ var _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/student/student.component */ "./src/app/components/student/student.component.ts");
 /* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
 /* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -5669,11 +5661,11 @@ var appRoutes = [
     { path: '', redirectTo: '/recipes', pathMatch: 'full' },
     { path: 'aboutus', component: _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_2__["AboutUsComponent"] },
     { path: 'contactus', component: _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__["ContactUsComponent"] },
-    { path: 'course', component: _course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
+    { path: 'course', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
     { path: '', redirectTo: '/admin', pathMatch: 'full' },
     { path: 'admin', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"], children: [
-            { path: 'managecourse', component: _course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
-            { path: 'managestudent', component: _student_student_component__WEBPACK_IMPORTED_MODULE_7__["StudentComponent"] },
+            { path: 'managecourse', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
+            { path: 'managestudent', component: _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__["StudentComponent"] },
         ] },
     { path: 'signup', component: _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__["SignupComponent"] },
     { path: 'signin', component: _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_9__["SigninComponent"] },
@@ -5760,6 +5752,23 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/app.config.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.config.ts ***!
+  \*******************************/
+/*! exports provided: appConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appConfig", function() { return appConfig; });
+var appConfig = {
+    apiUrl: "https://stark-journey-22743.herokuapp.com/api/",
+};
+
+
+/***/ }),
+
 /***/ "./src/app/app.module.ts":
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
@@ -5773,39 +5782,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _head_head_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./head/head.component */ "./src/app/head/head.component.ts");
-/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./admin-header/admin-header.component */ "./src/app/admin-header/admin-header.component.ts");
-/* harmony import */ var _course_course_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./course/course.component */ "./src/app/course/course.component.ts");
-/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
-/* harmony import */ var _student_student_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./student/student.component */ "./src/app/student/student.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./student/services/student.service */ "./src/app/student/services/student.service.ts");
-/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
-/* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
-/* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./auth/auth.service */ "./src/app/auth/auth.service.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
-/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./dialog-body/dialog-body.component */ "./src/app/dialog-body/dialog-body.component.ts");
-/* harmony import */ var angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! angular2-collapsible */ "./node_modules/angular2-collapsible/index.js");
-/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
-/* harmony import */ var _common_common_module__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./common/common.module */ "./src/app/common/common.module.ts");
-/* harmony import */ var _common_services_modal_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./common/services/modal.service */ "./src/app/common/services/modal.service.ts");
-/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
-/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./homebody/homebody.component */ "./src/app/homebody/homebody.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ag-grid-angular */ "./node_modules/ag-grid-angular/main.js");
+/* harmony import */ var ag_grid_angular__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ag_grid_angular__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var angular2_collapsible__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angular2-collapsible */ "./node_modules/angular2-collapsible/index.js");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_common_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./common/common.module */ "./src/app/common/common.module.ts");
+/* harmony import */ var _common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./common/services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./homebody/homebody.component */ "./src/app/homebody/homebody.component.ts");
+/* harmony import */ var _components_student_student_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/student/student.component */ "./src/app/components/student/student.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _head_head_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./head/head.component */ "./src/app/head/head.component.ts");
+/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
+/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./admin-header/admin-header.component */ "./src/app/admin-header/admin-header.component.ts");
+/* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
+/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
+/* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
+/* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./auth/auth.service */ "./src/app/auth/auth.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5844,69 +5850,60 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
-
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_4__["AboutUsComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
-                _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_6__["ContactUsComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_7__["HeaderComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_8__["FooterComponent"],
-                _head_head_component__WEBPACK_IMPORTED_MODULE_9__["HeadComponent"],
-                _menu_menu_component__WEBPACK_IMPORTED_MODULE_10__["MenuComponent"],
-                _admin_admin_component__WEBPACK_IMPORTED_MODULE_11__["AdminComponent"],
-                _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_12__["AdminHeaderComponent"],
-                _course_course_component__WEBPACK_IMPORTED_MODULE_13__["CourseComponent"],
-                _result_result_component__WEBPACK_IMPORTED_MODULE_14__["ResultComponent"],
-                _student_student_component__WEBPACK_IMPORTED_MODULE_15__["StudentComponent"],
-                _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_18__["SignupComponent"],
-                _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_19__["SigninComponent"],
-                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"],
-                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"],
-                _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_34__["HomebodyComponent"]
-            ],
-            schemas: [
-                _angular_core__WEBPACK_IMPORTED_MODULE_1__["CUSTOM_ELEMENTS_SCHEMA"],
-                _angular_core__WEBPACK_IMPORTED_MODULE_1__["NO_ERRORS_SCHEMA"]
+                _app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"],
+                _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__["AboutUsComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_18__["HomeComponent"],
+                _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__["ContactUsComponent"],
+                _header_header_component__WEBPACK_IMPORTED_MODULE_20__["HeaderComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_21__["FooterComponent"],
+                _head_head_component__WEBPACK_IMPORTED_MODULE_22__["HeadComponent"],
+                _menu_menu_component__WEBPACK_IMPORTED_MODULE_23__["MenuComponent"],
+                _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"],
+                _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__["AdminHeaderComponent"],
+                _components_course_course_component__WEBPACK_IMPORTED_MODULE_26__["CourseComponent"],
+                _components_student_student_component__WEBPACK_IMPORTED_MODULE_15__["StudentComponent"],
+                _result_result_component__WEBPACK_IMPORTED_MODULE_27__["ResultComponent"],
+                _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_29__["SignupComponent"],
+                _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_30__["SigninComponent"],
+                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__["PageActionComponent"],
+                _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__["HomebodyComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_16__["AppRoutingModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_28__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
-                _angular_http__WEBPACK_IMPORTED_MODULE_23__["HttpModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_24__["HttpClientModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatDialogModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatTableModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatPaginatorModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatSortModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatSnackBarModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatProgressSpinnerModule"],
-                ag_grid_angular__WEBPACK_IMPORTED_MODULE_22__["AgGridModule"].withComponents([]),
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_21__["BrowserAnimationsModule"],
-                angular2_collapsible__WEBPACK_IMPORTED_MODULE_27__["CollapsibleModule"],
-                _common_common_module__WEBPACK_IMPORTED_MODULE_29__["SmuCommonModule"].forRoot(),
-                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"].forRoot(),
-                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"].forRoot(),
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_33__["NgbModule"].forRoot()
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialogModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatInputModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatTableModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatPaginatorModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatSortModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatSnackBarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatProgressSpinnerModule"],
+                ag_grid_angular__WEBPACK_IMPORTED_MODULE_4__["AgGridModule"].withComponents([]),
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
+                angular2_collapsible__WEBPACK_IMPORTED_MODULE_7__["CollapsibleModule"],
+                _common_common_module__WEBPACK_IMPORTED_MODULE_9__["SmuCommonModule"].forRoot(),
+                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__["NgxSmartModalModule"].forRoot(),
+                ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["ModalModule"].forRoot(),
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbModule"].forRoot()
             ],
             exports: [
-                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_31__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["ModalModule"]
+                ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["ModalModule"]
             ],
-            providers: [_student_services_student_service__WEBPACK_IMPORTED_MODULE_17__["StudentService"], _auth_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"], _common_services_modal_service__WEBPACK_IMPORTED_MODULE_30__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_32__["BsModalService"]],
+            providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_31__["AuthService"], _common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["BsModalService"]],
             entryComponents: [
-                _dialog_body_dialog_body_component__WEBPACK_IMPORTED_MODULE_26__["DialogBodyComponent"], _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_28__["PageActionComponent"]
+                _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__["PageActionComponent"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -6112,22 +6109,30 @@ var SignupComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmuCommonModule", function() { return SmuCommonModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
-/* harmony import */ var _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
-/* harmony import */ var _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/confirmation-dialog/confirmation-dialog.component */ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts");
-/* harmony import */ var _services_alert_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./services/alert.service */ "./src/app/common/services/alert.service.ts");
-/* harmony import */ var _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/alert/alert.component */ "./src/app/common/components/alert/alert.component.ts");
-/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/modal.service */ "./src/app/common/services/modal.service.ts");
-/* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
-/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/data.service */ "./src/app/common/services/data.service.ts");
-/* harmony import */ var _course_service_course_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../course/service/course.service */ "./src/app/course/service/course.service.ts");
+/* harmony import */ var _components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
+/* harmony import */ var _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/confirmation-dialog/confirmation-dialog.component */ "./src/app/common/components/confirmation-dialog/confirmation-dialog.component.ts");
+/* harmony import */ var _services_alert_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/alert/alert.component */ "./src/app/common/components/alert/alert.component.ts");
+/* harmony import */ var _services_modal_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/modal.service */ "./src/app/common/services/modal.service.ts");
+/* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../services/data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var _services_course_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../services/course.service */ "./src/app/services/course.service.ts");
+/* harmony import */ var _services_httpjwt__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/httpjwt */ "./src/app/common/services/httpjwt.ts");
+/* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/loader.service */ "./src/app/common/services/loader.service.ts");
+/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../services/student.service */ "./src/app/services/student.service.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/register/register.component */ "./src/app/components/register/register.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -6146,17 +6151,34 @@ var SmuCommonModule = /** @class */ (function () {
     SmuCommonModule.forRoot = function () {
         return {
             ngModule: SmuCommonModule_1,
-            providers: [_services_alert_service__WEBPACK_IMPORTED_MODULE_5__["AlertService"], _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogService"], _services_modal_service__WEBPACK_IMPORTED_MODULE_7__["ModalService"], _services_data_service__WEBPACK_IMPORTED_MODULE_9__["DataService"], _course_service_course_service__WEBPACK_IMPORTED_MODULE_10__["CourseService"]],
+            providers: [
+                _services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"],
+                _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_2__["ConfirmationDialogService"],
+                _services_modal_service__WEBPACK_IMPORTED_MODULE_6__["ModalService"],
+                _services_data_service__WEBPACK_IMPORTED_MODULE_8__["DataService"],
+                _services_course_service__WEBPACK_IMPORTED_MODULE_9__["CourseService"],
+                _services_httpjwt__WEBPACK_IMPORTED_MODULE_10__["HttpJWT"],
+                _services_loader_service__WEBPACK_IMPORTED_MODULE_11__["LoaderService"],
+                _services_student_service__WEBPACK_IMPORTED_MODULE_12__["StudentService"]
+            ],
         };
     };
     var SmuCommonModule_1;
     SmuCommonModule = SmuCommonModule_1 = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            imports: [],
+            schemas: [
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["CUSTOM_ELEMENTS_SCHEMA"],
+                _angular_core__WEBPACK_IMPORTED_MODULE_0__["NO_ERRORS_SCHEMA"]
             ],
-            entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_2__["PageActionComponent"], _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__["ModalComponent"]],
-            declarations: [_components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_4__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_6__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__["ModalComponent"]],
+            entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_1__["PageActionComponent"], _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"]],
+            declarations: [
+                _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogComponent"],
+                _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"],
+                _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"],
+                _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
+                _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"]
+            ],
             exports: []
         })
     ], SmuCommonModule);
@@ -6603,19 +6625,24 @@ var ConfirmationDialogService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/common/services/data.service.ts":
-/*!*************************************************!*\
-  !*** ./src/app/common/services/data.service.ts ***!
-  \*************************************************/
-/*! exports provided: DataService */
+/***/ "./src/app/common/services/httpjwt.ts":
+/*!********************************************!*\
+  !*** ./src/app/common/services/httpjwt.ts ***!
+  \********************************************/
+/*! exports provided: HttpJWT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpJWT", function() { return HttpJWT; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app.config */ "./src/app/app.config.ts");
+/* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/loader.service */ "./src/app/common/services/loader.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_add_observable_throw__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/observable/throw */ "./node_modules/rxjs-compat/_esm5/add/observable/throw.js");
+/* harmony import */ var rxjs_add_operator_catch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/catch */ "./node_modules/rxjs-compat/_esm5/add/operator/catch.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6628,43 +6655,129 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var DataService = /** @class */ (function () {
-    // = '/api/students/';
-    // private http: HttpClient;
-    // private uri: any;
-    function DataService(http) {
+
+
+
+
+
+var HttpJWT = /** @class */ (function () {
+    // constructor(backend: ConnectionBackend, defaultOptions: RequestOptions, private loaderService: LoaderService) {
+    //     super(backend, defaultOptions);
+    // }
+    function HttpJWT(http, loaderService) {
         this.http = http;
+        this.loaderService = loaderService;
     }
-    DataService.prototype.create = function (uri, formData) {
-        return this.http.post(uri, formData).map(function (res) {
-            return res;
-        });
+    HttpJWT.prototype.get = function (url) {
+        var _this = this;
+        this.onStart();
+        return this.http.get(_app_config__WEBPACK_IMPORTED_MODULE_1__["appConfig"].apiUrl + url)
+            .catch(function (err) { return _this.handleError(err); }).finally(function () { return _this.onEnd(); });
     };
-    DataService.prototype.get = function (uri) {
-        return this.http.get(uri).map(function (res) {
-            return res;
-        });
+    HttpJWT.prototype.post = function (url, body) {
+        var _this = this;
+        this.onStart();
+        return this.http.post(_app_config__WEBPACK_IMPORTED_MODULE_1__["appConfig"].apiUrl + url, body)
+            .catch(function (err) { return _this.handleError(err); }).finally(function () { return _this.onEnd(); });
     };
-    DataService.prototype.edit = function (uri) {
-        return this.http.get(uri).map(function (res) {
-            return res;
-        });
+    // public put(url: string, body: string, options?: RequestOptionsArgs): Observable<Response> {
+    //     this.onStart();
+    //     return super.put(appConfig.apiUrl + url, body, options)
+    //         .catch((err) => this.handleError(err)).finally(() => this.onEnd());
+    // }
+    // public delete(url: string, options?: RequestOptionsArgs): Observable<Response> {
+    //     this.onStart();
+    //     return super.delete(appConfig.apiUrl + url, options)
+    //         .catch((err) => this.handleError(err)).finally(() => this.onEnd());
+    // }
+    // // private helper methods
+    HttpJWT.prototype.onStart = function () {
+        this.loaderService.start();
     };
-    DataService.prototype.update = function (uri, formData) {
-        return this.http.put(uri + formData.id, formData).map(function (res) {
-            return res;
-        });
+    HttpJWT.prototype.onEnd = function () {
+        this.loaderService.end();
     };
-    DataService.prototype.delete = function (uri) {
-        return this.http.delete(uri).map(function (res) {
-            return res;
-        });
+    HttpJWT.prototype.handleError = function (error) {
+        if (error.status === 401) {
+            // 401 unauthorized response so log user out of client
+            window.location.href = "/login";
+        }
+        return rxjs_Observable__WEBPACK_IMPORTED_MODULE_7__["Observable"].throw(error._body);
     };
-    DataService = __decorate([
+    HttpJWT = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
-    ], DataService);
-    return DataService;
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"], _services_loader_service__WEBPACK_IMPORTED_MODULE_2__["LoaderService"]])
+    ], HttpJWT);
+    return HttpJWT;
+}());
+
+// export function httpJWTFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions, loaderService: LoaderService): Http {
+//     return new HttpJWT(xhrBackend, requestOptions, loaderService);
+// }
+// export let httpJWTProvider = {
+//     provide: HttpJWT,
+//     useFactory: httpJWTFactory,
+//     deps: [XHRBackend, RequestOptions, LoaderService],
+// };
+
+
+/***/ }),
+
+/***/ "./src/app/common/services/loader.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/common/services/loader.service.ts ***!
+  \***************************************************/
+/*! exports provided: LoaderService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoaderService", function() { return LoaderService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LoaderService = /** @class */ (function () {
+    function LoaderService() {
+        this.loaderState$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.loaderState = this.loaderState$.asObservable();
+        // Track the number of outstanding AJAX requests.  Cannot use a boolean here
+        // because during overlapping requests, the first request to return will update
+        // the state to false.
+        this.inProgress = 0;
+        this.subscriptions = [];
+    }
+    LoaderService.prototype.start = function () {
+        var _this = this;
+        // The loading animation should only appear if the request has been outstanding
+        // for 200ms or more to avoid flickering.
+        this.subscriptions.push(rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"].timer(200).subscribe(function () {
+            _this.inProgress += 1;
+            _this.loaderState$.next(_this.inProgress);
+        }));
+    };
+    LoaderService.prototype.end = function () {
+        if (this.inProgress > 0) {
+            this.inProgress -= 1;
+        }
+        this.loaderState$.next(this.inProgress);
+        var subscription = this.subscriptions.pop();
+        subscription.unsubscribe();
+    };
+    LoaderService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], LoaderService);
+    return LoaderService;
 }());
 
 
@@ -6712,6 +6825,597 @@ var ModalService = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModalService);
     return ModalService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/course/course.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/course/course.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY291cnNlL2NvdXJzZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/course/course.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/course/course.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-template #dataModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Course Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"dataForm\" novalidate (ngSubmit)=\"editSubmit(dataForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"name\">First Name</label>\n\t        <input id=\"name\" type=\"text\" class=\"form-control\" formControlName=\"name\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"subcourse\">Last Name</label>\n\t        <input id=\"subcourse\" type=\"text\" class=\"form-control\" formControlName=\"subcourse\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"data-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"data-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!dataForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n\t<button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Course</button>\n\t<div class=\"row\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<ag-grid-angular\n\t\t\t\t\t\t\t#agGrid\n\t\t\t\t\t\t\tid=\"myGrid\"\n\t\t\t\t\t\t\tstyle=\"width: 480px; height: 400px;\"\n\t\t\t\t\t\t\tclass=\"ag-theme-balham\"\n\t\t\t\t\t\t\t[enableSorting]=\"true\"\n\t\t\t\t\t\t\t[enableFilter]=\"true\"\n\t\t\t\t\t\t\t[rowData]=\"rowData\"\n\t\t\t\t\t\t\trowSelection='multiple'\n\t\t\t\t\t\t\t(gridReady)=\"onGridReady($event)\"\n\t\t\t\t\t\t\t[columnDefs]=\"columnDefs\">\n\t\t\t\t\t</ag-grid-angular>\n\t\t\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/course/course.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/course/course.component.ts ***!
+  \*******************************************************/
+/*! exports provided: CourseComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseComponent", function() { return CourseComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _services_course_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/course.service */ "./src/app/services/course.service.ts");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var CourseComponent = /** @class */ (function () {
+    function CourseComponent(fb, courseService, modalService, confirmationDialogService, alertService) {
+        this.fb = fb;
+        this.courseService = courseService;
+        this.modalService = modalService;
+        this.confirmationDialogService = confirmationDialogService;
+        this.alertService = alertService;
+        this.createForm();
+    }
+    CourseComponent.prototype.ngOnInit = function () {
+        this.getData();
+    };
+    CourseComponent.prototype.getData = function () {
+        var _this = this;
+        this.courseService.get().subscribe(function (res) {
+            _this.rowData = res;
+        });
+    };
+    CourseComponent.prototype.createForm = function () {
+        this.dataForm = this.fb.group({
+            id: [''],
+            name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+            subcourse: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+        });
+    };
+    CourseComponent.prototype.edit = function (selectedData) {
+        this.dataForm.setValue({
+            id: selectedData._id,
+            name: selectedData.name,
+            subcourse: selectedData.subcourse,
+        });
+        this.modalRef = this.modalService.open(this.dataModal);
+    };
+    CourseComponent.prototype.delete = function (selectedRow) {
+        var _this = this;
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this course information ... ? ' + selectedRow.name, 'Ok', 'Cancel', 'sm')
+            .then(function (confirmed) {
+            if (confirmed) {
+                _this.courseService.delete(selectedRow._id).subscribe(function () {
+                    _this.getData();
+                    _this.alertService.showSuccessMessage('succesfully deleted course information ' + selectedRow.name, 'top', 2000);
+                });
+            }
+        })
+            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
+    };
+    CourseComponent.prototype.onGridReady = function (params) {
+        this.columnDefs = [
+            { headerName: 'Name', field: 'name' },
+            { headerName: 'Sub Course', field: 'subcourse' },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'edit' },
+                width: 40, tooltip: function () { return 'Edit'; } },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'delete' },
+                width: 40, tooltip: function () { return 'Delete'; } },
+        ];
+        this.gridOptions = {
+            rowData: this.rowData,
+            rowHeight: 36,
+            context: { componentParent: this }
+        };
+        this.gridApi = params.api;
+        this.gridApi.gridOptions = this.gridOptions;
+    };
+    CourseComponent.prototype.editSubmit = function (dataForm) {
+        var formData = dataForm.value;
+        if (formData.id !== null) {
+            this.update(formData);
+            this.closeModal();
+            this.alertService.openSnackBar('succesfully updated course information ' + formData.name, '', 'success');
+        }
+        else {
+            this.create(formData);
+            this.alertService.showSuccessMessage('succesfully Addedd student information', 'top', 2000);
+        }
+    };
+    CourseComponent.prototype.update = function (formData) {
+        var _this = this;
+        this.courseService.update(formData).subscribe(function () {
+            _this.getData();
+        });
+    };
+    CourseComponent.prototype.create = function (formData) {
+        var _this = this;
+        this.courseService.create(formData).subscribe(function (res) {
+            _this.closeModal();
+            _this.getData();
+        }, function (error) {
+            // this.errorMessage = error;
+            // console.log('this.errorMessage : ' + error);
+            // this.alertService.showError(error);
+            // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
+        });
+    };
+    CourseComponent.prototype.openModal = function () {
+        this.dataForm.reset();
+        this.modalRef = this.modalService.open(this.dataModal);
+    };
+    CourseComponent.prototype.closeModal = function () {
+        this.modalRef.close();
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('dataModal'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])
+    ], CourseComponent.prototype, "dataModal", void 0);
+    CourseComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-course',
+            template: __webpack_require__(/*! ./course.component.html */ "./src/app/components/course/course.component.html"),
+            styles: [__webpack_require__(/*! ./course.component.css */ "./src/app/components/course/course.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _services_course_service__WEBPACK_IMPORTED_MODULE_2__["CourseService"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModal"],
+            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__["ConfirmationDialogService"],
+            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"]])
+    ], CourseComponent);
+    return CourseComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/login/login.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/components/login/login.component.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/login/login.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/components/login/login.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  login works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/login/login.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/login/login.component.ts ***!
+  \*****************************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! ./login.component.html */ "./src/app/components/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/components/login/login.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/register/register.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/register/register.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVnaXN0ZXIvcmVnaXN0ZXIuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/register/register.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/components/register/register.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  register works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/register/register.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/register/register.component.ts ***!
+  \***********************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var RegisterComponent = /** @class */ (function () {
+    function RegisterComponent() {
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+    };
+    RegisterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-register',
+            template: __webpack_require__(/*! ./register.component.html */ "./src/app/components/register/register.component.html"),
+            styles: [__webpack_require__(/*! ./register.component.css */ "./src/app/components/register/register.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], RegisterComponent);
+    return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/student/student.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/student/student.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "#sparq-edit-button {padding: 0}\n.edit-btn { width: 100%; }\nh3 { float: left; }\n.sparq-modal-body {\n    padding: 20px;\n    height: 500px;\n    min-width: 860px;\n    overflow: auto;\n    background-color: rgb(246, 253, 255);\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 5%;\n}\nth { font-size: 15px;}\n.empty-table-message { text-align: center; }\n.empty-table-message td { padding: 200px; }\n.plandetail-hotspot:hover {\n    cursor: pointer;\n    background-color: #ddd;\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 15%;\n}\n.row {\n    min-width: 820px;\n}\n.image-upload > input\n{\n    display: none;\n}\n.success {\n  background: #2196F3;\n  color: white;\n}\n.fail {\n  background: #F44336;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zdHVkZW50L3N0dWRlbnQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxvQkFBb0IsVUFBVSxDQUFDO0FBQy9CLFlBQVksWUFBWSxFQUFFO0FBRTFCLEtBQUssWUFBWSxFQUFFO0FBRW5CO0lBQ0ksY0FBYztJQUNkLGNBQWM7SUFDZCxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHFDQUFxQztDQUN4QztBQUNEO0NBQ0MscUNBQXFDO0lBQ2xDLFFBQVE7Q0FDWDtBQUNELEtBQUssZ0JBQWdCLENBQUM7QUFFdEIsdUJBQXVCLG1CQUFtQixFQUFFO0FBQzVDLDBCQUEwQixlQUFlLEVBQUU7QUFFM0M7SUFDSSxnQkFBZ0I7SUFDaEIsdUJBQXVCO0NBQzFCO0FBQ0Q7Q0FDQyxxQ0FBcUM7SUFDbEMsU0FBUztDQUNaO0FBQ0Q7SUFDSSxpQkFBaUI7Q0FDcEI7QUFFRDs7SUFFSSxjQUFjO0NBQ2pCO0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkO0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zdHVkZW50L3N0dWRlbnQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNzcGFycS1lZGl0LWJ1dHRvbiB7cGFkZGluZzogMH1cbi5lZGl0LWJ0biB7IHdpZHRoOiAxMDAlOyB9XG5cbmgzIHsgZmxvYXQ6IGxlZnQ7IH1cblxuLnNwYXJxLW1vZGFsLWJvZHkge1xuICAgIHBhZGRpbmc6IDIwcHg7XG4gICAgaGVpZ2h0OiA1MDBweDtcbiAgICBtaW4td2lkdGg6IDg2MHB4O1xuICAgIG92ZXJmbG93OiBhdXRvO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNDYsIDI1MywgMjU1KTtcbn1cbi5zcGFycS1tb2RhbCB7XG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigyNDYsIDI1MywgMjU1KTtcbiAgICB0b3A6IDUlO1xufVxudGggeyBmb250LXNpemU6IDE1cHg7fVxuXG4uZW1wdHktdGFibGUtbWVzc2FnZSB7IHRleHQtYWxpZ246IGNlbnRlcjsgfVxuLmVtcHR5LXRhYmxlLW1lc3NhZ2UgdGQgeyBwYWRkaW5nOiAyMDBweDsgfVxuXG4ucGxhbmRldGFpbC1ob3RzcG90OmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2RkZDtcbn1cbi5zcGFycS1tb2RhbCB7XG5cdGJhY2tncm91bmQtY29sb3I6IHJnYigyNDYsIDI1MywgMjU1KTtcbiAgICB0b3A6IDE1JTtcbn1cbi5yb3cge1xuICAgIG1pbi13aWR0aDogODIwcHg7XG59XG5cbi5pbWFnZS11cGxvYWQgPiBpbnB1dFxue1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5zdWNjZXNzIHtcbiAgYmFja2dyb3VuZDogIzIxOTZGMztcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmFpbCB7XG4gIGJhY2tncm91bmQ6ICNGNDQzMzY7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/student/student.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/components/student/student.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+
+/***/ }),
+
+/***/ "./src/app/components/student/student.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/student/student.component.ts ***!
+  \*********************************************************/
+/*! exports provided: StudentComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentComponent", function() { return StudentComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/student.service */ "./src/app/services/student.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../services/data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
+/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
+/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+// import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
+
+
+
+
+
+
+
+var StudentComponent = /** @class */ (function () {
+    function StudentComponent(fb, dialog, alertService, studentService, dataService, modalService, viewContainerRef, snackBar, ngxSmartModalService, confirmationDialogService) {
+        this.fb = fb;
+        this.dialog = dialog;
+        this.alertService = alertService;
+        this.studentService = studentService;
+        this.dataService = dataService;
+        this.modalService = modalService;
+        this.viewContainerRef = viewContainerRef;
+        this.snackBar = snackBar;
+        this.ngxSmartModalService = ngxSmartModalService;
+        this.confirmationDialogService = confirmationDialogService;
+        //dialogConfig = new MatDialogConfig();
+        this.editMode = true;
+        this.message = 'Snack Bar opened.';
+        this.actionButtonLabel = 'Retry';
+        this.action = true;
+        this.setAutoHide = true;
+        this.autoHide = 2000;
+        this.horizontalPosition = 'center';
+        this.verticalPosition = 'top';
+        this.addExtraClass = false;
+        this.createForm();
+        this.gridOptions = { context: { componentParent: this } };
+    }
+    StudentComponent.prototype.ngOnInit = function () {
+        this.createForm();
+        this.getStudents();
+    };
+    StudentComponent.prototype.open = function () {
+        var config = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBarConfig"]();
+        config.verticalPosition = this.verticalPosition;
+        config.horizontalPosition = this.horizontalPosition;
+        config.duration = this.setAutoHide ? this.autoHide : 0;
+        this.snackBar.open(this.message, this.action ? this.actionButtonLabel : undefined, config);
+    };
+    StudentComponent.prototype.createForm = function () {
+        this.studentForm = this.fb.group({
+            id: [''],
+            fname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+            lname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
+        });
+    };
+    StudentComponent.prototype.newStudent = function () {
+        this.studentForm.reset();
+        this.editMode = false;
+        this.ngxSmartModalService.getModal('popupOne').open();
+    };
+    StudentComponent.prototype.onGridReady = function (params) {
+        this.columnDefs = [
+            { headerName: 'First Name', field: 'fname' },
+            { headerName: 'Last Name', field: 'lname' },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'edit' },
+                width: 40, tooltip: function () { return 'Edit'; } },
+            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
+                cellRendererParams: { pageAction: 'delete' },
+                width: 40, tooltip: function () { return 'Delete'; } },
+        ];
+        this.gridOptions = {
+            rowData: this.students,
+            rowHeight: 36,
+            context: { componentParent: this }
+        };
+        this.gridApi = params.api;
+        this.gridApi.gridOptions = this.gridOptions;
+        //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
+        //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
+    };
+    StudentComponent.prototype.openConfirmationDialog = function () {
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ?', 'Ok', 'Cancel', 'lg')
+            .then(function (confirmed) { return console.log('User confirmed:', confirmed); })
+            .catch(function () { return console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'); });
+    };
+    StudentComponent.prototype.editSubmit = function (studentForm) {
+        var studentData = studentForm.value;
+        if (studentData.id !== null) {
+            this.updateStudent(studentData);
+            this.closeModal();
+            //this.alertService.showSuccessMessage('succesfully updated student information ' + studentData.fname,'top',2000);
+            this.alertService.openSnackBar('succesfully updated student information ' + studentData.fname, '', 'success');
+        }
+        else {
+            this.addStudent(studentData);
+            this.alertService.showSuccessMessage('succesfully Addedd student information', 'top', 2000);
+        }
+    };
+    StudentComponent.prototype.delete = function (selectedStudent) {
+        var _this = this;
+        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ? ' + selectedStudent.fname, 'Ok', 'Cancel', 'sm')
+            .then(function (confirmed) {
+            if (confirmed) {
+                _this.studentService.delete(selectedStudent._id).subscribe(function () {
+                    _this.getStudents();
+                    _this.alertService.showSuccessMessage('succesfully deleted student information ' + selectedStudent.fname, 'top', 2000);
+                });
+            }
+        })
+            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
+    };
+    StudentComponent.prototype.updateStudent = function (studentData) {
+        var _this = this;
+        this.studentService.update(studentData).subscribe(function () {
+            _this.getStudents();
+        });
+    };
+    StudentComponent.prototype.addStudent = function (studentData) {
+        //   this.studentservice.addStudent(studentData).subscribe(() => {
+        //       this.getStudents();
+        //       this.studentForm.reset();
+        //   });
+        var _this = this;
+        this.studentService.create(studentData).subscribe(function (res) {
+            // this.students.push(res);
+            _this.closeModal();
+            _this.getStudents();
+            // this.gridApi.setRowData(this.students);
+        }, function (error) {
+            // this.errorMessage = error;
+            // console.log('this.errorMessage : ' + error);
+            // this.alertService.showError(error);
+            // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
+        });
+    };
+    StudentComponent.prototype.edit = function (selectedStudent) {
+        this.studentForm.setValue({
+            id: selectedStudent._id,
+            fname: selectedStudent.fname,
+            lname: selectedStudent.lname,
+        });
+        //   this.modalService.show('studentModal');
+        this.modalRef = this.modalService.open(this.studentModal);
+        // this.openDialog(this.studentForm);
+    };
+    StudentComponent.prototype.sizeColumnsToFit = function () {
+        this.gridApi.sizeColumnsToFit();
+    };
+    StudentComponent.prototype.openModal = function () {
+        this.studentForm.reset();
+        this.modalRef = this.modalService.open(this.studentModal);
+    };
+    StudentComponent.prototype.closeModal = function () {
+        this.modalRef.close();
+    };
+    //   onRowClicked(event: any, template: TemplateRef<any>) {
+    //     this.editStudent(event.data);
+    //     // this.modalRef = this.modalService.show(template);
+    //   }
+    StudentComponent.prototype.editStudent = function (student) {
+        this.student = student;
+        this.studentForm.setValue({
+            id: student._id,
+            fname: student.fname,
+            lname: student.lname,
+        });
+    };
+    //   openDialog(student) {
+    //     // this.dialogConfig.disableClose = true;
+    //     // this.dialogConfig.autoFocus = true;
+    //     const dialogRef = this.dialog.open(DialogBodyComponent, {
+    //         width: '600px',
+    //         data: {student}
+    //     });
+    //     dialogRef.afterClosed().subscribe(() => {
+    //         this.getStudents();
+    //     });
+    //   }
+    StudentComponent.prototype.getStudents = function () {
+        var _this = this;
+        this.studentService.get().subscribe(function (res) {
+            _this.students = res;
+        });
+    };
+    StudentComponent.prototype.deleteStudent = function (id) {
+        this.openConfirmationDialog();
+        // this.studentservice.deleteStudent(id).subscribe(() => {
+        //     this.getStudents();
+        // });
+    };
+    StudentComponent.prototype.openBackDropCustomClass = function (content) {
+        // this.modalService.open(content, {backdropClass: 'light-blue-backdrop'});
+    };
+    StudentComponent.prototype.openWindowCustomClass = function (content) {
+        // this.modalService.open(content, { windowClass: 'dark-modal' });
+    };
+    StudentComponent.prototype.openSm = function (content) {
+        // this.modalService.open(content, { size: 'sm' });
+    };
+    StudentComponent.prototype.openLg = function (content) {
+        // this.modalService.open(content, { size: 'lg' });
+    };
+    StudentComponent.prototype.openVerticallyCentered = function (content) {
+        // this.modalService.open(content, { centered: true });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('studentModal'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])
+    ], StudentComponent.prototype, "studentModal", void 0);
+    StudentComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-student',
+            template: __webpack_require__(/*! ./student.component.html */ "./src/app/components/student/student.component.html"),
+            styles: [__webpack_require__(/*! ./student.component.css */ "./src/app/components/student/student.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"],
+            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__["AlertService"],
+            _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
+            _services_data_service__WEBPACK_IMPORTED_MODULE_5__["DataService"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModal"],
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"],
+            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBar"],
+            ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__["NgxSmartModalService"],
+            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__["ConfirmationDialogService"]])
+    ], StudentComponent);
+    return StudentComponent;
 }());
 
 
@@ -6775,306 +7479,6 @@ var ContactUsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ContactUsComponent);
     return ContactUsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/course/course.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/course/course.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvdXJzZS9jb3Vyc2UuY29tcG9uZW50LmNzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/course/course.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/course/course.component.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n  \n    <form [formGroup]=\"courseForm\" novalidate (ngSubmit)=\"editSubmit(courseForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"name\">Course Name</label>\n\t        <input id=\"name\" type=\"text\" class=\"form-control\" formControlName=\"name\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"subcourse\">Sub Course Name</label>\n\t        <input id=\"subcourse\" type=\"text\" class=\"form-control\" formControlName=\"subcourse\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" (click)=\"create()\">Submit</button>\n\t  </div>\n  </form>\n  \n\t</div>\n\t\n\t<div class=\"row\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<ag-grid-angular\n\t\t\t\t\t\t\t#agGrid\n\t\t\t\t\t\t\tid=\"myGrid\"\n\t\t\t\t\t\t\tstyle=\"width: 480px; height: 400px;\"\n\t\t\t\t\t\t\tclass=\"ag-theme-balham\"\n\t\t\t\t\t\t\t[enableSorting]=\"true\"\n\t\t\t\t\t\t\t[enableFilter]=\"true\"\n\t\t\t\t\t\t\t[rowData]=\"rowData\"\n\t\t\t\t\t\t\trowSelection='multiple'\n\t\t\t\t\t\t\t(gridReady)=\"onGridReady($event)\"\n\t\t\t\t\t\t\t[columnDefs]=\"columnDefs\">\n\t\t\t\t\t</ag-grid-angular>\n\t\t\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/course/course.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/course/course.component.ts ***!
-  \********************************************/
-/*! exports provided: CourseComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseComponent", function() { return CourseComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _service_course_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./service/course.service */ "./src/app/course/service/course.service.ts");
-/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
-/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
-/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var CourseComponent = /** @class */ (function () {
-    function CourseComponent(fb, courseService, confirmationDialogService, alertService) {
-        this.fb = fb;
-        this.courseService = courseService;
-        this.confirmationDialogService = confirmationDialogService;
-        this.alertService = alertService;
-        this.createForm();
-    }
-    CourseComponent.prototype.ngOnInit = function () {
-        this.getData();
-    };
-    CourseComponent.prototype.getData = function () {
-        var _this = this;
-        this.courseService.get().subscribe(function (res) {
-            _this.rowData = res;
-        });
-    };
-    CourseComponent.prototype.createForm = function () {
-        this.courseForm = this.fb.group({
-            id: [''],
-            name: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
-            subcourse: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
-        });
-    };
-    CourseComponent.prototype.create = function () {
-        this.courseService.create(this.courseForm.value).subscribe(function (res) {
-            console.log('res : ' + res);
-        }, function (error) {
-            console.log('this.errorMessage : ' + error);
-        });
-    };
-    CourseComponent.prototype.delete = function (selectedRow) {
-        var _this = this;
-        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this course information ... ? ' + selectedRow.name, 'Ok', 'Cancel', 'sm')
-            .then(function (confirmed) {
-            if (confirmed) {
-                _this.courseService.delete(selectedRow._id).subscribe(function () {
-                    _this.getData();
-                    _this.alertService.showSuccessMessage('succesfully deleted course information ' + selectedRow.name, 'top', 2000);
-                });
-            }
-        })
-            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
-    };
-    CourseComponent.prototype.onGridReady = function (params) {
-        this.columnDefs = [
-            { headerName: 'Name', field: 'name' },
-            { headerName: 'Sub Course', field: 'subcourse' },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
-                cellRendererParams: { pageAction: 'edit' },
-                width: 40, tooltip: function () { return 'Edit'; } },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_3__["PageActionComponent"],
-                cellRendererParams: { pageAction: 'delete' },
-                width: 40, tooltip: function () { return 'Delete'; } },
-        ];
-        this.gridOptions = {
-            rowData: this.rowData,
-            rowHeight: 36,
-            context: { componentParent: this }
-        };
-        this.gridApi = params.api;
-        this.gridApi.gridOptions = this.gridOptions;
-        //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
-        //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
-    };
-    CourseComponent.prototype.editSubmit = function (courseForm) {
-        //   const studentData = form.value;
-        //   if (studentData.id !== null) {
-        //       this.updateStudent(studentData);
-        //       this.closeModal();
-        //       //this.alertService.showSuccessMessage('succesfully updated student information ' + studentData.fname,'top',2000);
-        //       this.alertService.openSnackBar('succesfully updated student information ' + studentData.fname,'','success');
-        //   } else {
-        //       this.addStudent(studentData);
-        //       this.alertService.showSuccessMessage('succesfully Addedd student information','top',2000);
-        //   }
-    };
-    CourseComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-course',
-            template: __webpack_require__(/*! ./course.component.html */ "./src/app/course/course.component.html"),
-            styles: [__webpack_require__(/*! ./course.component.css */ "./src/app/course/course.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
-            _service_course_service__WEBPACK_IMPORTED_MODULE_2__["CourseService"],
-            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_5__["ConfirmationDialogService"],
-            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"]])
-    ], CourseComponent);
-    return CourseComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/course/service/course.service.ts":
-/*!**************************************************!*\
-  !*** ./src/app/course/service/course.service.ts ***!
-  \**************************************************/
-/*! exports provided: CourseService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseService", function() { return CourseService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/services/data.service */ "./src/app/common/services/data.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var CourseService = /** @class */ (function () {
-    function CourseService(dataService) {
-        this.dataService = dataService;
-        this.uri = 'https://stark-journey-22743.herokuapp.com/api/courses/';
-    }
-    CourseService.prototype.create = function (formData) {
-        return this.dataService.create(this.uri, formData);
-    };
-    CourseService.prototype.get = function () {
-        console.log('call api course service > ' + this.uri);
-        return this.dataService.get(this.uri);
-    };
-    CourseService.prototype.edit = function (id) {
-        return this.dataService.get(this.uri + id).map(function (res) {
-            return res;
-        });
-    };
-    CourseService.prototype.update = function (formData) {
-        return this.dataService.update(this.uri, formData).map(function (res) {
-            return res;
-        });
-    };
-    CourseService.prototype.delete = function (id) {
-        return this.dataService.delete(this.uri + id).map(function (res) {
-            return res;
-        });
-    };
-    CourseService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_common_services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
-    ], CourseService);
-    return CourseService;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/dialog-body/dialog-body.component.css":
-/*!*******************************************************!*\
-  !*** ./src/app/dialog-body/dialog-body.component.css ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RpYWxvZy1ib2R5L2RpYWxvZy1ib2R5LmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/dialog-body/dialog-body.component.html":
-/*!********************************************************!*\
-  !*** ./src/app/dialog-body/dialog-body.component.html ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<h2 mat-dialog-title>{{description}}</h2>\n\n<mat-dialog-content>\n  \n    <mat-dialog-content>\n\t  <mat-form-field>\n\t    <input matInput placeholder=\"first name\" [(ngModel)]=\"data.student.fname\">\n\t  </mat-form-field>\n\n\t  <mat-form-field>\n\t    <input matInput placeholder=\"last name\" [(ngModel)]=\"data.student.lname\">\n\t  </mat-form-field>\n\t</mat-dialog-content>\n \n</mat-dialog-content>\n\n<mat-dialog-actions>\n    <button class=\"mat-raised-button\"(click)=\"close()\">Close</button>\n    <button class=\"mat-raised-button mat-primary\"(click)=\"updateStudent()\">Save</button>\n</mat-dialog-actions>"
-
-/***/ }),
-
-/***/ "./src/app/dialog-body/dialog-body.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/dialog-body/dialog-body.component.ts ***!
-  \******************************************************/
-/*! exports provided: DialogBodyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DialogBodyComponent", function() { return DialogBodyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../student/services/student.service */ "./src/app/student/services/student.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-
-
-
-
-var DialogBodyComponent = /** @class */ (function () {
-    function DialogBodyComponent(data, studentservice, router, route, dialogRef) {
-        this.data = data;
-        this.studentservice = studentservice;
-        this.router = router;
-        this.route = route;
-        this.dialogRef = dialogRef;
-    }
-    DialogBodyComponent.prototype.ngOnInit = function () {
-    };
-    DialogBodyComponent.prototype.updateStudent = function () {
-        //   this.studentservice.updateStudent(this.data.student).subscribe(res => {
-        //       this.dialogRef.close();
-        // });
-    };
-    DialogBodyComponent.prototype.close = function () {
-        this.dialogRef.close();
-    };
-    DialogBodyComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-dialog-body',
-            template: __webpack_require__(/*! ./dialog-body.component.html */ "./src/app/dialog-body/dialog-body.component.html"),
-            styles: [__webpack_require__(/*! ./dialog-body.component.css */ "./src/app/dialog-body/dialog-body.component.css")]
-        }),
-        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
-        __metadata("design:paramtypes", [Object, _student_services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]])
-    ], DialogBodyComponent);
-    return DialogBodyComponent;
 }());
 
 
@@ -7511,20 +7915,84 @@ var ResultComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/student/services/student.service.ts":
-/*!*****************************************************!*\
-  !*** ./src/app/student/services/student.service.ts ***!
-  \*****************************************************/
-/*! exports provided: StudentService */
+/***/ "./src/app/services/course.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/course.service.ts ***!
+  \********************************************/
+/*! exports provided: CourseService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentService", function() { return StudentService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseService", function() { return CourseService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CourseService = /** @class */ (function () {
+    function CourseService(dataService) {
+        this.dataService = dataService;
+        this.uri = 'courses/';
+    }
+    CourseService.prototype.create = function (formData) {
+        return this.dataService.create(this.uri, formData);
+    };
+    CourseService.prototype.get = function () {
+        console.log('call api course service > ' + this.uri);
+        return this.dataService.get(this.uri);
+    };
+    CourseService.prototype.edit = function (id) {
+        return this.dataService.get(this.uri + id).map(function (res) {
+            return res;
+        });
+    };
+    CourseService.prototype.update = function (formData) {
+        return this.dataService.update(this.uri, formData).map(function (res) {
+            return res;
+        });
+    };
+    CourseService.prototype.delete = function (id) {
+        return this.dataService.delete(this.uri + id).map(function (res) {
+            return res;
+        });
+    };
+    CourseService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
+    ], CourseService);
+    return CourseService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/data.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/data.service.ts ***!
+  \******************************************/
+/*! exports provided: DataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/services/data.service */ "./src/app/common/services/data.service.ts");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment.prod */ "./src/environments/environment.prod.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7538,25 +8006,91 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-var StudentService = /** @class */ (function () {
-    function StudentService(http, dataService) {
+
+var DataService = /** @class */ (function () {
+    function DataService(http) {
         this.http = http;
+        console.log('window.location.origin' + window.location.origin);
+        if (window.location.origin == 'http://localhost:4000') {
+            this.apiUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl;
+        }
+        else {
+            this.apiUrl = _environments_environment_prod__WEBPACK_IMPORTED_MODULE_3__["prodEnvironment"].apiUrl;
+        }
+        console.log('this.apiUrl : ' + this.apiUrl);
+    }
+    DataService.prototype.create = function (uri, formData) {
+        return this.http.post(this.apiUrl + uri, formData).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.get = function (uri) {
+        return this.http.get(this.apiUrl + uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.edit = function (uri) {
+        return this.http.get(this.apiUrl + uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.update = function (uri, formData) {
+        var localUri = this.apiUrl + uri;
+        return this.http.put(localUri + formData.id, formData).map(function (res) {
+            return res;
+        });
+    };
+    DataService.prototype.delete = function (uri) {
+        return this.http.delete(this.apiUrl + uri).map(function (res) {
+            return res;
+        });
+    };
+    DataService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], DataService);
+    return DataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/student.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/student.service.ts ***!
+  \*********************************************/
+/*! exports provided: StudentService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentService", function() { return StudentService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var StudentService = /** @class */ (function () {
+    function StudentService(dataService) {
         this.dataService = dataService;
-        this.uri = 'https://stark-journey-22743.herokuapp.com/api/students/';
-        // dataService = new DataService(); 
+        this.uri = 'students/';
     }
     StudentService.prototype.create = function (formData) {
         return this.dataService.create(this.uri, formData);
-        // return this.http.post(this.uri, formData).map(res => {
-        //   return res;
-        // });
     };
     StudentService.prototype.get = function () {
-        console.log('call api students service ------- ' + this.uri);
         return this.dataService.get(this.uri);
-        // return this.http.get(this.uri+'students').map(res => {
-        //   return res;
-        // });
     };
     StudentService.prototype.edit = function (id) {
         return this.dataService.get(this.uri + id).map(function (res) {
@@ -7575,8 +8109,7 @@ var StudentService = /** @class */ (function () {
     };
     StudentService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
-            _common_services_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
     ], StudentService);
     return StudentService;
 }());
@@ -7585,288 +8118,20 @@ var StudentService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/student/student.component.css":
-/*!***********************************************!*\
-  !*** ./src/app/student/student.component.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "#sparq-edit-button {padding: 0}\n.edit-btn { width: 100%; }\nh3 { float: left; }\n.sparq-modal-body {\n    padding: 20px;\n    height: 500px;\n    min-width: 860px;\n    overflow: auto;\n    background-color: rgb(246, 253, 255);\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 5%;\n}\nth { font-size: 15px;}\n.empty-table-message { text-align: center; }\n.empty-table-message td { padding: 200px; }\n.plandetail-hotspot:hover {\n    cursor: pointer;\n    background-color: #ddd;\n}\n.sparq-modal {\n\tbackground-color: rgb(246, 253, 255);\n    top: 15%;\n}\n.row {\n    min-width: 820px;\n}\n.image-upload > input\n{\n    display: none;\n}\n.success {\n  background: #2196F3;\n  color: white;\n}\n.fail {\n  background: #F44336;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3R1ZGVudC9zdHVkZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsb0JBQW9CLFVBQVUsQ0FBQztBQUMvQixZQUFZLFlBQVksRUFBRTtBQUUxQixLQUFLLFlBQVksRUFBRTtBQUVuQjtJQUNJLGNBQWM7SUFDZCxjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixxQ0FBcUM7Q0FDeEM7QUFDRDtDQUNDLHFDQUFxQztJQUNsQyxRQUFRO0NBQ1g7QUFDRCxLQUFLLGdCQUFnQixDQUFDO0FBRXRCLHVCQUF1QixtQkFBbUIsRUFBRTtBQUM1QywwQkFBMEIsZUFBZSxFQUFFO0FBRTNDO0lBQ0ksZ0JBQWdCO0lBQ2hCLHVCQUF1QjtDQUMxQjtBQUNEO0NBQ0MscUNBQXFDO0lBQ2xDLFNBQVM7Q0FDWjtBQUNEO0lBQ0ksaUJBQWlCO0NBQ3BCO0FBRUQ7O0lBRUksY0FBYztDQUNqQjtBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDtBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZCIsImZpbGUiOiJzcmMvYXBwL3N0dWRlbnQvc3R1ZGVudC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3NwYXJxLWVkaXQtYnV0dG9uIHtwYWRkaW5nOiAwfVxuLmVkaXQtYnRuIHsgd2lkdGg6IDEwMCU7IH1cblxuaDMgeyBmbG9hdDogbGVmdDsgfVxuXG4uc3BhcnEtbW9kYWwtYm9keSB7XG4gICAgcGFkZGluZzogMjBweDtcbiAgICBoZWlnaHQ6IDUwMHB4O1xuICAgIG1pbi13aWR0aDogODYwcHg7XG4gICAgb3ZlcmZsb3c6IGF1dG87XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xufVxuLnNwYXJxLW1vZGFsIHtcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xuICAgIHRvcDogNSU7XG59XG50aCB7IGZvbnQtc2l6ZTogMTVweDt9XG5cbi5lbXB0eS10YWJsZS1tZXNzYWdlIHsgdGV4dC1hbGlnbjogY2VudGVyOyB9XG4uZW1wdHktdGFibGUtbWVzc2FnZSB0ZCB7IHBhZGRpbmc6IDIwMHB4OyB9XG5cbi5wbGFuZGV0YWlsLWhvdHNwb3Q6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGRkO1xufVxuLnNwYXJxLW1vZGFsIHtcblx0YmFja2dyb3VuZC1jb2xvcjogcmdiKDI0NiwgMjUzLCAyNTUpO1xuICAgIHRvcDogMTUlO1xufVxuLnJvdyB7XG4gICAgbWluLXdpZHRoOiA4MjBweDtcbn1cblxuLmltYWdlLXVwbG9hZCA+IGlucHV0XG57XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuLnN1Y2Nlc3Mge1xuICBiYWNrZ3JvdW5kOiAjMjE5NkYzO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYWlsIHtcbiAgYmFja2dyb3VuZDogI0Y0NDMzNjtcbiAgY29sb3I6IHdoaXRlO1xufSJdfQ== */"
-
-/***/ }),
-
-/***/ "./src/app/student/student.component.html":
-/*!************************************************!*\
-  !*** ./src/app/student/student.component.html ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n\n<div class=\"container\">\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
-
-/***/ }),
-
-/***/ "./src/app/student/student.component.ts":
+/***/ "./src/environments/environment.prod.ts":
 /*!**********************************************!*\
-  !*** ./src/app/student/student.component.ts ***!
+  !*** ./src/environments/environment.prod.ts ***!
   \**********************************************/
-/*! exports provided: StudentComponent */
+/*! exports provided: prodEnvironment */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StudentComponent", function() { return StudentComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/student.service */ "./src/app/student/services/student.service.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common/components/page-action/page-action.component */ "./src/app/common/components/page-action/page-action.component.ts");
-/* harmony import */ var _common_services_data_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/services/data.service */ "./src/app/common/services/data.service.ts");
-/* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
-/* harmony import */ var _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/services/alert.service */ "./src/app/common/services/alert.service.ts");
-/* harmony import */ var _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/services/confirmation-dialog.service */ "./src/app/common/services/confirmation-dialog.service.ts");
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prodEnvironment", function() { return prodEnvironment; });
+var prodEnvironment = {
+    production: true,
+    apiUrl: "https://stark-journey-22743.herokuapp.com/api/"
 };
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-// import { DialogBodyComponent } from '../dialog-body/dialog-body.component';
-
-
-
-
-// import { ModalService } from '../common/services/modal.service';
-
-
-
-var StudentComponent = /** @class */ (function () {
-    function StudentComponent(fb, dialog, alertService, studentService, dataService, modalService, viewContainerRef, snackBar, ngxSmartModalService, confirmationDialogService) {
-        this.fb = fb;
-        this.dialog = dialog;
-        this.alertService = alertService;
-        this.studentService = studentService;
-        this.dataService = dataService;
-        this.modalService = modalService;
-        this.viewContainerRef = viewContainerRef;
-        this.snackBar = snackBar;
-        this.ngxSmartModalService = ngxSmartModalService;
-        this.confirmationDialogService = confirmationDialogService;
-        //dialogConfig = new MatDialogConfig();
-        this.editMode = true;
-        this.message = 'Snack Bar opened.';
-        this.actionButtonLabel = 'Retry';
-        this.action = true;
-        this.setAutoHide = true;
-        this.autoHide = 2000;
-        this.horizontalPosition = 'center';
-        this.verticalPosition = 'top';
-        this.addExtraClass = false;
-        this.createForm();
-        this.gridOptions = { context: { componentParent: this } };
-    }
-    StudentComponent.prototype.ngOnInit = function () {
-        this.createForm();
-        this.getStudents();
-    };
-    StudentComponent.prototype.open = function () {
-        var config = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBarConfig"]();
-        config.verticalPosition = this.verticalPosition;
-        config.horizontalPosition = this.horizontalPosition;
-        config.duration = this.setAutoHide ? this.autoHide : 0;
-        this.snackBar.open(this.message, this.action ? this.actionButtonLabel : undefined, config);
-    };
-    StudentComponent.prototype.createForm = function () {
-        this.studentForm = this.fb.group({
-            id: [''],
-            fname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
-            lname: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]],
-        });
-    };
-    StudentComponent.prototype.newStudent = function () {
-        this.studentForm.reset();
-        this.editMode = false;
-        this.ngxSmartModalService.getModal('popupOne').open();
-    };
-    StudentComponent.prototype.onGridReady = function (params) {
-        this.columnDefs = [
-            { headerName: 'First Name', field: 'fname' },
-            { headerName: 'Last Name', field: 'lname' },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
-                cellRendererParams: { pageAction: 'edit' },
-                width: 40, tooltip: function () { return 'Edit'; } },
-            { cellRendererFramework: _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_4__["PageActionComponent"],
-                cellRendererParams: { pageAction: 'delete' },
-                width: 40, tooltip: function () { return 'Delete'; } },
-        ];
-        this.gridOptions = {
-            rowData: this.students,
-            rowHeight: 36,
-            context: { componentParent: this }
-        };
-        this.gridApi = params.api;
-        this.gridApi.gridOptions = this.gridOptions;
-        //      setTimeout(() => { this.gridApi.sizeColumnsToFit(); });
-        //      window.addEventListener("resize", this.sizeColumnsToFit.bind(this));
-    };
-    StudentComponent.prototype.openConfirmationDialog = function () {
-        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ?', 'Ok', 'Cancel', 'lg')
-            .then(function (confirmed) { return console.log('User confirmed:', confirmed); })
-            .catch(function () { return console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'); });
-    };
-    StudentComponent.prototype.editSubmit = function (studentForm) {
-        var studentData = studentForm.value;
-        if (studentData.id !== null) {
-            this.updateStudent(studentData);
-            this.closeModal();
-            //this.alertService.showSuccessMessage('succesfully updated student information ' + studentData.fname,'top',2000);
-            this.alertService.openSnackBar('succesfully updated student information ' + studentData.fname, '', 'success');
-        }
-        else {
-            this.addStudent(studentData);
-            this.alertService.showSuccessMessage('succesfully Addedd student information', 'top', 2000);
-        }
-    };
-    StudentComponent.prototype.delete = function (selectedStudent) {
-        var _this = this;
-        this.confirmationDialogService.confirm('Please confirm..', 'Do you want to delete this student information ... ? ' + selectedStudent.fname, 'Ok', 'Cancel', 'sm')
-            .then(function (confirmed) {
-            if (confirmed) {
-                _this.studentService.delete(selectedStudent._id).subscribe(function () {
-                    _this.getStudents();
-                    _this.alertService.showSuccessMessage('succesfully deleted student information ' + selectedStudent.fname, 'top', 2000);
-                });
-            }
-        })
-            .catch(function () { return console.log('User dismissed the confirm delete dialog....'); });
-    };
-    StudentComponent.prototype.updateStudent = function (studentData) {
-        var _this = this;
-        this.studentService.update(studentData).subscribe(function () {
-            _this.getStudents();
-        });
-    };
-    StudentComponent.prototype.addStudent = function (studentData) {
-        //   this.studentservice.addStudent(studentData).subscribe(() => {
-        //       this.getStudents();
-        //       this.studentForm.reset();
-        //   });
-        var _this = this;
-        this.studentService.create(studentData).subscribe(function (res) {
-            // this.students.push(res);
-            _this.closeModal();
-            _this.getStudents();
-            // this.gridApi.setRowData(this.students);
-        }, function (error) {
-            // this.errorMessage = error;
-            // console.log('this.errorMessage : ' + error);
-            // this.alertService.showError(error);
-            // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
-        });
-    };
-    StudentComponent.prototype.edit = function (selectedStudent) {
-        this.studentForm.setValue({
-            id: selectedStudent._id,
-            fname: selectedStudent.fname,
-            lname: selectedStudent.lname,
-        });
-        //   this.modalService.show('studentModal');
-        this.modalRef = this.modalService.open(this.studentModal);
-        // this.openDialog(this.studentForm);
-    };
-    StudentComponent.prototype.sizeColumnsToFit = function () {
-        this.gridApi.sizeColumnsToFit();
-    };
-    StudentComponent.prototype.openModal = function () {
-        this.studentForm.reset();
-        this.modalRef = this.modalService.open(this.studentModal);
-    };
-    StudentComponent.prototype.closeModal = function () {
-        this.modalRef.close();
-    };
-    //   onRowClicked(event: any, template: TemplateRef<any>) {
-    //     this.editStudent(event.data);
-    //     // this.modalRef = this.modalService.show(template);
-    //   }
-    StudentComponent.prototype.editStudent = function (student) {
-        this.student = student;
-        this.studentForm.setValue({
-            id: student._id,
-            fname: student.fname,
-            lname: student.lname,
-        });
-    };
-    //   openDialog(student) {
-    //     // this.dialogConfig.disableClose = true;
-    //     // this.dialogConfig.autoFocus = true;
-    //     const dialogRef = this.dialog.open(DialogBodyComponent, {
-    //         width: '600px',
-    //         data: {student}
-    //     });
-    //     dialogRef.afterClosed().subscribe(() => {
-    //         this.getStudents();
-    //     });
-    //   }
-    StudentComponent.prototype.getStudents = function () {
-        var _this = this;
-        this.studentService.get().subscribe(function (res) {
-            _this.students = res;
-        });
-    };
-    StudentComponent.prototype.deleteStudent = function (id) {
-        this.openConfirmationDialog();
-        // this.studentservice.deleteStudent(id).subscribe(() => {
-        //     this.getStudents();
-        // });
-    };
-    StudentComponent.prototype.openBackDropCustomClass = function (content) {
-        // this.modalService.open(content, {backdropClass: 'light-blue-backdrop'});
-    };
-    StudentComponent.prototype.openWindowCustomClass = function (content) {
-        // this.modalService.open(content, { windowClass: 'dark-modal' });
-    };
-    StudentComponent.prototype.openSm = function (content) {
-        // this.modalService.open(content, { size: 'sm' });
-    };
-    StudentComponent.prototype.openLg = function (content) {
-        // this.modalService.open(content, { size: 'lg' });
-    };
-    StudentComponent.prototype.openVerticallyCentered = function (content) {
-        // this.modalService.open(content, { centered: true });
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('studentModal'),
-        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])
-    ], StudentComponent.prototype, "studentModal", void 0);
-    StudentComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-student',
-            template: __webpack_require__(/*! ./student.component.html */ "./src/app/student/student.component.html"),
-            styles: [__webpack_require__(/*! ./student.component.css */ "./src/app/student/student.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"],
-            _common_services_alert_service__WEBPACK_IMPORTED_MODULE_7__["AlertService"],
-            _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"],
-            _common_services_data_service__WEBPACK_IMPORTED_MODULE_5__["DataService"],
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_9__["NgbModal"],
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBar"],
-            ngx_smart_modal__WEBPACK_IMPORTED_MODULE_6__["NgxSmartModalService"],
-            _common_services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_8__["ConfirmationDialogService"]])
-    ], StudentComponent);
-    return StudentComponent;
-}());
-
 
 
 /***/ }),
@@ -7885,7 +8150,8 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    apiUrl: "http://localhost:4000/api/"
 };
 /*
  * In development mode, to ignore zone related error stack frames such as
