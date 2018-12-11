@@ -11,8 +11,10 @@ import { CourseService } from "../services/course.service";
 import { HttpJWT } from "./services/httpjwt";
 import { LoaderService } from "./services/loader.service";
 import { StudentService } from '../services/student.service';
-import { LoginComponent } from '../components/login/login.component';
 import { RegisterComponent } from '../components/register/register.component';
+import { AuthGuard } from '../services/auth.guard';
+import { LoginService } from '../services/login.service';
+//import { SignupComponent } '../components/auth/signup/signup.component';
 
 @NgModule({
   imports: [],
@@ -25,7 +27,6 @@ import { RegisterComponent } from '../components/register/register.component';
     ConfirmationDialogComponent,
     AlertComponent,
     ModalComponent,
-    LoginComponent,
     RegisterComponent],
   exports: []
 })
@@ -35,6 +36,8 @@ export class SmuCommonModule {
             ngModule : SmuCommonModule,
             providers : [
                   AlertService,
+                  LoginService,
+                  AuthGuard,
                   ConfirmationDialogService,
                   ModalService, 
                   DataService, 

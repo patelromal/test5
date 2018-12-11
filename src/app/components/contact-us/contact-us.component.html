@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<app-head></app-head>
+
+<body>
+
+  <div class="milestones">
+		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" style="background-image: url(../../assets/images/contact.jpg);" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+                        <div class="col">
+
+                          <div class="home_content text-center">
+							<div class="home_title">Contact us</div>
+                          </div>
+            
+                        </div>
+
+			</div>
+		</div>
+	</div>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+   	<app-header></app-header>
+    <!-- end header -->
+
+    <app-menu></app-menu>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <form id="contact-form" method="post" action="#" role="form">
+
+                  <div class="messages"></div>
+
+                  <div class="controls">
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Firstname *</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Lastname *</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_need">Please specify your need *</label>
+                                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                      <option value=""></option>
+                                      <option value="Request quotation">Request Fees Information</option>
+                                      <option value="Request order status">Request Registration status</option>
+                                      <option value="Other">Other</option>
+                                  </select>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="form_message">Message *</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btn btn-success btn-send" value="Send message">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <app-footer></app-footer>
+    
+  </div>
+
+</body>
+
+</html>

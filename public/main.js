@@ -5407,219 +5407,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/about-us/about-us.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/about-us/about-us.component.css ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".panel-heading a:after {\n    font-family:'Glyphicons Halflings';\n    content:\"\\e114\";\n    float: right;\n    color: grey;\n}\n.panel-heading a.collapsed:after {\n    content:\"\\e080\";\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWJvdXQtdXMvYWJvdXQtdXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG1DQUFtQztJQUNuQyxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLFlBQVk7Q0FDZjtBQUNEO0lBQ0ksZ0JBQWdCO0NBQ25CIiwiZmlsZSI6InNyYy9hcHAvYWJvdXQtdXMvYWJvdXQtdXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wYW5lbC1oZWFkaW5nIGE6YWZ0ZXIge1xuICAgIGZvbnQtZmFtaWx5OidHbHlwaGljb25zIEhhbGZsaW5ncyc7XG4gICAgY29udGVudDpcIlxcZTExNFwiO1xuICAgIGZsb2F0OiByaWdodDtcbiAgICBjb2xvcjogZ3JleTtcbn1cbi5wYW5lbC1oZWFkaW5nIGEuY29sbGFwc2VkOmFmdGVyIHtcbiAgICBjb250ZW50OlwiXFxlMDgwXCI7XG59Il19 */"
-
-/***/ }),
-
-/***/ "./src/app/about-us/about-us.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/about-us/about-us.component.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">About us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\n          <div class=\"span12\">\n            <i class=\"fa fa-hand-o-right\"></i><p class=\"text-justify\">\n            State of Maharashtra University –SMU Is Autonomous Institutes Formally Run on small Based Since 1990 And Now Under the Management of Education Society is an institution founded in 2000 and registered under the rules & regulations of Govt of India Act XXI 1860 by a group of devoted and educated persons with the help and co-operation of experts in this field. The area of operation of the SMU is wide and extensive all over India & Abroad & Online. Centers of examination are situated in almost all India & Abroad and Online where annual examinations are normally organized to different subjects and categories in every March, June, September and December \n            </p>\n            <p class=\"text-justify\">\n            To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life.\n            </p>\n            <p class=\"text-justify\">To provide the best possible teaching and learning environment to the students, so that they can serve the Society effectively with dignity\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To provide individualized study with flexibility in terms of place and duration.\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To identify educational needs of the children/persons of the State who are otherwise not catered to by the formal system of school education and to open study/academic centers.\n\t\t\t</p>\n\t\t\t<p>To provide opportunities in School Education and Skill Development through Open and Distance Learning (ODL) mode.\n\t\t\t</p>\n\t\t\t<p>To identify and promote approved standards of learning in Open and Distance Learning system.\n\t\t\t</p>\n\t\t\t<p>To design and develop courses, self-instructional materials (SIM) and other learning support for the courses identified at different points of time.\n\t\t\t</p>\n\t\t\t<p>To organize orientation and training programmes for the functionaries of the open schooling system in the country, to evolve strategies for curriculum development, instructional procedures etc.;\n\t\t\t</p>\n\t\t\t<p>To undertake and coordinate educational and research programmes with the suggestions of the State government(s) concerned\n\t\t\t</p>\n\t\t\t<p>To establish contacts with international agencies in the field of education, especially school education, for keeping acquainted with the latest trends in curriculum development, material production, media use for dissemination etc.,\n\t\t\t</p>\n\t\t\t<p>To establish links with other examining bodies with special focus on Asian countries.\n\t\t\t</p>\n\t\t\t<p>To collaborate with other agencies within and outside the state for developing and delivering skill oriented courses of study\n\t\t\t</p>\n\t\t\t<p>To promote and publicize open schooling programmes and distance education activities in the country.\n\t\t\t</p>\n\t\t\t<p>To maintain standards and equivalence with formal education system, while ensuring flexible characteristics of Open and Distance Learning System.\n\t\t\t</p>\n\t\t\t<p>To serve as an agency for effective dissemination of information related to open learning and distance education\n\t\t\t</p>\n\t\t\t<p>To establish linkages with contemporary education systems like State Boards, Sanskrit Boards, Madrasa Boards and state open boards with mainstream education system with mobility across them and equivalence between them; To expand access to school education at all levels and to increase retention rates at all levels of schooling.\n\t\t\t</p>\n\t\t\t<p>To encourage, promote and conduct a system of Open School Education and Distance education relevant to the students/learners, to organize training programmes at national and international level on `open  school system;\n\t\t\t</p>\n\t\t\t<p>To promote interaction and co-ordination among open schools and distance education institutions.\n\t\t\t</p>\n\t\t\t<p>To make study of various subjects more purposeful and to effect a fusion between traditional and modern system of education;\n\t\t\t</p>\n\t\t\t<p>To institute career oriented courses related to education through distance learning/ correspondence courses; to develop courses of education in various subjects.\n\t\t\t</p>\n\t\t\t<p>To prepare `database on open schooling and to conduct online and offline examination of Secondary , Higher Secondary level Exams and Diploma in Management and Technical Courses all over the country\n\t\t\t</p>\n\t\t\t<p>To announce the results of concerned examination and release certificates to passed candidates from time to time\n\t\t\t</p>\n\t\t\t<p>To organize educational and vocational training programmes with special concern for deprived sections, women/girls and unemployed youth to impart new skills: refine/sharpen/up-grade the existing skills.\n\t\t\t</p>\n\t\t\t<p>To impart free education and cultural training to the poor, helpless, differently able and needy children/students, to establish and maintain institutions for adult education with the consent of the concerned authorities.\n            </p>\n            \n<!--             <blockquote> -->\n<!--               To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life. -->\n<!--             </blockquote> -->\n\n          </div>\n\n        </div>\n        \n        <div class=\"row\">\n        \n\t\t\t\t\n\t\t\t\t<collapsible-list [type]=\"'accordion'\">\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      AIMS & OBJECTIVE OF THE MSU\n    </collapsible-header>\n    <collapsible-body [expanded]=\"false\">\n      <p>\n      \tThe aim of Institution is to provide some job oriented professional / Vocational / Technical / Management / I.T / Engineering / Academic and other Courses.\n      </p>\n      <p>\n      \t1. To act as an Autonomous , Non-Commercial, Voluntary and Perpetual Body Corporate with Statutory Status under the Constitution of India for the right to Education , Training and its Administration; for providing Education at LESSER COST\n\t\t</p>\n\t\t<i class=\"fa fa-hand-o-right\" style=\"font-size:48px;color:red\"></i>\n\t\t\n\t\t\t<p class=\"text-justify\">•\tfor the Expansion, Propagation and Development of Distance Education;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Democratization of Higher Education by providing it to the door- steps of Students;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Popularization of Education under Open and Distance Education System on the pattern of other Countries;\n\t\t\t</p><p>•\tfor providing Education at lesser cost;\n\t\t\t</p><p>•\tfor Publication of Educational Literature;\n\t\t\t</p><p>•\tfor Honoring Eminent Educationists;\n\t\t\t</p><p>•\tfor Awarding Titles of Honor’s to Educators and Researchers;\n\t\t\t</p><p>•\tfor Conducting Regular, Open, Distance, Correspondence and Continuing Education in General, Traditional, Technical, Professional, and Advanced Management Courses;\n\t\t\t</p><p>•\tfor Conducting Written, Practical and Oral Examinations;\n\t\t\t</p><p>•\tfor Awarding Certificates, Diplomas, Degrees and honor’s, as per the directions in the National Education Policy of the Government of India, the Directives in the Constitution of India and on the pattern of Open and Distance Education System approved by U.N. and its Agencies such as UNESCO, W.H.O, etc.\n\t\t</p><p>2. To establish Educational Institutions under the State of Maharashtra University –SMU to impart proper education to the needy from Pre-primary , Primary, Upper Primary, Secondary , Higher Secondary to Diploma, Degree, Post Graduate Diploma and P. G. Degree and in Research Level from M. Phil, Ph.D, to Post Doctorate and Honorary Doctorate Level.\n\t\t</p><p>3. To impart Education to the under-privileged, down trodden, Backward and Scheduled Classes, Women. Destitutes, Widows, Detenues and other eligible candidates at Concessional rate of fees, and for this purpose to establish Distance Education Canters in any part of India or Abroad; to conduct Courses of Study included in the Distance, Continuing, Correspondence and Open Education System of Open Universities and Institutions of National and International Reputation.\n      \t\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect heading-primary mt-xl\" >\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      METHOD OF EDUCATION\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tThe Institution has clear vision and aims at imparting Education and providing an opportunity to the school drop outs and to such students who are otherwise busy in their own life style and could not have an opportunity to attend regular schooling at their tender age but having a desire to learn to be educated at least to the level of Secondary and Senior Secondary Education. \nThe idea and concept of providing an opportunity to them is to make learn the education at least to the level of Secondary and Senior Secondary, which is very much essential to stand in the developing society and deal in the better way in the respective fields of works, business and professions in which they are already engaged by learning English, Mathematics, General Science, Social Studies, National Language, which are much helpful to them. \n      </p>\n      <p>\n      The effort of this Institution is also to impart education so has to enable the students to feel educated and to avail the job opportunities in private sectors who ever recognize our efforts and the ability of the students. \nIn accordance with National Education Policy (1986) of Govt. of India this Institution aims to impart education to those who are unable to come out their busy schedules and unable to attend the regular classes, by way of correspondence learning. \n      </p>\n      <p>\n      This Institution provides education to desired students in Engineering & Technical, Para-Medical and also Secondary, Senior Secondary courses only with English as medium of instructions and it also refers books on all selected subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      This Institution adopts multimedia educational system consisting of printed course material for self-study. Provide facility for practical and personal contact programme and to evaluate lessons by faculty experts. \nThis Institution provides excellent education to the desired students up to the level of Secondary & Senior Secondary Education with English of the medium of the Instruction and refers books on all concerning subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      The syllabus & examination pattern is based on syllabus prevailing in Board of Secondary Education, Board of Intermediate Education and other Recognized Boards / Institutions of India with a view to make our students all along the other students in this competitive World. \n      </p>\n      <p>\n      The study material would be supplied to the students who join our correspondence courses, which will guide them for effective learning of the course. Beside the same, syllabus of the programme and Model question papers would be sent to them time to time. The Institution also advice the students to purchase the recommended text books and shall attend personally for the periodical classes of theory and practical’s whenever called to attend and shall attend all the Term Examination and Annual Examinations conducted by this institute and make their efforts to excel in the same.\n      </p>\n      <p>\n      That on successful completion of the said courses, the Certificates / Diplomas will be awarded to the students on the passing of final examinations. It is pertinent hereto mentioned that the Certificates / Diplomas awarded by this Institutions only in reorganization of successfully completion of said course. \n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Independent Organization in the field of education, formally registered by Government of India and aims to democratize Higher Education by providing it to eligible students at their door step irrespective of Caste, Age, Sex and Territory so as to enable them to compete with the International standards of education.\n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Autonomous Board Registered under the Government of India, Planning Commission, Government of India and Ministry of Human Resource Development, Government of India. SMERC is accredited with International Council for Open and Distance Education (ICDE), Oslo, Norway and is accredited with ISO 9001:2015 Certification and a Member Institution of Indian Association of Teacher Educators (IATE).\n      </p>\n      <p>\n      State of Maharashtra University –SMU conducts the courses in Non-Formal mode through Regular, Correspondence, Open and Distance Learning. Currently State of Maharashtra University –SMU conducts Elementary Education, Preparatory Programme, OBE Programme, ESLC Programme, Secondary Education, Higher Secondary Education (First and Second Year), Certificate Courses, Diploma Courses, Post Graduate Diploma Courses, Technical Courses, Management Courses and various courses related to Teacher Education.\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  \n \n</collapsible-list>\n\t\t\t\t\n        </div>\n\n        <!-- <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"solidline\"></div>\n          </div>\n        </div>\n\n        <div class=\"row team\">\n          <div class=\"span12\">\n            <h4 class=\"title\">Board Of Members Portfolio In <strong>SMUGOV</strong></h4>\n          </div>\n\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/1.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Vincent Austin Jr</strong></p>\n                <p>\n                  CEO - Founder\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/2.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Tommy Laugher</strong></p>\n                <p>\n                  Lead designer\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/3.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Gabirelle Borowski</strong></p>\n                <p>\n                  Customer support\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/4.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Benny Strongton</strong></p>\n                <p>\n                  Coffee maker\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n        </div> -->\n        <!-- <div class=\"blankline30\"></div> -->\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>\n"
-
-/***/ }),
-
-/***/ "./src/app/about-us/about-us.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/about-us/about-us.component.ts ***!
-  \************************************************/
-/*! exports provided: AboutUsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutUsComponent", function() { return AboutUsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AboutUsComponent = /** @class */ (function () {
-    function AboutUsComponent() {
-    }
-    AboutUsComponent.prototype.ngOnInit = function () {
-    };
-    AboutUsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-about-us',
-            template: __webpack_require__(/*! ./about-us.component.html */ "./src/app/about-us/about-us.component.html"),
-            styles: [__webpack_require__(/*! ./about-us.component.css */ "./src/app/about-us/about-us.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], AboutUsComponent);
-    return AboutUsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/admin-header/admin-header.component.css":
-/*!*********************************************************!*\
-  !*** ./src/app/admin-header/admin-header.component.css ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluLWhlYWRlci9hZG1pbi1oZWFkZXIuY29tcG9uZW50LmNzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/admin-header/admin-header.component.html":
-/*!**********************************************************!*\
-  !*** ./src/app/admin-header/admin-header.component.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\n\t<div class=\"row\">\n     <div class=\"col\">\n      <nav class=\"main_nav_contaner\">\n            <ul class=\"main_nav\">\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managestudent\">Manage Student</a></li>\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managecourse\">Manage Course</a></li>\n            </ul>\n      </nav>\n      </div>\n      </div>\n</div>\n<div class=\"col-md-7\">\n   <router-outlet></router-outlet>\n </div>\n"
-
-/***/ }),
-
-/***/ "./src/app/admin-header/admin-header.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/admin-header/admin-header.component.ts ***!
-  \********************************************************/
-/*! exports provided: AdminHeaderComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminHeaderComponent", function() { return AdminHeaderComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AdminHeaderComponent = /** @class */ (function () {
-    function AdminHeaderComponent(router, route) {
-        this.router = router;
-        this.route = route;
-        this.featureSelected = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
-    }
-    AdminHeaderComponent.prototype.ngOnInit = function () {
-        //        this.recipes = this.recipeService.getRecipes();
-    };
-    AdminHeaderComponent.prototype.onSelect = function (feature) {
-        this.featureSelected.emit(feature);
-    };
-    AdminHeaderComponent.prototype.onManageCourse = function () {
-        this.router.navigate(['managecourse'], { relativeTo: this.route });
-    };
-    AdminHeaderComponent.prototype.onManageStudent = function () {
-        this.router.navigate(['managestudent'], { relativeTo: this.route });
-    };
-    __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
-        __metadata("design:type", Object)
-    ], AdminHeaderComponent.prototype, "featureSelected", void 0);
-    AdminHeaderComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-admin-header',
-            template: __webpack_require__(/*! ./admin-header.component.html */ "./src/app/admin-header/admin-header.component.html"),
-            styles: [__webpack_require__(/*! ./admin-header.component.css */ "./src/app/admin-header/admin-header.component.css")]
-        }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
-    ], AdminHeaderComponent);
-    return AdminHeaderComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/admin/admin.component.css":
-/*!*******************************************!*\
-  !*** ./src/app/admin/admin.component.css ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/admin/admin.component.html":
-/*!********************************************!*\
-  !*** ./src/app/admin/admin.component.html ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n  \n    <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Welcome Admin</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n  </div>\n  \n    <div class=\"container\">\n      <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t<div class=\"row\">\n     <div class=\"col\">\n                <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n          </div>\n        </div>\n        <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t</div>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>\n\n\n<!-- <!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n   \t<app-header></app-header>\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Admin</li>\n              </ul>\n              <h2>Welcome Admin</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n   <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n\n   <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n</body>\n\n</html> -->\n"
-
-/***/ }),
-
-/***/ "./src/app/admin/admin.component.ts":
-/*!******************************************!*\
-  !*** ./src/app/admin/admin.component.ts ***!
-  \******************************************/
-/*! exports provided: AdminComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var AdminComponent = /** @class */ (function () {
-    function AdminComponent() {
-        this.loadedFeature = 'managecourse';
-    }
-    AdminComponent.prototype.onNavigate = function (feature) {
-        this.loadedFeature = feature;
-    };
-    AdminComponent.prototype.ngOnInit = function () {
-    };
-    AdminComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-admin',
-            template: __webpack_require__(/*! ./admin.component.html */ "./src/app/admin/admin.component.html"),
-            styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/admin/admin.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], AdminComponent);
-    return AdminComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -5632,14 +5419,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
+/* harmony import */ var _components_about_us_about_us_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/about-us/about-us.component */ "./src/app/components/about-us/about-us.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/contact-us/contact-us.component */ "./src/app/components/contact-us/contact-us.component.ts");
+/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
 /* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
 /* harmony import */ var _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/student/student.component */ "./src/app/components/student/student.component.ts");
-/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
-/* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/auth.guard */ "./src/app/services/auth.guard.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5654,21 +5441,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+//import { SignupComponent } from './components/auth/signup/signup.component';
 
 
 var appRoutes = [
-    { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+    { path: '', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
     { path: '', redirectTo: '/recipes', pathMatch: 'full' },
-    { path: 'aboutus', component: _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_2__["AboutUsComponent"] },
-    { path: 'contactus', component: _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__["ContactUsComponent"] },
+    { path: 'aboutus', component: _components_about_us_about_us_component__WEBPACK_IMPORTED_MODULE_2__["AboutUsComponent"] },
+    { path: 'contactus', component: _components_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__["ContactUsComponent"] },
     { path: 'course', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
     { path: '', redirectTo: '/admin', pathMatch: 'full' },
-    { path: 'admin', component: _admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"], children: [
+    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"], canActivate: [_services_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]],
+        children: [
             { path: 'managecourse', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
             { path: 'managestudent', component: _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__["StudentComponent"] },
-        ] },
-    { path: 'signup', component: _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_8__["SignupComponent"] },
-    { path: 'signin', component: _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_9__["SigninComponent"] },
+        ]
+    },
+    // { path: 'signup', component: SignupComponent },
+    { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -5794,24 +5584,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-smart-modal */ "./node_modules/ngx-smart-modal/esm5/ngx-smart-modal.js");
 /* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/index.js");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
-/* harmony import */ var _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./homebody/homebody.component */ "./src/app/homebody/homebody.component.ts");
+/* harmony import */ var _components_homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/homebody/homebody.component */ "./src/app/components/homebody/homebody.component.ts");
 /* harmony import */ var _components_student_student_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/student/student.component */ "./src/app/components/student/student.component.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _head_head_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./head/head.component */ "./src/app/head/head.component.ts");
-/* harmony import */ var _menu_menu_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./menu/menu.component */ "./src/app/menu/menu.component.ts");
-/* harmony import */ var _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./admin/admin.component */ "./src/app/admin/admin.component.ts");
-/* harmony import */ var _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./admin-header/admin-header.component */ "./src/app/admin-header/admin-header.component.ts");
+/* harmony import */ var _components_about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/about-us/about-us.component */ "./src/app/components/about-us/about-us.component.ts");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/contact-us/contact-us.component */ "./src/app/components/contact-us/contact-us.component.ts");
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
+/* harmony import */ var _components_head_head_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/head/head.component */ "./src/app/components/head/head.component.ts");
+/* harmony import */ var _components_menu_menu_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/menu/menu.component */ "./src/app/components/menu/menu.component.ts");
+/* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
+/* harmony import */ var _components_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/admin-header/admin-header.component */ "./src/app/components/admin-header/admin-header.component.ts");
 /* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
-/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./result/result.component */ "./src/app/result/result.component.ts");
+/* harmony import */ var _components_result_result_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/result/result.component */ "./src/app/components/result/result.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./auth/signup/signup.component */ "./src/app/auth/signup/signup.component.ts");
-/* harmony import */ var _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./auth/signin/signin.component */ "./src/app/auth/signin/signin.component.ts");
-/* harmony import */ var _auth_auth_service__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./auth/auth.service */ "./src/app/auth/auth.service.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _services_session_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./services/session.service */ "./src/app/services/session.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5857,22 +5646,21 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"],
-                _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__["AboutUsComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_18__["HomeComponent"],
-                _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__["ContactUsComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_20__["HeaderComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_21__["FooterComponent"],
-                _head_head_component__WEBPACK_IMPORTED_MODULE_22__["HeadComponent"],
-                _menu_menu_component__WEBPACK_IMPORTED_MODULE_23__["MenuComponent"],
-                _admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"],
-                _admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__["AdminHeaderComponent"],
+                _components_about_us_about_us_component__WEBPACK_IMPORTED_MODULE_17__["AboutUsComponent"],
+                _components_home_home_component__WEBPACK_IMPORTED_MODULE_18__["HomeComponent"],
+                _components_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_19__["ContactUsComponent"],
+                _components_header_header_component__WEBPACK_IMPORTED_MODULE_20__["HeaderComponent"],
+                _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_21__["FooterComponent"],
+                _components_head_head_component__WEBPACK_IMPORTED_MODULE_22__["HeadComponent"],
+                _components_menu_menu_component__WEBPACK_IMPORTED_MODULE_23__["MenuComponent"],
+                _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"],
+                _components_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__["AdminHeaderComponent"],
                 _components_course_course_component__WEBPACK_IMPORTED_MODULE_26__["CourseComponent"],
                 _components_student_student_component__WEBPACK_IMPORTED_MODULE_15__["StudentComponent"],
-                _result_result_component__WEBPACK_IMPORTED_MODULE_27__["ResultComponent"],
-                _auth_signup_signup_component__WEBPACK_IMPORTED_MODULE_29__["SignupComponent"],
-                _auth_signin_signin_component__WEBPACK_IMPORTED_MODULE_30__["SigninComponent"],
+                _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__["LoginComponent"],
+                _components_result_result_component__WEBPACK_IMPORTED_MODULE_27__["ResultComponent"],
                 _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__["PageActionComponent"],
-                _homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__["HomebodyComponent"]
+                _components_homebody_homebody_component__WEBPACK_IMPORTED_MODULE_14__["HomebodyComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -5899,7 +5687,7 @@ var AppModule = /** @class */ (function () {
             exports: [
                 ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["ModalModule"]
             ],
-            providers: [_auth_auth_service__WEBPACK_IMPORTED_MODULE_31__["AuthService"], _common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["BsModalService"]],
+            providers: [_common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["BsModalService"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbActiveModal"], _services_session_service__WEBPACK_IMPORTED_MODULE_30__["SessionService"]],
             entryComponents: [
                 _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__["PageActionComponent"]
             ],
@@ -5907,191 +5695,6 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/auth/auth.service.ts":
-/*!**************************************!*\
-  !*** ./src/app/auth/auth.service.ts ***!
-  \**************************************/
-/*! exports provided: AuthService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
-/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_1__);
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-var AuthService = /** @class */ (function () {
-    function AuthService() {
-    }
-    AuthService.prototype.signupUser = function (email, password) {
-        firebase__WEBPACK_IMPORTED_MODULE_1__["auth"]().createUserWithEmailAndPassword(email, password)
-            .catch(function (error) { return console.log(error); });
-    };
-    AuthService.prototype.signinUser = function (email, password) {
-        firebase__WEBPACK_IMPORTED_MODULE_1__["auth"]().signInWithEmailAndPassword(email, password)
-            .then(function (response) { return console.log(response); })
-            .catch(function (error) { return console.log(error); });
-    };
-    AuthService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])()
-    ], AuthService);
-    return AuthService;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/auth/signin/signin.component.css":
-/*!**************************************************!*\
-  !*** ./src/app/auth/signin/signin.component.css ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2F1dGgvc2lnbmluL3NpZ25pbi5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/auth/signin/signin.component.html":
-/*!***************************************************!*\
-  !*** ./src/app/auth/signin/signin.component.html ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Sign Up</li>\n              </ul>\n              <h2>Sign Up</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\t\t\t\n\t\t<form (ngSubmit)=\"onSignin(f)\" #f=\"ngForm\">\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label for=\"email\">Mail</label>\n\t\t\t\t<input type=\"email\" name=\"email\" ngModel class=\"form-control\">\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label for=\"password\">Password</label>\n\t\t\t\t<input type=\"password\" name=\"password\" ngModel class=\"form-control\">\n\t\t\t</div>\n\t\t\t<button class=\"btn btn-primary\" type=\"submit\">Sign In</button>\n\t\t</form>\n          \n\n        </div>\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>"
-
-/***/ }),
-
-/***/ "./src/app/auth/signin/signin.component.ts":
-/*!*************************************************!*\
-  !*** ./src/app/auth/signin/signin.component.ts ***!
-  \*************************************************/
-/*! exports provided: SigninComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SigninComponent", function() { return SigninComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth/auth.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var SigninComponent = /** @class */ (function () {
-    function SigninComponent(authService) {
-        this.authService = authService;
-    }
-    SigninComponent.prototype.ngOnInit = function () {
-    };
-    SigninComponent.prototype.onSignin = function (form) {
-        var email = form.value.email;
-        var password = form.value.password;
-        this.authService.signinUser(email, password);
-    };
-    SigninComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-signup',
-            template: __webpack_require__(/*! ./signin.component.html */ "./src/app/auth/signin/signin.component.html"),
-            styles: [__webpack_require__(/*! ./signin.component.css */ "./src/app/auth/signin/signin.component.css")]
-        }),
-        __metadata("design:paramtypes", [_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"]])
-    ], SigninComponent);
-    return SigninComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/auth/signup/signup.component.css":
-/*!**************************************************!*\
-  !*** ./src/app/auth/signup/signup.component.css ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2F1dGgvc2lnbnVwL3NpZ251cC5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/auth/signup/signup.component.html":
-/*!***************************************************!*\
-  !*** ./src/app/auth/signup/signup.component.html ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Sign Up</li>\n              </ul>\n              <h2>Sign Up</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\t\t\t\n\t\t<form (ngSubmit)=\"onSignup(f)\" #f=\"ngForm\">\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label for=\"email\">Mail</label>\n\t\t\t\t<input type=\"email\" name=\"email\" ngModel class=\"form-control\">\n\t\t\t</div>\n\t\t\t<div class=\"form-group\">\n\t\t\t\t<label for=\"password\">Password</label>\n\t\t\t\t<input type=\"password\" name=\"password\" ngModel class=\"form-control\">\n\t\t\t</div>\n\t\t\t<button class=\"btn btn-primary\" type=\"submit\">Sign Up</button>\n\t\t</form>\n          \n\n        </div>\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>"
-
-/***/ }),
-
-/***/ "./src/app/auth/signup/signup.component.ts":
-/*!*************************************************!*\
-  !*** ./src/app/auth/signup/signup.component.ts ***!
-  \*************************************************/
-/*! exports provided: SignupComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth/auth.service.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var SignupComponent = /** @class */ (function () {
-    function SignupComponent(authService) {
-        this.authService = authService;
-    }
-    SignupComponent.prototype.ngOnInit = function () {
-    };
-    SignupComponent.prototype.onSignup = function (form) {
-        var email = form.value.email;
-        var password = form.value.password;
-        this.authService.signupUser(email, password);
-    };
-    SignupComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-signup',
-            template: __webpack_require__(/*! ./signup.component.html */ "./src/app/auth/signup/signup.component.html"),
-            styles: [__webpack_require__(/*! ./signup.component.css */ "./src/app/auth/signup/signup.component.css")]
-        }),
-        __metadata("design:paramtypes", [_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"]])
-    ], SignupComponent);
-    return SignupComponent;
 }());
 
 
@@ -6121,8 +5724,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_httpjwt__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/httpjwt */ "./src/app/common/services/httpjwt.ts");
 /* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/loader.service */ "./src/app/common/services/loader.service.ts");
 /* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../services/student.service */ "./src/app/services/student.service.ts");
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/login/login.component */ "./src/app/components/login/login.component.ts");
-/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/register/register.component */ "./src/app/components/register/register.component.ts");
+/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/register/register.component */ "./src/app/components/register/register.component.ts");
+/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../services/auth.guard */ "./src/app/services/auth.guard.ts");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../services/login.service */ "./src/app/services/login.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6144,6 +5748,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+//import { SignupComponent } '../components/auth/signup/signup.component';
 var SmuCommonModule = /** @class */ (function () {
     function SmuCommonModule() {
     }
@@ -6153,6 +5759,8 @@ var SmuCommonModule = /** @class */ (function () {
             ngModule: SmuCommonModule_1,
             providers: [
                 _services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"],
+                _services_login_service__WEBPACK_IMPORTED_MODULE_15__["LoginService"],
+                _services_auth_guard__WEBPACK_IMPORTED_MODULE_14__["AuthGuard"],
                 _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_2__["ConfirmationDialogService"],
                 _services_modal_service__WEBPACK_IMPORTED_MODULE_6__["ModalService"],
                 _services_data_service__WEBPACK_IMPORTED_MODULE_8__["DataService"],
@@ -6176,8 +5784,7 @@ var SmuCommonModule = /** @class */ (function () {
                 _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogComponent"],
                 _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"],
                 _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"],
-                _components_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
-                _components_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"]
+                _components_register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"]
             ],
             exports: []
         })
@@ -6272,7 +5879,7 @@ var AlertComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">{{ title }}</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"dismiss()\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    {{ message }}\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"decline()\">{{ btnCancelText }}</button>\n    <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"accept()\">{{ btnOkText }}</button>\n  </div>"
+module.exports = "<div class=\"modal-header\">\n<h4 class=\"modal-title\">{{ title }}</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"dismiss()\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<div class=\"modal-body\">\n  {{ message }}\n</div>\n<div class=\"modal-footer\">\n  <button type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"decline()\">{{ btnCancelText }}</button>\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"accept()\">{{ btnOkText }}</button>\n</div>"
 
 /***/ }),
 
@@ -6831,6 +6438,282 @@ var ModalService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/about-us/about-us.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/about-us/about-us.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".panel-heading a:after {\n    font-family:'Glyphicons Halflings';\n    content:\"\\e114\";\n    float: right;\n    color: grey;\n}\n.panel-heading a.collapsed:after {\n    content:\"\\e080\";\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hYm91dC11cy9hYm91dC11cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksbUNBQW1DO0lBQ25DLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsWUFBWTtDQUNmO0FBQ0Q7SUFDSSxnQkFBZ0I7Q0FDbkIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2Fib3V0LXVzL2Fib3V0LXVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGFuZWwtaGVhZGluZyBhOmFmdGVyIHtcbiAgICBmb250LWZhbWlseTonR2x5cGhpY29ucyBIYWxmbGluZ3MnO1xuICAgIGNvbnRlbnQ6XCJcXGUxMTRcIjtcbiAgICBmbG9hdDogcmlnaHQ7XG4gICAgY29sb3I6IGdyZXk7XG59XG4ucGFuZWwtaGVhZGluZyBhLmNvbGxhcHNlZDphZnRlciB7XG4gICAgY29udGVudDpcIlxcZTA4MFwiO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/about-us/about-us.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/components/about-us/about-us.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">About us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n\n          <div class=\"span12\">\n            <i class=\"fa fa-hand-o-right\"></i><p class=\"text-justify\">\n            State of Maharashtra University –SMU Is Autonomous Institutes Formally Run on small Based Since 1990 And Now Under the Management of Education Society is an institution founded in 2000 and registered under the rules & regulations of Govt of India Act XXI 1860 by a group of devoted and educated persons with the help and co-operation of experts in this field. The area of operation of the SMU is wide and extensive all over India & Abroad & Online. Centers of examination are situated in almost all India & Abroad and Online where annual examinations are normally organized to different subjects and categories in every March, June, September and December \n            </p>\n            <p class=\"text-justify\">\n            To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life.\n            </p>\n            <p class=\"text-justify\">To provide the best possible teaching and learning environment to the students, so that they can serve the Society effectively with dignity\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To provide individualized study with flexibility in terms of place and duration.\n\t\t\t</p>\n\t\t\t<p class=\"text-justify\">To identify educational needs of the children/persons of the State who are otherwise not catered to by the formal system of school education and to open study/academic centers.\n\t\t\t</p>\n\t\t\t<p>To provide opportunities in School Education and Skill Development through Open and Distance Learning (ODL) mode.\n\t\t\t</p>\n\t\t\t<p>To identify and promote approved standards of learning in Open and Distance Learning system.\n\t\t\t</p>\n\t\t\t<p>To design and develop courses, self-instructional materials (SIM) and other learning support for the courses identified at different points of time.\n\t\t\t</p>\n\t\t\t<p>To organize orientation and training programmes for the functionaries of the open schooling system in the country, to evolve strategies for curriculum development, instructional procedures etc.;\n\t\t\t</p>\n\t\t\t<p>To undertake and coordinate educational and research programmes with the suggestions of the State government(s) concerned\n\t\t\t</p>\n\t\t\t<p>To establish contacts with international agencies in the field of education, especially school education, for keeping acquainted with the latest trends in curriculum development, material production, media use for dissemination etc.,\n\t\t\t</p>\n\t\t\t<p>To establish links with other examining bodies with special focus on Asian countries.\n\t\t\t</p>\n\t\t\t<p>To collaborate with other agencies within and outside the state for developing and delivering skill oriented courses of study\n\t\t\t</p>\n\t\t\t<p>To promote and publicize open schooling programmes and distance education activities in the country.\n\t\t\t</p>\n\t\t\t<p>To maintain standards and equivalence with formal education system, while ensuring flexible characteristics of Open and Distance Learning System.\n\t\t\t</p>\n\t\t\t<p>To serve as an agency for effective dissemination of information related to open learning and distance education\n\t\t\t</p>\n\t\t\t<p>To establish linkages with contemporary education systems like State Boards, Sanskrit Boards, Madrasa Boards and state open boards with mainstream education system with mobility across them and equivalence between them; To expand access to school education at all levels and to increase retention rates at all levels of schooling.\n\t\t\t</p>\n\t\t\t<p>To encourage, promote and conduct a system of Open School Education and Distance education relevant to the students/learners, to organize training programmes at national and international level on `open  school system;\n\t\t\t</p>\n\t\t\t<p>To promote interaction and co-ordination among open schools and distance education institutions.\n\t\t\t</p>\n\t\t\t<p>To make study of various subjects more purposeful and to effect a fusion between traditional and modern system of education;\n\t\t\t</p>\n\t\t\t<p>To institute career oriented courses related to education through distance learning/ correspondence courses; to develop courses of education in various subjects.\n\t\t\t</p>\n\t\t\t<p>To prepare `database on open schooling and to conduct online and offline examination of Secondary , Higher Secondary level Exams and Diploma in Management and Technical Courses all over the country\n\t\t\t</p>\n\t\t\t<p>To announce the results of concerned examination and release certificates to passed candidates from time to time\n\t\t\t</p>\n\t\t\t<p>To organize educational and vocational training programmes with special concern for deprived sections, women/girls and unemployed youth to impart new skills: refine/sharpen/up-grade the existing skills.\n\t\t\t</p>\n\t\t\t<p>To impart free education and cultural training to the poor, helpless, differently able and needy children/students, to establish and maintain institutions for adult education with the consent of the concerned authorities.\n            </p>\n            \n<!--             <blockquote> -->\n<!--               To provide Secondary Education, Higher Secondary Education, Management and Technical Diploma Courses to those belonging to disadvantaged groups (e.g. the Scheduled Castes, the Scheduled Tribes, Socially and Educationally disadvantaged classes and other socially, culturally, economically, geographically weaker sections of the society, or such other factors as may be specified / notified appropriately by the Government) and people belonging to weaker sections who are not able to get education in the normal course of life. -->\n<!--             </blockquote> -->\n\n          </div>\n\n        </div>\n        \n        <div class=\"row\">\n        \n\t\t\t\t\n\t\t\t\t<collapsible-list [type]=\"'accordion'\">\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      AIMS & OBJECTIVE OF THE MSU\n    </collapsible-header>\n    <collapsible-body [expanded]=\"false\">\n      <p>\n      \tThe aim of Institution is to provide some job oriented professional / Vocational / Technical / Management / I.T / Engineering / Academic and other Courses.\n      </p>\n      <p>\n      \t1. To act as an Autonomous , Non-Commercial, Voluntary and Perpetual Body Corporate with Statutory Status under the Constitution of India for the right to Education , Training and its Administration; for providing Education at LESSER COST\n\t\t</p>\n\t\t<i class=\"fa fa-hand-o-right\" style=\"font-size:48px;color:red\"></i>\n\t\t\n\t\t\t<p class=\"text-justify\">•\tfor the Expansion, Propagation and Development of Distance Education;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Democratization of Higher Education by providing it to the door- steps of Students;\n\t\t\t</p><p class=\"text-justify\">•\tfor the Popularization of Education under Open and Distance Education System on the pattern of other Countries;\n\t\t\t</p><p>•\tfor providing Education at lesser cost;\n\t\t\t</p><p>•\tfor Publication of Educational Literature;\n\t\t\t</p><p>•\tfor Honoring Eminent Educationists;\n\t\t\t</p><p>•\tfor Awarding Titles of Honor’s to Educators and Researchers;\n\t\t\t</p><p>•\tfor Conducting Regular, Open, Distance, Correspondence and Continuing Education in General, Traditional, Technical, Professional, and Advanced Management Courses;\n\t\t\t</p><p>•\tfor Conducting Written, Practical and Oral Examinations;\n\t\t\t</p><p>•\tfor Awarding Certificates, Diplomas, Degrees and honor’s, as per the directions in the National Education Policy of the Government of India, the Directives in the Constitution of India and on the pattern of Open and Distance Education System approved by U.N. and its Agencies such as UNESCO, W.H.O, etc.\n\t\t</p><p>2. To establish Educational Institutions under the State of Maharashtra University –SMU to impart proper education to the needy from Pre-primary , Primary, Upper Primary, Secondary , Higher Secondary to Diploma, Degree, Post Graduate Diploma and P. G. Degree and in Research Level from M. Phil, Ph.D, to Post Doctorate and Honorary Doctorate Level.\n\t\t</p><p>3. To impart Education to the under-privileged, down trodden, Backward and Scheduled Classes, Women. Destitutes, Widows, Detenues and other eligible candidates at Concessional rate of fees, and for this purpose to establish Distance Education Canters in any part of India or Abroad; to conduct Courses of Study included in the Distance, Continuing, Correspondence and Open Education System of Open Universities and Institutions of National and International Reputation.\n      \t\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect heading-primary mt-xl\" >\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      METHOD OF EDUCATION\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tThe Institution has clear vision and aims at imparting Education and providing an opportunity to the school drop outs and to such students who are otherwise busy in their own life style and could not have an opportunity to attend regular schooling at their tender age but having a desire to learn to be educated at least to the level of Secondary and Senior Secondary Education. \nThe idea and concept of providing an opportunity to them is to make learn the education at least to the level of Secondary and Senior Secondary, which is very much essential to stand in the developing society and deal in the better way in the respective fields of works, business and professions in which they are already engaged by learning English, Mathematics, General Science, Social Studies, National Language, which are much helpful to them. \n      </p>\n      <p>\n      The effort of this Institution is also to impart education so has to enable the students to feel educated and to avail the job opportunities in private sectors who ever recognize our efforts and the ability of the students. \nIn accordance with National Education Policy (1986) of Govt. of India this Institution aims to impart education to those who are unable to come out their busy schedules and unable to attend the regular classes, by way of correspondence learning. \n      </p>\n      <p>\n      This Institution provides education to desired students in Engineering & Technical, Para-Medical and also Secondary, Senior Secondary courses only with English as medium of instructions and it also refers books on all selected subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      This Institution adopts multimedia educational system consisting of printed course material for self-study. Provide facility for practical and personal contact programme and to evaluate lessons by faculty experts. \nThis Institution provides excellent education to the desired students up to the level of Secondary & Senior Secondary Education with English of the medium of the Instruction and refers books on all concerning subjects and provides study material in respect of the said courses. \n      </p>\n      <p>\n      The syllabus & examination pattern is based on syllabus prevailing in Board of Secondary Education, Board of Intermediate Education and other Recognized Boards / Institutions of India with a view to make our students all along the other students in this competitive World. \n      </p>\n      <p>\n      The study material would be supplied to the students who join our correspondence courses, which will guide them for effective learning of the course. Beside the same, syllabus of the programme and Model question papers would be sent to them time to time. The Institution also advice the students to purchase the recommended text books and shall attend personally for the periodical classes of theory and practical’s whenever called to attend and shall attend all the Term Examination and Annual Examinations conducted by this institute and make their efforts to excel in the same.\n      </p>\n      <p>\n      That on successful completion of the said courses, the Certificates / Diplomas will be awarded to the students on the passing of final examinations. It is pertinent hereto mentioned that the Certificates / Diplomas awarded by this Institutions only in reorganization of successfully completion of said course. \n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Independent Organization in the field of education, formally registered by Government of India and aims to democratize Higher Education by providing it to eligible students at their door step irrespective of Caste, Age, Sex and Territory so as to enable them to compete with the International standards of education.\n      </p>\n      <p>\n      State of Maharashtra University –SMU is an Autonomous Board Registered under the Government of India, Planning Commission, Government of India and Ministry of Human Resource Development, Government of India. SMERC is accredited with International Council for Open and Distance Education (ICDE), Oslo, Norway and is accredited with ISO 9001:2015 Certification and a Member Institution of Indian Association of Teacher Educators (IATE).\n      </p>\n      <p>\n      State of Maharashtra University –SMU conducts the courses in Non-Formal mode through Regular, Correspondence, Open and Distance Learning. Currently State of Maharashtra University –SMU conducts Elementary Education, Preparatory Programme, OBE Programme, ESLC Programme, Secondary Education, Higher Secondary Education (First and Second Year), Certificate Courses, Diploma Courses, Post Graduate Diploma Courses, Technical Courses, Management Courses and various courses related to Teacher Education.\n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  <collapsible-list-item>\n    <collapsible-header class=\"waves-effect\">\n      CONSTITUTION & RELIABILITY\n    </collapsible-header>\n    <collapsible-body [expanded]=\"true\">\n      <p>\n      \tIt is but natural for an ambitious lover of education to enquire before seeking admission in any institute or Board its constitutionality, reliability beside employment opportunities. We clarify that all the Educational Boards are autonomous Bodies and it is left to their discretion to allow or refuse admission to those coming from another Boards or institutions etc, similarly to a person who holds a certificate, Diploma or a Degree from a particular Board. It is pertinent to note that the concept of Distance Education was originated in 19th Century in Germany & thereafter it was granted recognition by Russia to distance education in the world. Thereby the idea of open education flourished by Britishers during the year 1963 so as to provide an opportunity to persons who denied opportunities to further their education and to prospect their life successful. Similarly Govt. of India laid emphasis on Open & Distance Education through their New Education Policy 1986. \n      </p>\n    </collapsible-body>\n  </collapsible-list-item>\n  \n  \n \n</collapsible-list>\n\t\t\t\t\n        </div>\n\n        <!-- <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"solidline\"></div>\n          </div>\n        </div>\n\n        <div class=\"row team\">\n          <div class=\"span12\">\n            <h4 class=\"title\">Board Of Members Portfolio In <strong>SMUGOV</strong></h4>\n          </div>\n\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/1.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Vincent Austin Jr</strong></p>\n                <p>\n                  CEO - Founder\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/2.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Tommy Laugher</strong></p>\n                <p>\n                  Lead designer\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/3.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Gabirelle Borowski</strong></p>\n                <p>\n                  Customer support\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"span3\">\n            <div class=\"team-box\">\n              <a href=\"#\" class=\"thumbnail\"><img src=\"assets/img/dummies/team/4.jpg\" alt=\"\" /></a>\n              <div class=\"roles aligncenter\">\n                <p class=\"lead\"><strong>Benny Strongton</strong></p>\n                <p>\n                  Coffee maker\n                </p>\n                <p>\n                  <a href=\"#\"><i class=\"icon-facebook icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-twitter icon-circled icon-bglight active\"></i></a>\n                  <a href=\"#\"><i class=\"icon-linkedin icon-circled icon-bglight active\"></i></a>\n                </p>\n              </div>\n            </div>\n          </div>\n        </div> -->\n        <!-- <div class=\"blankline30\"></div> -->\n\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n\n</body>\n\n</html>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/about-us/about-us.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/about-us/about-us.component.ts ***!
+  \***********************************************************/
+/*! exports provided: AboutUsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutUsComponent", function() { return AboutUsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AboutUsComponent = /** @class */ (function () {
+    function AboutUsComponent() {
+    }
+    AboutUsComponent.prototype.ngOnInit = function () {
+    };
+    AboutUsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-about-us',
+            template: __webpack_require__(/*! ./about-us.component.html */ "./src/app/components/about-us/about-us.component.html"),
+            styles: [__webpack_require__(/*! ./about-us.component.css */ "./src/app/components/about-us/about-us.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutUsComponent);
+    return AboutUsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/admin-header/admin-header.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/admin-header/admin-header.component.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWRtaW4taGVhZGVyL2FkbWluLWhlYWRlci5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/admin-header/admin-header.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/components/admin-header/admin-header.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\t<div class=\"row\">\n     <div class=\"col\">\n      <nav class=\"main_nav_contaner\">\n            <ul class=\"main_nav\">\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managestudent\">Manage Student</a></li>\n            <li [routerLinkActive]=\"['active']\"><a routerLink=\"managecourse\">Manage Course</a></li>\n            </ul>\n      </nav>\n      </div>\n      </div>\n</div>\n<div class=\"col-md-7\">\n   <router-outlet></router-outlet>\n </div>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/admin-header/admin-header.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/admin-header/admin-header.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: AdminHeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminHeaderComponent", function() { return AdminHeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AdminHeaderComponent = /** @class */ (function () {
+    function AdminHeaderComponent(router, route) {
+        this.router = router;
+        this.route = route;
+        this.featureSelected = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    AdminHeaderComponent.prototype.ngOnInit = function () {
+        //        this.recipes = this.recipeService.getRecipes();
+    };
+    AdminHeaderComponent.prototype.onSelect = function (feature) {
+        this.featureSelected.emit(feature);
+    };
+    AdminHeaderComponent.prototype.onManageCourse = function () {
+        this.router.navigate(['managecourse'], { relativeTo: this.route });
+    };
+    AdminHeaderComponent.prototype.onManageStudent = function () {
+        this.router.navigate(['managestudent'], { relativeTo: this.route });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], AdminHeaderComponent.prototype, "featureSelected", void 0);
+    AdminHeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-admin-header',
+            template: __webpack_require__(/*! ./admin-header.component.html */ "./src/app/components/admin-header/admin-header.component.html"),
+            styles: [__webpack_require__(/*! ./admin-header.component.css */ "./src/app/components/admin-header/admin-header.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
+    ], AdminHeaderComponent);
+    return AdminHeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/admin/admin.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/components/admin/admin.component.css ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWRtaW4vYWRtaW4uY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/admin/admin.component.html":
+/*!*******************************************************!*\
+  !*** ./src/app/components/admin/admin.component.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n  \n    <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/about.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Welcome Admin</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n  </div>\n  \n    <div class=\"container\">\n      <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t<div class=\"row\">\n     <div class=\"col\">\n                <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n          </div>\n        </div>\n        <div class=\"row\"><br></div><div class=\"row\"><br></div>\n\t</div>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>\n\n\n<!-- <!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div id=\"wrapper\">\n\n   \t<app-header></app-header>\n\n    <section id=\"inner-headline\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"span12\">\n            <div class=\"inner-heading\">\n              <ul class=\"breadcrumb\">\n                <li><a href=\"index.html\">Home</a> <i class=\"icon-angle-right\"></i></li>\n                <li><a href=\"#\">Pages</a> <i class=\"icon-angle-right\"></i></li>\n                <li class=\"active\">Admin</li>\n              </ul>\n              <h2>Welcome Admin</h2>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n   <app-admin-header (featureSelected)=\"onNavigate($event)\"></app-admin-header>\n\n   <app-footer></app-footer>\n    \n  </div>\n  <a href=\"#\" class=\"scrollup\"><i class=\"icon-angle-up icon-square icon-bglight icon-2x active\"></i></a>\n\n</body>\n\n</html> -->\n"
+
+/***/ }),
+
+/***/ "./src/app/components/admin/admin.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/components/admin/admin.component.ts ***!
+  \*****************************************************/
+/*! exports provided: AdminComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AdminComponent = /** @class */ (function () {
+    function AdminComponent() {
+        this.loadedFeature = 'managecourse';
+    }
+    AdminComponent.prototype.onNavigate = function (feature) {
+        this.loadedFeature = feature;
+    };
+    AdminComponent.prototype.ngOnInit = function () {
+    };
+    AdminComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-admin',
+            template: __webpack_require__(/*! ./admin.component.html */ "./src/app/components/admin/admin.component.html"),
+            styles: [__webpack_require__(/*! ./admin.component.css */ "./src/app/components/admin/admin.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AdminComponent);
+    return AdminComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/contact-us/contact-us.component.css":
+/*!****************************************************************!*\
+  !*** ./src/app/components/contact-us/contact-us.component.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY29udGFjdC11cy9jb250YWN0LXVzLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/contact-us/contact-us.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/contact-us/contact-us.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/contact.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Contact us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <br>\n        </div>\n        <div class=\"row\">\n          <div class=\"col\">\n\n            <form id=\"contact-form\" method=\"post\" action=\"#\" role=\"form\">\n\n                  <div class=\"messages\"></div>\n\n                  <div class=\"controls\">\n\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_name\">Firstname *</label>\n                                  <input id=\"form_name\" type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Please enter your firstname *\" required=\"required\" data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_lastname\">Lastname *</label>\n                                  <input id=\"form_lastname\" type=\"text\" name=\"surname\" class=\"form-control\" placeholder=\"Please enter your lastname *\" required=\"required\" data-error=\"Lastname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_email\">Email *</label>\n                                  <input id=\"form_email\" type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Please enter your email *\" required=\"required\" data-error=\"Valid email is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_need\">Please specify your need *</label>\n                                  <select id=\"form_need\" name=\"need\" class=\"form-control\" required=\"required\" data-error=\"Please specify your need.\">\n                                      <option value=\"\"></option>\n                                      <option value=\"Request quotation\">Request Fees Information</option>\n                                      <option value=\"Request order status\">Request Registration status</option>\n                                      <option value=\"Other\">Other</option>\n                                  </select>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-12\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_message\">Message *</label>\n                                  <textarea id=\"form_message\" name=\"message\" class=\"form-control\" placeholder=\"Message for me *\" rows=\"4\" required=\"required\" data-error=\"Please, leave us a message.\"></textarea>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-12\">\n                              <input type=\"submit\" class=\"btn btn-success btn-send\" value=\"Send message\">\n                          </div>\n                      </div>\n                  </div>\n              </form>\n\n          </div>\n          <div class=\"col\">\n\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n\n</body>\n\n</html>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/contact-us/contact-us.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/components/contact-us/contact-us.component.ts ***!
+  \***************************************************************/
+/*! exports provided: ContactUsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsComponent", function() { return ContactUsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ContactUsComponent = /** @class */ (function () {
+    function ContactUsComponent() {
+    }
+    ContactUsComponent.prototype.ngOnInit = function () {
+    };
+    ContactUsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-contact-us',
+            template: __webpack_require__(/*! ./contact-us.component.html */ "./src/app/components/contact-us/contact-us.component.html"),
+            styles: [__webpack_require__(/*! ./contact-us.component.css */ "./src/app/components/contact-us/contact-us.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ContactUsComponent);
+    return ContactUsComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/course/course.component.css":
 /*!********************************************************!*\
   !*** ./src/app/components/course/course.component.css ***!
@@ -7011,6 +6894,332 @@ var CourseComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/footer/footer.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/footer/footer.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/footer/footer.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/footer/footer.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <!-- About -->\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_about\">\n          <div class=\"logo_container\">\n            <a href=\"#\">\n              <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                <div class=\"logo_img\"><img src=\"../../assets/images/logo.png\" alt=\"\"></div>\n                <div class=\"logo_text\">learn</div>\n              </div>\n            </a>\n          </div>\n          <div class=\"footer_about_text\">\n            <p>Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.</p>\n          </div>\n          <div class=\"footer_social\">\n            <ul>\n              <li><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n          </div>\n          <div class=\"copyright\"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->\n                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://smugov.org\" target=\"_blank\">Smugov</a>\n                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Quick menu</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"index.html\">Home</a></li>\n            <li><a href=\"about.html\">About us</a></li>\n            <li><a href=\"#\">Testimonials</a></li>\n            <li><a href=\"#\">Services</a></li>\n            <li><a href=\"contact.html\">Contact</a></li>\n            <li><a href=\"#\">Facts</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Useful Links</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"courses.html\">Courses</a></li>\n            <li><a href=\"#\">Events</a></li>\n            <li><a href=\"news.html\">News</a></li>\n            <li><a href=\"#\">Teachers</a></li>\n            <li><a href=\"#\">Links</a></li>\n            <li><a href=\"#\">FAQ</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_contact\">\n          <div class=\"footer_title\">Contact Us</div>\n          <div class=\"footer_contact_info\">\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Address:</div>\n              <div class=\"footer_contact_line\">Mumbai</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Phone:</div>\n              <div class=\"footer_contact_line\">+91 999999999</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Email:</div>\n              <div class=\"footer_contact_line\">info@smugov.org</div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>"
+
+/***/ }),
+
+/***/ "./src/app/components/footer/footer.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/footer/footer.component.ts ***!
+  \*******************************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/components/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/components/footer/footer.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/head/head.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/components/head/head.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZC9oZWFkLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/head/head.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/components/head/head.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<head>\n<title>State of Maharashtra University –SMU</title>\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"description\" content=\"Elearn project\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>"
+
+/***/ }),
+
+/***/ "./src/app/components/head/head.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/head/head.component.ts ***!
+  \***************************************************/
+/*! exports provided: HeadComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeadComponent", function() { return HeadComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var HeadComponent = /** @class */ (function () {
+    function HeadComponent() {
+    }
+    HeadComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-head',
+            template: __webpack_require__(/*! ./head.component.html */ "./src/app/components/head/head.component.html"),
+            styles: [__webpack_require__(/*! ./head.component.css */ "./src/app/components/head/head.component.css")]
+        })
+    ], HeadComponent);
+    return HeadComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/header/header.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/header/header.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".navbar-custom {\n    background-color: #000;\n}\n\n/* change the brand and text color */\n\n.navbar-custom .navbar-brand,\n.navbar-custom .navbar-text {\n    color: rgba(255,255,255,.8);\n}\n\n/* change the link color */\n\n.navbar-custom .navbar-nav .nav-link {\n    color: rgba(255,255,255,.5);\n}\n\n/* change the color of active or hovered links */\n\n.navbar-custom .nav-item.active .nav-link,\n.navbar-custom .nav-item:hover .nav-link {\n    color: #ffffff;\n}\n\n/* for dropdown only - change the color of droodown */\n\n.navbar-custom .dropdown-menu {\n    background-color: #000;\n}\n\n.navbar-custom .dropdown-item {\n    color: #ffffff;\n}\n\n.navbar-custom .dropdown-item:hover,\n.navbar-custom .dropdown-item:focus {\n    color: #333333;\n    background-color: #FE642E;\n}\n\n.dropdown:hover>.dropdown-menu {\n  display: block;\n}\n\n.dropdown>.dropdown-toggle:active {\n  /*Without this, clicking will make it sticky*/\n    pointer-events: none;\n}\n\n.fa {\n  padding: 10px;\n  font-size: 30px;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  text-decoration: none;\n  margin: 5px 2px;\n}\n\n.fa:hover {\n    opacity: 0.7;\n}\n\n.fa-facebook {\n  background: #3B5998;\n  color: white;\n}\n\n.fa-twitter {\n  background: #55ACEE;\n  color: white;\n}\n\n.fa-google {\n  background: #dd4b39;\n  color: white;\n}\n\n.fa-linkedin {\n  background: #007bb5;\n  color: white;\n}\n\n.fa-youtube {\n  background: #bb0000;\n  color: white;\n}\n\n.fa-instagram {\n  background: #125688;\n  color: white;\n}\n\n.fa-pinterest {\n  background: #cb2027;\n  color: white;\n}\n\n.fa-snapchat-ghost {\n  background: #fffc00;\n  color: white;\n  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n}\n\n.fa-skype {\n  background: #00aff0;\n  color: white;\n}\n\n.fa-android {\n  background: #a4c639;\n  color: white;\n}\n\n.fa-dribbble {\n  background: #ea4c89;\n  color: white;\n}\n\n.fa-vimeo {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-tumblr {\n  background: #2c4762;\n  color: white;\n}\n\n.fa-vine {\n  background: #00b489;\n  color: white;\n}\n\n.fa-foursquare {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-stumbleupon {\n  background: #eb4924;\n  color: white;\n}\n\n.fa-flickr {\n  background: #f40083;\n  color: white;\n}\n\n.fa-yahoo {\n  background: #430297;\n  color: white;\n}\n\n.fa-soundcloud {\n  background: #ff5500;\n  color: white;\n}\n\n.fa-reddit {\n  background: #ff5700;\n  color: white;\n}\n\n.fa-rss {\n  background: #ff6600;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx1QkFBdUI7Q0FDMUI7O0FBRUQscUNBQXFDOztBQUNyQzs7SUFFSSw0QkFBNEI7Q0FDL0I7O0FBRUQsMkJBQTJCOztBQUMzQjtJQUNJLDRCQUE0QjtDQUMvQjs7QUFFRCxpREFBaUQ7O0FBQ2pEOztJQUVJLGVBQWU7Q0FDbEI7O0FBRUQsc0RBQXNEOztBQUN0RDtJQUNJLHVCQUF1QjtDQUMxQjs7QUFDRDtJQUNJLGVBQWU7Q0FDbEI7O0FBQ0Q7O0lBRUksZUFBZTtJQUNmLDBCQUEwQjtDQUM3Qjs7QUFFRDtFQUNFLGVBQWU7Q0FDaEI7O0FBRUQ7RUFDRSw4Q0FBOEM7SUFDNUMscUJBQXFCO0NBQ3hCOztBQUVEO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixZQUFZO0VBQ1osYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixzQkFBc0I7RUFDdEIsZ0JBQWdCO0NBQ2pCOztBQUVEO0lBQ0ksYUFBYTtDQUNoQjs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtFQUNiLGtFQUFrRTtDQUNuRTs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZiYXItY3VzdG9tIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwO1xufVxuXG4vKiBjaGFuZ2UgdGhlIGJyYW5kIGFuZCB0ZXh0IGNvbG9yICovXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLWJyYW5kLFxuLm5hdmJhci1jdXN0b20gLm5hdmJhci10ZXh0IHtcbiAgICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwuOCk7XG59XG5cbi8qIGNoYW5nZSB0aGUgbGluayBjb2xvciAqL1xuLm5hdmJhci1jdXN0b20gLm5hdmJhci1uYXYgLm5hdi1saW5rIHtcbiAgICBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwuNSk7XG59XG5cbi8qIGNoYW5nZSB0aGUgY29sb3Igb2YgYWN0aXZlIG9yIGhvdmVyZWQgbGlua3MgKi9cbi5uYXZiYXItY3VzdG9tIC5uYXYtaXRlbS5hY3RpdmUgLm5hdi1saW5rLFxuLm5hdmJhci1jdXN0b20gLm5hdi1pdGVtOmhvdmVyIC5uYXYtbGluayB7XG4gICAgY29sb3I6ICNmZmZmZmY7XG59XG5cbi8qIGZvciBkcm9wZG93biBvbmx5IC0gY2hhbmdlIHRoZSBjb2xvciBvZiBkcm9vZG93biAqL1xuLm5hdmJhci1jdXN0b20gLmRyb3Bkb3duLW1lbnUge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG59XG4ubmF2YmFyLWN1c3RvbSAuZHJvcGRvd24taXRlbSB7XG4gICAgY29sb3I6ICNmZmZmZmY7XG59XG4ubmF2YmFyLWN1c3RvbSAuZHJvcGRvd24taXRlbTpob3Zlcixcbi5uYXZiYXItY3VzdG9tIC5kcm9wZG93bi1pdGVtOmZvY3VzIHtcbiAgICBjb2xvcjogIzMzMzMzMztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkU2NDJFO1xufVxuXG4uZHJvcGRvd246aG92ZXI+LmRyb3Bkb3duLW1lbnUge1xuICBkaXNwbGF5OiBibG9jaztcbn1cblxuLmRyb3Bkb3duPi5kcm9wZG93bi10b2dnbGU6YWN0aXZlIHtcbiAgLypXaXRob3V0IHRoaXMsIGNsaWNraW5nIHdpbGwgbWFrZSBpdCBzdGlja3kqL1xuICAgIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuXG4uZmEge1xuICBwYWRkaW5nOiAxMHB4O1xuICBmb250LXNpemU6IDMwcHg7XG4gIHdpZHRoOiA1MHB4O1xuICBoZWlnaHQ6IDUwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBtYXJnaW46IDVweCAycHg7XG59XG5cbi5mYTpob3ZlciB7XG4gICAgb3BhY2l0eTogMC43O1xufVxuXG4uZmEtZmFjZWJvb2sge1xuICBiYWNrZ3JvdW5kOiAjM0I1OTk4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS10d2l0dGVyIHtcbiAgYmFja2dyb3VuZDogIzU1QUNFRTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtZ29vZ2xlIHtcbiAgYmFja2dyb3VuZDogI2RkNGIzOTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtbGlua2VkaW4ge1xuICBiYWNrZ3JvdW5kOiAjMDA3YmI1O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS15b3V0dWJlIHtcbiAgYmFja2dyb3VuZDogI2JiMDAwMDtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtaW5zdGFncmFtIHtcbiAgYmFja2dyb3VuZDogIzEyNTY4ODtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtcGludGVyZXN0IHtcbiAgYmFja2dyb3VuZDogI2NiMjAyNztcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtc25hcGNoYXQtZ2hvc3Qge1xuICBiYWNrZ3JvdW5kOiAjZmZmYzAwO1xuICBjb2xvcjogd2hpdGU7XG4gIHRleHQtc2hhZG93OiAtMXB4IDAgYmxhY2ssIDAgMXB4IGJsYWNrLCAxcHggMCBibGFjaywgMCAtMXB4IGJsYWNrO1xufVxuXG4uZmEtc2t5cGUge1xuICBiYWNrZ3JvdW5kOiAjMDBhZmYwO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1hbmRyb2lkIHtcbiAgYmFja2dyb3VuZDogI2E0YzYzOTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtZHJpYmJibGUge1xuICBiYWNrZ3JvdW5kOiAjZWE0Yzg5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS12aW1lbyB7XG4gIGJhY2tncm91bmQ6ICM0NWJiZmY7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXR1bWJsciB7XG4gIGJhY2tncm91bmQ6ICMyYzQ3NjI7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXZpbmUge1xuICBiYWNrZ3JvdW5kOiAjMDBiNDg5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1mb3Vyc3F1YXJlIHtcbiAgYmFja2dyb3VuZDogIzQ1YmJmZjtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtc3R1bWJsZXVwb24ge1xuICBiYWNrZ3JvdW5kOiAjZWI0OTI0O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1mbGlja3Ige1xuICBiYWNrZ3JvdW5kOiAjZjQwMDgzO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS15YWhvbyB7XG4gIGJhY2tncm91bmQ6ICM0MzAyOTc7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXNvdW5kY2xvdWQge1xuICBiYWNrZ3JvdW5kOiAjZmY1NTAwO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1yZWRkaXQge1xuICBiYWNrZ3JvdW5kOiAjZmY1NzAwO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1yc3Mge1xuICBiYWNrZ3JvdW5kOiAjZmY2NjAwO1xuICBjb2xvcjogd2hpdGU7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/components/header/header.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/header/header.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<header class=\"header\">\n\t\t\t\n  <!-- Top Bar -->\n  <div class=\"top_bar\">\n    <div class=\"top_bar_container\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"top_bar_content d-flex flex-row align-items-center justify-content-start\">\n              <ul class=\"top_bar_contact_list\">\n                <li><div class=\"question\">Have any questions?</div></li>\n                <li>\n                  <div>+91 999999999</div>\n                </li>\n                <li>\n                  <div>info@smugov.org</div>\n                </li>\n              </ul>\n              <div class=\"top_bar_login ml-auto\">\n                <ul>\n                  <li><a href=\"#\">Register</a></li>\n                  <li *ngIf=\"loginService.currentUserValue == null\"><a (click)=\"onLogin();\" href=\"#\">Login</a></li>\n                  <li *ngIf=\"loginService.currentUserValue != null\"><a (click)=\"onLogout();\" href=\"#\">Logout</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\t\n  </div>\n\n  <!-- Header Content -->\n  <div class=\"header_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_content d-flex flex-row align-items-center justify-content-start\">\n            <div class=\"logo_container\">\n              <a href=\"#\">\n                <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                  <div class=\"logo_img\"><img src=\"../../assets/img/logo4.png\" alt=\"\" style=\"height: 90px;\"></div>\n                </div>\n              </a>\n            </div>\n            <nav class=\"main_nav_contaner ml-auto\">\n              <ul class=\"main_nav\">\n                  <li [routerLinkActive]=\"['active']\"><a href=\"/\">home</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/aboutus\">About Us</a></li>\n                  <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/courses\">Courses</a></li> -->\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/contactus\">Contact Us</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/admin\">Admin</a></li>\n              </ul>\n              <div class=\"search_button\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>\n\n              <!-- Hamburger -->\n\n              <div class=\"hamburger menu_mm\">\n                <i class=\"fa fa-bars menu_mm\" aria-hidden=\"true\"></i>\n              </div>\n            </nav>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Search Panel -->\n  <div class=\"header_search_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_search_content d-flex flex-row align-items-center justify-content-end\">\n            <form action=\"#\" class=\"header_search_form\">\n              <input type=\"search\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\n              <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center\">\n                <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\n  </div>\t\t\t\n</header>"
+
+/***/ }),
+
+/***/ "./src/app/components/header/header.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/header/header.component.ts ***!
+  \*******************************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/login.service */ "./src/app/services/login.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var HeaderComponent = /** @class */ (function () {
+    function HeaderComponent(modalService, loginService) {
+        this.modalService = modalService;
+        this.loginService = loginService;
+    }
+    HeaderComponent.prototype.ngOnInit = function () {
+        console.log('HeaderComponent inside ngOnInit');
+    };
+    HeaderComponent.prototype.onLogin = function () {
+        this.modalService.open(_login_login_component__WEBPACK_IMPORTED_MODULE_1__["LoginComponent"]);
+    };
+    HeaderComponent.prototype.onLogout = function () {
+        this.loginService.logout();
+    };
+    HeaderComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-header',
+            template: __webpack_require__(/*! ./header.component.html */ "./src/app/components/header/header.component.html"),
+            styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/components/header/header.component.css")]
+        }),
+        __metadata("design:paramtypes", [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModal"], _services_login_service__WEBPACK_IMPORTED_MODULE_3__["LoginService"]])
+    ], HeaderComponent);
+    return HeaderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/home/home.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/components/home/home.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/home/home.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/components/home/home.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n\t\n\t<!-- Home -->\n    <app-homebody></app-homebody>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>"
+
+/***/ }),
+
+/***/ "./src/app/components/home/home.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/home/home.component.ts ***!
+  \***************************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent() {
+        this.images = [1, 2, 3].map(function () { return "https://picsum.photos/900/500?random&t=" + Math.random(); });
+        localStorage.removeItem('currentUser');
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/components/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/components/home/home.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/homebody/homebody.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/homebody/homebody.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvaG9tZWJvZHkvaG9tZWJvZHkuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/components/homebody/homebody.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/components/homebody/homebody.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"home\">\n  <div class=\"home_slider_container\">\n    \n    <!-- Home Slider -->\n    <div class=\"owl-carousel owl-theme home_slider\">\n      \n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Register Online</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Courses Details</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Online Courses</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Featured Course -->\n\n<div class=\"featured\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <!-- Home Slider Nav -->\n        <div class=\"home_slider_nav_container d-flex flex-row align-items-start justify-content-between\">\n          <div class=\"home_slider_nav home_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"home_slider_nav home_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n        </div>\n        <div class=\"featured_container\">\n          <div class=\"row\">\n            <div class=\"col-lg-6 featured_col\">\n              <div class=\"featured_content\">\n                <div class=\"featured_header d-flex flex-row align-items-center justify-content-start\">\n                  <div class=\"featured_tag\"><a href=\"#\">Featured</a></div>\n                  <div class=\"featured_price ml-auto\">Price: <span>$35</span></div>\n                </div>\n                <div class=\"featured_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                <div class=\"featured_text\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Donec vehicula efficitur nibh, in pretium nulla interdum non.</div>\n                <div class=\"featured_footer d-flex align-items-center justify-content-start\">\n                  <div class=\"featured_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"\"></div>\n                  <div class=\"featured_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                  <div class=\"featured_sales ml-auto\"><span>352</span> Sales</div>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-lg-6 featured_col\">\n              <!-- Background image artist https://unsplash.com/@jtylernix -->\n              <div class=\"featured_background\" style=\"background-image:url(../../assets/images/featured.jpg)\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Courses -->\n\n<div class=\"courses\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Choose your course</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"course_search\">\n          <form action=\"#\" class=\"course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between\">\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Course\" required=\"required\"></div>\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Level\" required=\"required\"></div>\n            <button class=\"course_button\"><span>search course</span><span class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></span></button>\n          </form>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        \n        <!-- Courses Slider -->\n        <div class=\"courses_slider_container\">\n          <div class=\"owl-carousel owl-theme courses_slider\">\n            \n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_1.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"https://unsplash.com/@anthonytran\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_2.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">New</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Social Media Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_2.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Mark Smith</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_3.jpg\" alt=\"https://unsplash.com/@annademy\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Marketing Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_3.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Julia Williams</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n          </div>\n          \n          <!-- Courses Slider Nav -->\n          <div class=\"courses_slider_nav courses_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"courses_slider_nav courses_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Milestones -->\n\n<div class=\"milestones\">\n  <!-- Background image artis https://unsplash.com/@thepootphotographer -->\n  <div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image:  url(../../assets/images/milestones.jpg)\" data-speed=\"0.8\"></div>\n  <div class=\"container\">\n    <div class=\"row milestones_container\">\n            \n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_1.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"1548\">0</div>\n          <div class=\"milestone_text\">Online Courses</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_2.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"7286\">0</div>\n          <div class=\"milestone_text\">Students</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_3.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"257\">0</div>\n          <div class=\"milestone_text\">Teachers</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_4.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"39\">0</div>\n          <div class=\"milestone_text\">Countries</div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Sections -->\n\n<div class=\"grouped_sections\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- Why Choose Us -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Why Choose Us?</div>\n        <div class=\"accordions\">\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center active\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Vehicula nisi congue, blandit?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Nisi congue, blandit purus sed?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n\n      <!-- Events -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Upcoming Events</div>\n        <div class=\"events\">\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">20</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course Release</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">23</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Students Art Workshop</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">25</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Launch Party for a new Platform</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">27</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">29</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n\n      <!-- News -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Latest News</div>\n        <div class=\"news\">\n          \n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_1.jpg\" alt=\"https://unsplash.com/@beccatapert\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_2.jpg\" alt=\"https://unsplash.com/@nbb_photos\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_3.jpg\" alt=\"https://unsplash.com/@rawpixel\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_4.jpg\" alt=\"https://unsplash.com/@jtylernix\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Video -->\n\n<div class=\"video\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"video_container_outer\">\n          <div class=\"video_container\">\n            <!-- Video poster image artist: https://unsplash.com/@annademy -->\n            <!-- <video id=\"vid1\" class=\"video-js vjs-default-skin\" controls data-setup='{ \"poster\": \"../../assets/images/video.jpg\", \"techOrder\": [\"youtube\"], \"sources\": [{ \"type\": \"video/youtube\", \"src\": \"https://youtu.be/5_MRXyYjHDk\"}], \"youtube\": { \"iv_load_policy\": 1 } }'> -->\n            <!-- </video> -->\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Join -->\n\n<div class=\"join\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Join Our Course Today</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"button join_button\"><a href=\"#\">register now<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/homebody/homebody.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/homebody/homebody.component.ts ***!
+  \***********************************************************/
+/*! exports provided: HomebodyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomebodyComponent", function() { return HomebodyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HomebodyComponent = /** @class */ (function () {
+    function HomebodyComponent() {
+    }
+    HomebodyComponent.prototype.ngOnInit = function () {
+    };
+    HomebodyComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-homebody',
+            template: __webpack_require__(/*! ./homebody.component.html */ "./src/app/components/homebody/homebody.component.html"),
+            styles: [__webpack_require__(/*! ./homebody.component.css */ "./src/app/components/homebody/homebody.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], HomebodyComponent);
+    return HomebodyComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/login/login.component.css":
 /*!******************************************************!*\
   !*** ./src/app/components/login/login.component.css ***!
@@ -7029,7 +7238,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  login works!\n</p>\n"
+module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\">Log In</h4>\n  <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"dismiss()\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n<form [formGroup]='loginForm' #loginForm1>\n\t<div class=\"modal-body\">\n\t  <div class=\"container\">\n\t\t<div *ngIf=\"!isValid\" class=\"alert alert-danger\" role=\"alert\">\n\t\t\t{{ errorMessage }}\n\t\t</div>\t\n\t    <div class=\"form-group\">\n\t      <label for=\"username\">Username</label>\n\t      <input id=\"username\" type=\"text\" class=\"form-control\" />\n\t    </div>\n\t    <div class=\"form-group\">\n\t      <label for=\"password\">Password</label>\n\t      <input id=\"password\" type=\"text\" class=\"form-control\">\n\t    </div>\n\t  </div>\n\t</div>\n\t<div class=\"modal-footer\">\n\t  <button id=\"student-cancel-btn\" type=\"submit\" class=\"btn btn-danger btn-sm\" \n    \t\t  (click)=\"close()\">Cancel</button>\n\t  <button id=\"student-submit-btn\" type=\"button\" \n\t    class=\"btn btn-primary btn-sm\" (click)=\"onSignin(loginForm1)\">Login</button>\n\t    \n\t</div>\n</form>"
 
 /***/ }),
 
@@ -7044,6 +7253,10 @@ module.exports = "<p>\n  login works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/login.service */ "./src/app/services/login.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7054,10 +7267,61 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
+
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent() {
+    function LoginComponent(formBuilder, activatedRoute, modalService, activeModal, loginService, router) {
+        this.formBuilder = formBuilder;
+        this.activatedRoute = activatedRoute;
+        this.modalService = modalService;
+        this.activeModal = activeModal;
+        this.loginService = loginService;
+        this.router = router;
+        this.isValid = true;
     }
     LoginComponent.prototype.ngOnInit = function () {
+        this.createForm();
+        // get return url from route parameters or default to '/'
+        this.returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'];
+        console.log('this.returnUrl : ' + this.returnUrl);
+    };
+    LoginComponent.prototype.createForm = function () {
+        this.loginForm = this.formBuilder.group({
+            username: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]
+        });
+    };
+    LoginComponent.prototype.onSignin = function (form) {
+        //      this.authenticationService.login(form.username.value,form.password.value);
+        //      console.log('return url : ' + this.returnUrl);
+        //      this.activeModal.close(this.dataForm.value);
+        var _this = this;
+        this.loginService.login(form.username.value, form.password.value).subscribe(function (res) {
+            if (res != null) {
+                if (_this.close()) {
+                    _this.isValid = true;
+                    if (localStorage.getItem('currenturl') == '/admin') {
+                        setTimeout(function () { _this.router.navigate(['/admin/managestudent']); }, 1000);
+                    }
+                }
+            }
+            else {
+                _this.isValid = false;
+                _this.errorMessage = 'Username or password is incorrect';
+            }
+        }, function (error) {
+            console.log('error >>>> ' + error);
+        });
+    };
+    LoginComponent.prototype.close = function () {
+        this.activeModal.close(this.loginForm.value);
+        return true;
+    };
+    LoginComponent.prototype.dismiss = function () {
+        this.activeModal.dismiss();
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -7065,9 +7329,77 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/components/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/components/login/login.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModal"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbActiveModal"],
+            _services_login_service__WEBPACK_IMPORTED_MODULE_4__["LoginService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], LoginComponent);
     return LoginComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/menu/menu.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/components/menu/menu.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvbWVudS9tZW51LmNvbXBvbmVudC5jc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/components/menu/menu.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/components/menu/menu.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400\">\n  <div class=\"menu_close_container\"><div class=\"menu_close\"><div></div><div></div></div></div>\n  <div class=\"search\">\n    <form action=\"#\" class=\"header_search_form menu_mm\">\n      <input type=\"search\" class=\"search_input menu_mm\" placeholder=\"Search\" required=\"required\">\n      <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center menu_mm\">\n        <i class=\"fa fa-search menu_mm\" aria-hidden=\"true\"></i>\n      </button>\n    </form>\n  </div>\n  <nav class=\"menu_nav\">\n    <ul class=\"menu_mm\">\n      <li class=\"menu_mm\"><a href=\"/\">Home</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/aboutus\">About Us</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/admin\">Admin</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/contactus\">Contact Us</a></li>\n    </ul>\n  </nav>\n  <div class=\"menu_extra\">\n    <div class=\"menu_phone\"><span class=\"menu_title\">phone:</span>+91 999999999</div>\n    <div class=\"menu_social\">\n      <span class=\"menu_title\">follow us</span>\n      <ul>\n        <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/menu/menu.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/components/menu/menu.component.ts ***!
+  \***************************************************/
+/*! exports provided: MenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuComponent", function() { return MenuComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MenuComponent = /** @class */ (function () {
+    function MenuComponent() {
+    }
+    MenuComponent.prototype.ngOnInit = function () {
+    };
+    MenuComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-menu',
+            template: __webpack_require__(/*! ./menu.component.html */ "./src/app/components/menu/menu.component.html"),
+            styles: [__webpack_require__(/*! ./menu.component.css */ "./src/app/components/menu/menu.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MenuComponent);
+    return MenuComponent;
 }());
 
 
@@ -7137,6 +7469,63 @@ var RegisterComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/result/result.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/components/result/result.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVzdWx0L3Jlc3VsdC5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/result/result.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/result/result.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  result works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/components/result/result.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/result/result.component.ts ***!
+  \*******************************************************/
+/*! exports provided: ResultComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResultComponent", function() { return ResultComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ResultComponent = /** @class */ (function () {
+    function ResultComponent() {
+    }
+    ResultComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-result',
+            template: __webpack_require__(/*! ./result.component.html */ "./src/app/components/result/result.component.html"),
+            styles: [__webpack_require__(/*! ./result.component.css */ "./src/app/components/result/result.component.css")]
+        })
+    ], ResultComponent);
+    return ResultComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/student/student.component.css":
 /*!**********************************************************!*\
   !*** ./src/app/components/student/student.component.css ***!
@@ -7155,7 +7544,7 @@ module.exports = "#sparq-edit-button {padding: 0}\n.edit-btn { width: 100%; }\nh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-body\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
 
 /***/ }),
 
@@ -7214,6 +7603,7 @@ var StudentComponent = /** @class */ (function () {
         this.confirmationDialogService = confirmationDialogService;
         //dialogConfig = new MatDialogConfig();
         this.editMode = true;
+        this.isValid = false;
         this.message = 'Snack Bar opened.';
         this.actionButtonLabel = 'Retry';
         this.action = true;
@@ -7422,222 +7812,21 @@ var StudentComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/contact-us/contact-us.component.css":
-/*!*****************************************************!*\
-  !*** ./src/app/contact-us/contact-us.component.css ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRhY3QtdXMvY29udGFjdC11cy5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/contact-us/contact-us.component.html":
-/*!******************************************************!*\
-  !*** ./src/app/contact-us/contact-us.component.html ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/contact.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Contact us</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <br>\n        </div>\n        <div class=\"row\">\n          <div class=\"col\">\n\n            <form id=\"contact-form\" method=\"post\" action=\"#\" role=\"form\">\n\n                  <div class=\"messages\"></div>\n\n                  <div class=\"controls\">\n\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_name\">Firstname *</label>\n                                  <input id=\"form_name\" type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Please enter your firstname *\" required=\"required\" data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_lastname\">Lastname *</label>\n                                  <input id=\"form_lastname\" type=\"text\" name=\"surname\" class=\"form-control\" placeholder=\"Please enter your lastname *\" required=\"required\" data-error=\"Lastname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_email\">Email *</label>\n                                  <input id=\"form_email\" type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"Please enter your email *\" required=\"required\" data-error=\"Valid email is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_need\">Please specify your need *</label>\n                                  <select id=\"form_need\" name=\"need\" class=\"form-control\" required=\"required\" data-error=\"Please specify your need.\">\n                                      <option value=\"\"></option>\n                                      <option value=\"Request quotation\">Request Fees Information</option>\n                                      <option value=\"Request order status\">Request Registration status</option>\n                                      <option value=\"Other\">Other</option>\n                                  </select>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                      </div>\n                      <div class=\"row\">\n                          <div class=\"col-md-12\">\n                              <div class=\"form-group\">\n                                  <label for=\"form_message\">Message *</label>\n                                  <textarea id=\"form_message\" name=\"message\" class=\"form-control\" placeholder=\"Message for me *\" rows=\"4\" required=\"required\" data-error=\"Please, leave us a message.\"></textarea>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-12\">\n                              <input type=\"submit\" class=\"btn btn-success btn-send\" value=\"Send message\">\n                          </div>\n                      </div>\n                  </div>\n              </form>\n\n          </div>\n          <div class=\"col\">\n\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n\n</body>\n\n</html>\n"
-
-/***/ }),
-
-/***/ "./src/app/contact-us/contact-us.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/contact-us/contact-us.component.ts ***!
-  \****************************************************/
-/*! exports provided: ContactUsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactUsComponent", function() { return ContactUsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ContactUsComponent = /** @class */ (function () {
-    function ContactUsComponent() {
-    }
-    ContactUsComponent.prototype.ngOnInit = function () {
-    };
-    ContactUsComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-contact-us',
-            template: __webpack_require__(/*! ./contact-us.component.html */ "./src/app/contact-us/contact-us.component.html"),
-            styles: [__webpack_require__(/*! ./contact-us.component.css */ "./src/app/contact-us/contact-us.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], ContactUsComponent);
-    return ContactUsComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/footer/footer.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/footer/footer.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/footer/footer.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/footer/footer.component.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<footer class=\"footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <!-- About -->\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_about\">\n          <div class=\"logo_container\">\n            <a href=\"#\">\n              <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                <div class=\"logo_img\"><img src=\"../../assets/images/logo.png\" alt=\"\"></div>\n                <div class=\"logo_text\">learn</div>\n              </div>\n            </a>\n          </div>\n          <div class=\"footer_about_text\">\n            <p>Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar.</p>\n          </div>\n          <div class=\"footer_social\">\n            <ul>\n              <li><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n              <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n          </div>\n          <div class=\"copyright\"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->\n                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved. | This template is made with <i class=\"fa fa-heart-o\" aria-hidden=\"true\"></i> by <a href=\"https://smugov.org\" target=\"_blank\">Smugov</a>\n                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Quick menu</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"index.html\">Home</a></li>\n            <li><a href=\"about.html\">About us</a></li>\n            <li><a href=\"#\">Testimonials</a></li>\n            <li><a href=\"#\">Services</a></li>\n            <li><a href=\"contact.html\">Contact</a></li>\n            <li><a href=\"#\">Facts</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_links\">\n          <div class=\"footer_title\">Useful Links</div>\n          <ul class=\"footer_list\">\n            <li><a href=\"courses.html\">Courses</a></li>\n            <li><a href=\"#\">Events</a></li>\n            <li><a href=\"news.html\">News</a></li>\n            <li><a href=\"#\">Teachers</a></li>\n            <li><a href=\"#\">Links</a></li>\n            <li><a href=\"#\">FAQ</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"col-lg-3 footer_col\">\n        <div class=\"footer_contact\">\n          <div class=\"footer_title\">Contact Us</div>\n          <div class=\"footer_contact_info\">\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Address:</div>\n              <div class=\"footer_contact_line\">Mumbai</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Phone:</div>\n              <div class=\"footer_contact_line\">+91 999999999</div>\n            </div>\n            <div class=\"footer_contact_item\">\n              <div class=\"footer_contact_title\">Email:</div>\n              <div class=\"footer_contact_line\">info@smugov.org</div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</footer>"
-
-/***/ }),
-
-/***/ "./src/app/footer/footer.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/footer/footer.component.ts ***!
-  \********************************************/
-/*! exports provided: FooterComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var FooterComponent = /** @class */ (function () {
-    function FooterComponent() {
-    }
-    FooterComponent.prototype.ngOnInit = function () {
-    };
-    FooterComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-footer',
-            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/footer/footer.component.html"),
-            styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], FooterComponent);
-    return FooterComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/head/head.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/head/head.component.css ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hlYWQvaGVhZC5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/head/head.component.html":
-/*!******************************************!*\
-  !*** ./src/app/head/head.component.html ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<head>\n<title>State of Maharashtra University –SMU</title>\n<meta charset=\"utf-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"description\" content=\"Elearn project\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>"
-
-/***/ }),
-
-/***/ "./src/app/head/head.component.ts":
+/***/ "./src/app/services/auth.guard.ts":
 /*!****************************************!*\
-  !*** ./src/app/head/head.component.ts ***!
+  !*** ./src/app/services/auth.guard.ts ***!
   \****************************************/
-/*! exports provided: HeadComponent */
+/*! exports provided: AuthGuard */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeadComponent", function() { return HeadComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return AuthGuard; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var HeadComponent = /** @class */ (function () {
-    function HeadComponent() {
-    }
-    HeadComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-head',
-            template: __webpack_require__(/*! ./head.component.html */ "./src/app/head/head.component.html"),
-            styles: [__webpack_require__(/*! ./head.component.css */ "./src/app/head/head.component.css")]
-        })
-    ], HeadComponent);
-    return HeadComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/header/header.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/header/header.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".navbar-custom {\n    background-color: #000;\n}\n\n/* change the brand and text color */\n\n.navbar-custom .navbar-brand,\n.navbar-custom .navbar-text {\n    color: rgba(255,255,255,.8);\n}\n\n/* change the link color */\n\n.navbar-custom .navbar-nav .nav-link {\n    color: rgba(255,255,255,.5);\n}\n\n/* change the color of active or hovered links */\n\n.navbar-custom .nav-item.active .nav-link,\n.navbar-custom .nav-item:hover .nav-link {\n    color: #ffffff;\n}\n\n/* for dropdown only - change the color of droodown */\n\n.navbar-custom .dropdown-menu {\n    background-color: #000;\n}\n\n.navbar-custom .dropdown-item {\n    color: #ffffff;\n}\n\n.navbar-custom .dropdown-item:hover,\n.navbar-custom .dropdown-item:focus {\n    color: #333333;\n    background-color: #FE642E;\n}\n\n.dropdown:hover>.dropdown-menu {\n  display: block;\n}\n\n.dropdown>.dropdown-toggle:active {\n  /*Without this, clicking will make it sticky*/\n    pointer-events: none;\n}\n\n.fa {\n  padding: 10px;\n  font-size: 30px;\n  width: 50px;\n  height: 50px;\n  text-align: center;\n  text-decoration: none;\n  margin: 5px 2px;\n}\n\n.fa:hover {\n    opacity: 0.7;\n}\n\n.fa-facebook {\n  background: #3B5998;\n  color: white;\n}\n\n.fa-twitter {\n  background: #55ACEE;\n  color: white;\n}\n\n.fa-google {\n  background: #dd4b39;\n  color: white;\n}\n\n.fa-linkedin {\n  background: #007bb5;\n  color: white;\n}\n\n.fa-youtube {\n  background: #bb0000;\n  color: white;\n}\n\n.fa-instagram {\n  background: #125688;\n  color: white;\n}\n\n.fa-pinterest {\n  background: #cb2027;\n  color: white;\n}\n\n.fa-snapchat-ghost {\n  background: #fffc00;\n  color: white;\n  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;\n}\n\n.fa-skype {\n  background: #00aff0;\n  color: white;\n}\n\n.fa-android {\n  background: #a4c639;\n  color: white;\n}\n\n.fa-dribbble {\n  background: #ea4c89;\n  color: white;\n}\n\n.fa-vimeo {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-tumblr {\n  background: #2c4762;\n  color: white;\n}\n\n.fa-vine {\n  background: #00b489;\n  color: white;\n}\n\n.fa-foursquare {\n  background: #45bbff;\n  color: white;\n}\n\n.fa-stumbleupon {\n  background: #eb4924;\n  color: white;\n}\n\n.fa-flickr {\n  background: #f40083;\n  color: white;\n}\n\n.fa-yahoo {\n  background: #430297;\n  color: white;\n}\n\n.fa-soundcloud {\n  background: #ff5500;\n  color: white;\n}\n\n.fa-reddit {\n  background: #ff5700;\n  color: white;\n}\n\n.fa-rss {\n  background: #ff6600;\n  color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksdUJBQXVCO0NBQzFCOztBQUVELHFDQUFxQzs7QUFDckM7O0lBRUksNEJBQTRCO0NBQy9COztBQUVELDJCQUEyQjs7QUFDM0I7SUFDSSw0QkFBNEI7Q0FDL0I7O0FBRUQsaURBQWlEOztBQUNqRDs7SUFFSSxlQUFlO0NBQ2xCOztBQUVELHNEQUFzRDs7QUFDdEQ7SUFDSSx1QkFBdUI7Q0FDMUI7O0FBQ0Q7SUFDSSxlQUFlO0NBQ2xCOztBQUNEOztJQUVJLGVBQWU7SUFDZiwwQkFBMEI7Q0FDN0I7O0FBRUQ7RUFDRSxlQUFlO0NBQ2hCOztBQUVEO0VBQ0UsOENBQThDO0lBQzVDLHFCQUFxQjtDQUN4Qjs7QUFFRDtFQUNFLGNBQWM7RUFDZCxnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsc0JBQXNCO0VBQ3RCLGdCQUFnQjtDQUNqQjs7QUFFRDtJQUNJLGFBQWE7Q0FDaEI7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7RUFDYixrRUFBa0U7Q0FDbkU7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkOztBQUVEO0VBQ0Usb0JBQW9CO0VBQ3BCLGFBQWE7Q0FDZDs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxvQkFBb0I7RUFDcEIsYUFBYTtDQUNkIiwiZmlsZSI6InNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhci1jdXN0b20ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDA7XG59XG5cbi8qIGNoYW5nZSB0aGUgYnJhbmQgYW5kIHRleHQgY29sb3IgKi9cbi5uYXZiYXItY3VzdG9tIC5uYXZiYXItYnJhbmQsXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLXRleHQge1xuICAgIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC44KTtcbn1cblxuLyogY2hhbmdlIHRoZSBsaW5rIGNvbG9yICovXG4ubmF2YmFyLWN1c3RvbSAubmF2YmFyLW5hdiAubmF2LWxpbmsge1xuICAgIGNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC41KTtcbn1cblxuLyogY2hhbmdlIHRoZSBjb2xvciBvZiBhY3RpdmUgb3IgaG92ZXJlZCBsaW5rcyAqL1xuLm5hdmJhci1jdXN0b20gLm5hdi1pdGVtLmFjdGl2ZSAubmF2LWxpbmssXG4ubmF2YmFyLWN1c3RvbSAubmF2LWl0ZW06aG92ZXIgLm5hdi1saW5rIHtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbn1cblxuLyogZm9yIGRyb3Bkb3duIG9ubHkgLSBjaGFuZ2UgdGhlIGNvbG9yIG9mIGRyb29kb3duICovXG4ubmF2YmFyLWN1c3RvbSAuZHJvcGRvd24tbWVudSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDtcbn1cbi5uYXZiYXItY3VzdG9tIC5kcm9wZG93bi1pdGVtIHtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbn1cbi5uYXZiYXItY3VzdG9tIC5kcm9wZG93bi1pdGVtOmhvdmVyLFxuLm5hdmJhci1jdXN0b20gLmRyb3Bkb3duLWl0ZW06Zm9jdXMge1xuICAgIGNvbG9yOiAjMzMzMzMzO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGRTY0MkU7XG59XG5cbi5kcm9wZG93bjpob3Zlcj4uZHJvcGRvd24tbWVudSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4uZHJvcGRvd24+LmRyb3Bkb3duLXRvZ2dsZTphY3RpdmUge1xuICAvKldpdGhvdXQgdGhpcywgY2xpY2tpbmcgd2lsbCBtYWtlIGl0IHN0aWNreSovXG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG59XG5cbi5mYSB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgd2lkdGg6IDUwcHg7XG4gIGhlaWdodDogNTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIG1hcmdpbjogNXB4IDJweDtcbn1cblxuLmZhOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAwLjc7XG59XG5cbi5mYS1mYWNlYm9vayB7XG4gIGJhY2tncm91bmQ6ICMzQjU5OTg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXR3aXR0ZXIge1xuICBiYWNrZ3JvdW5kOiAjNTVBQ0VFO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1nb29nbGUge1xuICBiYWNrZ3JvdW5kOiAjZGQ0YjM5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1saW5rZWRpbiB7XG4gIGJhY2tncm91bmQ6ICMwMDdiYjU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXlvdXR1YmUge1xuICBiYWNrZ3JvdW5kOiAjYmIwMDAwO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1pbnN0YWdyYW0ge1xuICBiYWNrZ3JvdW5kOiAjMTI1Njg4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1waW50ZXJlc3Qge1xuICBiYWNrZ3JvdW5kOiAjY2IyMDI3O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1zbmFwY2hhdC1naG9zdCB7XG4gIGJhY2tncm91bmQ6ICNmZmZjMDA7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1zaGFkb3c6IC0xcHggMCBibGFjaywgMCAxcHggYmxhY2ssIDFweCAwIGJsYWNrLCAwIC0xcHggYmxhY2s7XG59XG5cbi5mYS1za3lwZSB7XG4gIGJhY2tncm91bmQ6ICMwMGFmZjA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWFuZHJvaWQge1xuICBiYWNrZ3JvdW5kOiAjYTRjNjM5O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1kcmliYmJsZSB7XG4gIGJhY2tncm91bmQ6ICNlYTRjODk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXZpbWVvIHtcbiAgYmFja2dyb3VuZDogIzQ1YmJmZjtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtdHVtYmxyIHtcbiAgYmFja2dyb3VuZDogIzJjNDc2MjtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtdmluZSB7XG4gIGJhY2tncm91bmQ6ICMwMGI0ODk7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWZvdXJzcXVhcmUge1xuICBiYWNrZ3JvdW5kOiAjNDViYmZmO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5mYS1zdHVtYmxldXBvbiB7XG4gIGJhY2tncm91bmQ6ICNlYjQ5MjQ7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLWZsaWNrciB7XG4gIGJhY2tncm91bmQ6ICNmNDAwODM7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXlhaG9vIHtcbiAgYmFja2dyb3VuZDogIzQzMDI5NztcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uZmEtc291bmRjbG91ZCB7XG4gIGJhY2tncm91bmQ6ICNmZjU1MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXJlZGRpdCB7XG4gIGJhY2tncm91bmQ6ICNmZjU3MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmZhLXJzcyB7XG4gIGJhY2tncm91bmQ6ICNmZjY2MDA7XG4gIGNvbG9yOiB3aGl0ZTtcbn0iXX0= */"
-
-/***/ }),
-
-/***/ "./src/app/header/header.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/header/header.component.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<header class=\"header\">\n\t\t\t\n  <!-- Top Bar -->\n  <div class=\"top_bar\">\n    <div class=\"top_bar_container\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"top_bar_content d-flex flex-row align-items-center justify-content-start\">\n              <ul class=\"top_bar_contact_list\">\n                <li><div class=\"question\">Have any questions?</div></li>\n                <li>\n                  <div>+91 999999999</div>\n                </li>\n                <li>\n                  <div>info@smugov.org</div>\n                </li>\n              </ul>\n              <div class=\"top_bar_login ml-auto\">\n                <ul>\n                  <li><a href=\"#\">Register</a></li>\n                  <li><a href=\"#\">Login</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\t\n  </div>\n\n  <!-- Header Content -->\n  <div class=\"header_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_content d-flex flex-row align-items-center justify-content-start\">\n            <div class=\"logo_container\">\n              <a href=\"#\">\n                <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                  <div class=\"logo_img\"><img src=\"../../assets/img/logo4.png\" alt=\"\" style=\"height: 90px;\"></div>\n                </div>\n              </a>\n            </div>\n            <nav class=\"main_nav_contaner ml-auto\">\n              <ul class=\"main_nav\">\n                  <li [routerLinkActive]=\"['active']\"><a href=\"/\">home</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/aboutus\">About Us</a></li>\n                  <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/courses\">Courses</a></li> -->\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/contactus\">Contact Us</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/admin\">Admin</a></li>\n              </ul>\n              <div class=\"search_button\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>\n\n              <!-- Hamburger -->\n\n              <div class=\"hamburger menu_mm\">\n                <i class=\"fa fa-bars menu_mm\" aria-hidden=\"true\"></i>\n              </div>\n            </nav>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Search Panel -->\n  <div class=\"header_search_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_search_content d-flex flex-row align-items-center justify-content-end\">\n            <form action=\"#\" class=\"header_search_form\">\n              <input type=\"search\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\n              <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center\">\n                <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\n  </div>\t\t\t\n</header>"
-
-/***/ }),
-
-/***/ "./src/app/header/header.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/header/header.component.ts ***!
-  \********************************************/
-/*! exports provided: HeaderComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/login.service */ "./src/app/services/login.service.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7648,267 +7837,36 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+
+
+
+
+var AuthGuard = /** @class */ (function () {
+    function AuthGuard(router, modalService, loginService) {
+        this.router = router;
+        this.modalService = modalService;
+        this.loginService = loginService;
     }
-    HeaderComponent.prototype.ngOnInit = function () {
+    AuthGuard.prototype.canActivate = function (route, state) {
+        var currentUser = this.loginService.currentUserValue;
+        if (currentUser) {
+            return true;
+        }
+        else {
+            localStorage.setItem('currenturl', state.url);
+            // not logged in so redirect to login page with the return url
+            this.modalService.open(_components_login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"]);
+            // this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
+            return false;
+        }
     };
-    HeaderComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-header',
-            template: __webpack_require__(/*! ./header.component.html */ "./src/app/header/header.component.html"),
-            styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], HeaderComponent);
-    return HeaderComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/home/home.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/home/home.component.css ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/home/home.component.html":
-/*!******************************************!*\
-  !*** ./src/app/home/home.component.html ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<!-- Head -->\n<app-head></app-head>\n\n<body>\n\n<div class=\"super_container\">\n\n\t<!-- Header -->\n\t<app-header></app-header>\n\n\t<!-- Menu -->\n\t<app-menu></app-menu>\n\t\n\t<!-- Home -->\n    <app-homebody></app-homebody>\n\n\t<!-- Footer -->\n    <app-footer></app-footer>\n\t\n</div>\n\n</body>\n\n</html>"
-
-/***/ }),
-
-/***/ "./src/app/home/home.component.ts":
-/*!****************************************!*\
-  !*** ./src/app/home/home.component.ts ***!
-  \****************************************/
-/*! exports provided: HomeComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
-        this.images = [1, 2, 3].map(function () { return "https://picsum.photos/900/500?random&t=" + Math.random(); });
-    }
-    HomeComponent.prototype.ngOnInit = function () {
-    };
-    HomeComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-home',
-            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
-            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], HomeComponent);
-    return HomeComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/homebody/homebody.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/homebody/homebody.component.css ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWVib2R5L2hvbWVib2R5LmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/homebody/homebody.component.html":
-/*!**************************************************!*\
-  !*** ./src/app/homebody/homebody.component.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"home\">\n  <div class=\"home_slider_container\">\n    \n    <!-- Home Slider -->\n    <div class=\"owl-carousel owl-theme home_slider\">\n      \n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Register Online</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Courses Details</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n      <!-- Slider Item -->\n      <div class=\"owl-item\">\n        <!-- Background image artist https://unsplash.com/@benwhitephotography -->\n        <div class=\"home_slider_background\" style=\"background-image:url(../../assets/images/index.jpg)\"></div>\n        <div class=\"home_container\">\n          <div class=\"container\">\n            <div class=\"row\">\n              <div class=\"col\">\n                <div class=\"home_content text-center\">\n                  <div class=\"home_logo\"><img src=\"../../assets/images/home_logo.png\" alt=\"\"></div>\n                  <div class=\"home_text\">\n                    <div class=\"home_title\">Complete Online Courses</div>\n                    <div class=\"home_subtitle\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Praesent vel nisl fermentum, gravida augue ut, fermentum ipsum.</div>\n                  </div>\n                  <div class=\"home_buttons\">\n                    <div class=\"button home_button\"><a href=\"#\">learn more<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                    <div class=\"button home_button\"><a href=\"#\">see all courses<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Featured Course -->\n\n<div class=\"featured\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <!-- Home Slider Nav -->\n        <div class=\"home_slider_nav_container d-flex flex-row align-items-start justify-content-between\">\n          <div class=\"home_slider_nav home_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"home_slider_nav home_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n        </div>\n        <div class=\"featured_container\">\n          <div class=\"row\">\n            <div class=\"col-lg-6 featured_col\">\n              <div class=\"featured_content\">\n                <div class=\"featured_header d-flex flex-row align-items-center justify-content-start\">\n                  <div class=\"featured_tag\"><a href=\"#\">Featured</a></div>\n                  <div class=\"featured_price ml-auto\">Price: <span>$35</span></div>\n                </div>\n                <div class=\"featured_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                <div class=\"featured_text\">Maecenas rutrum viverra sapien sed fermentum. Morbi tempor odio eget lacus tempus pulvinar. Donec vehicula efficitur nibh, in pretium nulla interdum non.</div>\n                <div class=\"featured_footer d-flex align-items-center justify-content-start\">\n                  <div class=\"featured_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"\"></div>\n                  <div class=\"featured_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                  <div class=\"featured_sales ml-auto\"><span>352</span> Sales</div>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-lg-6 featured_col\">\n              <!-- Background image artist https://unsplash.com/@jtylernix -->\n              <div class=\"featured_background\" style=\"background-image:url(../../assets/images/featured.jpg)\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Courses -->\n\n<div class=\"courses\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Choose your course</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"course_search\">\n          <form action=\"#\" class=\"course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between\">\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Course\" required=\"required\"></div>\n            <div><input type=\"text\" class=\"course_input\" placeholder=\"Level\" required=\"required\"></div>\n            <button class=\"course_button\"><span>search course</span><span class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></span></button>\n          </form>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        \n        <!-- Courses Slider -->\n        <div class=\"courses_slider_container\">\n          <div class=\"owl-carousel owl-theme courses_slider\">\n            \n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_1.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Online Literature Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/featured_author.jpg\" alt=\"https://unsplash.com/@anthonytran\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">James S. Morrison</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_2.jpg\" alt=\"\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">New</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Social Media Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_2.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Mark Smith</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            <!-- Slider Item -->\n            <div class=\"owl-item\">\n              <div class=\"course\">\n                <div class=\"course_image\"><img src=\"../../assets/images/course_3.jpg\" alt=\"https://unsplash.com/@annademy\"></div>\n                <div class=\"course_body\">\n                  <div class=\"course_header d-flex flex-row align-items-center justify-content-start\">\n                    <div class=\"course_tag\"><a href=\"#\">Featured</a></div>\n                    <div class=\"course_price ml-auto\">Price: <span>$35</span></div>\n                  </div>\n                  <div class=\"course_title\"><h3><a href=\"courses.html\">Marketing Course</a></h3></div>\n                  <div class=\"course_text\">Maecenas rutrum viverra sapien sed ferm entum. Morbi tempor odio eget lacus tempus pulvinar.</div>\n                  <div class=\"course_footer d-flex align-items-center justify-content-start\">\n                    <div class=\"course_author_image\"><img src=\"../../assets/images/course_author_3.jpg\" alt=\"\"></div>\n                    <div class=\"course_author_name\">By <a href=\"#\">Julia Williams</a></div>\n                    <div class=\"course_sales ml-auto\"><span>352</span> Sales</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n          </div>\n          \n          <!-- Courses Slider Nav -->\n          <div class=\"courses_slider_nav courses_slider_prev trans_200\"><i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i></div>\n          <div class=\"courses_slider_nav courses_slider_next trans_200\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Milestones -->\n\n<div class=\"milestones\">\n  <!-- Background image artis https://unsplash.com/@thepootphotographer -->\n  <div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image:  url(../../assets/images/milestones.jpg)\" data-speed=\"0.8\"></div>\n  <div class=\"container\">\n    <div class=\"row milestones_container\">\n            \n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_1.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"1548\">0</div>\n          <div class=\"milestone_text\">Online Courses</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_2.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"7286\">0</div>\n          <div class=\"milestone_text\">Students</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_3.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"257\">0</div>\n          <div class=\"milestone_text\">Teachers</div>\n        </div>\n      </div>\n\n      <!-- Milestone -->\n      <div class=\"col-lg-3 milestone_col\">\n        <div class=\"milestone text-center\">\n          <div class=\"milestone_icon\"><img src=\"../../assets/images/milestone_4.svg\" alt=\"\"></div>\n          <div class=\"milestone_counter\" data-end-value=\"39\">0</div>\n          <div class=\"milestone_text\">Countries</div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n\n<!-- Sections -->\n\n<div class=\"grouped_sections\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- Why Choose Us -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Why Choose Us?</div>\n        <div class=\"accordions\">\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center active\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Vehicula nisi congue, blandit?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Mauris vehicula nisi congue?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n          <div class=\"accordion_container\">\n            <div class=\"accordion d-flex flex-row align-items-center\"><div>Nisi congue, blandit purus sed?</div></div>\n            <div class=\"accordion_panel\">\n              <div>\n                <p>Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam.</p>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n\n      <!-- Events -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Upcoming Events</div>\n        <div class=\"events\">\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">20</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course Release</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">23</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Students Art Workshop</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">25</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">Launch Party for a new Platform</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">27</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n          <!-- Event -->\n          <div class=\"event d-flex flex-row align-items-start justify-content-start\">\n            <div>\n              <div class=\"event_date d-flex flex-column align-items-center justify-content-center\">\n                <div class=\"event_day\">29</div>\n                <div class=\"event_month\">April</div>\n              </div>\n            </div>\n            <div class=\"event_body\">\n              <div class=\"event_title\"><a href=\"#\">New Marketing Course</a></div>\n              <div class=\"event_subtitle\">Location: Online Platform</div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n\n      <!-- News -->\n\n      <div class=\"col-lg-4 grouped_col\">\n        <div class=\"grouped_title\">Latest News</div>\n        <div class=\"news\">\n          \n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_1.jpg\" alt=\"https://unsplash.com/@beccatapert\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_2.jpg\" alt=\"https://unsplash.com/@nbb_photos\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_3.jpg\" alt=\"https://unsplash.com/@rawpixel\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Why Choose online education?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n          <!-- News Post -->\n          <div class=\"news_post d-flex flex-row align-items-start justify-content-start\">\n            <div><div class=\"news_post_image\"><img src=\"../../assets/images/news_4.jpg\" alt=\"https://unsplash.com/@jtylernix\"></div></div>\n            <div class=\"news_post_body\">\n              <div class=\"news_post_date\">April 02, 2018</div>\n              <div class=\"news_post_title\"><a href=\"news.html\">Books, Kindle or tablet?</a></div>\n              <div class=\"news_post_author\">By <a href=\"#\">William Smith</a></div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Video -->\n\n<div class=\"video\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"video_container_outer\">\n          <div class=\"video_container\">\n            <!-- Video poster image artist: https://unsplash.com/@annademy -->\n            <!-- <video id=\"vid1\" class=\"video-js vjs-default-skin\" controls data-setup='{ \"poster\": \"../../assets/images/video.jpg\", \"techOrder\": [\"youtube\"], \"sources\": [{ \"type\": \"video/youtube\", \"src\": \"https://youtu.be/5_MRXyYjHDk\"}], \"youtube\": { \"iv_load_policy\": 1 } }'> -->\n            <!-- </video> -->\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Join -->\n\n<div class=\"join\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-lg-10 offset-lg-1\">\n        <div class=\"section_title text-center\"><h2>Join Our Course Today</h2></div>\n        <div class=\"section_subtitle\">Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut euismod pellentesque imperdiet. Cras laoreet gravida lectus, at viverra lorem venenatis in. Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"button join_button\"><a href=\"#\">register now<div class=\"button_arrow\"><i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i></div></a></div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/homebody/homebody.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/homebody/homebody.component.ts ***!
-  \************************************************/
-/*! exports provided: HomebodyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomebodyComponent", function() { return HomebodyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HomebodyComponent = /** @class */ (function () {
-    function HomebodyComponent() {
-    }
-    HomebodyComponent.prototype.ngOnInit = function () {
-    };
-    HomebodyComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-homebody',
-            template: __webpack_require__(/*! ./homebody.component.html */ "./src/app/homebody/homebody.component.html"),
-            styles: [__webpack_require__(/*! ./homebody.component.css */ "./src/app/homebody/homebody.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], HomebodyComponent);
-    return HomebodyComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/menu/menu.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/menu/menu.component.css ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuY3NzIn0= */"
-
-/***/ }),
-
-/***/ "./src/app/menu/menu.component.html":
-/*!******************************************!*\
-  !*** ./src/app/menu/menu.component.html ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400\">\n  <div class=\"menu_close_container\"><div class=\"menu_close\"><div></div><div></div></div></div>\n  <div class=\"search\">\n    <form action=\"#\" class=\"header_search_form menu_mm\">\n      <input type=\"search\" class=\"search_input menu_mm\" placeholder=\"Search\" required=\"required\">\n      <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center menu_mm\">\n        <i class=\"fa fa-search menu_mm\" aria-hidden=\"true\"></i>\n      </button>\n    </form>\n  </div>\n  <nav class=\"menu_nav\">\n    <ul class=\"menu_mm\">\n      <li class=\"menu_mm\"><a href=\"/\">Home</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/aboutus\">About Us</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/admin\">Admin</a></li>\n      <li class=\"menu_mm\"><a routerLink=\"/contactus\">Contact Us</a></li>\n    </ul>\n  </nav>\n  <div class=\"menu_extra\">\n    <div class=\"menu_phone\"><span class=\"menu_title\">phone:</span>+91 999999999</div>\n    <div class=\"menu_social\">\n      <span class=\"menu_title\">follow us</span>\n      <ul>\n        <li><a href=\"#\"><i class=\"fa fa-pinterest\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li>\n        <li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li>\n      </ul>\n    </div>\n  </div>\n</div>"
-
-/***/ }),
-
-/***/ "./src/app/menu/menu.component.ts":
-/*!****************************************!*\
-  !*** ./src/app/menu/menu.component.ts ***!
-  \****************************************/
-/*! exports provided: MenuComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuComponent", function() { return MenuComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var MenuComponent = /** @class */ (function () {
-    function MenuComponent() {
-    }
-    MenuComponent.prototype.ngOnInit = function () {
-    };
-    MenuComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-menu',
-            template: __webpack_require__(/*! ./menu.component.html */ "./src/app/menu/menu.component.html"),
-            styles: [__webpack_require__(/*! ./menu.component.css */ "./src/app/menu/menu.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], MenuComponent);
-    return MenuComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/result/result.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/result/result.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3VsdC9yZXN1bHQuY29tcG9uZW50LmNzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/result/result.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/result/result.component.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  result works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/result/result.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/result/result.component.ts ***!
-  \********************************************/
-/*! exports provided: ResultComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResultComponent", function() { return ResultComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var ResultComponent = /** @class */ (function () {
-    function ResultComponent() {
-    }
-    ResultComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-result',
-            template: __webpack_require__(/*! ./result.component.html */ "./src/app/result/result.component.html"),
-            styles: [__webpack_require__(/*! ./result.component.css */ "./src/app/result/result.component.css")]
-        })
-    ], ResultComponent);
-    return ResultComponent;
+    AuthGuard = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({ providedIn: 'root' }),
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"],
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModal"],
+            _services_login_service__WEBPACK_IMPORTED_MODULE_2__["LoginService"]])
+    ], AuthGuard);
+    return AuthGuard;
 }());
 
 
@@ -7946,10 +7904,9 @@ var CourseService = /** @class */ (function () {
         this.uri = 'courses/';
     }
     CourseService.prototype.create = function (formData) {
-        return this.dataService.create(this.uri, formData);
+        return this.dataService.post(this.uri, formData);
     };
     CourseService.prototype.get = function () {
-        console.log('call api course service > ' + this.uri);
         return this.dataService.get(this.uri);
     };
     CourseService.prototype.edit = function (id) {
@@ -7958,7 +7915,7 @@ var CourseService = /** @class */ (function () {
         });
     };
     CourseService.prototype.update = function (formData) {
-        return this.dataService.update(this.uri, formData).map(function (res) {
+        return this.dataService.put(this.uri, formData).map(function (res) {
             return res;
         });
     };
@@ -8011,7 +7968,7 @@ var DataService = /** @class */ (function () {
     function DataService(http) {
         this.http = http;
         console.log('window.location.origin' + window.location.origin);
-        if (window.location.origin == 'http://localhost:4000') {
+        if (window.location.origin == 'http://localhost:4000' || window.location.origin == 'http://localhost:4200') {
             this.apiUrl = _environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].apiUrl;
         }
         else {
@@ -8019,8 +7976,10 @@ var DataService = /** @class */ (function () {
         }
         console.log('this.apiUrl : ' + this.apiUrl);
     }
-    DataService.prototype.create = function (uri, formData) {
+    DataService.prototype.post = function (uri, formData) {
+        console.log('DataService url ' + this.apiUrl + uri + formData.username);
         return this.http.post(this.apiUrl + uri, formData).map(function (res) {
+            console.log('res ' + res);
             return res;
         });
     };
@@ -8029,12 +7988,7 @@ var DataService = /** @class */ (function () {
             return res;
         });
     };
-    DataService.prototype.edit = function (uri) {
-        return this.http.get(this.apiUrl + uri).map(function (res) {
-            return res;
-        });
-    };
-    DataService.prototype.update = function (uri, formData) {
+    DataService.prototype.put = function (uri, formData) {
         var localUri = this.apiUrl + uri;
         return this.http.put(localUri + formData.id, formData).map(function (res) {
             return res;
@@ -8050,6 +8004,136 @@ var DataService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], DataService);
     return DataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/login.service.ts":
+/*!*******************************************!*\
+  !*** ./src/app/services/login.service.ts ***!
+  \*******************************************/
+/*! exports provided: LoginService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginService", function() { return LoginService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng2-cookies/ng2-cookies */ "./node_modules/ng2-cookies/ng2-cookies.js");
+/* harmony import */ var ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data.service */ "./src/app/services/data.service.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var LoginService = /** @class */ (function () {
+    function LoginService(dataService) {
+        this.dataService = dataService;
+        this.uri = 'authenticate/users/';
+        this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](JSON.parse(localStorage.getItem('currentUser')));
+        this.currentUser = this.currentUserSubject.asObservable();
+    }
+    LoginService.prototype.login = function (username, password) {
+        var _this = this;
+        return this.dataService.post(this.uri, {
+            username: username,
+            password: password
+        }).map(function (res) {
+            if (res != null) {
+                _this.user = res;
+                localStorage.setItem('currentUser', _this.user.username);
+                _this.currentUserSubject.next(_this.user.username);
+                return res;
+            }
+            else {
+                return null;
+            }
+        });
+    };
+    LoginService.prototype.isLoggedIn = function () {
+        return this.currentUserSubject.asObservable();
+    };
+    LoginService.prototype.logout = function () {
+        // remove user from local storage to log user out
+        localStorage.removeItem('currentUser');
+        this.currentUserSubject.next(null);
+        // this.router.navigate(["/"]);
+    };
+    Object.defineProperty(LoginService.prototype, "currentUserValue", {
+        get: function () {
+            return this.currentUserSubject.value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    LoginService.prototype.getAuthToken = function () {
+        return ng2_cookies_ng2_cookies__WEBPACK_IMPORTED_MODULE_1__["Cookie"].get("currentUser");
+    };
+    LoginService.prototype.isAuthenticated = function () {
+        return this.getAuthToken() != null;
+    };
+    LoginService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
+    ], LoginService);
+    return LoginService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/session.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/session.service.ts ***!
+  \*********************************************/
+/*! exports provided: SessionService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SessionService", function() { return SessionService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_Subject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/Subject */ "./node_modules/rxjs-compat/_esm5/Subject.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SessionService = /** @class */ (function () {
+    function SessionService() {
+        this.login = new rxjs_Subject__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+    }
+    SessionService.prototype.isLogin = function () {
+        return this.login;
+    };
+    SessionService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [])
+    ], SessionService);
+    return SessionService;
 }());
 
 
@@ -8087,7 +8171,7 @@ var StudentService = /** @class */ (function () {
         this.uri = 'students/';
     }
     StudentService.prototype.create = function (formData) {
-        return this.dataService.create(this.uri, formData);
+        return this.dataService.post(this.uri, formData);
     };
     StudentService.prototype.get = function () {
         return this.dataService.get(this.uri);
@@ -8098,7 +8182,7 @@ var StudentService = /** @class */ (function () {
         });
     };
     StudentService.prototype.update = function (formData) {
-        return this.dataService.update(this.uri, formData).map(function (res) {
+        return this.dataService.put(this.uri, formData).map(function (res) {
             return res;
         });
     };

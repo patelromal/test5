@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row">
+     <div class="col">
+      <nav class="main_nav_contaner">
+            <ul class="main_nav">
+            <li [routerLinkActive]="['active']"><a routerLink="managestudent">Manage Student</a></li>
+            <li [routerLinkActive]="['active']"><a routerLink="managecourse">Manage Course</a></li>
+            </ul>
+      </nav>
+      </div>
+      </div>
+</div>
+<div class="col-md-7">
+   <router-outlet></router-outlet>
+ </div>

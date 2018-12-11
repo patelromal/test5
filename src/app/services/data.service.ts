@@ -11,19 +11,21 @@ export class DataService {
 
   constructor(private http: HttpClient) {
       console.log('window.location.origin' + window.location.origin);
-      if(window.location.origin== 'http://localhost:4000'){
+      if(window.location.origin== 'http://localhost:4000' || window.location.origin== 'http://localhost:4200'){
           this.apiUrl = environment.apiUrl;
       }else{
           this.apiUrl = prodEnvironment.apiUrl;
       }
       console.log('this.apiUrl : ' + this.apiUrl);
   }
-
-  create(uri, formData) {
-    return this.http.post(this.apiUrl + uri, formData).map(res => {
-      return res;
-    });
-  }
+  
+  post(uri, formData) {
+      console.log('DataService url ' + this.apiUrl + uri + formData.username)
+      return this.http.post(this.apiUrl + uri, formData).map(res => {
+        console.log('res ' + res);
+        return res;
+      });
+    }
 
   get(uri) {
     return this.http.get(this.apiUrl + uri).map(res => {
@@ -31,13 +33,7 @@ export class DataService {
     });
   }
 
-  edit(uri) {
-    return this.http.get(this.apiUrl + uri).map(res => {
-      return res;
-    });
-  }
-
-  update(uri,formData) {
+  put(uri,formData) {
     var localUri = this.apiUrl + uri;
     return this.http.put(localUri + formData.id, formData).map(res => {
         return res;

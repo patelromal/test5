@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import path from 'path';
 import mongoose from 'mongoose';
-import config from './config/DB';
+import db from './config/db';
 import api from './src/api';
 
 const app = express();
@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //mongo db connection ======================================
 mongoose.Promise = global.Promise;
-mongoose.connect(config.DB).then(
+mongoose.connect(db.url).then(
     () => {console.log('Database is connected') },
     err => { console.log('Can not connect to the database'+ err)}
 );

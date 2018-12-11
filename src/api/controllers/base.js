@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import pluralize  from "pluralize";
-import {ok, fail} from "./utils";
-
+import {ok, fail} from './utils';
 const MAX_RESULTS = 100;
 
 /**
@@ -18,6 +17,23 @@ export default class BaseController{
     this.model = model;
     this.modelName = model.modelName.toLowerCase();
     this.key = key;
+  }
+  
+  authenticate(data) {
+    return this.model
+    .findOne({ username: data.username})
+    .then((response) => {
+      if(response != null && response.username != null){
+        if(response.password == data.password){
+          return response;
+        }
+      }
+      return null;
+      // else{
+      //     return 'incorrect password';
+      // }
+      // return 'fail';
+    });
   }
 
   create(data) {
@@ -90,40 +106,60 @@ export default class BaseController{
     const router = new Router();
 
     router.get("/", (req, res) => {
-      this
-        .list()
+      this.list()
         .then(ok(res))
         .then(null, fail(res));
     });
 
     router.post("/", (req, res) => {
-      this
-        .create(req.body)
+      this.create(req.body)
         .then(ok(res))
         .then(null, fail(res));
     });
+    
+    router.post("/users", (req, res) => {
+        this.authenticate(req.body)
+         .then(ok(res))
+         .then(null, fail(res));
+      });
 
     router.get("/:key", (req, res) => {
-      this
-        .read(req.params.key)
+      this.read(req.params.key)
         .then(ok(res))
         .then(null, fail(res));
     });
 
     router.put("/:key", (req, res) => {
-      this
-        .update(req.params.key, req.body)
+      this.update(req.params.key, req.body)
         .then(ok(res))
         .then(null, fail(res));
     });
 
     router.delete("/:key", (req, res) => {
-      this
-        .delete(req.params.key)
+      this.delete(req.params.key)
         .then(ok(res))
         .then(null, fail(res));
     });
-
     return router;
   }
 }
+
+//	  var MongoClient = require('mongodb').MongoClient,
+//	  f = require('util').format,
+//	  assert = require('assert');
+
+// Connection URL
+// var url = 'mongodb://user1:welcome01@ds127342.mlab.com:27342/sspou';
+	
+// 	MongoClient.connect(url, function (err, database) {
+// 	      var db=database.db('sspou');
+// 	      var collections=db.collection('users');
+// 	      console.log("Called findOne");
+	      
+//          collections.findOne({}, function(err, doc){
+// 	        if(err) throw err;
+//           console.log(doc);
+//           return doc;
+// //	        db.close();
+// 	     });
+// 	});

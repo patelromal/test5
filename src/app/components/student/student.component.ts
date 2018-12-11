@@ -37,6 +37,7 @@ export class StudentComponent implements OnInit {
   modalRef: NgbModalRef;
   modalModule: ModalModule;
   public gridOptions: GridOptions;
+  isValid = false;
 
   message: string = 'Snack Bar opened.';
   actionButtonLabel: string = 'Retry';

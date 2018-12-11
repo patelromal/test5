@@ -3,20 +3,21 @@ import { Routes,RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { HomeComponent } from './home/home.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeadComponent } from './head/head.component';
-import { MenuComponent } from './menu/menu.component';
-import { AdminComponent } from './admin/admin.component';
-import { AdminHeaderComponent } from './admin-header/admin-header.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { HomeComponent } from './components/home/home.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeadComponent } from './components/head/head.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 import { CourseComponent } from './components/course/course.component';
-import { ResultComponent } from './result/result.component';
+import { ResultComponent } from './components/result/result.component';
 import { StudentComponent } from './components/student/student.component';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
+//import { SignupComponent } from './components/auth/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './services/auth.guard';
 
 const appRoutes: Routes =[
 { path: '', component: HomeComponent },
@@ -25,14 +26,14 @@ const appRoutes: Routes =[
 { path: 'contactus', component: ContactUsComponent },
 { path: 'course', component: CourseComponent },
 { path: '', redirectTo: '/admin', pathMatch: 'full' },
-{ path: 'admin', component: AdminComponent, children: [
-   { path: 'managecourse', component: CourseComponent },
-   { path: 'managestudent', component: StudentComponent },
- ] },
- { path: 'signup', component: SignupComponent },
- { path: 'signin', component: SigninComponent },
-//{ path: 'student', component: StudentComponent },
-//{ path: 'student/:id/edit', component: StudentComponent },
+{ path: 'admin', component: AdminComponent, canActivate: [AuthGuard],
+   children: [
+       { path: 'managecourse', component: CourseComponent },
+       { path: 'managestudent', component: StudentComponent },
+   ]
+},
+// { path: 'signup', component: SignupComponent },
+ { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

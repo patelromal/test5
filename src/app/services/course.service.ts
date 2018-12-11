@@ -13,11 +13,10 @@ export class CourseService {
   }
 
   create(formData) {
-    return this.dataService.create(this.uri,formData);
+    return this.dataService.post(this.uri,formData);
   }
 
   get() {
-    console.log('call api course service > ' + this.uri);
     return this.dataService.get(this.uri);
   }
 
@@ -28,7 +27,7 @@ export class CourseService {
   }
 
   update(formData) {
-    return this.dataService.update(this.uri,formData).map(res => {
+    return this.dataService.put(this.uri,formData).map(res => {
         return res;
     });
   }
