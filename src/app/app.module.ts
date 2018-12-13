@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
+import { ResponseOptions, BrowserXhr, XHRBackend } from "@angular/http";
 import { MatDialogModule, MatDialogRef, MatFormFieldModule,MatSnackBarModule,
          MatButtonModule, MatIconModule, MatInputModule,
          MatPaginatorModule, MatProgressSpinnerModule,
@@ -34,6 +35,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
 import { SessionService } from './services/session.service';
+import { RegisterComponent } from './components//register/register.component';
+import { ToastaModule } from 'ngx-toasta';
+import { Alert1Service } from './common/services/alert1.service';
+import { HttpInterceptor } from './services/http-interceptor';
+import { InterceptorService } from 'ng2-interceptors';
+import { MustMatchDirective } from './common/directives/must-match.directive';
 
 @NgModule({
   declarations: [
@@ -47,6 +54,7 @@ import { SessionService } from './services/session.service';
     MenuComponent,
     AdminComponent,
     AdminHeaderComponent,
+    RegisterComponent,
     CourseComponent,
     StudentComponent,
     LoginComponent,
@@ -74,12 +82,14 @@ import { SessionService } from './services/session.service';
     SmuCommonModule.forRoot(),
     NgxSmartModalModule.forRoot(),
     ModalModule.forRoot(),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ToastaModule.forRoot()
   ],
   exports: [
     NgxSmartModalModule, ModalModule
   ],
-  providers: [ModalService, BsModalService, NgbActiveModal, SessionService],
+  providers: [ModalService, BsModalService, NgbActiveModal, 
+    SessionService, Alert1Service],
   entryComponents: [
     PageActionComponent
   ],

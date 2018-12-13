@@ -5425,8 +5425,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/admin/admin.component */ "./src/app/components/admin/admin.component.ts");
 /* harmony import */ var _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/course/course.component */ "./src/app/components/course/course.component.ts");
 /* harmony import */ var _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/student/student.component */ "./src/app/components/student/student.component.ts");
-/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
-/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/auth.guard */ "./src/app/services/auth.guard.ts");
+/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/register/register.component */ "./src/app/components/register/register.component.ts");
+/* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
+/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/auth.guard */ "./src/app/services/auth.guard.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5441,7 +5442,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-//import { SignupComponent } from './components/auth/signup/signup.component';
+
 
 
 var appRoutes = [
@@ -5451,14 +5452,14 @@ var appRoutes = [
     { path: 'contactus', component: _components_contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_4__["ContactUsComponent"] },
     { path: 'course', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
     { path: '', redirectTo: '/admin', pathMatch: 'full' },
-    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"], canActivate: [_services_auth_guard__WEBPACK_IMPORTED_MODULE_9__["AuthGuard"]],
+    { path: 'admin', component: _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_5__["AdminComponent"], canActivate: [_services_auth_guard__WEBPACK_IMPORTED_MODULE_10__["AuthGuard"]],
         children: [
             { path: 'managecourse', component: _components_course_course_component__WEBPACK_IMPORTED_MODULE_6__["CourseComponent"] },
             { path: 'managestudent', component: _components_student_student_component__WEBPACK_IMPORTED_MODULE_7__["StudentComponent"] },
         ]
     },
-    // { path: 'signup', component: SignupComponent },
-    { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"] },
+    { path: 'register', component: _components_register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"] },
+    { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -5542,23 +5543,6 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/app.config.ts":
-/*!*******************************!*\
-  !*** ./src/app/app.config.ts ***!
-  \*******************************/
-/*! exports provided: appConfig */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "appConfig", function() { return appConfig; });
-var appConfig = {
-    apiUrl: "https://stark-journey-22743.herokuapp.com/api/",
-};
-
-
-/***/ }),
-
 /***/ "./src/app/app.module.ts":
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
@@ -5601,12 +5585,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/login/login.component */ "./src/app/components/login/login.component.ts");
 /* harmony import */ var _services_session_service__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./services/session.service */ "./src/app/services/session.service.ts");
+/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components//register/register.component */ "./src/app/components/register/register.component.ts");
+/* harmony import */ var ngx_toasta__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ngx-toasta */ "./node_modules/ngx-toasta/fesm5/ngx-toasta.js");
+/* harmony import */ var _common_services_alert1_service__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./common/services/alert1.service */ "./src/app/common/services/alert1.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -5655,6 +5645,7 @@ var AppModule = /** @class */ (function () {
                 _components_menu_menu_component__WEBPACK_IMPORTED_MODULE_23__["MenuComponent"],
                 _components_admin_admin_component__WEBPACK_IMPORTED_MODULE_24__["AdminComponent"],
                 _components_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_25__["AdminHeaderComponent"],
+                _components_register_register_component__WEBPACK_IMPORTED_MODULE_31__["RegisterComponent"],
                 _components_course_course_component__WEBPACK_IMPORTED_MODULE_26__["CourseComponent"],
                 _components_student_student_component__WEBPACK_IMPORTED_MODULE_15__["StudentComponent"],
                 _components_login_login_component__WEBPACK_IMPORTED_MODULE_29__["LoginComponent"],
@@ -5682,12 +5673,14 @@ var AppModule = /** @class */ (function () {
                 _common_common_module__WEBPACK_IMPORTED_MODULE_9__["SmuCommonModule"].forRoot(),
                 ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__["NgxSmartModalModule"].forRoot(),
                 ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["ModalModule"].forRoot(),
-                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbModule"].forRoot()
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbModule"].forRoot(),
+                ngx_toasta__WEBPACK_IMPORTED_MODULE_32__["ToastaModule"].forRoot()
             ],
             exports: [
                 ngx_smart_modal__WEBPACK_IMPORTED_MODULE_11__["NgxSmartModalModule"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["ModalModule"]
             ],
-            providers: [_common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["BsModalService"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbActiveModal"], _services_session_service__WEBPACK_IMPORTED_MODULE_30__["SessionService"]],
+            providers: [_common_services_modal_service__WEBPACK_IMPORTED_MODULE_10__["ModalService"], ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_12__["BsModalService"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_13__["NgbActiveModal"],
+                _services_session_service__WEBPACK_IMPORTED_MODULE_30__["SessionService"], _common_services_alert1_service__WEBPACK_IMPORTED_MODULE_33__["Alert1Service"]],
             entryComponents: [
                 _common_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_8__["PageActionComponent"]
             ],
@@ -5721,12 +5714,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/modal/modal.component */ "./src/app/common/components/modal/modal.component.ts");
 /* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../services/data.service */ "./src/app/services/data.service.ts");
 /* harmony import */ var _services_course_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../services/course.service */ "./src/app/services/course.service.ts");
-/* harmony import */ var _services_httpjwt__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/httpjwt */ "./src/app/common/services/httpjwt.ts");
-/* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./services/loader.service */ "./src/app/common/services/loader.service.ts");
-/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../services/student.service */ "./src/app/services/student.service.ts");
-/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/register/register.component */ "./src/app/components/register/register.component.ts");
-/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../services/auth.guard */ "./src/app/services/auth.guard.ts");
-/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../services/login.service */ "./src/app/services/login.service.ts");
+/* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./services/loader.service */ "./src/app/common/services/loader.service.ts");
+/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../services/student.service */ "./src/app/services/student.service.ts");
+/* harmony import */ var _services_auth_guard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../services/auth.guard */ "./src/app/services/auth.guard.ts");
+/* harmony import */ var _services_login_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../services/login.service */ "./src/app/services/login.service.ts");
+/* harmony import */ var _services_http_interceptor__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../services/http-interceptor */ "./src/app/services/http-interceptor.ts");
+/* harmony import */ var _directives_must_match_directive__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./directives/must-match.directive */ "./src/app/common/directives/must-match.directive.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5749,7 +5742,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-//import { SignupComponent } '../components/auth/signup/signup.component';
 var SmuCommonModule = /** @class */ (function () {
     function SmuCommonModule() {
     }
@@ -5759,15 +5751,15 @@ var SmuCommonModule = /** @class */ (function () {
             ngModule: SmuCommonModule_1,
             providers: [
                 _services_alert_service__WEBPACK_IMPORTED_MODULE_4__["AlertService"],
-                _services_login_service__WEBPACK_IMPORTED_MODULE_15__["LoginService"],
-                _services_auth_guard__WEBPACK_IMPORTED_MODULE_14__["AuthGuard"],
+                _services_login_service__WEBPACK_IMPORTED_MODULE_13__["LoginService"],
+                _services_auth_guard__WEBPACK_IMPORTED_MODULE_12__["AuthGuard"],
                 _services_confirmation_dialog_service__WEBPACK_IMPORTED_MODULE_2__["ConfirmationDialogService"],
                 _services_modal_service__WEBPACK_IMPORTED_MODULE_6__["ModalService"],
                 _services_data_service__WEBPACK_IMPORTED_MODULE_8__["DataService"],
                 _services_course_service__WEBPACK_IMPORTED_MODULE_9__["CourseService"],
-                _services_httpjwt__WEBPACK_IMPORTED_MODULE_10__["HttpJWT"],
-                _services_loader_service__WEBPACK_IMPORTED_MODULE_11__["LoaderService"],
-                _services_student_service__WEBPACK_IMPORTED_MODULE_12__["StudentService"]
+                _services_loader_service__WEBPACK_IMPORTED_MODULE_10__["LoaderService"],
+                _services_http_interceptor__WEBPACK_IMPORTED_MODULE_14__["HttpInterceptor"],
+                _services_student_service__WEBPACK_IMPORTED_MODULE_11__["StudentService"]
             ],
         };
     };
@@ -5782,9 +5774,7 @@ var SmuCommonModule = /** @class */ (function () {
             entryComponents: [_components_page_action_page_action_component__WEBPACK_IMPORTED_MODULE_1__["PageActionComponent"], _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogComponent"], _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"]],
             declarations: [
                 _components_confirmation_dialog_confirmation_dialog_component__WEBPACK_IMPORTED_MODULE_3__["ConfirmationDialogComponent"],
-                _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"],
-                _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"],
-                _components_register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"]
+                _components_alert_alert_component__WEBPACK_IMPORTED_MODULE_5__["AlertComponent"], _components_modal_modal_component__WEBPACK_IMPORTED_MODULE_7__["ModalComponent"], _directives_must_match_directive__WEBPACK_IMPORTED_MODULE_15__["MustMatchDirective"]
             ],
             exports: []
         })
@@ -6089,6 +6079,78 @@ var PageActionComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/directives/must-match.directive.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/common/directives/must-match.directive.ts ***!
+  \***********************************************************/
+/*! exports provided: MustMatchDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MustMatchDirective", function() { return MustMatchDirective; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+// import { MustMatch } from './must-match.validator';
+var MustMatchDirective = /** @class */ (function () {
+    function MustMatchDirective() {
+        this.mustMatch = [];
+    }
+    MustMatchDirective_1 = MustMatchDirective;
+    MustMatchDirective.prototype.validate = function (formGroup) {
+        return this.MustMatch(this.mustMatch[0], this.mustMatch[1])(formGroup);
+    };
+    MustMatchDirective.prototype.MustMatch = function (controlName, matchingControlName) {
+        return function (formGroup) {
+            var control = formGroup.controls[controlName];
+            var matchingControl = formGroup.controls[matchingControlName];
+            // return null if controls haven't initialised yet
+            if (!control || !matchingControl) {
+                return null;
+            }
+            // return null if another validator has already found an error on the matchingControl
+            if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+                console.log('return null working');
+                return null;
+            }
+            // set error on matchingControl if validation fails
+            if (control.value !== matchingControl.value) {
+                matchingControl.setErrors({ mustMatch: true });
+            }
+            else {
+                matchingControl.setErrors(null);
+            }
+        };
+    };
+    var MustMatchDirective_1;
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('mustMatch'),
+        __metadata("design:type", Array)
+    ], MustMatchDirective.prototype, "mustMatch", void 0);
+    MustMatchDirective = MustMatchDirective_1 = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"])({
+            selector: '[mustMatch]',
+            providers: [{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NG_VALIDATORS"], useExisting: MustMatchDirective_1, multi: true }]
+        })
+    ], MustMatchDirective);
+    return MustMatchDirective;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/services/alert.service.ts":
 /*!**************************************************!*\
   !*** ./src/app/common/services/alert.service.ts ***!
@@ -6182,6 +6244,66 @@ var AlertService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/common/services/alert1.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/common/services/alert1.service.ts ***!
+  \***************************************************/
+/*! exports provided: Alert1Service */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Alert1Service", function() { return Alert1Service; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ngx_toasta__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-toasta */ "./node_modules/ngx-toasta/fesm5/ngx-toasta.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Alert1Service = /** @class */ (function () {
+    function Alert1Service(toastaService) {
+        this.toastaService = toastaService;
+        this.toastaService.default('Hi there');
+        var toastOptions = {
+            title: "My title",
+            msg: "The message",
+            showClose: true,
+            timeout: 5000,
+            theme: 'default',
+            onAdd: function (toast) {
+                console.log('Toast ' + toast.id + ' has been added!');
+            },
+            onRemove: function (toast) {
+                console.log('Toast ' + toast.id + ' has been removed!');
+            }
+        };
+        // Add see all possible types in one shot
+        this.toastaService.info(toastOptions);
+        this.toastaService.success(toastOptions);
+        this.toastaService.wait(toastOptions);
+        this.toastaService.error(toastOptions);
+        this.toastaService.warning(toastOptions);
+    }
+    Alert1Service = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [ngx_toasta__WEBPACK_IMPORTED_MODULE_1__["ToastaService"]])
+    ], Alert1Service);
+    return Alert1Service;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/common/services/confirmation-dialog.service.ts":
 /*!****************************************************************!*\
   !*** ./src/app/common/services/confirmation-dialog.service.ts ***!
@@ -6228,104 +6350,6 @@ var ConfirmationDialogService = /** @class */ (function () {
     return ConfirmationDialogService;
 }());
 
-
-
-/***/ }),
-
-/***/ "./src/app/common/services/httpjwt.ts":
-/*!********************************************!*\
-  !*** ./src/app/common/services/httpjwt.ts ***!
-  \********************************************/
-/*! exports provided: HttpJWT */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpJWT", function() { return HttpJWT; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../app.config */ "./src/app/app.config.ts");
-/* harmony import */ var _services_loader_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/loader.service */ "./src/app/common/services/loader.service.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs_add_observable_throw__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/observable/throw */ "./node_modules/rxjs-compat/_esm5/add/observable/throw.js");
-/* harmony import */ var rxjs_add_operator_catch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/catch */ "./node_modules/rxjs-compat/_esm5/add/operator/catch.js");
-/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
-/* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-var HttpJWT = /** @class */ (function () {
-    // constructor(backend: ConnectionBackend, defaultOptions: RequestOptions, private loaderService: LoaderService) {
-    //     super(backend, defaultOptions);
-    // }
-    function HttpJWT(http, loaderService) {
-        this.http = http;
-        this.loaderService = loaderService;
-    }
-    HttpJWT.prototype.get = function (url) {
-        var _this = this;
-        this.onStart();
-        return this.http.get(_app_config__WEBPACK_IMPORTED_MODULE_1__["appConfig"].apiUrl + url)
-            .catch(function (err) { return _this.handleError(err); }).finally(function () { return _this.onEnd(); });
-    };
-    HttpJWT.prototype.post = function (url, body) {
-        var _this = this;
-        this.onStart();
-        return this.http.post(_app_config__WEBPACK_IMPORTED_MODULE_1__["appConfig"].apiUrl + url, body)
-            .catch(function (err) { return _this.handleError(err); }).finally(function () { return _this.onEnd(); });
-    };
-    // public put(url: string, body: string, options?: RequestOptionsArgs): Observable<Response> {
-    //     this.onStart();
-    //     return super.put(appConfig.apiUrl + url, body, options)
-    //         .catch((err) => this.handleError(err)).finally(() => this.onEnd());
-    // }
-    // public delete(url: string, options?: RequestOptionsArgs): Observable<Response> {
-    //     this.onStart();
-    //     return super.delete(appConfig.apiUrl + url, options)
-    //         .catch((err) => this.handleError(err)).finally(() => this.onEnd());
-    // }
-    // // private helper methods
-    HttpJWT.prototype.onStart = function () {
-        this.loaderService.start();
-    };
-    HttpJWT.prototype.onEnd = function () {
-        this.loaderService.end();
-    };
-    HttpJWT.prototype.handleError = function (error) {
-        if (error.status === 401) {
-            // 401 unauthorized response so log user out of client
-            window.location.href = "/login";
-        }
-        return rxjs_Observable__WEBPACK_IMPORTED_MODULE_7__["Observable"].throw(error._body);
-    };
-    HttpJWT = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"], _services_loader_service__WEBPACK_IMPORTED_MODULE_2__["LoaderService"]])
-    ], HttpJWT);
-    return HttpJWT;
-}());
-
-// export function httpJWTFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions, loaderService: LoaderService): Http {
-//     return new HttpJWT(xhrBackend, requestOptions, loaderService);
-// }
-// export let httpJWTProvider = {
-//     provide: HttpJWT,
-//     useFactory: httpJWTFactory,
-//     deps: [XHRBackend, RequestOptions, LoaderService],
-// };
 
 
 /***/ }),
@@ -6732,7 +6756,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-template #dataModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Course Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"dataForm\" novalidate (ngSubmit)=\"editSubmit(dataForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"name\">First Name</label>\n\t        <input id=\"name\" type=\"text\" class=\"form-control\" formControlName=\"name\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"subcourse\">Last Name</label>\n\t        <input id=\"subcourse\" type=\"text\" class=\"form-control\" formControlName=\"subcourse\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"data-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"data-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!dataForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n\t<button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Course</button>\n\t<div class=\"row\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<ag-grid-angular\n\t\t\t\t\t\t\t#agGrid\n\t\t\t\t\t\t\tid=\"myGrid\"\n\t\t\t\t\t\t\tstyle=\"width: 480px; height: 400px;\"\n\t\t\t\t\t\t\tclass=\"ag-theme-balham\"\n\t\t\t\t\t\t\t[enableSorting]=\"true\"\n\t\t\t\t\t\t\t[enableFilter]=\"true\"\n\t\t\t\t\t\t\t[rowData]=\"rowData\"\n\t\t\t\t\t\t\trowSelection='multiple'\n\t\t\t\t\t\t\t(gridReady)=\"onGridReady($event)\"\n\t\t\t\t\t\t\t[columnDefs]=\"columnDefs\">\n\t\t\t\t\t</ag-grid-angular>\n\t\t\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+module.exports = "<ng-template #dataModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Course Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"dataForm\" novalidate (ngSubmit)=\"editSubmit(dataForm)\">\n\t  <div class=\"modal-boy\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"name\">Course Name</label>\n\t        <input id=\"name\" type=\"text\" class=\"form-control\" formControlName=\"name\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"subcourse\">Subcourse Name</label>\n\t        <input id=\"subcourse\" type=\"text\" class=\"form-control\" formControlName=\"subcourse\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"data-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"data-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!dataForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n\t<button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Course</button>\n\t<div class=\"row\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n\t\t\t\t\t<ag-grid-angular\n\t\t\t\t\t\t\t#agGrid\n\t\t\t\t\t\t\tid=\"myGrid\"\n\t\t\t\t\t\t\tstyle=\"width: 480px; height: 400px;\"\n\t\t\t\t\t\t\tclass=\"ag-theme-balham\"\n\t\t\t\t\t\t\t[enableSorting]=\"true\"\n\t\t\t\t\t\t\t[enableFilter]=\"true\"\n\t\t\t\t\t\t\t[rowData]=\"rowData\"\n\t\t\t\t\t\t\trowSelection='multiple'\n\t\t\t\t\t\t\t(gridReady)=\"onGridReady($event)\"\n\t\t\t\t\t\t\t[columnDefs]=\"columnDefs\">\n\t\t\t\t\t</ag-grid-angular>\n\t\t\t\t\t<!-- Selection: <span id=\"selectedRows\"></span> -->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -7032,7 +7056,7 @@ module.exports = ".navbar-custom {\n    background-color: #000;\n}\n\n/* change 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"header\">\n\t\t\t\n  <!-- Top Bar -->\n  <div class=\"top_bar\">\n    <div class=\"top_bar_container\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"top_bar_content d-flex flex-row align-items-center justify-content-start\">\n              <ul class=\"top_bar_contact_list\">\n                <li><div class=\"question\">Have any questions?</div></li>\n                <li>\n                  <div>+91 999999999</div>\n                </li>\n                <li>\n                  <div>info@smugov.org</div>\n                </li>\n              </ul>\n              <div class=\"top_bar_login ml-auto\">\n                <ul>\n                  <li><a href=\"#\">Register</a></li>\n                  <li *ngIf=\"loginService.currentUserValue == null\"><a (click)=\"onLogin();\" href=\"#\">Login</a></li>\n                  <li *ngIf=\"loginService.currentUserValue != null\"><a (click)=\"onLogout();\" href=\"#\">Logout</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\t\n  </div>\n\n  <!-- Header Content -->\n  <div class=\"header_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_content d-flex flex-row align-items-center justify-content-start\">\n            <div class=\"logo_container\">\n              <a href=\"#\">\n                <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                  <div class=\"logo_img\"><img src=\"../../assets/img/logo4.png\" alt=\"\" style=\"height: 90px;\"></div>\n                </div>\n              </a>\n            </div>\n            <nav class=\"main_nav_contaner ml-auto\">\n              <ul class=\"main_nav\">\n                  <li [routerLinkActive]=\"['active']\"><a href=\"/\">home</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/aboutus\">About Us</a></li>\n                  <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/courses\">Courses</a></li> -->\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/contactus\">Contact Us</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/admin\">Admin</a></li>\n              </ul>\n              <div class=\"search_button\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>\n\n              <!-- Hamburger -->\n\n              <div class=\"hamburger menu_mm\">\n                <i class=\"fa fa-bars menu_mm\" aria-hidden=\"true\"></i>\n              </div>\n            </nav>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Search Panel -->\n  <div class=\"header_search_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_search_content d-flex flex-row align-items-center justify-content-end\">\n            <form action=\"#\" class=\"header_search_form\">\n              <input type=\"search\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\n              <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center\">\n                <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\n  </div>\t\t\t\n</header>"
+module.exports = "<header class=\"header\">\n\t\t\t\n  <!-- Top Bar -->\n  <div class=\"top_bar\">\n    <div class=\"top_bar_container\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col\">\n            <div class=\"top_bar_content d-flex flex-row align-items-center justify-content-start\">\n              <ul class=\"top_bar_contact_list\">\n                <li><div class=\"question\">Have any questions?</div></li>\n                <li>\n                  <div>+91 999999999</div>\n                </li>\n                <li>\n                  <div>info@smugov.org</div>\n                </li>\n              </ul>\n              <div class=\"top_bar_login ml-auto\">\n                <ul>\n                  <li><a routerLink=\"/register\">Register</a></li>\n                  <li *ngIf=\"loginService.currentUserValue == null\"><a (click)=\"onLogin();\" href=\"#\">Login</a></li>\n                  <li *ngIf=\"loginService.currentUserValue != null\"><a (click)=\"onLogout();\" href=\"#\">Logout</a></li>\n                </ul>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\t\n  </div>\n\n  <!-- Header Content -->\n  <div class=\"header_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_content d-flex flex-row align-items-center justify-content-start\">\n            <div class=\"logo_container\">\n              <a href=\"#\">\n                <div class=\"logo_content d-flex flex-row align-items-end justify-content-start\">\n                  <div class=\"logo_img\"><img src=\"../../assets/img/logo4.png\" alt=\"\" style=\"height: 90px;\"></div>\n                </div>\n              </a>\n            </div>\n            <nav class=\"main_nav_contaner ml-auto\">\n              <ul class=\"main_nav\">\n                  <li [routerLinkActive]=\"['active']\"><a href=\"/\">home</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/aboutus\">About Us</a></li>\n                  <!-- <li [routerLinkActive]=\"['active']\"><a routerLink=\"/courses\">Courses</a></li> -->\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/contactus\">Contact Us</a></li>\n                  <li [routerLinkActive]=\"['active']\"><a routerLink=\"/admin\">Admin</a></li>\n              </ul>\n              <div class=\"search_button\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>\n\n              <!-- Hamburger -->\n\n              <div class=\"hamburger menu_mm\">\n                <i class=\"fa fa-bars menu_mm\" aria-hidden=\"true\"></i>\n              </div>\n            </nav>\n\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <!-- Header Search Panel -->\n  <div class=\"header_search_container\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col\">\n          <div class=\"header_search_content d-flex flex-row align-items-center justify-content-end\">\n            <form action=\"#\" class=\"header_search_form\">\n              <input type=\"search\" class=\"search_input\" placeholder=\"Search\" required=\"required\">\n              <button class=\"header_search_button d-flex flex-column align-items-center justify-content-center\">\n                <i class=\"fa fa-search\" aria-hidden=\"true\"></i>\n              </button>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\t\t\t\n  </div>\t\t\t\n</header>"
 
 /***/ }),
 
@@ -7271,12 +7295,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(formBuilder, activatedRoute, modalService, activeModal, loginService, router) {
+    function LoginComponent(formBuilder, activatedRoute, activeModal, loginService, router) {
         this.formBuilder = formBuilder;
         this.activatedRoute = activatedRoute;
-        this.modalService = modalService;
         this.activeModal = activeModal;
         this.loginService = loginService;
         this.router = router;
@@ -7313,6 +7335,8 @@ var LoginComponent = /** @class */ (function () {
                 _this.errorMessage = 'Username or password is incorrect';
             }
         }, function (error) {
+            _this.isValid = false;
+            _this.errorMessage = 'Service Fail while login users. Please try again.';
             console.log('error >>>> ' + error);
         });
     };
@@ -7331,7 +7355,6 @@ var LoginComponent = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbModal"],
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbActiveModal"],
             _services_login_service__WEBPACK_IMPORTED_MODULE_4__["LoginService"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
@@ -7424,7 +7447,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  register works!\n</p>\n"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n<app-head></app-head>\n\n<body>\n\n  <div class=\"milestones\">\n\t\t<!-- Background image artis https://unsplash.com/@thepootphotographer -->\n\t\t<div class=\"parallax_background parallax-window\" data-parallax=\"scroll\" style=\"background-image: url(../../assets/images/contact.jpg);\" data-speed=\"0.8\"></div>\n\t\t<div class=\"container\">\n\t\t\t<div class=\"row\">\n                        <div class=\"col\">\n\n                          <div class=\"home_content text-center\">\n\t\t\t\t\t\t\t<div class=\"home_title\">Student Register</div>\n                          </div>\n            \n                        </div>\n\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n  <div id=\"wrapper\">\n\n    <!-- start header -->\n   \t<app-header></app-header>\n    <!-- end header -->\n\n    <app-menu></app-menu>\n\n    <section id=\"content\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <br>\n        </div>\n        <div class=\"row\">\n          <div class=\"col\">\n\n            <form id=\"registerForm\" [formGroup]=\"registerForm\" (ngSubmit)=\"create(registerForm)\"\n                  mustMatch=\"['password', 'confirmPassword']\">\n\n                  <div *ngIf=\"!isValid && message != null\" class=\"alert alert-danger\" role=\"alert\">\n                    {{ message }}\n                  </div>\n                  <div *ngIf=\"isValid && message != null\" class=\"alert alert-success\" role=\"alert\">\n                    {{ message }}\n                  </div>\t\n\n                      <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"fname\">Firstname *</label>\n                                  <input id=\"fname\" name=\"fname\" type=\"text\" class=\"form-control\" \n                                  ng-pattern=\"[a-zA-Z]\" formControlName=\"fname\" placeholder=\"Please enter your firstname *\" \n                                  data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"lname\">Lastname *</label>\n                                  <input id=\"lname\" type=\"text\" class=\"form-control\" \n                                  ng-pattern=\"[a-zA-Z]\" formControlName=\"lname\" placeholder=\"Please enter your lastname *\" \n                                  data-error=\"Lastname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"username\">Username *</label>\n                                  <input id=\"username\" type=\"text\" class=\"form-control\" \n                                  formControlName=\"username\" placeholder=\"Please enter your username *\" \n                                  data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"password\">password *</label>\n                                  <input id=\"password\" type=\"text\" class=\"form-control\" \n                                  formControlName=\"password\" placeholder=\"Please enter your password *\"\n                                  data-error=\"password is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          </div>\n                          <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"email\">Email *</label>\n                                  <input id=\"email\" type=\"email\" class=\"form-control\" \n                                  formControlName=\"email\" placeholder=\"Please enter your email *\" \n                                  data-error=\"Valid email is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          </div>\n                          <div class=\"row\">\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"course\">Course *</label>\n                                  <input id=\"course\" type=\"text\" class=\"form-control\" \n                                  formControlName=\"course\" placeholder=\"Please select\" \n                                  data-error=\"Firstname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-6\">\n                              <div class=\"form-group\">\n                                  <label for=\"subcourse\">Sub Course *</label>\n                                  <input id=\"subcourse\" type=\"text\" class=\"form-control\" \n                                  formControlName=\"subcourse\" placeholder=\"Please select sub course\" \n                                  data-error=\"Lastname is required.\">\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          </div>\n                          <div class=\"row\">\n                          <div class=\"col-md-12\">\n                              <div class=\"form-group\">\n                                  <label for=\"address\">Address</label>\n                                  <textarea id=\"address\" class=\"form-control\" \n                                  formControlName=\"address\" placeholder=\"Please enter your address\" rows=\"4\" required=\"required\" data-error=\"Please, leave us a message.\"></textarea>\n                                  <div class=\"help-block with-errors\"></div>\n                              </div>\n                          </div>\n                          <div class=\"col-md-12\">\n                             <button id=\"data-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"reset()\">Cancel</button>\n                             <button id=\"student-submit-btn\" type=\"submit\" \n                             class=\"btn btn-primary btn-sm\" [disabled]=\"!registerForm.valid\">Submit</button>\n                          </div>\n                      </div>\n              </form>\n\n          </div>\n          <div class=\"col\">\n\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <app-footer></app-footer>\n    \n  </div>\n\n</body>\n\n</html>\n"
 
 /***/ }),
 
@@ -7439,6 +7462,8 @@ module.exports = "<p>\n  register works!\n</p>\n"
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _services_student_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/student.service */ "./src/app/services/student.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7449,10 +7474,42 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var RegisterComponent = /** @class */ (function () {
-    function RegisterComponent() {
+    function RegisterComponent(formBuilder, studentService) {
+        this.formBuilder = formBuilder;
+        this.studentService = studentService;
     }
     RegisterComponent.prototype.ngOnInit = function () {
+        this.createForm();
+    };
+    RegisterComponent.prototype.createForm = function () {
+        this.registerForm = this.formBuilder.group({
+            fname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            lname: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            email: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            username: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            password: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            address: [''],
+            course: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required],
+            subcourse: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required]
+        });
+    };
+    RegisterComponent.prototype.create = function (formData) {
+        var _this = this;
+        var formData = this.registerForm.value;
+        this.studentService.create(formData).subscribe(function (res) {
+            _this.message = 'successfully registered.';
+            _this.isValid = true;
+            _this.reset();
+        }, function (error) {
+            _this.message = 'Faile while register. Please try again.';
+            _this.isValid = false;
+        });
+    };
+    RegisterComponent.prototype.reset = function () {
+        this.registerForm.reset();
     };
     RegisterComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -7460,7 +7517,7 @@ var RegisterComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./register.component.html */ "./src/app/components/register/register.component.html"),
             styles: [__webpack_require__(/*! ./register.component.css */ "./src/app/components/register/register.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"], _services_student_service__WEBPACK_IMPORTED_MODULE_2__["StudentService"]])
     ], RegisterComponent);
     return RegisterComponent;
 }());
@@ -7544,7 +7601,7 @@ module.exports = "#sparq-edit-button {padding: 0}\n.edit-btn { width: 100%; }\nh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-body\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t        <input id=\"fname\" type=\"text\" class=\"form-control\" formControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t        <input id=\"lname\" type=\"text\" class=\"form-control\" formControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
+module.exports = "<ng-template #studentModal let-modal>\n\t<div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n\t  <h4 class=\"modal-title\">Student Add/Update Form</h4>\n\t</div>\n\t<form [formGroup]=\"studentForm\" novalidate (ngSubmit)=\"editSubmit(studentForm)\">\n\t  <div class=\"modal-body\">\n\t    <div class=\"container\">\n\t      <div class=\"form-group\">\n\t        <label for=\"fname\">First Name</label>\n\t\t\t\t\t<input id=\"fname\" type=\"text\" class=\"form-control\" \n\t\t\t\t\tformControlName=\"fname\" />\n\t      </div>\n\t      <div class=\"form-group\">\n\t        <label for=\"lname\">Last Name</label>\n\t\t\t\t\t<input id=\"lname\" type=\"text\" class=\"form-control\" \n\t\t\t\t\tformControlName=\"lname\">\n\t      </div>\n\t    </div>\n\t  </div>\n\t  <div class=\"modal-footer\">\n\t    <button id=\"student-cancel-btn\" type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"closeModal()\">Cancel</button>\n\t\t<button id=\"student-submit-btn\" type=\"submit\" class=\"btn btn-primary btn-sm\" \n\t\t[disabled]=\"!studentForm.valid\">Submit</button>\n\t  </div>\n\t</form>\n</ng-template>\n\n<div class=\"container\">\n  <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"openModal()\">New Student</button>\n  <div class=\"row\">\n    \t<ag-grid-angular\n\t\t\t    #agGrid\n\t\t\t    id=\"myGrid\"\n\t\t\t    style=\"width: 480px; height: 400px;\"\n\t\t\t    class=\"ag-theme-balham\"\n\t\t\t    [enableSorting]=\"true\"\n\t\t\t    [enableFilter]=\"true\"\n\t\t\t    [rowData]=\"students\"\n\t\t\t    rowSelection='multiple'\n\t\t\t    (gridReady)=\"onGridReady($event)\"\n\t\t\t    [columnDefs]=\"columnDefs\">\n\t\t\t</ag-grid-angular>\n  </div>\n</div>\n\n\n<!-- <button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openWindowCustomClass(content)\">Modal with window custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openBackDropCustomClass(content)\">Modal with backdrop custom class</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openSm(content)\">Small modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openLg(content)\">Large modal</button>\n<button class=\"btn btn-outline-primary mb-2 mr-2\" (click)=\"openVerticallyCentered(content)\">Modal vertically centered</button> -->\n\n<!-- <ng-template #content let-modal>\n  <div class=\"modal-header\" style=\"position: relative;z-index: 1;\">\n    <h4 class=\"modal-title\">Modal title</h4>\n    <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"modal.dismiss('Cross click')\">\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n  </div>\n  <div class=\"modal-body\">\n    <p>One fine body&hellip;</p>\n  </div>\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-light\" (click)=\"modal.close('Close click')\">Close</button>\n  </div>\n</ng-template> -->\n\n<!-- <div class=\"container\"> -->\n<!--   c -->\n<!--     <div class=\"col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2\"> -->\n<!--       <div> -->\n<!-- \t     <label class=\"col-md-4\">First Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.fname\" /> -->\n<!-- \t  </div> -->\n<!-- \t  <div> -->\n<!-- \t     <label class=\"col-md-4\">Last Name: </label> -->\n<!-- \t     <input type=\"text\" class=\"form-control\" [(ngModel)]=\"student.lname\" /> -->\n<!-- \t  </div>\t -->\n<!--       <form [formGroup]=\"angForm\" novalidate> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">First Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"fname\" #fname /> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['fname'].errors.required\"> -->\n<!--           First Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--       <div class=\"form-group\"> -->\n<!--         <label class=\"col-md-4\">Last Name</label> -->\n<!--         <input type=\"text\" class=\"form-control\" formControlName=\"lname\" #lname/> -->\n<!--       </div> -->\n<!--       <div *ngIf=\"angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)\" class=\"alert alert-danger\"> -->\n<!--         <div *ngIf=\"angForm.controls['lname'].errors.required\"> -->\n<!--           Last Name is required. -->\n<!--         </div> -->\n<!--       </div> -->\n<!--         <div class=\"form-group\"> -->\n<!--           <button (click)=\"addStudent(fname.value, lname.value)\" [disabled]=\"angForm.pristine || angForm.invalid\" class=\"btn btn-primary\">Add</button> -->\n<!--           <button (click)=\"openDialog()\" class=\"btn btn-primary\">Update</button> -->\n<!--         </div> -->\n<!--     </form> -->\n<!--     </div> -->\n<!--     <div class=\"row\"> -->\n<!--     \t<ag-grid-angular -->\n<!-- \t\t\t    #agGrid -->\n<!-- \t\t\t    id=\"myGrid\" -->\n<!-- \t\t\t    style=\"width: 600px; height: 200px;\" -->\n<!-- \t\t\t    class=\"ag-theme-balham\" -->\n<!-- \t\t\t    [enableSorting]=\"true\" -->\n<!-- \t\t\t    [enableFilter]=\"true\" -->\n<!-- \t\t\t    [rowData]=\"students\" -->\n<!-- \t\t\t    [rowSelection]=\"rowSelection\" -->\n<!-- \t\t\t    (rowClicked)='onRowClicked($event)' -->\n<!-- \t\t\t    [columnDefs]=\"columnDefs\" -->\n<!-- \t\t\t    > -->\n<!-- \t\t\t</ag-grid-angular> -->\n\t\n<!-- \t\t\tSelection: <span id=\"selectedRows\"></span> -->\n<!--     </div> -->\n<!--   </div> -->\n<!-- </div> -->"
 
 /***/ }),
 
@@ -8010,6 +8067,79 @@ var DataService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/services/http-interceptor.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/http-interceptor.ts ***!
+  \**********************************************/
+/*! exports provided: HttpInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpInterceptor", function() { return HttpInterceptor; });
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/Rx */ "./node_modules/rxjs-compat/_esm5/Rx.js");
+/* harmony import */ var rxjs_add_operator_catch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/add/operator/catch */ "./node_modules/rxjs-compat/_esm5/add/operator/catch.js");
+/* harmony import */ var rxjs_add_observable_throw__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/add/observable/throw */ "./node_modules/rxjs-compat/_esm5/add/observable/throw.js");
+/* harmony import */ var rxjs_add_operator_map__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/add/operator/map */ "./node_modules/rxjs-compat/_esm5/add/operator/map.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+// operators
+
+
+
+var HttpInterceptor = /** @class */ (function (_super) {
+    __extends(HttpInterceptor, _super);
+    function HttpInterceptor(backend, options, http) {
+        var _this = _super.call(this, backend, options) || this;
+        _this.http = http;
+        _this.handleError = function (error) {
+            // Do messaging and error handling here
+            return rxjs_Rx__WEBPACK_IMPORTED_MODULE_2__["Observable"].throw(error);
+        };
+        return _this;
+    }
+    HttpInterceptor.prototype.request = function (url, options) {
+        return _super.prototype.request.call(this, url, options)
+            .catch(this.handleError);
+    };
+    HttpInterceptor = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_http__WEBPACK_IMPORTED_MODULE_0__["XHRBackend"],
+            _angular_http__WEBPACK_IMPORTED_MODULE_0__["RequestOptions"],
+            _angular_http__WEBPACK_IMPORTED_MODULE_0__["Http"]])
+    ], HttpInterceptor);
+    return HttpInterceptor;
+}(_angular_http__WEBPACK_IMPORTED_MODULE_0__["Http"]));
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/login.service.ts":
 /*!*******************************************!*\
   !*** ./src/app/services/login.service.ts ***!
@@ -8171,7 +8301,9 @@ var StudentService = /** @class */ (function () {
         this.uri = 'students/';
     }
     StudentService.prototype.create = function (formData) {
-        return this.dataService.post(this.uri, formData);
+        return this.dataService.post(this.uri, formData).map(function (res) {
+            return res;
+        });
     };
     StudentService.prototype.get = function () {
         return this.dataService.get(this.uri);

@@ -12,7 +12,9 @@ export class StudentService {
   }
 
   create(formData) {
-    return this.dataService.post(this.uri,formData);
+    return this.dataService.post(this.uri,formData).map(res => {
+      return res;
+    });
   }
 
   get() { 

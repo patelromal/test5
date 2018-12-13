@@ -1,13 +1,8 @@
-import { Component, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { AuthenticationService } from '../../services/authentication.service';
+import { Component, OnInit} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { Observable, throwError } from 'rxjs';
 import { LoginService } from '../../services/login.service';
-import { mapTo, delay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +18,6 @@ export class LoginComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private activatedRoute: ActivatedRoute,
-              private modalService: NgbModal,
               private activeModal: NgbActiveModal,
               private loginService: LoginService,
               private router: Router) {
@@ -63,6 +57,8 @@ export class LoginComponent implements OnInit {
               this.errorMessage = 'Username or password is incorrect';
           }
       }, (error) => {
+          this.isValid=false;
+          this.errorMessage = 'Service Fail while login users. Please try again.';
           console.log('error >>>> ' + error);
       });
       

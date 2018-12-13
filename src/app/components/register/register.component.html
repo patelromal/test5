@@ -1,3 +1,151 @@
-<p>
-  register works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<app-head></app-head>
+
+<body>
+
+  <div class="milestones">
+		<!-- Background image artis https://unsplash.com/@thepootphotographer -->
+		<div class="parallax_background parallax-window" data-parallax="scroll" style="background-image: url(../../assets/images/contact.jpg);" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+                        <div class="col">
+
+                          <div class="home_content text-center">
+							<div class="home_title">Student Register</div>
+                          </div>
+            
+                        </div>
+
+			</div>
+		</div>
+	</div>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+   	<app-header></app-header>
+    <!-- end header -->
+
+    <app-menu></app-menu>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <br>
+        </div>
+        <div class="row">
+          <div class="col">
+
+            <form id="registerForm" [formGroup]="registerForm" (ngSubmit)="create(registerForm)"
+                  mustMatch="['password', 'confirmPassword']">
+
+                  <div *ngIf="!isValid && message != null" class="alert alert-danger" role="alert">
+                    {{ message }}
+                  </div>
+                  <div *ngIf="isValid && message != null" class="alert alert-success" role="alert">
+                    {{ message }}
+                  </div>	
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="fname">Firstname *</label>
+                                  <input id="fname" name="fname" type="text" class="form-control" 
+                                  ng-pattern="[a-zA-Z]" formControlName="fname" placeholder="Please enter your firstname *" 
+                                  data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="lname">Lastname *</label>
+                                  <input id="lname" type="text" class="form-control" 
+                                  ng-pattern="[a-zA-Z]" formControlName="lname" placeholder="Please enter your lastname *" 
+                                  data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="username">Username *</label>
+                                  <input id="username" type="text" class="form-control" 
+                                  formControlName="username" placeholder="Please enter your username *" 
+                                  data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="password">password *</label>
+                                  <input id="password" type="text" class="form-control" 
+                                  formControlName="password" placeholder="Please enter your password *"
+                                  data-error="password is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="email">Email *</label>
+                                  <input id="email" type="email" class="form-control" 
+                                  formControlName="email" placeholder="Please enter your email *" 
+                                  data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="course">Course *</label>
+                                  <input id="course" type="text" class="form-control" 
+                                  formControlName="course" placeholder="Please select" 
+                                  data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="subcourse">Sub Course *</label>
+                                  <input id="subcourse" type="text" class="form-control" 
+                                  formControlName="subcourse" placeholder="Please select sub course" 
+                                  data-error="Lastname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="address">Address</label>
+                                  <textarea id="address" class="form-control" 
+                                  formControlName="address" placeholder="Please enter your address" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                             <button id="data-cancel-btn" type="button" class="btn btn-danger btn-sm" (click)="reset()">Cancel</button>
+                             <button id="student-submit-btn" type="submit" 
+                             class="btn btn-primary btn-sm" [disabled]="!registerForm.valid">Submit</button>
+                          </div>
+                      </div>
+              </form>
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <app-footer></app-footer>
+    
+  </div>
+
+</body>
+
+</html>

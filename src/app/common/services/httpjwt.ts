@@ -13,23 +13,23 @@ import { Observable } from "rxjs/Observable";
 
 
 @Injectable()
-export class HttpJWT {
-    // constructor(backend: ConnectionBackend, defaultOptions: RequestOptions, private loaderService: LoaderService) {
-    //     super(backend, defaultOptions);
-    // }
-    constructor(private http: HttpClient,private loaderService: LoaderService) {}
+export class HttpJWT extends Http{
+    constructor(backend: ConnectionBackend, defaultOptions: RequestOptions, private loaderService: LoaderService) {
+        super(backend, defaultOptions);
+    }
+    // constructor(private http: HttpClient,private loaderService: LoaderService) {}
 
     public get(url: string){
-        this.onStart();
-        return this.http.get(appConfig.apiUrl + url)
-            .catch((err) => this.handleError(err)).finally(() => this.onEnd());
+        // this.onStart();
+        return super.get(appConfig.apiUrl + url);
+            // .catch((err) => this.handleError(err)).finally(() => this.onEnd());
     }
 
     public post(url: string, body: string){
-        this.onStart();
+        // this.onStart();
 
-        return this.http.post(appConfig.apiUrl + url, body)
-            .catch((err) => this.handleError(err)).finally(() => this.onEnd());
+        return super.post(appConfig.apiUrl + url, body);
+            // .catch((err) => this.handleError(err)).finally(() => this.onEnd());
     }
 
     // public put(url: string, body: string, options?: RequestOptionsArgs): Observable<Response> {
@@ -48,22 +48,22 @@ export class HttpJWT {
 
     // // private helper methods
 
-    private onStart() {
-        this.loaderService.start();
-    }
+    // private onStart() {
+    //     this.loaderService.start();
+    // }
 
-    private onEnd() {
-        this.loaderService.end();
-    }
+    // private onEnd() {
+    //     this.loaderService.end();
+    // }
 
-    private handleError(error: any) {
-        if (error.status === 401) {
-            // 401 unauthorized response so log user out of client
-            window.location.href = "/login";
-        }
+    // private handleError(error: any) {
+    //     if (error.status === 401) {
+    //         // 401 unauthorized response so log user out of client
+    //         window.location.href = "/login";
+    //     }
 
-        return Observable.throw(error._body);
-    }
+    //     return Observable.throw(error._body);
+    // }
 }
 
 // export function httpJWTFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions, loaderService: LoaderService): Http {

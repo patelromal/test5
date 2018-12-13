@@ -15,7 +15,7 @@ import { AdminHeaderComponent } from './components/admin-header/admin-header.com
 import { CourseComponent } from './components/course/course.component';
 import { ResultComponent } from './components/result/result.component';
 import { StudentComponent } from './components/student/student.component';
-//import { SignupComponent } from './components/auth/signup/signup.component';
+import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './services/auth.guard';
 
@@ -32,7 +32,7 @@ const appRoutes: Routes =[
        { path: 'managestudent', component: StudentComponent },
    ]
 },
-// { path: 'signup', component: SignupComponent },
+{ path: 'register', component: RegisterComponent },
  { path: 'login', component: LoginComponent },
 ];
 

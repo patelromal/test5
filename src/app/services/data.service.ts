@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { prodEnvironment } from '../../environments/environment.prod';
+// import { InterceptorService } from 'ng2-interceptors';
+import { HttpInterceptor } from '../services/http-interceptor';
 import 'rxjs/add/operator/map';
 
 @Injectable()
