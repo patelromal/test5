@@ -2,7 +2,7 @@ const mongoose  = require('mongoose');
 
 const CourseSchema = new mongoose.Schema({
   name: String,
-  subcourse: String,
+  details: String,
 });
 
 const Course = mongoose.model('Course', CourseSchema);

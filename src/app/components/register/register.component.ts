@@ -1,6 +1,9 @@
 import { Component, OnInit} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { StudentService } from '../../services/student.service'
+import { StudentService } from '../../services/student.service';
+import { CourseService } from '../../services/course.service';
+import { SubcourseService } from '../../services/subcourse.service';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,26 +11,54 @@ import { StudentService } from '../../services/student.service'
 })
 export class RegisterComponent implements OnInit {
 
-  message: any
+  message: any;
   isValid: boolean;
   registerForm: FormGroup;
+  courses: any;
+  subCourses: any;
+  selectedCourse: any;
+  selectedSubCourse: any;
+  searchText: any;
 
-  constructor(private formBuilder: FormBuilder,private studentService: StudentService) { }
+  constructor(private formBuilder: FormBuilder,
+    private studentService: StudentService,
+    private subcourseService: SubcourseService,
+    private courseService: CourseService) { }
 
   ngOnInit() {
       this.createForm();
+      this.getCourses();
+      this.getSubCourses('');
+  }
+
+  public getCourses() {
+    this.courseService.get().subscribe(res => {
+        this.courses = res;
+    });
+  }
+
+  public getSubCourses(courseId) {
+    this.subcourseService.findOne(courseId).subscribe(res => {
+            this.subCourses = res;
+    });
+  }
+
+  public onChangeCourse(selectedCourse){
+    this.selectedCourse = selectedCourse;
   }
 
   createForm() {
       this.registerForm = this.formBuilder.group({
-          fname: ['', Validators.required],
-          lname: ['', Validators.required],
-          email: ['', Validators.required],
-          username: ['', Validators.required],
-          password: ['', Validators.required],
+          fname: [''],
+          lname: [''],
+          email: [''],
+          username: [''],
+          password: [''],
           address: [''],
-          course: ['', Validators.required],
-          subcourse: ['', Validators.required]
+          course: [''],
+          subcourse: [''],
+          selectedCourse: [''],
+          searchText: ['']
       });
   }
 

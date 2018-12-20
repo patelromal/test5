@@ -30,7 +30,7 @@ export class DataService {
     }
 
   get(uri) {
-    return this.http.get(this.apiUrl + uri).map(res => {
+    return this.http.get(this.apiUrl + uri, { params: { populate: '' }} ).map(res => {
       return res;
     });
   }

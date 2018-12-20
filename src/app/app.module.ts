@@ -41,6 +41,11 @@ import { Alert1Service } from './common/services/alert1.service';
 import { HttpInterceptor } from './services/http-interceptor';
 import { InterceptorService } from 'ng2-interceptors';
 import { MustMatchDirective } from './common/directives/must-match.directive';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { SubcourseComponent } from './components/subcourse/subcourse.component';
+import { SubcourseService } from './services/subcourse.service';
+import { FilterPipe } from './common/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -60,7 +65,9 @@ import { MustMatchDirective } from './common/directives/must-match.directive';
     LoginComponent,
     ResultComponent,
     PageActionComponent,
-    HomebodyComponent
+    HomebodyComponent,
+    SubcourseComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -76,6 +83,7 @@ import { MustMatchDirective } from './common/directives/must-match.directive';
     MatSortModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
+    NgSelectModule,
     AgGridModule.withComponents([]),
     BrowserAnimationsModule,
     CollapsibleModule,
@@ -83,12 +91,13 @@ import { MustMatchDirective } from './common/directives/must-match.directive';
     NgxSmartModalModule.forRoot(),
     ModalModule.forRoot(),
     NgbModule.forRoot(),
-    ToastaModule.forRoot()
+    ToastaModule.forRoot(),
+    MDBBootstrapModule.forRoot()
   ],
   exports: [
     NgxSmartModalModule, ModalModule
   ],
-  providers: [ModalService, BsModalService, NgbActiveModal, 
+  providers: [ModalService, BsModalService, NgbActiveModal, SubcourseService, 
     SessionService, Alert1Service],
   entryComponents: [
     PageActionComponent

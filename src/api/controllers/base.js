@@ -6,6 +6,9 @@ const MAX_RESULTS = 100;
 /**
   Generic controller that provides CRUD operations for a given Mongoose model
 */
+var mongoUtil = require( '../mongoUtil' );
+var db = mongoUtil.getDb();
+
 export default class BaseController{
 
   /**
@@ -29,10 +32,6 @@ export default class BaseController{
         }
       }
       return null;
-      // else{
-      //     return 'incorrect password';
-      // }
-      // return 'fail';
     });
   }
 
@@ -47,25 +46,27 @@ export default class BaseController{
   }
 
   read(id) {
-    var filter = {};
-    filter[this.key] = id;
     return this.model
-    .findOne(filter)
+    .find({ })
+    .populate('course')
     .then((modelInstance) => {
-      // var response = {};
-      // response[this.modelName] = modelInstance;
-      return modelInstance;
+        var response = {};
+        response[this.modelName] = modelInstance;
+        console.log('response :  ' , response);
+        return response;
     });
   }
 
-  list() {
+  list(request) {
+   console.log('param populate : ' + request.params.populate);
    return this.model
       .find({})
+      .populate(request.params.populate)
+      // .populate('course')
       .limit(MAX_RESULTS)
-      .then((modelInstances) => {
-        // var response = {};
-        // response[pluralize(this.modelName)] = modelInstances;
-        return modelInstances;
+      .then((response) => {
+        console.log('response :  ' , response);
+        return response;
       });
   }
 
@@ -106,7 +107,7 @@ export default class BaseController{
     const router = new Router();
 
     router.get("/", (req, res) => {
-      this.list()
+      this.list(req)
         .then(ok(res))
         .then(null, fail(res));
     });

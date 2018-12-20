@@ -5,6 +5,7 @@ import path from 'path';
 import mongoose from 'mongoose';
 import db from './config/db';
 import api from './src/api';
+var mongoUtil = require( './src/api/mongoUtil' );
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -22,6 +23,11 @@ mongoose.connect(db.url).then(
     () => {console.log('Database is connected') },
     err => { console.log('Can not connect to the database'+ err)}
 );
+
+// mongoUtil.connectToServer( function( err ) {
+//   () => {console.log('Database is connected') },
+//   err => { console.log('Can not connect to the database'+ err)}
+// } );
 
 //listen (start app with node server.js) ======================================
 app.listen(port);

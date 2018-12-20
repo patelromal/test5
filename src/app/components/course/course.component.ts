@@ -47,7 +47,7 @@ export class CourseComponent implements OnInit{
     this.dataForm = this.fb.group({
         id: [''],
         name: ['', [Validators.required as any]],
-        subcourse: ['', [Validators.required as any]],
+        details: ['', [Validators.required as any]],
     });
   }
 
@@ -55,7 +55,7 @@ export class CourseComponent implements OnInit{
       this.dataForm.setValue({
           id: selectedData._id,
           name: selectedData.name,
-          subcourse: selectedData.subcourse,
+          details: selectedData.details,
       });
       this.modalRef =  this.modalService.open(this.dataModal);
   }
@@ -79,7 +79,7 @@ export class CourseComponent implements OnInit{
   public onGridReady(params) {
       this.columnDefs = [
       {headerName: 'Name', field: 'name'},
-      {headerName: 'Sub Course', field: 'subcourse' },
+      {headerName: 'Details', field: 'details' },
       {cellRendererFramework: PageActionComponent,
           cellRendererParams: {pageAction: 'edit'},
               width: 40, tooltip: () => 'Edit'},

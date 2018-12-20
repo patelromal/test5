@@ -13,6 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
 import { CourseComponent } from './components/course/course.component';
+import { SubcourseComponent } from './components/subcourse/subcourse.component';
 import { ResultComponent } from './components/result/result.component';
 import { StudentComponent } from './components/student/student.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -25,10 +26,13 @@ const appRoutes: Routes =[
 { path: 'aboutus', component: AboutUsComponent },
 { path: 'contactus', component: ContactUsComponent },
 { path: 'course', component: CourseComponent },
+{ path: 'subcourse', component: SubcourseComponent },
 { path: '', redirectTo: '/admin', pathMatch: 'full' },
-{ path: 'admin', component: AdminComponent, canActivate: [AuthGuard],
+// { path: 'admin', component: AdminComponent, canActivate: [AuthGuard],
+{ path: 'admin', component: AdminComponent,
    children: [
        { path: 'managecourse', component: CourseComponent },
+       { path: 'managesubcourse', component: SubcourseComponent },
        { path: 'managestudent', component: StudentComponent },
    ]
 },

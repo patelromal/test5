@@ -15,6 +15,9 @@ import { AuthGuard } from '../services/auth.guard';
 import { LoginService } from '../services/login.service';
 import { HttpInterceptor } from '../services/http-interceptor';
 import { MustMatchDirective } from './directives/must-match.directive';
+import { Data1Service } from "../services/data1.service";
+import { SubcourseService } from "../services/subcourse.service";
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   imports: [],
@@ -38,8 +41,8 @@ export class SmuCommonModule {
                   AuthGuard,
                   ConfirmationDialogService,
                   ModalService, 
-                  DataService, 
-                  CourseService, 
+                  DataService,
+                  CourseService,
                   LoaderService,
                   HttpInterceptor,
                   StudentService],

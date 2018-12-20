@@ -100,20 +100,24 @@
                           <div class="row">
                           <div class="col-md-6">
                               <div class="form-group">
-                                  <label for="course">Course *</label>
-                                  <input id="course" type="text" class="form-control" 
-                                  formControlName="course" placeholder="Please select" 
-                                  data-error="Firstname is required.">
-                                  <div class="help-block with-errors"></div>
+                                  <label for="subcourse">Course *</label>
+                                  <select formControlName="course" class="form-control inputstl"
+                                          (change)="onChangeCourse($event.target.value)">
+                                    <option *ngFor="let course of courses" value="{{course._id}}">
+                                        {{course.name}}
+                                    </option>
+                                  </select>
                               </div>
                           </div>
                           <div class="col-md-6">
                               <div class="form-group">
                                   <label for="subcourse">Sub Course *</label>
-                                  <input id="subcourse" type="text" class="form-control" 
-                                  formControlName="subcourse" placeholder="Please select sub course" 
-                                  data-error="Lastname is required.">
-                                  <div class="help-block with-errors"></div>
+                                   <select formControlName="subcourse" class="form-control inputstl">
+                                    <option *ngFor="let subCourse of subCourses | filter : selectedCourse" 
+                                            value="{{subCourse._id}}">
+                                        {{subCourse.name}}
+                                    </option>
+                                  </select>
                               </div>
                           </div>
                           </div>
@@ -122,7 +126,7 @@
                               <div class="form-group">
                                   <label for="address">Address</label>
                                   <textarea id="address" class="form-control" 
-                                  formControlName="address" placeholder="Please enter your address" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                  formControlName="address" placeholder="Please enter your address" rows="4" data-error="Please, leave us a message."></textarea>
                                   <div class="help-block with-errors"></div>
                               </div>
                           </div>
@@ -149,3 +153,20 @@
 </body>
 
 </html>
+
+
+                          <!-- <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="subcourse">Course *</label>
+                                  <input formControlName="searchText" 
+                                  [(ngModel)]="searchText"
+                                  placeholder="search text goes here">
+                              <ul>
+                                <li *ngFor="let c of courses | filter : searchText">
+                                    {{c.name}}
+                                </li>
+                            </ul>
+                              </div>
+                          </div>
+                          </div> -->
