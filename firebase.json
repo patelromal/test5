@@ -1,5 +1,5 @@
 {
-  "firebase": "sosgov",
+  "firebase": "saifoods",
   "public": "public",
   "scripts": {
     "ng": "ng",

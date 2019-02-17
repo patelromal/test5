@@ -46,6 +46,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SubcourseComponent } from './components/subcourse/subcourse.component';
 import { SubcourseService } from './services/subcourse.service';
 import { FilterPipe } from './common/pipes/filter.pipe';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { FilterPipe } from './common/pipes/filter.pipe';
     PageActionComponent,
     HomebodyComponent,
     SubcourseComponent,
-    FilterPipe
+    FilterPipe,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -353,7 +353,7 @@ section
 .top_bar
 {
 	width: 100%;
-	background: #2c2b31;
+	background: #4D0B27;
 }
 .header.scrolled .top_bar
 {
@@ -387,7 +387,7 @@ section
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 500;
-	color: #918ea0;
+	color: #fff;
 }
 .top_bar_contact_list li > div
 {
@@ -468,6 +468,7 @@ section
 .logo_text
 {
 	display: inline-block;
+	color: #fff !important;
 }
 .logo
 {
@@ -1421,7 +1422,7 @@ section
 {
 	width: 100%;
 	padding-top: 156px;
-	padding-bottom: 161px;
+	padding-bottom: 50px;
 }
 .milestones_container
 {
@@ -1826,9 +1827,10 @@ section
 .footer
 {
 	width: 100%;
-	background: #000;
+	background: #4D0B27 !important;
 	padding-top: 108px;
 	padding-bottom: 90px;
+	color: #fff;
 }
 .footer .logo_container
 {
@@ -1839,6 +1841,7 @@ section
 .footer_about_text
 {
 	padding-top: 49px;
+	color: #fff !important;
 }
 .footer_social
 {
@@ -1870,14 +1873,14 @@ section
 {
 	font-size: 12px;
 	font-weight: 500;
-	color: #b3b3b3;
+	color: #fff;
 	margin-top: 70px;
 }
 .footer_title
 {
 	font-size: 18px;
 	font-weight: 600;
-	color: #44425a;
+	color: #2EFEF7;
 }
 .footer_list
 {
@@ -1891,7 +1894,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #6c6a74;
+	color: #fff;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1921,6 +1924,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #6c6a74;
+	color: #fff;
 	margin-top: 3px;
 }
+

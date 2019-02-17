@@ -18,11 +18,11 @@ export class StudentService {
   }
 
   get() { 
-    return this.dataService.get(this.uri);
+    return this.dataService.get(this.uri,'');
   }
 
   edit(id) {
-    return this.dataService.get(this.uri+ id).map(res => {
+    return this.dataService.get(this.uri , id).map(res => {
       return res;
     });
   }

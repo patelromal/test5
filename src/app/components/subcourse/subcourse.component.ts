@@ -68,6 +68,14 @@ export class SubcourseComponent implements OnInit {
     this.dataForm = this.fb.group({
         id: [''],
         name: ['', [Validators.required as any]],
+        prerequisites: [''],
+        regular: [''],
+        fees: [''],
+        feesremark: [''],
+        online: [''],
+        home: [''],
+        centrebased: [''],
+        structure: [''],
         course: [''],
     });
   }
@@ -76,6 +84,14 @@ export class SubcourseComponent implements OnInit {
       this.dataForm.setValue({
           id: selectedData._id,
           name: selectedData.name,
+          prerequisites: selectedData.prerequisites,
+          regular: selectedData.regular,
+          fees: selectedData.fees,
+          feesremark: selectedData.feesremark,
+          online: selectedData.online,
+          home: selectedData.home,
+          centrebased: selectedData.centrebased,
+          structure: selectedData.structure,
           course: selectedData.course._id,
       });
       this.modalRef =  this.modalService.open(this.dataModal);

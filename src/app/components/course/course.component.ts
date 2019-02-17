@@ -47,7 +47,7 @@ export class CourseComponent implements OnInit{
     this.dataForm = this.fb.group({
         id: [''],
         name: ['', [Validators.required as any]],
-        details: ['', [Validators.required as any]],
+        details: ['']
     });
   }
 
@@ -55,7 +55,7 @@ export class CourseComponent implements OnInit{
       this.dataForm.setValue({
           id: selectedData._id,
           name: selectedData.name,
-          details: selectedData.details,
+          details: selectedData.details
       });
       this.modalRef =  this.modalService.open(this.dataModal);
   }

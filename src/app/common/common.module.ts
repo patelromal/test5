@@ -13,7 +13,7 @@ import { StudentService } from '../services/student.service';
 import { RegisterComponent } from '../components/register/register.component';
 import { AuthGuard } from '../services/auth.guard';
 import { LoginService } from '../services/login.service';
-import { HttpInterceptor } from '../services/http-interceptor';
+//import { HttpInterceptor } from '../services/http-interceptor';
 import { MustMatchDirective } from './directives/must-match.directive';
 import { Data1Service } from "../services/data1.service";
 import { SubcourseService } from "../services/subcourse.service";
@@ -44,7 +44,6 @@ export class SmuCommonModule {
                   DataService,
                   CourseService,
                   LoaderService,
-                  HttpInterceptor,
                   StudentService],
         };
     }

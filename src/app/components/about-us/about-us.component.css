@@ -7,3 +7,13 @@
 .panel-heading a.collapsed:after {
     content:"\e080";
 }
+
+.card-header {
+  padding-top: 0;
+  margin-bottom: 0;
+  background-color: #4D0B27 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  height: 25px !important;
+  font-weight: bold !important;
+  color: #fff; 
+}

@@ -19,15 +19,15 @@ export class SubcourseService{
   }
 
   get() { 
-    return this.dataService.get(this.uri);
+    return this.dataService.get(this.uri, 'course');
   }
 
-  findOne(id) { 
-    return this.dataService.get(this.uri + id);
-  }
+  findOne(id) {
+    return this.dataService.findOne(this.uri, id, 'course');
+  }  
 
   edit(id) {
-    return this.dataService.get(this.uri+ id).map(res => {
+    return this.dataService.get(this.uri, id).map(res => {
       return res;
     });
   }

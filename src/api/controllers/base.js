@@ -45,27 +45,46 @@ export default class BaseController{
       });
   }
 
-  read(id) {
+  read(request) {
+//    console.log('id : ' + request.params.key);
     return this.model
     .find({ })
-    .populate('course')
+//    .populate(request.params.model)
     .then((modelInstance) => {
         var response = {};
         response[this.modelName] = modelInstance;
-        console.log('response :  ' , response);
+        return response;
+    });
+  }
+  
+  findOne(request) {
+    console.log('inside findOne ');
+    return this.model
+    .find({ course: request.params.id })
+    .populate(request.query.populate)
+    .then((response) => {
+//        var response = {};
+//        response[this.modelName] = modelInstance;
         return response;
     });
   }
 
-  list(request) {
-   console.log('param populate : ' + request.params.populate);
+  listWithParam(request) {
+  console.log('inside listWithParam ');
    return this.model
       .find({})
-      .populate(request.params.populate)
-      // .populate('course')
+      .populate(request.query.populate)
       .limit(MAX_RESULTS)
       .then((response) => {
-        console.log('response :  ' , response);
+        return response;
+      });
+  }
+  
+  list(request) {
+   return this.model
+      .find({})
+      .limit(MAX_RESULTS)
+      .then((response) => {
         return response;
       });
   }
@@ -79,7 +98,6 @@ export default class BaseController{
         return {};
       })
   }
-
 
   /**
    */
@@ -105,9 +123,23 @@ export default class BaseController{
 
   route(){
     const router = new Router();
-
+    
     router.get("/", (req, res) => {
-      this.list(req)
+		console.log('get all list populate : ' + req.query.populate);
+		if(req.query.populate != ''){
+			this.listWithParam(req)
+	        .then(ok(res))
+	        .then(null, fail(res)); 
+		}else{
+			this.list(req)
+	        .then(ok(res))
+	        .then(null, fail(res)); 
+		}
+    });
+    
+    router.get("/:id", (req, res) => {
+	  console.log('findOne populate : ' + req.query.populate);
+      this.findOne(req)
         .then(ok(res))
         .then(null, fail(res));
     });
@@ -123,12 +155,6 @@ export default class BaseController{
          .then(ok(res))
          .then(null, fail(res));
       });
-
-    router.get("/:key", (req, res) => {
-      this.read(req.params.key)
-        .then(ok(res))
-        .then(null, fail(res));
-    });
 
     router.put("/:key", (req, res) => {
       this.update(req.params.key, req.body)

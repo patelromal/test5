@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<app-head></app-head>
+
+<body>
+
+	<div class="icon-bar">
+		<a href="https://www.facebook.com" class="facebook"><i
+			class="fa fa-facebook"></i></a> <a href="#" class="twitter"><i
+			class="fa fa-twitter"></i></a> <a href="#" class="google"><i
+			class="fa fa-google"></i></a> <a href="#" class="linkedin"><i
+			class="fa fa-linkedin"></i></a> <a href="#" class="youtube"><i
+			class="fa fa-youtube"></i></a>
+	</div>
+
+	<div class="milestones">
+		<div class="container">
+			<div class="row">
+
+				<div class="col">
+
+					<div class="home_content text-center">
+						<!--                           	<img src="../../assets/images/slides1.jpg"/> -->
+						<!-- 							<div class="home_title">About us</div> -->
+
+						<div id="demo" class="carousel slide" data-ride="carousel">
+
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active"></li>
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+							</ul>
+
+							<!-- The slideshow -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="../../assets/images/slides1.jpg" alt="Los Angeles">
+								</div>
+								<div class="carousel-item">
+									<img src="../../assets/images/slides2.jpg" alt="Chicago">
+								</div>
+								<div class="carousel-item">
+									<img src="../../assets/images/slides3.jpg" alt="New York">
+								</div>
+							</div>
+
+							<!-- Left and right controls -->
+							<a class="carousel-control-prev" href="#demo" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<!-- start header -->
+		<app-header></app-header>
+		<!-- end header -->
+
+		<app-menu></app-menu>
+
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<mdb-card class="w-100" borderColor="border-success"> 
+						<mdb-card-header>Sub Course Details</mdb-card-header>
+						<mdb-card-body> 
+							<mdb-card-text>
+								<div *ngFor="let course of subCourseList">
+<!-- 								{{course.name}} -->
+							
+								<div class="container">
+								  <ul class="nav nav-tabs" role="tablist">
+								    <li class="nav-item">
+								      <a class="nav-link active" data-toggle="tab" href="#home">Advance Diploma in Hospitality Management</a>
+								    </li>
+<!-- 								    <li class="nav-item"> -->
+<!-- 								      <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a> -->
+<!-- 								    </li> -->
+<!-- 								    <li class="nav-item"> -->
+<!-- 								      <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a> -->
+<!-- 								    </li> -->
+								  </ul>
+								
+								  <!-- Tab panes -->
+								  <div class="tab-content">
+								    <div id="home" class="container tab-pane active">
+								      	<div class="row">
+										  <div class="col-3 bg-success">image</div>
+									      <div class="col-4 bg-warning">
+									      	<div class="row">
+											  <div class="col" align="right">Place of Origin : </div>
+											  <div class="col">2 of 4</div>
+											</div>
+											<div class="row">
+											  <div class="col" align="right">Brand Name :</div>
+											  <div class="col">2 of 4</div>
+											</div>
+											<div class="row">
+											  <div class="col" align="right">Size :</div>
+											  <div class="col">2 of 4</div>
+											</div>
+											<div class="row">
+											  <div class="col" align="right">Type :</div>
+											  <div class="col">2 of 4</div>
+											</div>
+									      </div>
+									      <div class="col bg-success">Description</div>
+										</div>
+								    </div>
+<!-- 								    <div id="menu1" class="container tab-pane fade"> -->
+<!-- 								      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+<!-- 								    </div> -->
+<!-- 								    <div id="menu2" class="container tab-pane fade"> -->
+<!-- 								      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+<!-- 								    </div> -->
+								  </div>
+								</div>
+								
+								</div>
+  
+							</mdb-card-text>
+							
+						</mdb-card-body>
+					</mdb-card>
+
+				</div>
+			</div>
+		</section>
+
+		<div class="row">&nbsp;</div>
+
+		<app-footer></app-footer>
+
+	</div>
+	<a href="#" class="scrollup"><i
+		class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
+</body>
+
+</html>

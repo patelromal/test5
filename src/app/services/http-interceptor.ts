@@ -7,7 +7,7 @@ import "rxjs/add/operator/catch"
 import "rxjs/add/observable/throw"
 import "rxjs/add/operator/map"
 
-@Injectable()
+//@Injectable()
 export class HttpInterceptor extends Http {
 
     constructor(

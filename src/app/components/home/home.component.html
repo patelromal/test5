@@ -1,26 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Head -->
 <app-head></app-head>
 
 <body>
 
-<div class="super_container">
+  <div class="milestones">
+		<div class="container">
+			<div class="row">
+						
+                        <div class="col">
 
-	<!-- Header -->
-	<app-header></app-header>
+                          <div class="home_content text-center">
+<!--                           	<img src="../../assets/images/slides1.jpg"/> -->
+<!-- 							<div class="home_title">About us</div> -->
+								
+								<div id="demo" class="carousel slide" data-ride="carousel">
 
-	<!-- Menu -->
-	<app-menu></app-menu>
-	
-	<!-- Home -->
-    <app-homebody></app-homebody>
+									  <!-- Indicators -->
+									  <ul class="carousel-indicators">
+									    <li data-target="#demo" data-slide-to="0" class="active"></li>
+									    <li data-target="#demo" data-slide-to="1"></li>
+									    <li data-target="#demo" data-slide-to="2"></li>
+									  </ul>
+									
+									  <!-- The slideshow -->
+									  <div class="carousel-inner">
+									    <div class="carousel-item active">
+									      <img src="../../assets/images/slides1.jpg" alt="Los Angeles">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../assets/images/slides2.jpg" alt="Chicago">
+									    </div>
+									    <div class="carousel-item">
+									      <img src="../../assets/images/slides3.jpg" alt="New York">
+									    </div>
+									  </div>
+									
+									  <!-- Left and right controls -->
+									  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+									    <span class="carousel-control-prev-icon"></span>
+									  </a>
+									  <a class="carousel-control-next" href="#demo" data-slide="next">
+									    <span class="carousel-control-next-icon"></span>
+									  </a>
+									
+									</div>
 
-	<!-- Footer -->
-    <app-footer></app-footer>
-	
-</div>
+                          </div>
+            
+                        </div>
+
+			</div>
+		</div>
+	</div>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+   	<app-header></app-header>
+    <!-- end header -->
+
+    <app-menu></app-menu>
+
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="column w-75">
+				
+						<mdb-card borderColor="border-success"> 
+							<mdb-card-header>Welcome to SSPJIIMS!</mdb-card-header>
+							<mdb-card-body> 
+								<mdb-card-text>
+									<h3>&quot;Your first step towards right career !&quot;</h3>
+									SSPJIIMS paves a path to early success in life through its fast track short duration correspondence courses.
+									These courses consist of concepts and case studies that provide broad exposure to relevant business concepts and management specifics.
+									This helps them to get started as Managers by enhancing their productivity, capability to formulate business policies, strategies and
+									their implications for the organization.
+								</mdb-card-text>
+								
+								<mdb-card-text>
+									SSPJIIMS was established in 2000 by a well known SHARDA EDUCATION SOCIETY.
+									It is also ranked among the top International B-Schools that provide management courses through correspondence.
+									SSPJIIMS has over 100 specializations and management courses to choose from SSPJIIMS is SOCIETY working its way to reaching
+									towards people in the most distant corners of not only India but world in providing Correspondence courses in management field,
+									with specially designed courses for working professionals; from Diploma in management courses to the Doctorate and Laureate level.
+									At SSPJIIMS, the courses are designed for those who have burning desire to pursue a career in business and management.
+									The students will get qualified without disrupting their current career progression and earning.
+								</mdb-card-text>
+								
+							</mdb-card-body>
+						</mdb-card>
+					
+					</div>
+					<div class="column w-25">
+						<mdb-card borderColor="border-success"> 
+							<mdb-card-header>Why SSPJIIMS</mdb-card-header>
+							<mdb-card-body> 
+								<mdb-card-text>
+									SSPJIIMS paves a path to early success in life through its
+									fast-track short duration correspondence courses. These courses
+									consist of concepts and case studies that provide broad exposure to
+									relevant business concepts and management specifics. This helps
+									them to get started as âManagersâ by enhancing their
+									productivity, capability to formulate business policies, strategies
+									and their implications for the organization.
+								</mdb-card-text>
+							</mdb-card-body>
+						</mdb-card>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+		</section>
+		
+		<div class="container cta-100 ">
+        <div class="container">
+          <div class="row blog">
+            <div class="col-md-12">
+              <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="http://spendbridge.com/wp-content/uploads/2017/10/College-Student-300-wide.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="https://www.phdstudent.com/images/How_to_Stand_Out_in_a_Class_of_300.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="https://www.irishtimes.com/polopoly_fs/1.1865017.1405284336!/image/image.jpg_gen/derivatives/box_620_330/image.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+                  <div class="carousel-item ">
+                    <div class="row">
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="https://image.shutterstock.com/image-photo/multiracial-students-walking-university-hall-450w-685407757.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="https://image.shutterstock.com/image-photo/student-450w-374128723.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            <!--Date-->
+<!--                             <div class="item-box-blog-date bg-blue-ui white"> <span class="mon">Augu 01</span> </div> -->
+                            <!--Image-->
+                            <figure> <img alt="" src="https://image.shutterstock.com/image-photo/happy-young-university-students-studying-450w-522554425.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            <!--Heading-->
+                            <div class="item-box-blog-heading">
+                              <a href="#" tabindex="0">
+                                <h5>News Title</h5>
+                              </a>
+                            </div>
+                            <!--Text-->
+                            <div class="item-box-blog-text">
+                              <p>Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor.</p>
+                            </div>
+                            <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read">read more</a> </div>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+                      
+                     
+                    </div>
+                    <!--.row-->
+                  </div>
+                  
+                  
+                </div>
+                <!--.carousel-inner-->
+              </div>
+              <!--.Carousel-->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+	<app-footer></app-footer>
+    
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
 
 </body>
 

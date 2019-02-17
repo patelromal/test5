@@ -19,15 +19,16 @@ import { StudentComponent } from './components/student/student.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './services/auth.guard';
+import { DetailsComponent } from './components/details/details.component';
 
 const appRoutes: Routes =[
-{ path: '', component: HomeComponent },
-{ path: '', redirectTo: '/recipes', pathMatch: 'full' },
+{ path: 'index', component: HomeComponent },
 { path: 'aboutus', component: AboutUsComponent },
 { path: 'contactus', component: ContactUsComponent },
 { path: 'course', component: CourseComponent },
 { path: 'subcourse', component: SubcourseComponent },
-{ path: '', redirectTo: '/admin', pathMatch: 'full' },
+{ path: '', redirectTo: '/index', pathMatch: 'full' },
+{ path: 'details/:id', component: DetailsComponent },
 // { path: 'admin', component: AdminComponent, canActivate: [AuthGuard],
 { path: 'admin', component: AdminComponent,
    children: [
