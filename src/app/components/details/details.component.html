@@ -75,7 +75,7 @@
 			<div class="container">
 				<div class="row">
 					<mdb-card class="w-100" borderColor="border-success"> 
-						<mdb-card-header>Sub Course Details</mdb-card-header>
+						<mdb-card-header><p class="font-weight-bold text-success">Sub Course Details</p></mdb-card-header>
 						<mdb-card-body> 
 							<mdb-card-text>
 								<div *ngFor="let course of subCourseList">
@@ -84,7 +84,7 @@
 								<div class="container">
 								  <ul class="nav nav-tabs" role="tablist">
 								    <li class="nav-item">
-								      <a class="nav-link active" data-toggle="tab" href="#home">Advance Diploma in Hospitality Management</a>
+								      <a class="nav-link active font-weight-bold text-danger" data-toggle="tab" href="#home">{{course.name}}</a>
 								    </li>
 <!-- 								    <li class="nav-item"> -->
 <!-- 								      <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a> -->
@@ -98,26 +98,34 @@
 								  <div class="tab-content">
 								    <div id="home" class="container tab-pane active">
 								      	<div class="row">
-										  <div class="col-3 bg-success">image</div>
-									      <div class="col-4 bg-warning">
+										  <div class="col-3">image</div>
+									      <div class="col-4">
 									      	<div class="row">
-											  <div class="col" align="right">Place of Origin : </div>
-											  <div class="col">2 of 4</div>
+											  <div class="col font-weight-bold text-info" align="right">Pre-Requisites : </div>
+											  <div class="col">{{course.prerequisites}}</div>
 											</div>
 											<div class="row">
-											  <div class="col" align="right">Brand Name :</div>
-											  <div class="col">2 of 4</div>
+											  <div class="col font-weight-bold text-info" align="right">Duration :</div>
+											  <div class="col">{{course.regular}}</div>
 											</div>
 											<div class="row">
-											  <div class="col" align="right">Size :</div>
-											  <div class="col">2 of 4</div>
+											  <div class="col font-weight-bold text-info" align="right">Fees :</div>
+											  <div class="col">{{course.fees}}</div>
 											</div>
 											<div class="row">
-											  <div class="col" align="right">Type :</div>
-											  <div class="col">2 of 4</div>
+											  <div class="col font-weight-bold text-info" align="right">Fees Remark :</div>
+											  <div class="col">{{course.feesremark}}</div>
+											</div>
+											<div class="row">
+											  <div class="col font-weight-bold text-info" align="right">Examination Online:</div>
+											  <div class="col">{{course.online}}</div>
+											</div>
+											<div class="row">
+											  <div class="col font-weight-bold text-info" align="right">Regular :</div>
+											  <div class="col">{{course.regular}}</div>
 											</div>
 									      </div>
-									      <div class="col bg-success">Description</div>
+									      <div class="col text-justify">{{course.structure}}</div>
 										</div>
 								    </div>
 <!-- 								    <div id="menu1" class="container tab-pane fade"> -->

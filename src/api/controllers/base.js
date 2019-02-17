@@ -63,8 +63,6 @@ export default class BaseController{
     .find({ course: request.params.id })
     .populate(request.query.populate)
     .then((response) => {
-//        var response = {};
-//        response[this.modelName] = modelInstance;
         return response;
     });
   }
