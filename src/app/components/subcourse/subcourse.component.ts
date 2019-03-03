@@ -1,7 +1,7 @@
 import { SubcourseService } from '../../services/subcourse.service';
 import { CourseService } from '../../services/course.service';
 import { Component, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, Validators, FormBuilder,FormArray } from '@angular/forms';
 import { GridOptions } from 'ag-grid';
 import { PageActionComponent} from '../../common/components/page-action/page-action.component';
 import { AlertService } from '../../common/services/alert.service';
@@ -18,12 +18,16 @@ export class SubcourseComponent implements OnInit {
   public dataForm: FormGroup;
     rowData: any;
     courses: any;
+    modalContent = 'margin-left: 20px !important';
     public gridOptions: GridOptions;
     private gridApi;
     public columnDefs;
 
     modalRef: NgbModalRef;
 
+    orderForm: FormGroup;
+    items: FormArray;
+    
     @ViewChild('dataModal')
     private dataModal: TemplateRef<any>;
 
@@ -33,12 +37,38 @@ export class SubcourseComponent implements OnInit {
                 private modalService: NgbModal,
                 private confirmationDialogService: ConfirmationDialogService,
                 private alertService: AlertService){
-        this.createForm();
     }
   ngOnInit(){
+    this.createForm();
     this.getData();
     this.getCourses();
   }
+    
+  createForm() {
+    this.dataForm = this.fb.group({
+        name: '',
+        course: '',
+        details: '',
+        items: this.fb.array([this.createItem()])
+      });
+  }
+    
+  addItem(): void {
+    this.items = this.dataForm.get('items') as FormArray;
+    this.items.push(this.createItem());
+  }
+  
+  createItem(): FormGroup {
+      return this.fb.group({
+        label: '',
+        description: ''
+      });
+  } 
+    
+  deleteFieldValue(index) {
+    this.items = this.dataForm.get('items') as FormArray;
+//    this.items.splice(index, 1);
+  }  
 
   public getData() {
     this.subCourseService.get().subscribe(res => {
@@ -48,7 +78,7 @@ export class SubcourseComponent implements OnInit {
 
   create(formData){
         this.subCourseService.create(formData).subscribe((res) => {
-            this.closeModal();
+//            this.closeModal();
             this.getData();
         }, (error) => {
             // this.errorMessage = error;
@@ -64,22 +94,13 @@ export class SubcourseComponent implements OnInit {
     });
   }
 
-  createForm() {
-    this.dataForm = this.fb.group({
-        id: [''],
-        name: ['', [Validators.required as any]],
-        prerequisites: [''],
-        regular: [''],
-        fees: [''],
-        feesremark: [''],
-        online: [''],
-        home: [''],
-        centrebased: [''],
-        structure: [''],
-        course: [''],
-    });
-  }
-
+//  public createItem(): FormGroup {
+//      return this.fb.group({
+//        name: '',
+//        description: ''
+//      });
+//  }
+    
   public edit(selectedData) {
       this.dataForm.setValue({
           id: selectedData._id,
@@ -134,16 +155,22 @@ export class SubcourseComponent implements OnInit {
       this.gridApi.gridOptions = this.gridOptions;
   }
 
-    public editSubmit(dataForm) {
-      const formData = dataForm.value;
-      if (formData.id !== null) {
-          this.update(formData);
-          this.closeModal();
-          this.alertService.openSnackBar('succesfully updated course information ' + formData.name,'','success');
-      } else {
+  public editSubmit(dataForm) {  
+    const formData = dataForm.value;
+      console.log('formData ' + formData.items);      
+//    for (let i = 0; i < dataForm.controls.items.controls.length; i++) {
+//      console.log(dataForm.controls.items.controls[i].controls.label.value);
+//      console.log(dataForm.controls.items.controls[i].controls.description.value);
+//    }
+//      const formData = dataForm.value;
+//      if (formData.id !== null) {
+//          this.update(formData);
+//          this.closeModal();
+//          this.alertService.openSnackBar('succesfully updated course information ' + formData.name,'','success');
+//      } else {
           this.create(formData);
           this.alertService.showSuccessMessage('succesfully Addedd student information','top',2000);
-      }
+//      }
   }
 
   update(formData) {
@@ -162,3 +189,20 @@ export class SubcourseComponent implements OnInit {
   }
 
 }
+
+
+//    this.dataForm = this.fb.group({
+//        id: [''],
+//        name: ['', [Validators.required as any]],
+//        prerequisites: [''],
+//        regular: [''],
+//        fees: [''],
+//        feesremark: [''],
+//        online: [''],
+//        home: [''],
+//        centrebased: [''],
+//        structure: [''],
+//        course: [''],
+//        label: [''],
+//        labelvalue: ['']
+//    });

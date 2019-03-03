@@ -1,15 +1,14 @@
 const mongoose  = require('mongoose'), Schema = mongoose.Schema;
 
+var ItemSchema = new Schema({
+    label: String,
+    description: String
+});
+
 const SubcourseSchema = new mongoose.Schema({
 	name: String,
-	prerequisites: String,
-	regular: String,
-	fees: String,
-	feesremark: String,
-	online: String,
-	home: String,
-	centrebased: String,
-	structure: String,
+	items: [ItemSchema],
+	details: String,
 	course : { type: Schema.Types.ObjectId, ref: 'Course' }
 });
 

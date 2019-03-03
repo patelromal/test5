@@ -36,17 +36,15 @@ export default class BaseController{
   }
 
   create(data) {
+	  console.log(data);
     return this.model
       .create(data)
       .then((modelInstance) => {
-        // var response = {};
-        // response[this.modelName] = modelInstance;
         return modelInstance;
       });
   }
 
   read(request) {
-//    console.log('id : ' + request.params.key);
     return this.model
     .find({ })
 //    .populate(request.params.model)
