@@ -100,32 +100,14 @@
 								      	<div class="row">
 										  <div class="col-3">image</div>
 									      <div class="col-4">
-									      	<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Pre-Requisites : </div>
-											  <div class="col">{{course.prerequisites}}</div>
-											</div>
-											<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Duration :</div>
-											  <div class="col">{{course.regular}}</div>
-											</div>
-											<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Fees :</div>
-											  <div class="col">{{course.fees}}</div>
-											</div>
-											<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Fees Remark :</div>
-											  <div class="col">{{course.feesremark}}</div>
-											</div>
-											<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Examination Online:</div>
-											  <div class="col">{{course.online}}</div>
-											</div>
-											<div class="row">
-											  <div class="col font-weight-bold text-info" align="right">Regular :</div>
-											  <div class="col">{{course.regular}}</div>
+									      	<div *ngFor="let items of course.items">	
+										      	<div class="row">
+												  <div class="col font-weight-bold text-info" align="right">{{items.label}}</div>
+												  <div class="col">{{items.description}}</div>
+												</div>
 											</div>
 									      </div>
-									      <div class="col text-justify">{{course.structure}}</div>
+									      <div class="col text-justify">{{course.details}}</div>
 										</div>
 								    </div>
 <!-- 								    <div id="menu1" class="container tab-pane fade"> -->

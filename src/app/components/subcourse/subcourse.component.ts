@@ -1,7 +1,7 @@
 import { SubcourseService } from '../../services/subcourse.service';
 import { CourseService } from '../../services/course.service';
 import { Component, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { FormGroup, Validators, FormBuilder,FormArray } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder,FormArray } from '@angular/forms';
 import { GridOptions } from 'ag-grid';
 import { PageActionComponent} from '../../common/components/page-action/page-action.component';
 import { AlertService } from '../../common/services/alert.service';
@@ -27,6 +27,7 @@ export class SubcourseComponent implements OnInit {
 
     orderForm: FormGroup;
     items: FormArray;
+    public show:boolean = false;
     
     @ViewChild('dataModal')
     private dataModal: TemplateRef<any>;
@@ -46,10 +47,11 @@ export class SubcourseComponent implements OnInit {
     
   createForm() {
     this.dataForm = this.fb.group({
+        id: '',
         name: '',
         course: '',
         details: '',
-        items: this.fb.array([this.createItem()])
+        items: this.fb.array([])
       });
   }
     
@@ -60,14 +62,44 @@ export class SubcourseComponent implements OnInit {
   
   createItem(): FormGroup {
       return this.fb.group({
+        id: '',  
         label: '',
         description: ''
       });
-  } 
+  }
+    
+  setItems(items) {
+//    this.items = this.dataForm.get('items') as FormArray;  
+//    let control = <FormArray>this.dataForm.controls.items;
+//    selectedData.forEach(x => {
+//      this.items.push(this.fb.group({ 
+//        label: x.label, 
+//        description: x.description }))
+//    })
+    
+    let control = <FormArray>this.dataForm.controls.items;
+    items.forEach(x => {
+        control.push(this.fb.group({
+            label: x.label,
+            description: x.description
+            }))
+    })  
+}  
+   
+  public edit(selectedData) {
+      this.show = true;
+      console.log('selectedData._id : ' + selectedData._id);
+      this.dataForm.patchValue({
+          id: selectedData._id,
+          name: selectedData.name,
+          course: selectedData.course._id,
+          details: selectedData.details
+      });
+      this.setItems(selectedData.items);
+  }
     
   deleteFieldValue(index) {
-    this.items = this.dataForm.get('items') as FormArray;
-//    this.items.splice(index, 1);
+     this.items.removeAt(index);
   }  
 
   public getData() {
@@ -77,8 +109,8 @@ export class SubcourseComponent implements OnInit {
   }
 
   create(formData){
+      if(formData.id !== null){
         this.subCourseService.create(formData).subscribe((res) => {
-//            this.closeModal();
             this.getData();
         }, (error) => {
             // this.errorMessage = error;
@@ -86,6 +118,16 @@ export class SubcourseComponent implements OnInit {
             // this.alertService.showError(error);
             // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
         });
+      }else{
+        this.subCourseService.update(formData).subscribe((res) => {
+            this.getData();
+        }, (error) => {
+            // this.errorMessage = error;
+            // console.log('this.errorMessage : ' + error);
+            // this.alertService.showError(error);
+            // this.alertService.danger({message: this.errorMessage, timed: false, closeable: true});
+        });  
+      }
   }
 
   public getCourses() {
@@ -93,31 +135,7 @@ export class SubcourseComponent implements OnInit {
         this.courses = res;
     });
   }
-
-//  public createItem(): FormGroup {
-//      return this.fb.group({
-//        name: '',
-//        description: ''
-//      });
-//  }
     
-  public edit(selectedData) {
-      this.dataForm.setValue({
-          id: selectedData._id,
-          name: selectedData.name,
-          prerequisites: selectedData.prerequisites,
-          regular: selectedData.regular,
-          fees: selectedData.fees,
-          feesremark: selectedData.feesremark,
-          online: selectedData.online,
-          home: selectedData.home,
-          centrebased: selectedData.centrebased,
-          structure: selectedData.structure,
-          course: selectedData.course._id,
-      });
-      this.modalRef =  this.modalService.open(this.dataModal);
-  }
-
   public delete(selectedRow) {
         this.confirmationDialogService.confirm(
         'Please confirm..', 

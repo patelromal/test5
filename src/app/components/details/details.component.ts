@@ -33,6 +33,7 @@ export class DetailsComponent implements OnInit {
   public getSubCourseDetails() {
     this.subCourseService.findOne(this.id).subscribe(res => {
         this.subCourseList = res;
+        console.log(res);
     });
   }  
 

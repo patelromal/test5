@@ -1,20 +1,20 @@
 <!-- https://stackblitz.com/edit/angular-q5txgw?file=src/app/app.component.html -->
 <!-- https://alligator.io/angular/reactive-forms-formarray-dynamic-fields/ -->
+<!-- https://angular.io/api/forms/FormArrayName -->
+<!-- https://www.concretepage.com/angular-2/angular-2-formgroup-example -->
 
-<ul class="nav nav-tabs" role="tablist">
+
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" href="#table" role="tab" data-toggle="tab">Search</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Search</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#detail" role="tab" data-toggle="tab">Add/Update</a>
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Add/Update</a>
   </li>
 </ul>
-
-<!-- Tab panes -->
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="table">
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
   		<div class="container">
-			<button type="button" class="btn btn-primary btn-sm" (click)="openModal()">New Course</button>
 			<div class="row">
 				<div class="container">
 					<div class="row">
@@ -35,8 +35,8 @@
 			</div>
 		</div>
   </div>
-  <div role="tabpanel" class="tab-pane fade" id="detail">
-	<form [formGroup]="dataForm" novalidate (ngSubmit)="editSubmit(dataForm)">
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+  	<form [formGroup]="dataForm" novalidate (ngSubmit)="editSubmit(dataForm)">
 	    <div class="row">
           <div class="col-md-3">
 			  <div class="form-group">
@@ -61,9 +61,9 @@
 			      </div>
 			  </div>
 		  </div>
-	    <div formArrayName="items" *ngFor="let item of dataForm.get('items').controls; let i = index;">
-		  <div [formGroupName]="i">
-	   		<div class="row">
+	   <div formArrayName="items">
+	   <div *ngFor="let item of dataForm.controls.items.controls; let i=index"> 
+	   		<div [formGroupName]="i" class="row">
 	   			<div class="col-2"><div (click)="deleteFieldValue(i)" class="input-group-text">Delete</div></div>
 			    <div class="col-3">
 			      <div class="form-group">
@@ -76,7 +76,7 @@
 			      </div>
 			   	</div>
 	   	    </div>
-  	      </div>
+	   	    </div>
 	    </div>
 	    <div class="row">
 	          <div class="col-md-6">
@@ -91,101 +91,5 @@
 			<button id="data-submit-btn" type="submit" class="btn btn-primary btn-sm">Submit</button>
 	     </div>
 	</form>
-	</div>
+  </div>
 </div>
-
-
-<!-- 	    <div class="row" *ngFor="let field of fieldArray; let i = index"> -->
-<!-- 	         <div class="col-2" align="center"> -->
-<!-- 					<div (click)="deleteFieldValue(i)"  -->
-<!-- 						 class="input-group-text">Delete -->
-<!-- 					</div> -->
-<!-- 			  </div> -->
-<!-- 	          <div class="col-3"> -->
-<!-- 	          	<input class="form-control" type="text"  -->
-<!-- 	          		   name="{{field.name}}" formControlName="label" -->
-<!-- 	          		   placeholder="Title"> -->
-<!-- 	          </div> -->
-<!-- 	          <div class="col-6"> -->
-<!-- 	          	<input class="form-control" type="text"  -->
-<!-- 	          		   name="{{field.name}}" formControlName="labelvalue" -->
-<!-- 	          		   placeholder="value"> -->
-<!-- 	          </div> -->
-<!--         </div> -->
-<!-- 	    <div class="row"> -->
-<!-- 	          <div class="col-md-6"> -->
-<!-- 			  <div class="form-group"> -->
-<!-- 		        <label for="course">Course</label> -->
-<!-- 		        	<ng-select [items]="courses" -->
-<!-- 								bindLabel="name" placeholder="No course selected" -->
-<!-- 								bindValue="_id" formControlName="course"> -->
-<!-- 					</ng-select> -->
-<!-- 		      </div> -->
-<!-- 	       	  </div> -->
-<!-- 	          <div class="col-md-6">		 -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="name">Sub Course</label> -->
-<!-- 			        <input id="name" type="text"  -->
-<!-- 			        class="form-control"  -->
-<!-- 			        formControlName="name" /> -->
-<!-- 			      </div> -->
-<!-- 		   	  </div> -->
-<!-- 		 </div> -->
-<!--          <div class="row"> -->
-<!-- 	          <div class="col-md-6"> -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="prerequisites">Prerequisites</label> -->
-<!-- 			        <textarea id="prerequisites" class="form-control" formControlName="prerequisites"></textarea> -->
-<!-- 			      </div> -->
-<!-- 			  </div> -->
-<!-- 	          <div class="col-md-6"> -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="regular">Regular</label> -->
-<!-- 			        <textarea id="regular" class="form-control" formControlName="regular"></textarea> -->
-<!-- 			      </div> -->
-<!-- 			  </div> -->
-<!-- 		  </div> -->
-<!-- 		  <div class="row"> -->
-<!-- 	          <div class="col-md-6">	  -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="fees">Fees</label> -->
-<!-- 			        <textarea id="fees" type="text" class="form-control" formControlName="fees"></textarea> -->
-<!-- 			      </div> -->
-<!-- 			  </div> -->
-<!-- 	         <div class="col-md-6"> -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="feesremark">Fees Remark</label> -->
-<!-- 			        <textarea id="feesremark" class="form-control" formControlName="feesremark"></textarea> -->
-<!-- 			      </div> -->
-<!-- 			 </div> -->
-<!-- 		 </div> -->
-<!-- 		 <div class="row"> -->
-<!--          	  <div class="col-md-6"> -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="online">Online</label> -->
-<!-- 			        <textarea id="online" class="form-control" formControlName="online"></textarea> -->
-<!-- 			      </div> -->
-<!-- 			  </div> -->
-<!-- 		      <div class="col-md-6"> -->
-<!-- 			      <div class="form-group"> -->
-<!-- 			        <label for="home">Home</label> -->
-<!-- 			        <textarea id="home" class="form-control" formControlName="home"></textarea> -->
-<!-- 			      </div> -->
-<!-- 		     </div> -->
-<!-- 		 </div> -->
-<!-- 		 <div class="row"> -->
-<!-- 		    <div class="col-md-6"> -->
-<!-- 		      <div class="form-group"> -->
-<!-- 		        <label for="centrebased">Centrebased</label> -->
-<!-- 		        <textarea id="centrebased" class="form-control" formControlName="centrebased"></textarea> -->
-<!-- 		      </div> -->
-<!-- 		    </div> -->
-<!-- 		    <div class="col-md-6"> -->
-<!-- 		      <div class="form-group"> -->
-<!-- 		        <label for="structure">Structure</label> -->
-<!-- 		        <textarea id="structure" class="form-control" formControlName="structure"></textarea> -->
-<!-- 		      </div> -->
-<!-- 	    	</div> -->
-<!-- 	  	 </div> -->
-<!-- 	  	 </div> -->
-<!-- 	  	 </div> -->

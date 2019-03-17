@@ -23,7 +23,7 @@ export class DataService {
   }
   
   post(uri, formData) {
-      console.log('DataService url ' + this.apiUrl + uri + formData.username)
+      console.log('DataService url ' + formData.id)
       return this.http.post(this.apiUrl + uri, formData).map(res => {
         console.log('res ' + res);
         return res;
