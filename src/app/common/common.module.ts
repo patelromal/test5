@@ -18,6 +18,7 @@ import { MustMatchDirective } from './directives/must-match.directive';
 import { Data1Service } from "../services/data1.service";
 import { SubcourseService } from "../services/subcourse.service";
 import { FilterPipe } from './pipes/filter.pipe';
+import { FileUploader, FileDropDirective } from 'ng2-file-upload';
 
 @NgModule({
   imports: [],

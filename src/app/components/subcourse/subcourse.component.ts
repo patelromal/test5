@@ -8,6 +8,12 @@ import { AlertService } from '../../common/services/alert.service';
 import { ConfirmationDialogService } from '../../common/services/confirmation-dialog.service';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
+//import { saveAs } from "file-saver";
+//import { FileItem } from "ng2-file-upload/file-upload/file-item.class";
+import { FileUploader, FileSelectDirective, FileDropDirective } from 'ng2-file-upload';
+
+const URL = 'http://localhost:4000/api/upload';
+
 @Component({
   selector: 'app-subcourse',
   templateUrl: './subcourse.component.html',
@@ -29,6 +35,8 @@ export class SubcourseComponent implements OnInit {
     items: FormArray;
     public show:boolean = false;
     
+    public uploader: FileUploader = new FileUploader({url: URL, itemAlias: 'photo'});
+    
     @ViewChild('dataModal')
     private dataModal: TemplateRef<any>;
 
@@ -43,6 +51,12 @@ export class SubcourseComponent implements OnInit {
     this.createForm();
     this.getData();
     this.getCourses();
+      
+    this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
+    this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
+         console.log('ImageUpload:uploaded:', item, status, response);
+         alert('File uploaded successfully');
+    };  
   }
     
   createForm() {

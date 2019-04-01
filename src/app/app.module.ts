@@ -47,6 +47,7 @@ import { SubcourseComponent } from './components/subcourse/subcourse.component';
 import { SubcourseService } from './services/subcourse.service';
 import { FilterPipe } from './common/pipes/filter.pipe';
 import { DetailsComponent } from './components/details/details.component';
+import { FileSelectDirective } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { DetailsComponent } from './components/details/details.component';
     HomebodyComponent,
     SubcourseComponent,
     FilterPipe,
+    FileSelectDirective,
     DetailsComponent
   ],
   imports: [

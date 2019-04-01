@@ -5,6 +5,11 @@ import path from 'path';
 import mongoose from 'mongoose';
 import db from './config/db';
 import api from './src/api';
+
+import GridFsStorage from 'multer-gridfs-storage';
+import Grid  from 'gridfs-stream';
+import multer from 'multer';
+
 var mongoUtil = require( './src/api/mongoUtil' );
 
 const app = express();
