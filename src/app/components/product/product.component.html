@@ -1,0 +1,70 @@
+<ng-template #dataModal let-modal>
+	<div class="modal-header" style="position: relative;z-index: 1;">
+	  <h4 class="modal-title">Product Add/Update Form</h4>
+	</div>
+	<form [formGroup]="dataForm" novalidate (ngSubmit)="editSubmit(dataForm)">
+	  <div class="modal-boy">
+	    <div class="container">
+	      <div class="form-group">
+	        <label for="name">Product Name</label>
+	        <input id="name" type="text" class="form-control" formControlName="name" />
+	      </div>
+	      <div class="form-group">
+	        <label for="details">Details</label>
+	        <input id="details" type="text" class="form-control" formControlName="details">
+	      </div>
+	    </div>
+	  </div>
+	  <div class="modal-footer">
+	    <button id="data-cancel-btn" type="button" class="btn btn-danger btn-sm" (click)="closeModal()">Cancel</button>
+		<button id="data-submit-btn" type="submit" class="btn btn-primary btn-sm" [disabled]="!dataForm.valid">Submit</button>
+	  </div>
+	</form>
+</ng-template>
+
+<!-- <div class="container"> -->
+	<button type="button" class="btn btn-primary btn-sm" (click)="openModal()">New Product</button>
+	<custom-button [text]="'click me!'" (countChanged)="handleCountChanged($event)"></custom-button>
+  
+		<div class="example-container mat-elevation-z8">
+
+  <table mat-table [dataSource]="dataSource" matSort>
+		  <ng-container matColumnDef="name">
+		    <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+		    <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+		  </ng-container>
+		  
+		  <ng-container matColumnDef="detail">
+		     <th mat-header-cell *matHeaderCellDef mat-sort-header> Details </th>
+		     <td mat-cell *matCellDef="let row"> {{row.details}} </td>
+<!-- 		    <td mat-cell *matCellDef="let row"> -->
+<!-- 		      <button mat-icon-button color="primary" (click)="redirectToDetails(row.id)"> -->
+<!-- 		          <mat-icon class="mat-18">reorder</mat-icon> -->
+<!-- 		      </button> -->
+<!-- 		    </td> -->
+		  </ng-container>
+		  
+		  <ng-container matColumnDef="update">
+		      <th mat-header-cell *matHeaderCellDef> Update </th>
+		      <td mat-cell *matCellDef="let row">
+		        <button mat-icon-button color="accent" (click)="edit(row)">
+		            <mat-icon class="mat-18">system_update</mat-icon>
+		        </button>
+		      </td>
+		    </ng-container>
+		 
+		    <ng-container matColumnDef="delete">
+		        <th mat-header-cell *matHeaderCellDef> Delete </th>
+		        <td mat-cell *matCellDef="let row">
+		          <button mat-icon-button color="warn" (click)="delete(row)">
+		              <mat-icon class="mat-18">delete</mat-icon>
+		          </button>
+		        </td>
+		      </ng-container>
+		 
+		  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+		  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+	</table>
+
+  <mat-paginator [pageSizeOptions]="[2, 4, 5, 100]"></mat-paginator>
+</div>

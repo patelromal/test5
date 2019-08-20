@@ -22,8 +22,8 @@ export class AppComponent {
 
   ngOnInit(){
       firebase.initializeApp({
-          apiKey: "AIzaSyAeFGtd5RG4T-hRxdCsz9y5263K6JIJ9Cg",
-          authDomain: "student-http.firebaseapp.com"
+          apiKey: "AIzaSyAEA55kvhmDdzVvrzzp6ICHqrHZCN3nOPs",
+          authDomain: "sspjiims-c3f70.firebaseapp.com"
       });
   }
 }

@@ -7,9 +7,11 @@ import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { ResponseOptions, BrowserXhr, XHRBackend } from "@angular/http";
 import { MatDialogModule, MatDialogRef, MatFormFieldModule,MatSnackBarModule,
-         MatButtonModule, MatIconModule, MatInputModule,
+         MatButtonModule, MatInputModule,
          MatPaginatorModule, MatProgressSpinnerModule,
-         MatSortModule, MatTableModule, MatToolbarModule} from '@angular/material';
+         MatSortModule, MatTableModule, MatToolbarModule, 
+         MatTableDataSource} from '@angular/material';
+import { MatIconModule,MatIconRegistry } from "@angular/material/icon";
 import { CollapsibleModule } from 'angular2-collapsible';
 import { PageActionComponent } from './common/components/page-action/page-action.component';
 import { SmuCommonModule } from './common/common.module';
@@ -18,7 +20,6 @@ import { NgxSmartModalModule, NgxSmartModalService } from 'ngx-smart-modal';
 import { BsModalService, BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomebodyComponent } from './components/homebody/homebody.component';
-import { StudentComponent } from './components/student/student.component';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,8 +30,6 @@ import { HeadComponent } from './components/head/head.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { AdminHeaderComponent } from './components/admin-header/admin-header.component';
-import { CourseComponent } from './components/course/course.component';
-import { ResultComponent } from './components/result/result.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './components/login/login.component';
@@ -43,11 +42,15 @@ import { InterceptorService } from 'ng2-interceptors';
 import { MustMatchDirective } from './common/directives/must-match.directive';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { SubcourseComponent } from './components/subcourse/subcourse.component';
-import { SubcourseService } from './services/subcourse.service';
 import { FilterPipe } from './common/pipes/filter.pipe';
 import { DetailsComponent } from './components/details/details.component';
 import { FileSelectDirective } from 'ng2-file-upload';
+import { SubproductComponent } from './components/subproduct/subproduct.component';
+import { ProductComponent } from './components/product/product.component';
+import { SubproductService } from './services/subproduct.service';
+import { ProductService } from './services/product.service';
+import { CompanyComponent } from './components/company/company.component';
+import { CustomButtonComponent } from './common/components/custom-button/custom-button.component';
 
 @NgModule({
   declarations: [
@@ -62,16 +65,16 @@ import { FileSelectDirective } from 'ng2-file-upload';
     AdminComponent,
     AdminHeaderComponent,
     RegisterComponent,
-    CourseComponent,
-    StudentComponent,
     LoginComponent,
-    ResultComponent,
     PageActionComponent,
     HomebodyComponent,
-    SubcourseComponent,
     FilterPipe,
     FileSelectDirective,
-    DetailsComponent
+    DetailsComponent,
+    SubproductComponent,
+    ProductComponent,
+    CompanyComponent,
+    CustomButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -84,6 +87,8 @@ import { FileSelectDirective } from 'ng2-file-upload';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
+    MatIconModule,
+    MatButtonModule,
     MatSortModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
@@ -101,10 +106,10 @@ import { FileSelectDirective } from 'ng2-file-upload';
   exports: [
     NgxSmartModalModule, ModalModule
   ],
-  providers: [ModalService, BsModalService, NgbActiveModal, SubcourseService, 
-    SessionService, Alert1Service],
+  providers: [ModalService, BsModalService, NgbActiveModal, 
+    SessionService, Alert1Service, ProductService, SubproductService],
   entryComponents: [
-    PageActionComponent
+    PageActionComponent,CustomButtonComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -7,16 +7,13 @@ import { AlertComponent } from "./components/alert/alert.component";
 import { ModalService } from './services/modal.service';
 import { ModalComponent } from "./components/modal/modal.component";
 import { DataService } from "../services/data.service";
-import { CourseService } from "../services/course.service";
 import { LoaderService } from "./services/loader.service";
-import { StudentService } from '../services/student.service';
+import { UserService } from '../services/user.service';
 import { RegisterComponent } from '../components/register/register.component';
 import { AuthGuard } from '../services/auth.guard';
 import { LoginService } from '../services/login.service';
 //import { HttpInterceptor } from '../services/http-interceptor';
 import { MustMatchDirective } from './directives/must-match.directive';
-import { Data1Service } from "../services/data1.service";
-import { SubcourseService } from "../services/subcourse.service";
 import { FilterPipe } from './pipes/filter.pipe';
 import { FileUploader, FileDropDirective } from 'ng2-file-upload';
 
@@ -26,7 +23,8 @@ import { FileUploader, FileDropDirective } from 'ng2-file-upload';
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
   ],
-  entryComponents: [PageActionComponent,ConfirmationDialogComponent,AlertComponent,ModalComponent],
+  entryComponents: [PageActionComponent,ConfirmationDialogComponent,
+                    AlertComponent,ModalComponent],
   declarations: [
     ConfirmationDialogComponent,
     AlertComponent, ModalComponent, MustMatchDirective],
@@ -43,9 +41,7 @@ export class SmuCommonModule {
                   ConfirmationDialogService,
                   ModalService, 
                   DataService,
-                  CourseService,
-                  LoaderService,
-                  StudentService],
+                  LoaderService]
         };
     }
 }

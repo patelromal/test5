@@ -1,8 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { StudentService } from '../../services/student.service';
-import { CourseService } from '../../services/course.service';
-import { SubcourseService } from '../../services/subcourse.service';
+import { UserService } from '../../services/user.service';
+import { ProductService } from '../../services/product.service';
+import { SubproductService } from '../../services/subproduct.service';
 
 @Component({
   selector: 'app-register',
@@ -14,37 +14,37 @@ export class RegisterComponent implements OnInit {
   message: any;
   isValid: boolean;
   registerForm: FormGroup;
-  courses: any;
-  subCourses: any;
-  selectedCourse: any;
-  selectedSubCourse: any;
+  products: any;
+  subProducts: any;
+  selectedProduct: any;
+  selectedSubProduct: any;
   searchText: any;
 
   constructor(private formBuilder: FormBuilder,
-    private studentService: StudentService,
-    private subcourseService: SubcourseService,
-    private courseService: CourseService) { }
+    private userService: UserService,
+    private subproductService: SubproductService,
+    private productService: ProductService) { }
 
   ngOnInit() {
       this.createForm();
-      this.getCourses();
-      this.getSubCourses('');
+      this.getProducts();
+      this.getSubProducts('');
   }
 
-  public getCourses() {
-    this.courseService.get().subscribe(res => {
-        this.courses = res;
+  public getProducts() {
+    this.productService.get().subscribe(res => {
+        this.products = res;
     });
   }
 
-  public getSubCourses(courseId) {
-    this.subcourseService.findOne(courseId).subscribe(res => {
-            this.subCourses = res;
+  public getSubProducts(productId) {
+    this.subproductService.findOne(productId).subscribe(res => {
+            this.subProducts = res;
     });
   }
 
-  public onChangeCourse(selectedCourse){
-    this.selectedCourse = selectedCourse;
+  public onChangeProduct(selectedProduct){
+    this.selectedProduct = selectedProduct;
   }
 
   createForm() {
@@ -55,16 +55,16 @@ export class RegisterComponent implements OnInit {
           username: [''],
           password: [''],
           address: [''],
-          course: [''],
-          subcourse: [''],
-          selectedCourse: [''],
+          product: [''],
+          subproduct: [''],
+          selectedProduct: [''],
           searchText: ['']
       });
   }
 
   create(formData){
     var formData = this.registerForm.value;
-        this.studentService.create(formData).subscribe((res) => {
+        this.userService.create(formData).subscribe((res) => {
             this.message = 'successfully registered.';
             this.isValid=true;
             this.reset();

@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject, ViewChild, ContentChild, Output, EventEmitter } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { FormArray, FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { StudentService } from '../../services/student.service';
+import { UserService } from '../../services/user.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -16,7 +16,7 @@ export class DialogBodyComponent implements OnInit {
   public description: any;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
-          private studentservice: StudentService,
+          private userService: UserService,
           private router: Router,
           private route: ActivatedRoute,
           public dialogRef: MatDialogRef<DialogBodyComponent>) {

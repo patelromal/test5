@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginService } from '../../services/login.service';
-import { CourseService } from '../../services/course.service';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-header',
@@ -11,20 +11,19 @@ import { CourseService } from '../../services/course.service';
 })
 export class HeaderComponent implements OnInit {
 
-  courseList: any;
+  productList: any;
     
   constructor(private modalService: NgbModal,
-              private courseService: CourseService,
+              private productService: ProductService,
               public loginService: LoginService) { }
 
   ngOnInit(){
-    this.getCourseList();
+    this.getProductList();
   }
 
-  public getCourseList() {
-    this.courseService.get().subscribe(res => {
-        this.courseList = res;
-        console.log(this.courseList);
+  public getProductList() {
+    this.productService.get().subscribe(res => {
+        this.productList = res;
     });
   }
   

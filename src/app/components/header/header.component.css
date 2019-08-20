@@ -92,7 +92,7 @@
 
 /* for dropdown only - change the color of droodown */
 .navbar-custom .dropdown-menu {
-    background-color: #4D0B27;
+    background-color: #74DF00;
 }
 .navbar-custom .dropdown-item {
     color: #ffffff;
@@ -100,7 +100,7 @@
 .navbar-custom .dropdown-item:hover,
 .navbar-custom .dropdown-item:focus {
     color: #333333;
-    background-color: #FE642E;
+    background-color: #74DF00;
 }
 
 .dropdown:hover>.dropdown-menu {

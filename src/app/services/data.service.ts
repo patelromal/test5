@@ -3,8 +3,6 @@ import { RequestOptions, URLSearchParams } from '@angular/http';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { prodEnvironment } from '../../environments/environment.prod';
-// import { InterceptorService } from 'ng2-interceptors';
-//import { HttpInterceptor } from '../services/http-interceptor';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -35,7 +33,7 @@ export class DataService {
         .set("populate",populate);
         
     var localUri = this.apiUrl + uri;
-    return this.http.get(localUri , { params } ).map(res => {
+    return this.http.get(localUri).map(res => {
       return res;
     });
   }
@@ -48,17 +46,7 @@ export class DataService {
     return this.http.get(localUri + id, { params }).map(res => {
       return res;
     });
-  }
-      
-//  findOne(url, populate) {
-//    var params = new HttpParams()
-//      .set("populate",populate);
-//        
-//    var localUri = this.apiUrl + url;
-//    return this.http.get(localUri).map(res => {
-//      return res;
-//    });
-//  }    
+  }   
 
   put(uri,formData) {
     var localUri = this.apiUrl + uri;

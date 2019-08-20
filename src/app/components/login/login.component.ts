@@ -46,10 +46,18 @@ export class LoginComponent implements OnInit {
       this.loginService.login(form.username.value,
         form.password.value).subscribe((res) => {
           if(res != null){
+              console.log('res : ' + res);
               if(this.close()){
                 this.isValid=true;
+                  if(res != null){
+                      setTimeout(()=>{ 
+                        this.router.navigate(['/admin/managestudent']) 
+                     }, 1000)
+                  }
                 if(localStorage.getItem('currenturl') == '/admin'){
-                        setTimeout(()=>{ this.router.navigate(['/admin/managestudent']) }, 1000)
+                     setTimeout(()=>{ 
+                        this.router.navigate(['/admin/managestudent']) 
+                     }, 500)
                 }
               }
           }else{

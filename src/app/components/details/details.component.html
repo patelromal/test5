@@ -98,24 +98,26 @@
 								  <div class="tab-content">
 								    <div id="home" class="container tab-pane active">
 								      	<div class="row">
-										  <div class="col-3">image</div>
-									      <div class="col-4">
-									      	<div *ngFor="let items of course.items">	
+<!-- 										  <div class="col-3">image</div> -->
+									      <div class="col-5">
+									      	<div *ngFor="let items of course.items; let odd=odd; let even=even;"  [ngClass]="{ odd: odd, even: even }">	
 										      	<div class="row">
-												  <div class="col font-weight-bold text-info" align="right">{{items.label}}</div>
-												  <div class="col">{{items.description}}</div>
+													  <div class="col font-weight-bold text-info" align="right">
+													  	{{items.label}}
+													  </div>
+													  <div class="col">
+													  	{{items.description}}
+													  </div>
 												</div>
 											</div>
+											<div class="row">&nbsp;
+										</div>
 									      </div>
 									      <div class="col text-justify">{{course.details}}</div>
 										</div>
+										
+										
 								    </div>
-<!-- 								    <div id="menu1" class="container tab-pane fade"> -->
-<!-- 								      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-<!-- 								    </div> -->
-<!-- 								    <div id="menu2" class="container tab-pane fade"> -->
-<!-- 								      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
-<!-- 								    </div> -->
 								  </div>
 								</div>
 								

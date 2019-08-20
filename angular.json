@@ -39,6 +39,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap-select/dist/css/bootstrap-select.min.css",
               "node_modules/@ng-select/ng-select/themes/default.theme.css",
+              "node_modules/material-icons/css/material-icons.min.css",
               "src/styles/grid.css",
               "src/styles/modal.css",
               "node_modules/mdbootstrap/css/mdb.css",
@@ -60,7 +61,10 @@
               "src/assets/js/custom.js",
               "node_modules/select2/dist/js/select2.full.min.js",
               "src/assets/plugins/video-js/video.min.js",
-              "src/assets/plugins/video-js/Youtube.min.js"
+              "src/assets/plugins/video-js/Youtube.min.js",
+              {
+                "input": "node_modules/document-register-element/build/document-register-element.js"
+              }
             ]
           },
           "configurations": {
